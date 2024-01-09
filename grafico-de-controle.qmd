@@ -1,0 +1,59 @@
+# Gráfico de controle
+
+## O que é {-}
+
+O gráfico de controle ou carta de controle como também é conhecido, é uma ferramenta gráfica criada pelo estatístico americano Walter Andrew Shewhart em 1924 como um método de analisar e ajustar variações de um processo em função do tempo. 
+
+Duas características fundamentais descreviam os processos: centralização, que era determinada pela média representada por limite de controle (LC), e dispersão, que era determinada pelo desvio-padrão ou amplitude.
+
+O desvio-padrão nos gráficos de controle, é representado por linhas paralelas em relação à média, as quais são chamadas de limites de controle, sendo, limite superior de controle (LSC), que é a linha superior à média, e limite inferior de controle (LIC), que é a linha inferior à média e não pode ser menor que zero. Um valor comum utilizado no estabelecimento de limites em um gráfico de controle é  e pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994).
+
+Em algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para   quando os custos de investigação das causas forem muito grandes e reduzir para   quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto (DEMING, 2003).
+
+Os gráficos de controle são divididos em dois grupos: de controle por variáveis e por atributos. O gráfico de controle por variáveis é formado por dados quantitativos, mensuráveis ou que variam continuamente, e é utilizado quando as amostras são expressas em unidades quantitativas de medida tais como comprimento, largura, peso, tempo. O mais comum desses gráficos é o Xbarra-R ou  , onde se determinam a média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992).
+
+O gráfico de controle por atributos é representado por dados que só podem ser contados ou classificados e é utilizado quando as amostras refletem características qualitativas como defeituoso ou não, passa ou não passa, entre outros. Para esse tipo de controle é comumente utilizado o gráfico P, NP, C e U, os quais serão apresentados nos apêncides B, C, D, E. Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).
+
+Os gráficos P e NP são utilizados quando os atributos são do tipo classificação, por exemplo, SIM ou NÃO, PASSA ou NÃO PASSA, onde em classificações com tamanhos de amostra variável, é mais indicado o gráfico P.
+Os limites de controle para o gráfico P, de fração defeituosa total na
+amostra, são:
+ 
+Deming (1997), descreve que Shewhart descobriu duas formas de variações em um processo as quais ele classificou como causas comuns, as quais afetam todos os valores individuais do resultado do processo mas que se enquadram dentro dos limites de controle e representam um processo estável, e as causas especiais, que compreendem as variações intermitentes, imprevisíveis ou instáveis, e são sinalizadas de várias formas, como um ponto fora dos limites de controle, ausência de padrões não aleatórios ou tendências dentro do limite de controle (Figura 10).
+ 
+
+Uma das dificuldades das empresas ao trabalhar com gráficos de controle, é diferenciar as causas que geraram o problema, se são comuns ou especiais, no entanto, existem diferenças em alguns aspectos. As causas especiais geralmente apresentam pequenas perdas monetárias, grandes visibilidades do problema por causa da variação súbita, facilidade na coleta e análise dos dados e a responsabilidade para as ações de restabelecer o nível anterior fica por conta do pessoal envolvido no processo. 
+
+Nas causas comuns, as características são bem diferentes pois apresentam na maioria das vezes, grandes perdas monetárias, a visibilidade do problema se torna difícil por causa da natureza contínua, a coleta e análise dos dados se tornam complexas e devem ser realizadas por equipe técnica cuja responsabilidade para as ações fica por conta da administração, pois se trata de mudanças no sistema ou projeto (DEMING, 2003).
+
+
+
+## Qual o objetivo {-}
+
+- A
+- B
+- C
+
+## De onde vem {-}
+
+- A
+- B
+- C
+
+## Como fazer {-}
+
+- A
+- B
+- C
+
+## Pra onde vai {-}
+
+- A
+- B
+- C
+
+## Qual o resultado {-}
+
+- A
+- B
+- C
+

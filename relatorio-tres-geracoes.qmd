@@ -1,0 +1,43 @@
+# Relatório de três gerações
+
+## O que é {-}
+
+O relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:
+
+- **Passado** – o que foi planejado e o que foi feito.
+
+- **Presente** – o resultado obtido e os problemas existentes.
+
+- **Futuro** – mais propostas de solução.
+
+## Qual o objetivo {-}
+
+- O objetivo principal do relatório de três gerações é relatar, avaliar os esforços que foram feitos para resolver um determinado problema e obter uma visão geral dos resultados e ao mesmo tempo, identificar se há possibilidade imediata de propostas para resolução desses problemas (WERKEMA, 1995).
+
+- B
+
+- C
+
+## De onde vem {-}
+
+- A
+- B
+- C
+
+## Como fazer {-}
+
+- A
+- B
+- C
+
+## Pra onde vai {-}
+
+- A
+- B
+- C
+
+## Qual o resultado {-}
+
+- A
+- B
+- C

@@ -2,9 +2,12 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "YOUR PROJECT TITLE",
+    "title": "Método PDCA e ferramentas da qualidade",
     "section": "",
-    "text": "1 Introduction"
+    "text": "Preface\nA melhoria de processos envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios,perdas, atender determinados padrões, melhorar a qualidade e experiência de consumidores finais seja de um produto, serviço ou ideia.\nO método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade são conceitos usados parar identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras dos conceitos e implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.\nOs conceitos abordados neste livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores em muitos países.",
+    "crumbs": [
+      "Preface"
+    ]
   },
   {
     "objectID": "data.html#description",
@@ -19,5 +22,665 @@
     "title": "2  Data",
     "section": "2.2 Missing value analysis",
     "text": "2.2 Missing value analysis"
+  },
+  {
+    "objectID": "index.html#como-o-livro-é-organizado",
+    "href": "index.html#como-o-livro-é-organizado",
+    "title": "Método PDCA e ferramentas da qualidade",
+    "section": "Como o livro é organizado",
+    "text": "Como o livro é organizado\nPara facilitar a compreensão e busca dos temas abordados, todos os capítulos serão organizados com os seguintes tópicos:\n\nO que é: qua a ideia do que está sendo abordado.\nQual o objetivo: por que isso está sendo ou foi desenvolvido.\nDe onde vem: quais as necessidades ou origem dessa demanda. A motivação.\nComo fazer: qual o procedimento, código, sequência ou fluxo.\nPra onde vai: que é o consumidor disso. Qual a aplicação prática disso.\nQual o resultado: descrição dos resultados previstos ou comprovados.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#objetivo",
+    "href": "index.html#objetivo",
+    "title": "Método PDCA e ferramentas da qualidade",
+    "section": "Objetivo",
+    "text": "Objetivo\nPossibilitar que as ideias e conceitos em torno do PDCA e ferramentas da qualidade possam ser usados para desenvolvimento humano no presente e no futuro. Nos negócios, projetos pessoais, projetos comunitários dentro e fora do agronegócio. Para que isso seja possível alguns cuidados foram tomados:\n\nUsar linguagem simples e exemplos práticos.\nPermitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.\nExplorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal, ou seja, se as ferramentas mudarem, as ideias continuarão sendo úteis.\nSer um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#agradecimento",
+    "href": "index.html#agradecimento",
+    "title": "Método PDCA e ferramentas da qualidade",
+    "section": "Agradecimento",
+    "text": "Agradecimento\nAgradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, paulinyzito, SilvioBras, priscilazavadil, Ana Incerti, Muxtaa, FlávioCorrêa, factorialmap",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introdução",
+    "section": "",
+    "text": "No momento em que este livro está sendo escrito junho de 2020, fenômenos importantes estão acontecendo os quais podem se tornar desafiadores para as nações nas próximas décadas. A ideia do livro é explorar conceitos e ferramentas que possam ajudar na transformação desses desafios em oportunidades.\n\nTransição demográfica que remete a ideia de desafios estruturais. Está relacionada a mudança histórica de taxas de natalidade, mortalidade e crescimento populacional decorrentes do avanço da medicina, urbanização e desenvolvimento de novas técnologias.\n\nEstamos ficando mais velhos onde os idosos acima de 65 anos constituem a faixa etária de crescimento mais rápido do mundo. Algumas regiões como Europa e Ásia Oriental já enfrentam desafios para cuidar de sua população idosa.\nEstamos ficando mais urbanos em 2020 cerca de 55% da população mundial vive em vilas e cidades. O acesso a economia e a sociedade digital em áreas ruais é um processo contínuo onde pequenos agricultores podem desempenhar papel vital na produção de alimentos e na proteção do meio ambiente.\n\nDesenvolvimento de tecnologias disruptivas remete a ideia de produtividade total dos fatores. O aumento da interação entre as pessoas, as descobertas científicas e instrumentos que potencializam as capacidades humanas. A inteligência artificial, blockchain, impressão 3D, realidade aumentada, internet das coisas, edição de DNA CRISPR e luz sincrotron por exemplo, podem provocar grandes mudanças no modo como as coisas são feitas.\nAtividade economica em países emergentes remete a ideia de mudança no padrão de vida. Em 2020 países como Indonésia, Africa do Sul, Russia, México, Malasia, Colombia, Polônia, Chile, Hingria, Tailandia, Turquia, Brasil, China e Índia são considerandos países emergentes. Boa parte desses países, têm feito progressos notáveis no fortalecimento de seus políticas macroeconômicas desde a virada do século o que os permitiu mais do que dobrar a renda per capita em média.\nMudanças climáticas que remete ao habito de consumo e impactam diretamente no comportamento das pessoas, na demanda de produtos e serviços, nos meios de produção e na forma como as coisas são consumidas.",
+    "crumbs": [
+      "Introdução"
+    ]
+  },
+  {
+    "objectID": "conceitos.html#método-pdca",
+    "href": "conceitos.html#método-pdca",
+    "title": "1  Conceitos",
+    "section": "1.1 Método PDCA",
+    "text": "1.1 Método PDCA\nO PDCA é um método criado para auxiliar os gestores na identificação e solução de problemas. Ele mostra de forma simplificada e organizada o caminho a ser percorrido na busca de melhoria contínua.\nTambém conhecido como ciclo de Shewhart ou ciclo de Deming, foi concluído em 1930 por Walter Shewhart no Bell Laboratories que analisando estatisticamente o controle de processos, criou um modelo que poderia ser aplicado em qualquer situação (WERKEMA, 1995).\nO estatístico William Edwards Deming foi o responsável por propagar a idéia no Japão após a segunda guerra mundial. Desde então, obteve-se a popularização ao redor do mundo, das técnicas e da qualidade dos produtos japoneses(veículos, eletronicos, frutas etc), os quais antes da guerra competiam no mercado internacional apenas em preço e não em qualidade.\nSegundo Campos (1995), o ciclo PDCA tem por princípio tornar mais claras e ágeis as etapas no processo de gerenciamento as quais são assim divididas:\n\nPLAN (Planejamento) - Etapa onde se busca identificar oportunidades ou problemas, analisar os fenômenos, detectar causas reais, definir metas, criar procedimentos para execussão com prazos e metricas para avaliação.\nDO (Execução) - Etapa em que as ações propostas em Plan são executadas por meio da busca pelo aprendizado.\nCHECK (Verificação) – Etapa de validação através de avaliação, monitoramento e controle das ações em execussão, comparando os resultados com o que foi planejado em Plan.\nACT (Ação e Padronização) - Etapa onde as ações que foram validadas em Check são adotados como padrão, aplicadas, reproduzidas e ensinadas para os demais.\n\nA figura abaixo mostra o processo do método PDCA(lado esquerdo) apoiado pelas ferramentas da qualidade (lado direito) e pela liderança (figura com cor diferente).\n\n\n\nFigura 1 - Ilustração médoto PDCA",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Conceitos</span>"
+    ]
+  },
+  {
+    "objectID": "conceitos.html#ferramentas-da-qualidade",
+    "href": "conceitos.html#ferramentas-da-qualidade",
+    "title": "1  Conceitos",
+    "section": "1.2 Ferramentas da qualidade",
+    "text": "1.2 Ferramentas da qualidade\nAs ferramentas da qualidade são instrumentos que auxiliam no processo de execução do PDCA dando suporte técnico a intuição. Imagine que fossemos construir uma casa(solução para um problema de moradia) e pra isso usaríamos ferramentas como martelo, conceitos de engenharia, software, betoneira entre outros. No PDCA é a mesma coisa.\nAlgumas ferramentas da qualidade são listadas abaixo. A ideia por traz de cada etapa também foi incluída para caso você esteja lendo esse livro no futuro, e essas ferramentas estejam obsoletas:\n\nIdentificação do problema sensores, formulários de pesquisa, check list, fluxograma de processos, desenhos, comentários, reviews e sugestões em redes socais. A ideia é definir e deixar claro o problema e conhecer sua importância.\nObservação do fenômeno gráficos de controle, gráfico de pareto, histograma, gráfico de correlação, gráfico de dispersão, gráfico de candlestick, gráfico waterfall. A ideia é investigar as características específicas com visão ampla e sobre diversos pontos de vista. O estatístico Shewhart propôs para a industria japonesa um gráfico de controle para análise de dados resultantes de inspeção. Isso fez com que a importância dada a procedimentos de inspeção e correção de produtos defeituosos começasse a ser substituída por estudos e prevenção dos problemas relacionados à qualidade garantindo que o possível defeito do produto fosse eliminado durante o processo e não após o término (FERRO, 1997).\nAnálise diagrama de ishikawa, diagrama de 5 porquês, regressão linear, regressão logística, testes-t, anova etc. A ideia é descobrir as causas fundamentais para agir na causa e não no efeito(sintoma) do problema. Como um exemplo podemos citar uma dor de cabeça e febre como sintoma e não causa de um problema. A causa pode ser um ataque bacteriano por exemplo e pra ter certeza disso, exames e avaliação médica podem ser necessárias para então aplicar o medicamento adequado. Por outro lado, ao optar intuitivamente por tomar um remédio para dor de cabeça, o problema pode ser amenizado inicialmente e agravado no longo prazo.\nPlano de ação Plano de Ação 5W2H. A ideia é elaborar um plano para tratar as causas fundamentais e que nele tenha o que vai ser feito, quem será o responsável pela execução, quando será feito, quanto custa, e onde será comunicado para avaliação.\nAção A liderança tem papel cruciar nessa etapa e a clareza e articulação na comunicação são ferramentas poderosas na mão de um líder. É abundante os dados que revelam que sem meta e sem método mas com liderança, aleatoriamente se chega a algum lugar, por outro lado mesmo tendo metas bem definicas e excelentes métodos mas sem liderança, dificilmente se chegará a algum lugar.\nVerificação são gráficos de tendência, indicadores direcionadores, de resultados, testes a/b ou caso controle, painel de gestão a vista com os resultados das ações executadas. A ideia é monitorar e avaliar os resultados das ações que estão sendo executadas, auxiliar no engajamento e geração de novas ideias ou ações que auxiliem tratamento do problema.\nValidação equipe multidisciplinar. A ideia é definir se os resultados foram safisfatórios com visão no todo. Em alguns casos o resultados da ação não impactaram na causa espeficicada, mas pode ser muito relevante em outras. Por exemplo na descoberta do velcro, que não resolveu um problema da moda que era um objetivo inicial de Georges de Mestral seu criador. Por outro lado, a NASA viu naqulo uma oportunidade e usou em trajes de voo para proteger itens em gravidade zero expandindo o uso também para outros campos.\nPadronização são normas, regras, procedimentos, processos, fichas técnicas. A ideia é facilitar a reprodução e aprendizado do que foi bem sucedido e gerando novas ideias para prevenir o reaparecimento do problema.\nConclusão registro, publicação científica, livros, revistas, repositório no github, zenodo etc. A ideia é gerar um legado que possa ser usado no futuro em prol do desenvolvimento de quem usa-lo. Que novas ideias possam ser criadas a partir dessas.\n\nApós a segunda guerra mundial, o Japão em especial, passou por uma verdadeira revolução, onde a qualidade dos produtos e serviços nunca foi tão discutida, estudada e aplicada. Grandes nomes como Shewhart, Deming, Juran e Ishikawa, desenvolveram ou ajudaram a disseminar algumas ferramentas que permitiram um maior controle dos processos ou melhoria nas tomadas de decisões (CAMPOS, 1995).\nNas décadas de 1970 e 1980, essas técnicas e ferramentas começaram a ser introduzidas em empresas de diversos países da Ásia, Europa, América do Norte e América Latina, influenciados principalmente pela maior competitividade dos produtos japoneses por meio de alta qualidade e preços competitivos (FERRO, 1997).\nNo Brasil, o uso de ferramentas da qualidade na gestão de empresas ocorreu por volta de 1970, sendo introduzido em algumas empresas como Volkswagen, Johnson & Johnson e Embraer, tendo seu movimento impulsionado em 1986, quando o professor Ishikawa esteve no país.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Conceitos</span>"
+    ]
+  },
+  {
+    "objectID": "fluxograma-de-processos.html#o-que-é",
+    "href": "fluxograma-de-processos.html#o-que-é",
+    "title": "2  Fluxograma de Processos",
+    "section": "O que é",
+    "text": "O que é\nRepresentação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é permitir ao usuário ter uma visão do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.\nNão há uma data precisa do início do uso dessa ideia mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.\n\n\n\nFigura 2 - Papiro de Ani:A pesagem do coração\n\n\nO uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão.\n\n\n\nFigura 3 - fluxograma de processo industrial de metais",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
+    ]
+  },
+  {
+    "objectID": "fluxograma-de-processos.html#qual-o-objetivo",
+    "href": "fluxograma-de-processos.html#qual-o-objetivo",
+    "title": "2  Fluxograma de Processos",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nEntender um processo e identificar as oportunidades de melhoria.\nFacilitar a comunicação através da visualização do todo e suas relações\nFacilitar a expressão de ideias, formulação de hipóteses e discussões.\nAnalisar o fenômeno em diferentes perspectivas",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
+    ]
+  },
+  {
+    "objectID": "fluxograma-de-processos.html#de-onde-vem",
+    "href": "fluxograma-de-processos.html#de-onde-vem",
+    "title": "2  Fluxograma de Processos",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nDa necessidade ter uma visão global do assunto que está sendo discutido e compreender melhor as relações e interações para que ideias sejam geradas e melhorias ou até estratégias ou planos táticos possam ser propostos.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
+    ]
+  },
+  {
+    "objectID": "fluxograma-de-processos.html#como-fazer",
+    "href": "fluxograma-de-processos.html#como-fazer",
+    "title": "2  Fluxograma de Processos",
+    "section": "Como fazer",
+    "text": "Como fazer\nExistem várias formas de criar um fluxograma de processos sendo o lápis e o papel um dos mais eficiêntes por outro lado no R também é possível criar vários modelos de fluxogramas os quais citarei alguns usando o pacote DiagrammeR onde:\n\nmermaid é a função que chamará a biblioteca em javascript que fará o diagrama\ngraph LR é a orientação do digrama que pode ser TD=top down, LR = left to right etc.\nA, B, C, D..N é a definição de um nó\n&gt;], [], (), (()) é o formato do nó\n–&gt; é a direção do conector\n\n\n\nCode\nlibrary(DiagrammeR)\n\n\nWarning: package 'DiagrammeR' was built under R version 4.3.2\n\n\nCode\nmermaid(\"\ngraph LR\nA&gt;Mat. prima]--&gt;B[Produção]\nB--&gt;C[Estoque PA]\nC--&gt;D[Demanda]\nE&gt;Mão obra]--&gt;B\nF&gt;Máquina]--&gt;B\n\", height='100%', width='100%')\n\n\n\n\n\n\nCode\nmermaid (\"\ngraph LR\n\nsubgraph Cliente\nA[Vendido no limite]\nend\n\nsubgraph Corretora\nA--&gt;B{Tem saldo?}\nB--&gt;|Sim|C[Manter posição]\nC--&gt; D[Novo pregão]\nD--&gt; B\nend\n\nsubgraph Compliance\nB --&gt;|Não| F[Encerra posição]\nend\n\n\", height='100%', width='100%')\n\n\n\n\n\n\nCode\nmermaid(\"\ngraph LR\n    A[Estoque MP] --&gt;|materia prima| B(Produção)\n    B --&gt; C{Sob pedido?}\n    C --&gt;|Sim| D[Venda]\n    C --&gt;|Não| E[Estoque Prod. Acabado]\n\", height='100%', width='100%')",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
+    ]
+  },
+  {
+    "objectID": "fluxograma-de-processos.html#pra-onde-vai",
+    "href": "fluxograma-de-processos.html#pra-onde-vai",
+    "title": "2  Fluxograma de Processos",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\n\nO fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias entre outras aplicações.\nComo se trata de uma ferramenta de análise de fenômeno ele fornece dados para o próximo passo que é a analise de causa raiz do problema",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
+    ]
+  },
+  {
+    "objectID": "fluxograma-de-processos.html#qual-o-resultado",
+    "href": "fluxograma-de-processos.html#qual-o-resultado",
+    "title": "2  Fluxograma de Processos",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nEficiência no aproveitamento de recurso de tempo e mão de obra atraves da facilidade de compreenção e geração de ideias.\nEngajamento da equipe uma vez que todos compreendem o assunto mesmo quando foge sua área de domínio.\nFixação do assunto abordado na mente dos envolvidos pois simbolos e imagens são melhores armazenados na memória humana.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-s.html#o-que-é",
+    "href": "cinco-s.html#o-que-é",
+    "title": "3  OS 5S",
+    "section": "O que é",
+    "text": "O que é\nO 5S é uma prática propagada no Japão que ensina que bons hábitos, eliminação de desperdícios e perdas são capazes de modificar o humor, harmonizar o ambiente e a maneira da condução das atividades de todos.\nEssa prática foi desenvolvida a partir dos hábitos das mães de família japonesas e foi introduzida no meio empresarial logo após a segunda guerra mundial. Seu objetivo principal na época, era de combater a sujeira das fábricas e desde então é ensinado como princípio educacional para a formação dos indivíduos (RIBEIRO, 2006).\nO 5S é uma referência a uma série de cinco palavras do vocabulário japonês. Ele se refere a uma filosofia e uma maneira de organizar e gerenciar o espaço de trabalho com o propósito de melhorar a eficiência por meio da eliminação de materiais não utilizados, melhorando o fluxo de trabalho e mitigando os processos desnecessários. Esses princípios são os primeiros passos para a certificação ISO que em conjunto com outras metodologias, podem enriquecer o processo e torná-lo ainda mais vantajoso (NAKATA, 2000).\nO 5S é composto de cinco conceitos simples, que em japonês começam com a letra “S”: Seiri, Seiton, Seiso, Seiketsu, Shitsuke. Como não existe um significado dessas palavras começando com a letra “S” na língua portuguesa, acrescentou-se então a palavra senso a sua respectiva tradução (CARVALHO, 2000).\n\nSeiri - Arrumação\nDe acordo com o dicionário da língua japonesa shogakukan, Seiri significa dispor em perfeita ordem as coisas que estão em desordem ou que estão em situação confusa, afastar coisas inúteis ou descartá-las. É comum ver situações de desorganização no cotidiano das pessoas, desde “Onde deixei minhas chaves?“, até “Onde coloquei os relatórios?”. Estas são situações que podem facilmente ser evitadas com a aplicação do seiri (NAKATA, 2000).\nNa filosofia dos 5S no Japão, a aplicação do seiri obedece a uma ordem de classificação.\n\nDesnecessárias: coisas que não são utilizadas como ferramentas avariadas, moldes, materiais fora de linha, peças e materiais não conformes, equipamentos antigos ou em desuso.\nNão essenciais: coisas necessárias, porém, não são utilizadas com muita frequência\nEssenciais: coisas necessárias e que são utilizadas frequentemente.\n\nUma das barreiras na execução do seiri é o pensamento de que os objetos que estão atualmente em desuso irão ser utilizados algum dia, ficando meses ou até anos armazenados sem que haja utilização (NAKATA, 2000).\n\n\nSeiton - Ordenação\nNo dicionário da língua japonesa shogakukan, Seiton significa organizar os objetos e as coisas que estão em desordem ou dispor as coisas necessárias em perfeita ordem e indicá-las de forma que qualquer pessoa possa encontrá-las.\nRefere-se à disposição de ferramentas, equipamentos ou materiais de forma que melhore o fluxo de trabalho, onde os objetos são claramente identificados com relação ao local, conteúdo, quantidade e disposição eliminando movimentos desnecessários economizando tempo e agilizando a localização.\n\n\nSeiso - Limpeza\nAinda de acordo com o dicionário da língua japonesa shogakukan, a palavra Seiso significa fazer uma perfeita operação de remoção de sujeira.\nRefere-se à necessidade de manter o mais limpo possível o local de trabalho e de realizar inspeções periódicas, utilizando efetivamente os cinco sentidos, verificando-se a existência de anormalidades e falhas minúsculas, ou seja, todas as fontes de sujeira, devem ser eliminadas e deve ser criada uma rotina de limpeza que envolva os operadores de cada máquina, equipamento ou estação de trabalho. Essas práticas, auxiliam na prevenção de acidentes, além de melhorar as condições de trabalho de todas as pessoas dentro da empresa (RIBEIRO, 2006).\n\n\nSeiketsu – Higiene\nA palavra Seiketsu, no dicionário da língua japonesa shogakukan, significa limpo, isento de sujeira. Ambiente com excelentes condições sanitárias e ainda pessoa com retidão de caráter e conduta (NAKATA, 2000).\nNa filosofia dos 5S japonesa, higiene se refere à manutenção dos três sensos anteriores, ou seja, arrumação, ordenação e limpeza. Cria-se dessa forma um ambiente com boas condições de saúde física e mental. Significa ainda garantir que informações e comunicação sejam feitas de forma simples e claras, e que todas as pessoas consigam compreender (NAKATA, 2000).\n\n\nShitsuke – Se colocar no lugar do outro\nA palavra Shitsuke, no dicionário da língua japonesa shogakukan significa dotar-se de boas maneiras ou já dotado de boas maneiras. Refere-se ao ato de desenvolver hábitos de cumprir os deveres como membro da sociedade. Vem a ser também um movimento de educação pessoal para desenvolver as potencialidades do ser humano, ou seja, saber imaginar situações nas quais se colocam no lugar do outro e atuar com os sentimentos que eles teriam naquelas circunstâncias, de modo a tornar isso um hábito (NAKATA, 2000).\nConforme Nakata (2000), o shitsuke seria o principal objetivo a ser perseguido pelas empresas, pela sociedade e pelo país, considerando que a implementação do 5S é uma técnica de melhoria.\nOs efeitos da aplicação do 5S são de uma mudança cultural dentro e fora das empresas, mudando o jeito de pensar das pessoas, direcionando-as a um comportamento melhor, e que serão aplicados para toda a vida. Não deve ser tratado apenas como um programa de limpeza, mas sim uma nova maneira de conduzir uma organização a ganhos expressivos de produtividade e melhorar a qualidade de vida das pessoas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>OS 5S</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-s.html#qual-o-objetivo",
+    "href": "cinco-s.html#qual-o-objetivo",
+    "title": "3  OS 5S",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nmelhoria do ambiente de trabalho\nprevenção de acidentes\nredução de custos\neliminação de desperdícios\nmelhoria das relações humanas\nmelhoria da qualidade de produtos e serviços.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>OS 5S</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-s.html#de-onde-vem",
+    "href": "cinco-s.html#de-onde-vem",
+    "title": "3  OS 5S",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>OS 5S</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-s.html#como-fazer",
+    "href": "cinco-s.html#como-fazer",
+    "title": "3  OS 5S",
+    "section": "Como fazer",
+    "text": "Como fazer\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>OS 5S</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-s.html#pra-onde-vai",
+    "href": "cinco-s.html#pra-onde-vai",
+    "title": "3  OS 5S",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>OS 5S</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-s.html#qual-o-resultado",
+    "href": "cinco-s.html#qual-o-resultado",
+    "title": "3  OS 5S",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>OS 5S</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-porques.html#o-que-é",
+    "href": "cinco-porques.html#o-que-é",
+    "title": "4  Método 5 porquês",
+    "section": "O que é",
+    "text": "O que é\nOs cinco porquês é uma técnica desenvolvida no Japão por Sakichi Toyoda fundador da Toyota. A utilização é bastante simples e consiste em perguntar: Por que o fato ocorreu? Para a resposta, perguntar “por quê?” novamente, e assim seguir até encontrar o motivo real, a causa raiz. Não são necessárias exatamente cinco interações, podem ser menos ou mais. A ideia é realmente encontrar a causa raiz do problema, evitando tomar ações paliativas (MERIGHI, 2009).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Método 5 porquês</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-porques.html#qual-o-objetivo",
+    "href": "cinco-porques.html#qual-o-objetivo",
+    "title": "4  Método 5 porquês",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Método 5 porquês</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-porques.html#de-onde-vem",
+    "href": "cinco-porques.html#de-onde-vem",
+    "title": "4  Método 5 porquês",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Método 5 porquês</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-porques.html#como-fazer",
+    "href": "cinco-porques.html#como-fazer",
+    "title": "4  Método 5 porquês",
+    "section": "Como fazer",
+    "text": "Como fazer\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Método 5 porquês</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-porques.html#pra-onde-vai",
+    "href": "cinco-porques.html#pra-onde-vai",
+    "title": "4  Método 5 porquês",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Método 5 porquês</span>"
+    ]
+  },
+  {
+    "objectID": "cinco-porques.html#qual-o-resultado",
+    "href": "cinco-porques.html#qual-o-resultado",
+    "title": "4  Método 5 porquês",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Método 5 porquês</span>"
+    ]
+  },
+  {
+    "objectID": "diagrama-causa-efeito.html#o-que-é",
+    "href": "diagrama-causa-efeito.html#o-que-é",
+    "title": "5  Diagrama de Causa e Efeito(Ishikawa)",
+    "section": "O que é",
+    "text": "O que é\nO diagrama de causa e efeito, diagrama de Ishikawa ou espinha de peixe, é uma ferramenta gráfica que facilita identificar uma relação significativa entre o efeito e suas possíveis causas (WERKEMA, 1995). Muito utilizada no gerenciamento de diversos processos e de diversos projetos. foi originalmente proposto pelo engenheiro químico japonês Kaoru Ishikawa em 1943, e aperfeiçoado nos anos seguintes.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagrama de Causa e Efeito(Ishikawa)</span>"
+    ]
+  },
+  {
+    "objectID": "diagrama-causa-efeito.html#qual-o-objetivo",
+    "href": "diagrama-causa-efeito.html#qual-o-objetivo",
+    "title": "5  Diagrama de Causa e Efeito(Ishikawa)",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nEstimular a interação entre as pessoas, ambiente e instrumetos usados na busca de causas que unfluenciam no efeito.\nPermitir que todos os envolvidos contribuam com ideias e pontos de vista.\nFacilitar a identificação de possíveis causas sobre o efeito proposto.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagrama de Causa e Efeito(Ishikawa)</span>"
+    ]
+  },
+  {
+    "objectID": "diagrama-causa-efeito.html#de-onde-vem",
+    "href": "diagrama-causa-efeito.html#de-onde-vem",
+    "title": "5  Diagrama de Causa e Efeito(Ishikawa)",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagrama de Causa e Efeito(Ishikawa)</span>"
+    ]
+  },
+  {
+    "objectID": "diagrama-causa-efeito.html#como-fazer",
+    "href": "diagrama-causa-efeito.html#como-fazer",
+    "title": "5  Diagrama de Causa e Efeito(Ishikawa)",
+    "section": "Como fazer",
+    "text": "Como fazer\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagrama de Causa e Efeito(Ishikawa)</span>"
+    ]
+  },
+  {
+    "objectID": "diagrama-causa-efeito.html#pra-onde-vai",
+    "href": "diagrama-causa-efeito.html#pra-onde-vai",
+    "title": "5  Diagrama de Causa e Efeito(Ishikawa)",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagrama de Causa e Efeito(Ishikawa)</span>"
+    ]
+  },
+  {
+    "objectID": "diagrama-causa-efeito.html#qual-o-resultado",
+    "href": "diagrama-causa-efeito.html#qual-o-resultado",
+    "title": "5  Diagrama de Causa e Efeito(Ishikawa)",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nA\nB\nC\n\nEssa ferramenta foi utilizada pela primeira vez no Japão por volta de 1953, com o objetivo de sintetizar as opiniões dos engenheiros de uma fábrica quando estes discutem problemas referentes à qualidade dos produtos (SEBRAE, 2009),\nEsse sistema permite estruturar hierarquicamente as causas de determinado problema ou oportunidade de melhoria, bem como seus efeitos sobre a qualidade dos produtos. Permite também, estruturar qualquer sistema que necessite de resposta de forma gráfica e sintética, obtendo melhor visualização (SEBRAE, 2009).",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagrama de Causa e Efeito(Ishikawa)</span>"
+    ]
+  },
+  {
+    "objectID": "check-list.html#o-que-é",
+    "href": "check-list.html#o-que-é",
+    "title": "6  Folha de verificação (Check-list)",
+    "section": "O que é",
+    "text": "O que é\nA folha de verificação, check sheet ou check list como também é conhecida, trata-se de um formulário impresso ou por meio digital. É uma ferramenta bastante simples utilizada para a coleta de dados quantitativos e qualitativos em tempo real no local onde os dados são gerados. O objetivo principal da folha de verificação é a coleta de dados de forma estruturada e organizada, dispondo de dados autoexplicativos e que são rapidamente vistos e interpretados corretamente por todos (KUME, 1993).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+    ]
+  },
+  {
+    "objectID": "check-list.html#qual-o-objetivo",
+    "href": "check-list.html#qual-o-objetivo",
+    "title": "6  Folha de verificação (Check-list)",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\nAlguns benefícios do uso da folha de verificação na coleta de dados é a economia de tempo, pois elimina a necessidade de desenhar figuras ou escrever números repetitivos, e evita também que problemas como falhas na interpretação comprometam o tratamento e análise dos dados, principalmente em situações em que várias pessoas participam da etapa de coleta (WERKEMA, 1995).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+    ]
+  },
+  {
+    "objectID": "check-list.html#de-onde-vem",
+    "href": "check-list.html#de-onde-vem",
+    "title": "6  Folha de verificação (Check-list)",
+    "section": "De onde vem",
+    "text": "De onde vem\nAlgumas características são comuns em uma folha de verificação, como a indicação dos itens que serão verificados, o período, o motivo e a frequência. Essa folha, relaciona-se com quase todas as demais ferramentas estatísticas, pois é a etapa inicial e onde se encontram os dados que serão analisados (WERKEMA, 1995).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+    ]
+  },
+  {
+    "objectID": "check-list.html#como-fazer",
+    "href": "check-list.html#como-fazer",
+    "title": "6  Folha de verificação (Check-list)",
+    "section": "Como fazer",
+    "text": "Como fazer\nSegundo Kume (1993), existem alguns preceitos básicos na elaboração de uma folha de verificação, que é o agrupamento de elementos com características semelhantes tendo causa e soluções comuns, além de dividi-los em algumas categorias:\n\nfolha de verificação para distribuição de processos de produção: coleta-se os dados de amostras de produção para se calcular a variação do processo produtivo;\nfolha de verificação para produtos defeituosos: coletam-se os dados para identificar os defeitos mais frequêntes, bem como o número de vezes de cada motivo;\nfolhas de verificação para localizar os defeitos: a coleta de dados geralmente é composta de um desenho, figura ou mapa do item a ser verificado no qual são assinalados o local e a forma da ocorrência dos defeitos;\nfolha de verificação de causa e defeitos: coleta de dados em que os dados relativos às causas e aos defeitos são dispostos de forma ordenada, tornando muito clara a relação entre eles. Brassard (1994), observa que as folhas de verificação (Figura 7), por serem uma ferramenta de fácil compreensão e fácil elaboração, são utilizadas na coleta de dados amostrais com o objetivo de se formar um modelo. É o ponto lógico de início na maioria dos ciclos de solução de problemas.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+    ]
+  },
+  {
+    "objectID": "check-list.html#pra-onde-vai",
+    "href": "check-list.html#pra-onde-vai",
+    "title": "6  Folha de verificação (Check-list)",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+    ]
+  },
+  {
+    "objectID": "check-list.html#qual-o-resultado",
+    "href": "check-list.html#qual-o-resultado",
+    "title": "6  Folha de verificação (Check-list)",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-dispercao.html#o-que-é",
+    "href": "grafico-de-dispercao.html#o-que-é",
+    "title": "7  Gráfico de Disperção",
+    "section": "O que é",
+    "text": "O que é",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-dispercao.html#qual-o-objetivo",
+    "href": "grafico-de-dispercao.html#qual-o-objetivo",
+    "title": "7  Gráfico de Disperção",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-dispercao.html#de-onde-vem",
+    "href": "grafico-de-dispercao.html#de-onde-vem",
+    "title": "7  Gráfico de Disperção",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-dispercao.html#como-fazer",
+    "href": "grafico-de-dispercao.html#como-fazer",
+    "title": "7  Gráfico de Disperção",
+    "section": "Como fazer",
+    "text": "Como fazer\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-dispercao.html#pra-onde-vai",
+    "href": "grafico-de-dispercao.html#pra-onde-vai",
+    "title": "7  Gráfico de Disperção",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-dispercao.html#qual-o-resultado",
+    "href": "grafico-de-dispercao.html#qual-o-resultado",
+    "title": "7  Gráfico de Disperção",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-pareto.html#o-que-é",
+    "href": "grafico-pareto.html#o-que-é",
+    "title": "8  Gráfico de Pareto",
+    "section": "O que é",
+    "text": "O que é\nO gráfico de Pareto ou gráfico 80/20 é um tipo específico de histograma ordenado por frequência de ocorrência da maior para a menor. Sua origem decorre de estudos do economista italiano Vilfredo Pareto, no qual ele afirma que para muitos fenômenos, 80% das consequências advêm de 20% das causas. Esses estudos foram aprofundados por Joseph Moses Juran, o qual expandiu essa lei para a esfera organizacional nos Estados Unidos a partir da década de 1930 (BRASSARD, 1994).",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Gráfico de Pareto</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-pareto.html#qual-o-objetivo",
+    "href": "grafico-pareto.html#qual-o-objetivo",
+    "title": "8  Gráfico de Pareto",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nIdentificar quais causas seriam responsáveis pela maior parcela dos efeitos.\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Gráfico de Pareto</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-pareto.html#de-onde-vem",
+    "href": "grafico-pareto.html#de-onde-vem",
+    "title": "8  Gráfico de Pareto",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Gráfico de Pareto</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-pareto.html#como-fazer",
+    "href": "grafico-pareto.html#como-fazer",
+    "title": "8  Gráfico de Pareto",
+    "section": "Como fazer",
+    "text": "Como fazer\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Gráfico de Pareto</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-pareto.html#pra-onde-vai",
+    "href": "grafico-pareto.html#pra-onde-vai",
+    "title": "8  Gráfico de Pareto",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Gráfico de Pareto</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-pareto.html#qual-o-resultado",
+    "href": "grafico-pareto.html#qual-o-resultado",
+    "title": "8  Gráfico de Pareto",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Gráfico de Pareto</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-controle.html#o-que-é",
+    "href": "grafico-de-controle.html#o-que-é",
+    "title": "9  Gráfico de controle",
+    "section": "O que é",
+    "text": "O que é\nO gráfico de controle ou carta de controle como também é conhecido, é uma ferramenta gráfica criada pelo estatístico americano Walter Andrew Shewhart em 1924 como um método de analisar e ajustar variações de um processo em função do tempo.\nDuas características fundamentais descreviam os processos: centralização, que era determinada pela média representada por limite de controle (LC), e dispersão, que era determinada pelo desvio-padrão ou amplitude.\nO desvio-padrão nos gráficos de controle, é representado por linhas paralelas em relação à média, as quais são chamadas de limites de controle, sendo, limite superior de controle (LSC), que é a linha superior à média, e limite inferior de controle (LIC), que é a linha inferior à média e não pode ser menor que zero. Um valor comum utilizado no estabelecimento de limites em um gráfico de controle é e pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994).\nEm algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto (DEMING, 2003).\nOs gráficos de controle são divididos em dois grupos: de controle por variáveis e por atributos. O gráfico de controle por variáveis é formado por dados quantitativos, mensuráveis ou que variam continuamente, e é utilizado quando as amostras são expressas em unidades quantitativas de medida tais como comprimento, largura, peso, tempo. O mais comum desses gráficos é o Xbarra-R ou , onde se determinam a média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992).\nO gráfico de controle por atributos é representado por dados que só podem ser contados ou classificados e é utilizado quando as amostras refletem características qualitativas como defeituoso ou não, passa ou não passa, entre outros. Para esse tipo de controle é comumente utilizado o gráfico P, NP, C e U, os quais serão apresentados nos apêncides B, C, D, E. Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).\nOs gráficos P e NP são utilizados quando os atributos são do tipo classificação, por exemplo, SIM ou NÃO, PASSA ou NÃO PASSA, onde em classificações com tamanhos de amostra variável, é mais indicado o gráfico P. Os limites de controle para o gráfico P, de fração defeituosa total na amostra, são:\nDeming (1997), descreve que Shewhart descobriu duas formas de variações em um processo as quais ele classificou como causas comuns, as quais afetam todos os valores individuais do resultado do processo mas que se enquadram dentro dos limites de controle e representam um processo estável, e as causas especiais, que compreendem as variações intermitentes, imprevisíveis ou instáveis, e são sinalizadas de várias formas, como um ponto fora dos limites de controle, ausência de padrões não aleatórios ou tendências dentro do limite de controle (Figura 10).\nUma das dificuldades das empresas ao trabalhar com gráficos de controle, é diferenciar as causas que geraram o problema, se são comuns ou especiais, no entanto, existem diferenças em alguns aspectos. As causas especiais geralmente apresentam pequenas perdas monetárias, grandes visibilidades do problema por causa da variação súbita, facilidade na coleta e análise dos dados e a responsabilidade para as ações de restabelecer o nível anterior fica por conta do pessoal envolvido no processo.\nNas causas comuns, as características são bem diferentes pois apresentam na maioria das vezes, grandes perdas monetárias, a visibilidade do problema se torna difícil por causa da natureza contínua, a coleta e análise dos dados se tornam complexas e devem ser realizadas por equipe técnica cuja responsabilidade para as ações fica por conta da administração, pois se trata de mudanças no sistema ou projeto (DEMING, 2003).",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Gráfico de controle</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-controle.html#qual-o-objetivo",
+    "href": "grafico-de-controle.html#qual-o-objetivo",
+    "title": "9  Gráfico de controle",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Gráfico de controle</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-controle.html#de-onde-vem",
+    "href": "grafico-de-controle.html#de-onde-vem",
+    "title": "9  Gráfico de controle",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Gráfico de controle</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-controle.html#como-fazer",
+    "href": "grafico-de-controle.html#como-fazer",
+    "title": "9  Gráfico de controle",
+    "section": "Como fazer",
+    "text": "Como fazer\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Gráfico de controle</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-controle.html#pra-onde-vai",
+    "href": "grafico-de-controle.html#pra-onde-vai",
+    "title": "9  Gráfico de controle",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Gráfico de controle</span>"
+    ]
+  },
+  {
+    "objectID": "grafico-de-controle.html#qual-o-resultado",
+    "href": "grafico-de-controle.html#qual-o-resultado",
+    "title": "9  Gráfico de controle",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Gráfico de controle</span>"
+    ]
+  },
+  {
+    "objectID": "plano-de-acao.html#o-que-é",
+    "href": "plano-de-acao.html#o-que-é",
+    "title": "10  Plano de Ação",
+    "section": "O que é",
+    "text": "O que é\nO plano de ação ou 5W2H é uma ferramenta utilizada para detalhar e organizar todas as tarefas a serem executadas para a resolução do problema, assegurando a sua implementação efetiva, e é considerada a etapa principal do ciclo PDCA, onde as ações são implementadas (CAMPOS, 1994).\nO nome 5W2H surgiu do conjunto das primeiras letras (em inglês) das diretrizes utilizadas no plano de ação, sendo cinco delas iniciadas em “W” e duas delas em “H”, e são classificadas em:\n\nWhat – O que será feito (etapas);\nWho – Quem o fará (responsabilidade);\nWhen – Quando será feito (tempo);\nWhere – Onde será feito (local);\nWhy – Por que será feito (justificativa);\nHow – Como será feito (método);\nHow much – Quanto custará para ser feito (custo).\n\nO plano de ação após serem definidas todas essas etapas, deve ficar em local visível por toda a equipe para que as ações passem a ser executadas efetivamente",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Plano de Ação</span>"
+    ]
+  },
+  {
+    "objectID": "plano-de-acao.html#qual-o-objetivo",
+    "href": "plano-de-acao.html#qual-o-objetivo",
+    "title": "10  Plano de Ação",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Plano de Ação</span>"
+    ]
+  },
+  {
+    "objectID": "plano-de-acao.html#de-onde-vem",
+    "href": "plano-de-acao.html#de-onde-vem",
+    "title": "10  Plano de Ação",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Plano de Ação</span>"
+    ]
+  },
+  {
+    "objectID": "plano-de-acao.html#como-fazer",
+    "href": "plano-de-acao.html#como-fazer",
+    "title": "10  Plano de Ação",
+    "section": "Como fazer",
+    "text": "Como fazer\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Plano de Ação</span>"
+    ]
+  },
+  {
+    "objectID": "plano-de-acao.html#pra-onde-vai",
+    "href": "plano-de-acao.html#pra-onde-vai",
+    "title": "10  Plano de Ação",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Plano de Ação</span>"
+    ]
+  },
+  {
+    "objectID": "plano-de-acao.html#qual-o-resultado",
+    "href": "plano-de-acao.html#qual-o-resultado",
+    "title": "10  Plano de Ação",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Plano de Ação</span>"
+    ]
+  },
+  {
+    "objectID": "relatorio-tres-geracoes.html#o-que-é",
+    "href": "relatorio-tres-geracoes.html#o-que-é",
+    "title": "11  Relatório de três gerações",
+    "section": "O que é",
+    "text": "O que é\nO relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:\n\nPassado – o que foi planejado e o que foi feito.\nPresente – o resultado obtido e os problemas existentes.\nFuturo – mais propostas de solução.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "relatorio-tres-geracoes.html#qual-o-objetivo",
+    "href": "relatorio-tres-geracoes.html#qual-o-objetivo",
+    "title": "11  Relatório de três gerações",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nO objetivo principal do relatório de três gerações é relatar, avaliar os esforços que foram feitos para resolver um determinado problema e obter uma visão geral dos resultados e ao mesmo tempo, identificar se há possibilidade imediata de propostas para resolução desses problemas (WERKEMA, 1995).\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "relatorio-tres-geracoes.html#de-onde-vem",
+    "href": "relatorio-tres-geracoes.html#de-onde-vem",
+    "title": "11  Relatório de três gerações",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "relatorio-tres-geracoes.html#como-fazer",
+    "href": "relatorio-tres-geracoes.html#como-fazer",
+    "title": "11  Relatório de três gerações",
+    "section": "Como fazer",
+    "text": "Como fazer\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "relatorio-tres-geracoes.html#pra-onde-vai",
+    "href": "relatorio-tres-geracoes.html#pra-onde-vai",
+    "title": "11  Relatório de três gerações",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "relatorio-tres-geracoes.html#qual-o-resultado",
+    "href": "relatorio-tres-geracoes.html#qual-o-resultado",
+    "title": "11  Relatório de três gerações",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
   }
 ]

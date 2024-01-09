@@ -1,1 +1,34 @@
-# Introduction
+# Preface {.unnumbered}
+
+**A melhoria de processos** envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios,perdas, atender determinados padrões, melhorar a qualidade e experiência de consumidores finais seja de um produto, serviço ou ideia.
+
+**O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade** são conceitos usados parar identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras dos conceitos e implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.
+
+Os conceitos abordados neste livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores em muitos países.
+
+## Como o livro é organizado {.unnumbered}
+
+Para facilitar a compreensão e busca dos temas abordados, todos os capítulos serão organizados com os seguintes tópicos:
+
+-   **O que é**: qua a ideia do que está sendo abordado.
+-   **Qual o objetivo**: por que isso está sendo ou foi desenvolvido.
+-   **De onde vem**: quais as necessidades ou origem dessa demanda. A motivação.
+-   **Como fazer**: qual o procedimento, código, sequência ou fluxo.
+-   **Pra onde vai**: que é o consumidor disso. Qual a aplicação prática disso.
+-   **Qual o resultado**: descrição dos resultados previstos ou comprovados.
+
+## Objetivo {.unnumbered}
+
+Possibilitar que as ideias e conceitos em torno do PDCA e ferramentas da qualidade possam ser usados para desenvolvimento humano no presente e no futuro. Nos negócios, projetos pessoais, projetos comunitários dentro e fora do agronegócio. Para que isso seja possível alguns cuidados foram tomados:
+
+-   Usar linguagem simples e exemplos práticos.
+
+-   Permitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.
+
+-   Explorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal, ou seja, se as ferramentas mudarem, as ideias continuarão sendo úteis.
+
+-   Ser um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.
+
+## Agradecimento {.unnumbered}
+
+Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, paulinyzito, SilvioBras, priscilazavadil, Ana Incerti, Muxtaa, FlávioCorrêa, factorialmap

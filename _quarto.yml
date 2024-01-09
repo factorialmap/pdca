@@ -6,26 +6,37 @@ execute:
   echo: true
 
 book:
-  title: "YOUR PROJECT TITLE"
-  author:
-    - AUTHOR1 (UNI1)
-    - AUTHOR2 (UNI2)
-  repo-url: https://github.com/YOUR_GITHUB_ACCOUNT/REPO_NAME
+  title: "Método PDCA e ferramentas da qualidade"
+  author: "Marcelo Carvalho dos Anjos"
+  repo-url: https://github.com/factorialmap/pdca
   date: today
   page-footer:
+    left: |
+      O método PDCA e ferramentas da qualidade was written by Marcelo Carvalho dos Anjos.
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
   repo-actions: [edit, issue]
+  cover-image: pdca_capa.PNG
+  favicon: pdca_capa.PNG
+
   chapters:
     - index.qmd
-    - data.qmd
-    - results.qmd
-    - d3graph.qmd
-    - conclusion.qmd
+    - intro.qmd
+    - conceitos.qmd
+    - fluxograma-de-processos.qmd
+    - cinco-s.qmd
+    - cinco-porques.qmd
+    - diagrama-causa-efeito.qmd
+    - check-list.qmd
+    - grafico-de-dispercao.qmd
+    - grafico-pareto.qmd
+    - grafico-de-controle.qmd
+    - plano-de-acao.qmd
+    - relatorio-tres-geracoes.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     code-fold: true
 
 

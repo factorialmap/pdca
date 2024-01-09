@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Marcelo Carvalho dos Anjos">
-<meta name="dcterms.date" content="2024-01-08">
 
-<title>Método PDCA e ferramentas da qualidade</title>
+<title>Método PDCA e ferramentas da qualidade - 2&nbsp; Fluxograma de Processos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,7 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./cinco-s.html" rel="next">
+<link href="./conceitos.html" rel="prev">
 <link href="./pdca_capa.PNG" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -70,6 +103,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/d3-3.3.8/d3.min.js"></script>
+<script src="site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="site_libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet">
+<script src="site_libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="site_libs/chromatography-0.1/chromatography.js"></script>
+<script src="site_libs/DiagrammeR-binding-1.0.10/DiagrammeR.js"></script>
 
 
 </head>
@@ -83,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./fluxograma-de-processos.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fluxograma de Processos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -113,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -131,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./fluxograma-de-processos.html" class="sidebar-item-text sidebar-link">
+  <a href="./fluxograma-de-processos.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fluxograma de Processos</span></span></a>
   </div>
 </li>
@@ -199,40 +240,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
-  <ul class="collapse">
-  <li><a href="#como-o-livro-é-organizado" id="toc-como-o-livro-é-organizado" class="nav-link" data-scroll-target="#como-o-livro-é-organizado">Como o livro é organizado</a></li>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link" data-scroll-target="#objetivo">Objetivo</a></li>
-  <li><a href="#agradecimento" id="toc-agradecimento" class="nav-link" data-scroll-target="#agradecimento">Agradecimento</a></li>
-  </ul></li>
+  <li><a href="#o-que-é" id="toc-o-que-é" class="nav-link active" data-scroll-target="#o-que-é">O que é</a></li>
+  <li><a href="#qual-o-objetivo" id="toc-qual-o-objetivo" class="nav-link" data-scroll-target="#qual-o-objetivo">Qual o objetivo</a></li>
+  <li><a href="#de-onde-vem" id="toc-de-onde-vem" class="nav-link" data-scroll-target="#de-onde-vem">De onde vem</a></li>
+  <li><a href="#como-fazer" id="toc-como-fazer" class="nav-link" data-scroll-target="#como-fazer">Como fazer</a></li>
+  <li><a href="#pra-onde-vai" id="toc-pra-onde-vai" class="nav-link" data-scroll-target="#pra-onde-vai">Pra onde vai</a></li>
+  <li><a href="#qual-o-resultado" id="toc-qual-o-resultado" class="nav-link" data-scroll-target="#qual-o-resultado">Qual o resultado</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/fluxograma-de-processos.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Método PDCA e ferramentas da qualidade</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fluxograma de Processos</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Marcelo Carvalho dos Anjos </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 8, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -242,40 +271,130 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1><p><img src="pdca_capa.PNG" title="Método PDCA e ferramentas da qualidade" class="quarto-cover-image img-fluid"></p>
-<p><strong>A melhoria de processos</strong> envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios,perdas, atender determinados padrões, melhorar a qualidade e experiência de consumidores finais seja de um produto, serviço ou ideia.</p>
-<p><strong>O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade</strong> são conceitos usados parar identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras dos conceitos e implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.</p>
-<p>Os conceitos abordados neste livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores em muitos países.</p>
-<section id="como-o-livro-é-organizado" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="como-o-livro-é-organizado">Como o livro é organizado</h2>
-<p>Para facilitar a compreensão e busca dos temas abordados, todos os capítulos serão organizados com os seguintes tópicos:</p>
+<section id="o-que-é" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
+<p>Representação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é permitir ao usuário ter uma visão do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.</p>
+<p>Não há uma data precisa do início do uso dessa ideia mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.</p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/papiro_ani.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figura 2 - Papiro de Ani:A pesagem do coração</figcaption>
+</figure>
+</div>
+<p>O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão.</p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/figura_processo.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 3 - fluxograma de processo industrial de metais</figcaption>
+</figure>
+</div>
+</section>
+<section id="qual-o-objetivo" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
 <ul>
-<li><strong>O que é</strong>: qua a ideia do que está sendo abordado.</li>
-<li><strong>Qual o objetivo</strong>: por que isso está sendo ou foi desenvolvido.</li>
-<li><strong>De onde vem</strong>: quais as necessidades ou origem dessa demanda. A motivação.</li>
-<li><strong>Como fazer</strong>: qual o procedimento, código, sequência ou fluxo.</li>
-<li><strong>Pra onde vai</strong>: que é o consumidor disso. Qual a aplicação prática disso.</li>
-<li><strong>Qual o resultado</strong>: descrição dos resultados previstos ou comprovados.</li>
+<li><p>Entender um processo e identificar as oportunidades de melhoria.</p></li>
+<li><p>Facilitar a comunicação através da visualização do todo e suas relações</p></li>
+<li><p>Facilitar a expressão de ideias, formulação de hipóteses e discussões.</p></li>
+<li><p>Analisar o fenômeno em diferentes perspectivas</p></li>
 </ul>
 </section>
-<section id="objetivo" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="objetivo">Objetivo</h2>
-<p>Possibilitar que as ideias e conceitos em torno do PDCA e ferramentas da qualidade possam ser usados para desenvolvimento humano no presente e no futuro. Nos negócios, projetos pessoais, projetos comunitários dentro e fora do agronegócio. Para que isso seja possível alguns cuidados foram tomados:</p>
+<section id="de-onde-vem" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
 <ul>
-<li><p>Usar linguagem simples e exemplos práticos.</p></li>
-<li><p>Permitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.</p></li>
-<li><p>Explorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal, ou seja, se as ferramentas mudarem, as ideias continuarão sendo úteis.</p></li>
-<li><p>Ser um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.</p></li>
+<li>Da necessidade ter uma visão global do assunto que está sendo discutido e compreender melhor as relações e interações para que ideias sejam geradas e melhorias ou até estratégias ou planos táticos possam ser propostos.</li>
 </ul>
 </section>
-<section id="agradecimento" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="agradecimento">Agradecimento</h2>
-<p>Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, paulinyzito, SilvioBras, priscilazavadil, Ana Incerti, Muxtaa, FlávioCorrêa, factorialmap</p>
-
-
+<section id="como-fazer" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
+<p>Existem várias formas de criar um fluxograma de processos sendo o lápis e o papel um dos mais eficiêntes por outro lado no R também é possível criar vários modelos de fluxogramas os quais citarei alguns usando o pacote <code>DiagrammeR</code> onde:</p>
+<ul>
+<li><strong>mermaid</strong> é a função que chamará a biblioteca em javascript que fará o diagrama</li>
+<li><strong>graph LR</strong> é a orientação do digrama que pode ser TD=top down, LR = left to right etc.</li>
+<li><strong>A, B, C, D..N</strong> é a definição de um nó</li>
+<li><strong>&gt;], [], (), (())</strong> é o formato do nó</li>
+<li><strong>–&gt;</strong> é a direção do conector</li>
+</ul>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DiagrammeR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'DiagrammeR' was built under R version 4.3.2</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mermaid</span>(<span class="st">"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="st">graph LR</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="st">A&gt;Mat. prima]--&gt;B[Produção]</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="st">B--&gt;C[Estoque PA]</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="st">C--&gt;D[Demanda]</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="st">E&gt;Mão obra]--&gt;B</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="st">F&gt;Máquina]--&gt;B</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="htmlwidget-4a8162b2b2a9cb36c4a8" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4a8162b2b2a9cb36c4a8">{"x":{"diagram":"\ngraph LR\nA>Mat. prima]-->B[Produção]\nB-->C[Estoque PA]\nC-->D[Demanda]\nE>Mão obra]-->B\nF>Máquina]-->B\n"},"evals":[],"jsHooks":[]}</script>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mermaid</span> (<span class="st">"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="st">graph LR</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="st">subgraph Cliente</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="st">A[Vendido no limite]</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="st">end</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="st">subgraph Corretora</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="st">A--&gt;B{Tem saldo?}</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="st">B--&gt;|Sim|C[Manter posição]</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="st">C--&gt; D[Novo pregão]</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="st">D--&gt; B</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="st">end</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="st">subgraph Compliance</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="st">B --&gt;|Não| F[Encerra posição]</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="st">end</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="htmlwidget-afe222813c341a900c3e" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-afe222813c341a900c3e">{"x":{"diagram":"\ngraph LR\n\nsubgraph Cliente\nA[Vendido no limite]\nend\n\nsubgraph Corretora\nA-->B{Tem saldo?}\nB-->|Sim|C[Manter posição]\nC--> D[Novo pregão]\nD--> B\nend\n\nsubgraph Compliance\nB -->|Não| F[Encerra posição]\nend\n\n"},"evals":[],"jsHooks":[]}</script>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mermaid</span>(<span class="st">"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="st">graph LR</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="st">    A[Estoque MP] --&gt;|materia prima| B(Produção)</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="st">    B --&gt; C{Sob pedido?}</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="st">    C --&gt;|Sim| D[Venda]</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="st">    C --&gt;|Não| E[Estoque Prod. Acabado]</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="htmlwidget-b22aff32152d1fea7def" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b22aff32152d1fea7def">{"x":{"diagram":"\ngraph LR\n    A[Estoque MP] -->|materia prima| B(Produção)\n    B --> C{Sob pedido?}\n    C -->|Sim| D[Venda]\n    C -->|Não| E[Estoque Prod. Acabado]\n"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 </section>
+<section id="pra-onde-vai" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
+<ul>
+<li>O fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias entre outras aplicações.</li>
+<li>Como se trata de uma ferramenta de análise de fenômeno ele fornece dados para o próximo passo que é a analise de causa raiz do problema</li>
+</ul>
+</section>
+<section id="qual-o-resultado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
+<ul>
+<li><p>Eficiência no aproveitamento de recurso de tempo e mão de obra atraves da facilidade de compreenção e geração de ideias.</p></li>
+<li><p>Engajamento da equipe uma vez que todos compreendem o assunto mesmo quando foge sua área de domínio.</p></li>
+<li><p>Fixação do assunto abordado na mente dos envolvidos pois simbolos e imagens são melhores armazenados na memória humana.</p></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -663,10 +782,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./conceitos.html" class="pagination-link  aria-label=" &lt;span="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Conceitos</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introdução">
-        <span class="nav-page-text">Introdução</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./cinco-s.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>OS 5S</span>">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">OS 5S</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -678,7 +800,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/fluxograma-de-processos.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

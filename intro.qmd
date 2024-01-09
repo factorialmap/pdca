@@ -1,0 +1,15 @@
+# Introdução {#sec-intro .unnumbered}
+
+No momento em que este livro está sendo escrito junho de 2020, fenômenos importantes estão acontecendo os quais podem se tornar desafiadores para as nações nas próximas décadas. A ideia do livro é explorar conceitos e ferramentas que possam ajudar na transformação desses desafios em oportunidades.
+
+-   **Transição demográfica** que remete a ideia de desafios estruturais. Está relacionada a mudança histórica de taxas de natalidade, mortalidade e crescimento populacional decorrentes do avanço da medicina, urbanização e desenvolvimento de novas técnologias.
+
+    -   **Estamos ficando mais velhos** onde os idosos acima de 65 anos constituem a faixa etária de crescimento mais rápido do mundo. Algumas regiões como Europa e Ásia Oriental já enfrentam desafios para cuidar de sua população idosa.
+
+    -   **Estamos ficando mais urbanos** em 2020 cerca de 55% da população mundial vive em vilas e cidades. O acesso a economia e a sociedade digital em áreas ruais é um processo contínuo onde pequenos agricultores podem desempenhar papel vital na produção de alimentos e na proteção do meio ambiente.
+
+-   **Desenvolvimento de tecnologias disruptivas** remete a ideia de produtividade total dos fatores. O aumento da interação entre as pessoas, as descobertas científicas e instrumentos que potencializam as capacidades humanas. A inteligência artificial, blockchain, impressão 3D, realidade aumentada, internet das coisas, edição de DNA CRISPR e luz sincrotron por exemplo, podem provocar grandes mudanças no modo como as coisas são feitas.
+
+-   **Atividade economica em países emergentes** remete a ideia de mudança no padrão de vida. Em 2020 países como Indonésia, Africa do Sul, Russia, México, Malasia, Colombia, Polônia, Chile, Hingria, Tailandia, Turquia, Brasil, China e Índia são considerandos países emergentes. Boa parte desses países, têm feito progressos notáveis no fortalecimento de seus políticas macroeconômicas desde a virada do século o que os permitiu mais do que dobrar a renda per capita em média.
+
+-   **Mudanças climáticas** que remete ao habito de consumo e impactam diretamente no comportamento das pessoas, na demanda de produtos e serviços, nos meios de produção e na forma como as coisas são consumidas.

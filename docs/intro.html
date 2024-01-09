@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Marcelo Carvalho dos Anjos">
-<meta name="dcterms.date" content="2024-01-08">
 
-<title>Método PDCA e ferramentas da qualidade</title>
+<title>Método PDCA e ferramentas da qualidade - Introdução</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./conceitos.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href="./pdca_capa.PNG" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html">Introdução</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -113,13 +112,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Introdução</span></a>
   </div>
 </li>
@@ -195,44 +194,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
-  <ul class="collapse">
-  <li><a href="#como-o-livro-é-organizado" id="toc-como-o-livro-é-organizado" class="nav-link" data-scroll-target="#como-o-livro-é-organizado">Como o livro é organizado</a></li>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link" data-scroll-target="#objetivo">Objetivo</a></li>
-  <li><a href="#agradecimento" id="toc-agradecimento" class="nav-link" data-scroll-target="#agradecimento">Agradecimento</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Método PDCA e ferramentas da qualidade</h1>
+<h1 class="title"><span id="sec-intro" class="quarto-section-identifier">Introdução</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Marcelo Carvalho dos Anjos </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 8, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -242,41 +218,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1><p><img src="pdca_capa.PNG" title="Método PDCA e ferramentas da qualidade" class="quarto-cover-image img-fluid"></p>
-<p><strong>A melhoria de processos</strong> envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios,perdas, atender determinados padrões, melhorar a qualidade e experiência de consumidores finais seja de um produto, serviço ou ideia.</p>
-<p><strong>O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade</strong> são conceitos usados parar identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras dos conceitos e implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.</p>
-<p>Os conceitos abordados neste livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores em muitos países.</p>
-<section id="como-o-livro-é-organizado" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="como-o-livro-é-organizado">Como o livro é organizado</h2>
-<p>Para facilitar a compreensão e busca dos temas abordados, todos os capítulos serão organizados com os seguintes tópicos:</p>
+<p>No momento em que este livro está sendo escrito junho de 2020, fenômenos importantes estão acontecendo os quais podem se tornar desafiadores para as nações nas próximas décadas. A ideia do livro é explorar conceitos e ferramentas que possam ajudar na transformação desses desafios em oportunidades.</p>
 <ul>
-<li><strong>O que é</strong>: qua a ideia do que está sendo abordado.</li>
-<li><strong>Qual o objetivo</strong>: por que isso está sendo ou foi desenvolvido.</li>
-<li><strong>De onde vem</strong>: quais as necessidades ou origem dessa demanda. A motivação.</li>
-<li><strong>Como fazer</strong>: qual o procedimento, código, sequência ou fluxo.</li>
-<li><strong>Pra onde vai</strong>: que é o consumidor disso. Qual a aplicação prática disso.</li>
-<li><strong>Qual o resultado</strong>: descrição dos resultados previstos ou comprovados.</li>
-</ul>
-</section>
-<section id="objetivo" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="objetivo">Objetivo</h2>
-<p>Possibilitar que as ideias e conceitos em torno do PDCA e ferramentas da qualidade possam ser usados para desenvolvimento humano no presente e no futuro. Nos negócios, projetos pessoais, projetos comunitários dentro e fora do agronegócio. Para que isso seja possível alguns cuidados foram tomados:</p>
+<li><p><strong>Transição demográfica</strong> que remete a ideia de desafios estruturais. Está relacionada a mudança histórica de taxas de natalidade, mortalidade e crescimento populacional decorrentes do avanço da medicina, urbanização e desenvolvimento de novas técnologias.</p>
 <ul>
-<li><p>Usar linguagem simples e exemplos práticos.</p></li>
-<li><p>Permitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.</p></li>
-<li><p>Explorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal, ou seja, se as ferramentas mudarem, as ideias continuarão sendo úteis.</p></li>
-<li><p>Ser um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.</p></li>
+<li><p><strong>Estamos ficando mais velhos</strong> onde os idosos acima de 65 anos constituem a faixa etária de crescimento mais rápido do mundo. Algumas regiões como Europa e Ásia Oriental já enfrentam desafios para cuidar de sua população idosa.</p></li>
+<li><p><strong>Estamos ficando mais urbanos</strong> em 2020 cerca de 55% da população mundial vive em vilas e cidades. O acesso a economia e a sociedade digital em áreas ruais é um processo contínuo onde pequenos agricultores podem desempenhar papel vital na produção de alimentos e na proteção do meio ambiente.</p></li>
+</ul></li>
+<li><p><strong>Desenvolvimento de tecnologias disruptivas</strong> remete a ideia de produtividade total dos fatores. O aumento da interação entre as pessoas, as descobertas científicas e instrumentos que potencializam as capacidades humanas. A inteligência artificial, blockchain, impressão 3D, realidade aumentada, internet das coisas, edição de DNA CRISPR e luz sincrotron por exemplo, podem provocar grandes mudanças no modo como as coisas são feitas.</p></li>
+<li><p><strong>Atividade economica em países emergentes</strong> remete a ideia de mudança no padrão de vida. Em 2020 países como Indonésia, Africa do Sul, Russia, México, Malasia, Colombia, Polônia, Chile, Hingria, Tailandia, Turquia, Brasil, China e Índia são considerandos países emergentes. Boa parte desses países, têm feito progressos notáveis no fortalecimento de seus políticas macroeconômicas desde a virada do século o que os permitiu mais do que dobrar a renda per capita em média.</p></li>
+<li><p><strong>Mudanças climáticas</strong> que remete ao habito de consumo e impactam diretamente no comportamento das pessoas, na demanda de produtos e serviços, nos meios de produção e na forma como as coisas são consumidas.</p></li>
 </ul>
-</section>
-<section id="agradecimento" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="agradecimento">Agradecimento</h2>
-<p>Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, paulinyzito, SilvioBras, priscilazavadil, Ana Incerti, Muxtaa, FlávioCorrêa, factorialmap</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -663,10 +617,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link  aria-label=" preface"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introdução">
-        <span class="nav-page-text">Introdução</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./conceitos.html" class="pagination-link" aria-label="<span class='chapter-number'>1</span>&nbsp; <span class='chapter-title'>Conceitos</span>">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Conceitos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -678,7 +635,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

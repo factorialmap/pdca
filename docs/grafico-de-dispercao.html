@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Marcelo Carvalho dos Anjos">
-<meta name="dcterms.date" content="2024-01-08">
 
-<title>Método PDCA e ferramentas da qualidade</title>
+<title>Método PDCA e ferramentas da qualidade - 7&nbsp; Gráfico de Disperção</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./grafico-pareto.html" rel="next">
+<link href="./check-list.html" rel="prev">
 <link href="./pdca_capa.PNG" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./grafico-de-dispercao.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Gráfico de Disperção</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -113,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -161,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./grafico-de-dispercao.html" class="sidebar-item-text sidebar-link">
+  <a href="./grafico-de-dispercao.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Gráfico de Disperção</span></span></a>
   </div>
 </li>
@@ -199,40 +198,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
-  <ul class="collapse">
-  <li><a href="#como-o-livro-é-organizado" id="toc-como-o-livro-é-organizado" class="nav-link" data-scroll-target="#como-o-livro-é-organizado">Como o livro é organizado</a></li>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link" data-scroll-target="#objetivo">Objetivo</a></li>
-  <li><a href="#agradecimento" id="toc-agradecimento" class="nav-link" data-scroll-target="#agradecimento">Agradecimento</a></li>
-  </ul></li>
+  <li><a href="#o-que-é" id="toc-o-que-é" class="nav-link active" data-scroll-target="#o-que-é">O que é</a></li>
+  <li><a href="#qual-o-objetivo" id="toc-qual-o-objetivo" class="nav-link" data-scroll-target="#qual-o-objetivo">Qual o objetivo</a></li>
+  <li><a href="#de-onde-vem" id="toc-de-onde-vem" class="nav-link" data-scroll-target="#de-onde-vem">De onde vem</a></li>
+  <li><a href="#como-fazer" id="toc-como-fazer" class="nav-link" data-scroll-target="#como-fazer">Como fazer</a></li>
+  <li><a href="#pra-onde-vai" id="toc-pra-onde-vai" class="nav-link" data-scroll-target="#pra-onde-vai">Pra onde vai</a></li>
+  <li><a href="#qual-o-resultado" id="toc-qual-o-resultado" class="nav-link" data-scroll-target="#qual-o-resultado">Qual o resultado</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/grafico-de-dispercao.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Método PDCA e ferramentas da qualidade</h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Gráfico de Disperção</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Marcelo Carvalho dos Anjos </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 8, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -242,40 +229,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1><p><img src="pdca_capa.PNG" title="Método PDCA e ferramentas da qualidade" class="quarto-cover-image img-fluid"></p>
-<p><strong>A melhoria de processos</strong> envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios,perdas, atender determinados padrões, melhorar a qualidade e experiência de consumidores finais seja de um produto, serviço ou ideia.</p>
-<p><strong>O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade</strong> são conceitos usados parar identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras dos conceitos e implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.</p>
-<p>Os conceitos abordados neste livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores em muitos países.</p>
-<section id="como-o-livro-é-organizado" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="como-o-livro-é-organizado">Como o livro é organizado</h2>
-<p>Para facilitar a compreensão e busca dos temas abordados, todos os capítulos serão organizados com os seguintes tópicos:</p>
+<section id="o-que-é" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
+</section>
+<section id="qual-o-objetivo" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
 <ul>
-<li><strong>O que é</strong>: qua a ideia do que está sendo abordado.</li>
-<li><strong>Qual o objetivo</strong>: por que isso está sendo ou foi desenvolvido.</li>
-<li><strong>De onde vem</strong>: quais as necessidades ou origem dessa demanda. A motivação.</li>
-<li><strong>Como fazer</strong>: qual o procedimento, código, sequência ou fluxo.</li>
-<li><strong>Pra onde vai</strong>: que é o consumidor disso. Qual a aplicação prática disso.</li>
-<li><strong>Qual o resultado</strong>: descrição dos resultados previstos ou comprovados.</li>
+<li>A</li>
+<li>B</li>
+<li>C</li>
 </ul>
 </section>
-<section id="objetivo" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="objetivo">Objetivo</h2>
-<p>Possibilitar que as ideias e conceitos em torno do PDCA e ferramentas da qualidade possam ser usados para desenvolvimento humano no presente e no futuro. Nos negócios, projetos pessoais, projetos comunitários dentro e fora do agronegócio. Para que isso seja possível alguns cuidados foram tomados:</p>
+<section id="de-onde-vem" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
 <ul>
-<li><p>Usar linguagem simples e exemplos práticos.</p></li>
-<li><p>Permitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.</p></li>
-<li><p>Explorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal, ou seja, se as ferramentas mudarem, as ideias continuarão sendo úteis.</p></li>
-<li><p>Ser um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.</p></li>
+<li>A</li>
+<li>B</li>
+<li>C</li>
 </ul>
 </section>
-<section id="agradecimento" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="agradecimento">Agradecimento</h2>
-<p>Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, paulinyzito, SilvioBras, priscilazavadil, Ana Incerti, Muxtaa, FlávioCorrêa, factorialmap</p>
-
-
+<section id="como-fazer" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
+<ul>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+</ul>
 </section>
+<section id="pra-onde-vai" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
+<ul>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+</ul>
+</section>
+<section id="qual-o-resultado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
+<ul>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -663,10 +660,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./check-list.html" class="pagination-link  aria-label=" &lt;span="" de="" verificação="" (check-list)&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Folha de verificação (Check-list)</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introdução">
-        <span class="nav-page-text">Introdução</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./grafico-pareto.html" class="pagination-link" aria-label="<span class='chapter-number'>8</span>&nbsp; <span class='chapter-title'>Gráfico de Pareto</span>">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Gráfico de Pareto</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -678,7 +678,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/grafico-de-dispercao.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
