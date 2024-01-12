@@ -1,6 +1,6 @@
 # Plano de Ação
 
-## O que é {-}
+## O que é {.unnumbered}
 
 O plano de ação ou 5W2H é uma ferramenta utilizada para detalhar e organizar todas as tarefas a serem executadas para a resolução do problema, assegurando a sua implementação efetiva, e é considerada a etapa principal do ciclo PDCA, onde as ações são implementadas (CAMPOS, 1994). 
 
@@ -16,31 +16,31 @@ O nome 5W2H surgiu do conjunto das primeiras letras (em inglês) das diretrizes 
 
 O plano de ação após serem definidas todas essas etapas, deve ficar em local visível por toda a equipe para que as ações passem a ser executadas efetivamente
 
-## Qual o objetivo {-}
+## Qual o objetivo {.unnumbered}
 
 - A
 - B
 - C
 
-## De onde vem {-}
+## De onde vem {.unnumbered}
 
 - A
 - B
 - C
 
-## Como fazer {-}
+## Como fazer {.unnumbered}
 
 - A
 - B
 - C
 
-## Pra onde vai {-}
+## Pra onde vai {.unnumbered}
 
 - A
 - B
 - C
 
-## Qual o resultado {-}
+## Qual o resultado {.unnumbered}
 
 - A
 - B

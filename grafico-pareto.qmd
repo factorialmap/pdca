@@ -1,35 +1,35 @@
 # Gráfico de Pareto
 
-## O que é {-}
+## O que é {.unnumbered}
 
 O gráfico de Pareto ou gráfico 80/20 é um tipo específico de histograma ordenado por frequência de ocorrência da maior para a menor. Sua origem decorre de estudos do economista italiano Vilfredo Pareto, no qual ele afirma que para muitos fenômenos, 80% das consequências advêm de 20% das causas. Esses estudos foram aprofundados por Joseph Moses Juran, o qual expandiu essa lei para a esfera organizacional nos Estados Unidos a partir da década de 1930 (BRASSARD, 1994).	
 
-## Qual o objetivo {-}
+## Qual o objetivo {.unnumbered}
 
 - Identificar quais causas seriam responsáveis pela maior parcela dos efeitos.
 - A
 - B
 - C
 
-## De onde vem {-}
+## De onde vem {.unnumbered}
 
 - A
 - B
 - C
 
-## Como fazer {-}
+## Como fazer {.unnumbered}
 
 - A
 - B
 - C
 
-## Pra onde vai {-}
+## Pra onde vai {.unnumbered}
 
 - A
 - B
 - C
 
-## Qual o resultado {-}
+## Qual o resultado {.unnumbered}
 
 - A
 - B

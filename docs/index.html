@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Marcelo Carvalho dos Anjos">
-<meta name="dcterms.date" content="2024-01-08">
+<meta name="dcterms.date" content="2024-01-12">
 
 <title>Método PDCA e ferramentas da qualidade</title>
 <style>
@@ -206,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#agradecimento" id="toc-agradecimento" class="nav-link" data-scroll-target="#agradecimento">Agradecimento</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -230,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 8, 2024</p>
+      <p class="date">January 12, 2024</p>
     </div>
   </div>
   
@@ -245,26 +245,26 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="preface" class="level1 unnumbered">
 <h1 class="unnumbered">Preface</h1><p><img src="pdca_capa.PNG" title="Método PDCA e ferramentas da qualidade" class="quarto-cover-image img-fluid"></p>
-<p><strong>A melhoria de processos</strong> envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios,perdas, atender determinados padrões, melhorar a qualidade e experiência de consumidores finais seja de um produto, serviço ou ideia.</p>
-<p><strong>O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade</strong> são conceitos usados parar identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras dos conceitos e implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.</p>
-<p>Os conceitos abordados neste livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores em muitos países.</p>
+<p><strong>A melhoria de processos</strong> envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios, perdas, atender determinados padrões de qualidade e especificação e melhorar a experiência de consumidores de produtos, serviços ou ideias.</p>
+<p><strong>O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade</strong> são conceitos utilizados na identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras desses conceitos, implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.</p>
+<p>Os conceitos abordados no livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados, melhorados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores ao redor do mundo.</p>
 <section id="como-o-livro-é-organizado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-o-livro-é-organizado">Como o livro é organizado</h2>
-<p>Para facilitar a compreensão e busca dos temas abordados, todos os capítulos serão organizados com os seguintes tópicos:</p>
+<p>Para facilitar a compreensão e busca dos temas, os capítulos serão organizados com os seguintes tópicos:</p>
 <ul>
-<li><strong>O que é</strong>: qua a ideia do que está sendo abordado.</li>
+<li><strong>O que é</strong>: refere-se a ideia do que está sendo abordado.</li>
 <li><strong>Qual o objetivo</strong>: por que isso está sendo ou foi desenvolvido.</li>
 <li><strong>De onde vem</strong>: quais as necessidades ou origem dessa demanda. A motivação.</li>
 <li><strong>Como fazer</strong>: qual o procedimento, código, sequência ou fluxo.</li>
-<li><strong>Pra onde vai</strong>: que é o consumidor disso. Qual a aplicação prática disso.</li>
+<li><strong>Pra onde vai</strong>: quem é o consumidor disso. Qual a aplicação prática disso.</li>
 <li><strong>Qual o resultado</strong>: descrição dos resultados previstos ou comprovados.</li>
 </ul>
 </section>
 <section id="objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="objetivo">Objetivo</h2>
-<p>Possibilitar que as ideias e conceitos em torno do PDCA e ferramentas da qualidade possam ser usados para desenvolvimento humano no presente e no futuro. Nos negócios, projetos pessoais, projetos comunitários dentro e fora do agronegócio. Para que isso seja possível alguns cuidados foram tomados:</p>
+<p>Possibilitar que as ideias e conceitos sobre PDCA e ferramentas da qualidade possam ser usados para o desenvolvimento humano no presente e no futuro. Para facilitar a compreensão, alguns cuidados foram tomados:</p>
 <ul>
-<li><p>Usar linguagem simples e exemplos práticos.</p></li>
+<li><p>Usar uma linguagem simples e exemplos práticos.</p></li>
 <li><p>Permitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.</p></li>
 <li><p>Explorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal, ou seja, se as ferramentas mudarem, as ideias continuarão sendo úteis.</p></li>
 <li><p>Ser um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.</p></li>
@@ -272,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="agradecimento" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="agradecimento">Agradecimento</h2>
-<p>Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, paulinyzito, SilvioBras, priscilazavadil, Ana Incerti, Muxtaa, FlávioCorrêa, factorialmap</p>
+<p>Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, paulinyzito, SilvioBras, priscilazavadil, Ana Incerti, Muxtaa, FlávioCorrêa e factorialmap.</p>
 
 
 </section>
@@ -674,11 +674,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>O método PDCA e ferramentas da qualidade was written by Marcelo Carvalho dos Anjos.</p>
+<p>Método PDCA e ferramentas da qualidade was written by Marcelo Carvalho dos Anjos.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    </div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

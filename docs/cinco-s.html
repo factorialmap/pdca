@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -205,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#pra-onde-vai" id="toc-pra-onde-vai" class="nav-link" data-scroll-target="#pra-onde-vai">Pra onde vai</a></li>
   <li><a href="#qual-o-resultado" id="toc-qual-o-resultado" class="nav-link" data-scroll-target="#qual-o-resultado">Qual o resultado</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/cinco-s.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -233,6 +253,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
 <p>O 5S é uma prática propagada no Japão que ensina que bons hábitos, eliminação de desperdícios e perdas são capazes de modificar o humor, harmonizar o ambiente e a maneira da condução das atividades de todos.</p>
 <p>Essa prática foi desenvolvida a partir dos hábitos das mães de família japonesas e foi introduzida no meio empresarial logo após a segunda guerra mundial. Seu objetivo principal na época, era de combater a sujeira das fábricas e desde então é ensinado como princípio educacional para a formação dos indivíduos (RIBEIRO, 2006).</p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/five_s.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figura - 5S cinco sensos</figcaption>
+</figure>
+</div>
 <p>O 5S é uma referência a uma série de cinco palavras do vocabulário japonês. Ele se refere a uma filosofia e uma maneira de organizar e gerenciar o espaço de trabalho com o propósito de melhorar a eficiência por meio da eliminação de materiais não utilizados, melhorando o fluxo de trabalho e mitigando os processos desnecessários. Esses princípios são os primeiros passos para a certificação ISO que em conjunto com outras metodologias, podem enriquecer o processo e torná-lo ainda mais vantajoso (NAKATA, 2000).</p>
 <p>O 5S é composto de cinco conceitos simples, que em japonês começam com a letra “S”: Seiri, Seiton, Seiso, Seiketsu, Shitsuke. Como não existe um significado dessas palavras começando com a letra “S” na língua portuguesa, acrescentou-se então a palavra senso a sua respectiva tradução (CARVALHO, 2000).</p>
 <section id="seiri---arrumação" class="level4 unnumbered">
@@ -271,26 +297,24 @@ ul.task-list li input[type="checkbox"] {
 <section id="qual-o-objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
 <ul>
-<li>melhoria do ambiente de trabalho</li>
-<li>prevenção de acidentes</li>
-<li>redução de custos</li>
-<li>eliminação de desperdícios</li>
-<li>melhoria das relações humanas</li>
+<li>melhoria do ambiente de trabalho.</li>
+<li>prevenção de acidentes.</li>
+<li>redução de custos.</li>
+<li>eliminação de desperdícios.</li>
+<li>melhoria das relações humanas.</li>
 <li>melhoria da qualidade de produtos e serviços.</li>
 </ul>
 </section>
 <section id="de-onde-vem" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li>Harmonia no ambiente. Conforme <span class="citation" data-cites="Korteling2018">Korteling, Brouwer, and Toet (<a href="#ref-Korteling2018" role="doc-biblioref">2018</a>)</span>, o cerebro, assim como todas as redes neurais funciona de forma altamente associativa. Automaticamente e subconcientemente nosso cerebro busca por correlação, coerência e conexões causais. A associação constitui a base da capacidade humana de reconhecimento de padrões e estruturas coerentes na abundância de informações absorvidas e processadas pelo cerebro. Essa forma associativa de perceber, compreender e prever o mundo, faz com que o ser humano organize as observações em relações e padrões regulares e ordenados, e temos dificuldade em lidar com a aleatoriedade, a imprevisibilidade e o o caos. Se o uso de heurística é inevitável pelo ser humano em um primeiro momento, a harmonia no ambiente ajuda a evitar o bias cognitivo que resulta em decisões indesejadas.</li>
 </ul>
 </section>
 <section id="como-fazer" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
 <ul>
-<li>A</li>
+<li>Uma forma comum de começar e pela identificação de equipamentos para evitar ambiguidade.</li>
 <li>B</li>
 <li>C</li>
 </ul>
@@ -298,7 +322,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="pra-onde-vai" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
 <ul>
-<li>A</li>
+<li>Todos as pessoas que usarem os equipamentos e ou utensilios conseguirão localizar e identificar com facilidade.</li>
 <li>B</li>
 <li>C</li>
 </ul>
@@ -306,12 +330,17 @@ ul.task-list li input[type="checkbox"] {
 <section id="qual-o-resultado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li>Processos mais simplificados e redução de erros durante o processo.</li>
+<li>Melhora do ambiente de trabalho e a comunicação entre as equipes de diferentes áreas e também de novos integrantes.</li>
+<li>Melhoria da qualidade e consequentemente satisfação do consumidor além de</li>
 </ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Korteling2018" class="csl-entry" role="listitem">
+Korteling, Johan E., Anne-Marie Brouwer, and Alexander Toet. 2018. <span>“A Neural Network Framework for Cognitive Bias.”</span> <em>Frontiers in Psychology</em> 9 (September). <a href="https://doi.org/10.3389/fpsyg.2018.01561">https://doi.org/10.3389/fpsyg.2018.01561</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -713,11 +742,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>O método PDCA e ferramentas da qualidade was written by Marcelo Carvalho dos Anjos.</p>
+<p>Método PDCA e ferramentas da qualidade was written by Marcelo Carvalho dos Anjos.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/factorialmap/pdca/edit/main/cinco-s.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/factorialmap/pdca/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    </div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

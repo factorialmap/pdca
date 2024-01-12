@@ -6,10 +6,12 @@ No momento em que este livro está sendo escrito junho de 2020, fenômenos impor
 
     -   **Estamos ficando mais velhos** onde os idosos acima de 65 anos constituem a faixa etária de crescimento mais rápido do mundo. Algumas regiões como Europa e Ásia Oriental já enfrentam desafios para cuidar de sua população idosa.
 
-    -   **Estamos ficando mais urbanos** em 2020 cerca de 55% da população mundial vive em vilas e cidades. O acesso a economia e a sociedade digital em áreas ruais é um processo contínuo onde pequenos agricultores podem desempenhar papel vital na produção de alimentos e na proteção do meio ambiente.
+    -   **Estamos ficando mais urbanos** em 2020 cerca de 55% da população mundial vive em vilas e cidades. O acesso a economia e a sociedade digital em áreas rurais é um processo contínuo onde pequenos agricultores podem desempenhar papel vital na produção de alimentos e na proteção do meio ambiente.
 
--   **Desenvolvimento de tecnologias disruptivas** remete a ideia de produtividade total dos fatores. O aumento da interação entre as pessoas, as descobertas científicas e instrumentos que potencializam as capacidades humanas. A inteligência artificial, blockchain, impressão 3D, realidade aumentada, internet das coisas, edição de DNA CRISPR e luz sincrotron por exemplo, podem provocar grandes mudanças no modo como as coisas são feitas.
+-   **Desenvolvimento de tecnologias disruptivas** remete a ideia sobre mudança na produtividade total dos fatores. O aumento da interação entre as pessoas, as descobertas científicas e desenvolvimento de instrumentos que potencializam as capacidades humanas. A inteligência artificial, blockchain, impressão 3D, realidade aumentada, internet das coisas, edição de DNA CRISPR são alguns exemplos de tecnologias que vão se espalhando rapidamente pela sociedade impactando a vida de todos.
 
 -   **Atividade economica em países emergentes** remete a ideia de mudança no padrão de vida. Em 2020 países como Indonésia, Africa do Sul, Russia, México, Malasia, Colombia, Polônia, Chile, Hingria, Tailandia, Turquia, Brasil, China e Índia são considerandos países emergentes. Boa parte desses países, têm feito progressos notáveis no fortalecimento de seus políticas macroeconômicas desde a virada do século o que os permitiu mais do que dobrar a renda per capita em média.
 
--   **Mudanças climáticas** que remete ao habito de consumo e impactam diretamente no comportamento das pessoas, na demanda de produtos e serviços, nos meios de produção e na forma como as coisas são consumidas.
+-   **Mudanças climáticas** que remete a sustentabilidade impactando diretamente no comportamento das pessoas, na demanda de produtos e serviços e nos meios de produção.
+
+Espero que após ler este livro, você consiga refletir sobre esses fenômenos citados acima, encontrar e descrever os desafios e oportunidades, consiga agir em benefício próprio e da humanidade e que consiga explorar todas as potencialidades que o método PDCA e ferramentas da qualidade possuem em suas tarefas e no seu dia a dia.

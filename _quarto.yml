@@ -12,10 +12,9 @@ book:
   date: today
   page-footer:
     left: |
-      O método PDCA e ferramentas da qualidade was written by Marcelo Carvalho dos Anjos.
+      Método PDCA e ferramentas da qualidade was written by Marcelo Carvalho dos Anjos.
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
-  repo-actions: [edit, issue]
   cover-image: pdca_capa.PNG
   favicon: pdca_capa.PNG
 

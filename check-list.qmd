@@ -1,18 +1,18 @@
 # Folha de verificação (Check-list)
 
-## O que é {-}
+## O que é {.unnumbered}
 
 A folha de verificação, check sheet ou check list como também é conhecida, trata-se de um formulário impresso ou por meio digital. É uma ferramenta bastante simples utilizada para a coleta de dados quantitativos e qualitativos em tempo real no local onde os dados são gerados. O objetivo principal da folha de verificação é a coleta de dados de forma estruturada e organizada, dispondo de dados autoexplicativos e que são rapidamente vistos e interpretados corretamente por todos (KUME, 1993).
 
 
-## Qual o objetivo {-}
+## Qual o objetivo {.unnumbered}
 Alguns benefícios do uso da folha de verificação na coleta de dados é a economia de tempo, pois elimina a necessidade de desenhar figuras ou escrever números repetitivos, e evita também que problemas como falhas na interpretação comprometam o tratamento e análise dos dados, principalmente em situações em que várias pessoas participam da etapa de coleta (WERKEMA, 1995).
 
 
-## De onde vem {-}
+## De onde vem {.unnumbered}
 Algumas características são comuns em uma folha de verificação, como a indicação dos itens que serão verificados, o período, o motivo e a frequência. Essa folha, relaciona-se com quase todas as demais ferramentas estatísticas, pois é a etapa inicial e onde se encontram os dados que serão analisados (WERKEMA, 1995).
 
-## Como fazer {-}
+## Como fazer {.unnumbered}
 
 Segundo Kume (1993), existem alguns preceitos básicos na elaboração de uma folha de verificação, que é o agrupamento de elementos com características semelhantes tendo causa e soluções comuns, além de dividi-los em algumas categorias:
 
@@ -25,9 +25,9 @@ Segundo Kume (1993), existem alguns preceitos básicos na elaboração de uma fo
 - folha de verificação de causa e defeitos: coleta de dados em que os dados relativos às causas e aos defeitos são dispostos de forma ordenada, tornando muito clara a relação entre eles.
 Brassard (1994), observa que as folhas de verificação (Figura 7), por serem uma ferramenta de fácil compreensão e fácil elaboração, são utilizadas na coleta de dados amostrais com o objetivo de se formar um modelo. É o ponto lógico de início na maioria dos ciclos de solução de problemas.
 
-## Pra onde vai {-}
+## Pra onde vai {.unnumbered}
 
-## Qual o resultado {-}
+## Qual o resultado {.unnumbered}
 
 
 

@@ -4,6 +4,15 @@
 
 O PDCA é um método criado para auxiliar os gestores na identificação e solução de problemas. Ele mostra de forma simplificada e organizada o caminho a ser percorrido na busca de melhoria contínua.
 
+A figura abaixo ilustra o método PDCA sendo:
+
+- PDCA mostra a parte no ciclo (P = Planejamento, D = Execução, C = Medição, A = Padronização)
+- Fluxo mostra como o processo deve ser seguido.
+- Etapa mostra um resumo do que é feito em cada ponto do processo.
+- Objetivo mostra o por que de cada etapa juntamente com a ferramenta de apoio representados pelas figuras.
+
+![Figura 1 - Ilustração médoto PDCA](images/pdca_chart.png)
+
 Também conhecido como ciclo de Shewhart ou ciclo de Deming, foi concluído em 1930 por Walter Shewhart no Bell Laboratories que analisando estatisticamente o controle de processos, criou um modelo que poderia ser aplicado em qualquer situação (WERKEMA, 1995).
 
 O estatístico William Edwards Deming foi o responsável por propagar a idéia no Japão após a segunda guerra mundial. Desde então, obteve-se a popularização ao redor do mundo, das técnicas e da qualidade dos produtos japoneses(veículos, eletronicos, frutas etc), os quais antes da guerra competiam no mercado internacional apenas em preço e não em qualidade.
@@ -14,13 +23,9 @@ Segundo Campos (1995), o ciclo PDCA tem por princípio tornar mais claras e áge
 
 -   **DO (Execução)** - Etapa em que as ações propostas em **Plan** são executadas por meio da busca pelo aprendizado.
 
--   **CHECK (Verificação)** – Etapa de validação através de avaliação, monitoramento e controle das ações em execussão, comparando os resultados com o que foi planejado em **Plan**.
+-   **CHECK (Medição)** – Etapa de validação através de avaliação, monitoramento e controle das ações em execussão, comparando os resultados com o que foi planejado em **Plan**.
 
--   **ACT (Ação e Padronização)** - Etapa onde as ações que foram validadas em **Check** são adotados como padrão, aplicadas, reproduzidas e ensinadas para os demais.
-
-A figura abaixo mostra o processo do método PDCA(lado esquerdo) apoiado pelas ferramentas da qualidade (lado direito) e pela liderança (figura com cor diferente).
-
-![Figura 1 - Ilustração médoto PDCA](images/pdca_chart.png)
+-   **ACT (Padronização)** - Etapa onde as ações que foram validadas em **Check** são adotados como padrão, aplicadas, reproduzidas e ensinadas para os demais.
 
 ## Ferramentas da qualidade
 
@@ -32,13 +37,13 @@ Algumas ferramentas da qualidade são listadas abaixo. A ideia por traz de cada 
 
 -   **Observação do fenômeno** gráficos de controle, gráfico de pareto, histograma, gráfico de correlação, gráfico de dispersão, gráfico de candlestick, gráfico waterfall. A ideia é investigar as características específicas com visão ampla e sobre diversos pontos de vista. O estatístico Shewhart propôs para a industria japonesa um gráfico de controle para análise de dados resultantes de inspeção. Isso fez com que a importância dada a procedimentos de inspeção e correção de produtos defeituosos começasse a ser substituída por estudos e **prevenção dos problemas relacionados à qualidade** garantindo que o possível defeito do produto fosse eliminado durante o processo e não após o término (FERRO, 1997).
 
--   **Análise** diagrama de ishikawa, diagrama de 5 porquês, regressão linear, regressão logística, testes-t, anova etc. A ideia é descobrir as causas fundamentais para agir na causa e não no efeito(sintoma) do problema. Como um exemplo podemos citar uma dor de cabeça e febre como sintoma e não causa de um problema. A causa pode ser um ataque bacteriano por exemplo e pra ter certeza disso, exames e avaliação médica podem ser necessárias para então aplicar o medicamento adequado. Por outro lado, ao optar intuitivamente por tomar um remédio para dor de cabeça, o problema pode ser amenizado inicialmente e agravado no longo prazo.
+-   **Análise** diagrama de ishikawa, método dos cinco porquês, regressão linear, regressão logística, testes-t, anova etc. A ideia é descobrir as causas fundamentais para agir na causa e não no efeito(sintoma) do problema. Como um exemplo podemos citar uma dor de cabeça e febre como sintoma e não causa de um problema. A causa pode ser um ataque bacteriano por exemplo e pra ter certeza disso, exames e avaliação médica podem ser necessárias para então aplicar o medicamento adequado. Por outro lado, ao optar intuitivamente por tomar um remédio para dor de cabeça, o problema pode ser amenizado inicialmente e agravado no longo prazo.
 
--   **Plano de ação** Plano de Ação 5W2H. A ideia é elaborar um plano para tratar as causas fundamentais e que nele tenha o que vai ser feito, quem será o responsável pela execução, quando será feito, quanto custa, e onde será comunicado para avaliação.
+-   **Plano de ação** Plano de Ação 5W2H. A ideia é elaborar um plano para tratar as causas fundamentais e que nele tenha o que vai ser feito, quem será o responsável pela execução, quando será feito, quanto custa, como será medido e onde será comunicado os resultados para que possa ser avaliado.
 
 -   **Ação** A liderança tem papel cruciar nessa etapa e a clareza e articulação na comunicação são ferramentas poderosas na mão de um líder. É abundante os dados que revelam que sem meta e sem método mas com liderança, aleatoriamente se chega a algum lugar, por outro lado mesmo tendo metas bem definicas e excelentes métodos mas sem liderança, dificilmente se chegará a algum lugar.
 
--   **Verificação** são gráficos de tendência, indicadores direcionadores, de resultados, testes a/b ou caso controle, painel de gestão a vista com os resultados das ações executadas. A ideia é monitorar e avaliar os resultados das ações que estão sendo executadas, auxiliar no engajamento e geração de novas ideias ou ações que auxiliem tratamento do problema.
+-   **Medição** são gráficos de tendência, indicadores direcionadores, de resultados, testes a/b ou caso controle, painel de gestão a vista com os resultados das ações executadas. A ideia é monitorar e avaliar os resultados das ações que estão sendo executadas, auxiliar no engajamento e geração de novas ideias ou ações que auxiliem tratamento do problema.
 
 -   **Validação** equipe multidisciplinar. A ideia é definir se os resultados foram safisfatórios com visão no todo. Em alguns casos o resultados da ação não impactaram na causa espeficicada, mas pode ser muito relevante em outras. Por exemplo na descoberta do velcro, que não resolveu um problema da moda que era um objetivo inicial de Georges de Mestral seu criador. Por outro lado, a NASA viu naqulo uma oportunidade e usou em trajes de voo para proteger itens em gravidade zero expandindo o uso também para outros campos.
 
