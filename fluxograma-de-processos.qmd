@@ -2,11 +2,11 @@
 
 ## O que é {.unnumbered}
 
-Representação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é permitir ao usuário ter uma visão do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.
+Representação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é fornecer uma visão clara do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.
 
-Não há uma data precisa do início do uso dessa ideia mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.
+Não há uma data precisa do início do uso dessa ideia, mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.
 
-![Figura 2 - Papiro de Ani:A pesagem do coração](images/papiro_ani.jpg)
+![Figura 2 - Papiro de Ani: A pesagem do coração](images/papiro_ani.jpg)
 
 O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão.
 
@@ -14,17 +14,17 @@ O uso de descrições detalhadas das etapas em um processo nos permite compreend
 
 ## Qual o objetivo {.unnumbered}
 
--   Entender um processo e identificar as oportunidades de melhoria.
+-   Entender as etapas de um processo e identificar oportunidades de melhoria.
 
 -   Facilitar a comunicação através da visualização do todo e suas relações
 
 -   Facilitar a expressão de ideias, formulação de hipóteses e discussões.
 
--   Analisar o fenômeno em diferentes perspectivas
+-   Analisar fenômenos em diferentes perspectivas.
 
 ## De onde vem {.unnumbered}
 
--   Da necessidade ter uma visão global do assunto que está sendo discutido e compreender melhor as relações e interações para que ideias sejam geradas e melhorias ou até estratégias ou planos táticos possam ser propostos.
+-   O fluxograma ou desenho de um processo vem da necessidade ter uma visão geral daquilo que está sendo analisado, estudado ou discutido para compreender melhor as relações e interações entre os elementos. Com isso, permitir que ideias, melhorias possam ser geradas ou até estratégias ou planos táticos possam ser propostos.
 
 ## Como fazer {.unnumbered}
 
@@ -80,13 +80,13 @@ graph LR
 
 ## Pra onde vai {.unnumbered}
 
--   O fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias entre outras aplicações.
+-   O fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias, formulação de estratégias entre outras aplicações.
 -   Como se trata de uma ferramenta de análise de fenômeno ele fornece dados para o próximo passo que é a analise de causa raiz do problema
 
 ## Qual o resultado {.unnumbered}
 
--   Eficiência no aproveitamento de recurso de tempo e mão de obra atraves da facilidade de compreenção e geração de ideias.
+-   Eficiência no aproveitamento de recurso de tempo e mão de obra através da facilidade de compreenção e geração de ideias contribuindo com mais clareza e velocidade.
 
--   Engajamento da equipe uma vez que todos compreendem o assunto mesmo quando foge sua área de domínio.
+-   Maior engajamento da equipe uma vez que todos compreendem o processo de forma mais clara e precisa mesmo em situações em que foge da área de domínio.
 
--   Fixação do assunto abordado na mente dos envolvidos pois simbolos e imagens são melhores armazenados na memória humana.
+-   Maior rapidez na identificação de problemas e identificação de pontos de melhoria pois ilustrações e figuras são melhores armazenadas na memória humana.

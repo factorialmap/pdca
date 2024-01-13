@@ -4,15 +4,25 @@ project:
 
 execute:
   echo: true
+  freeze: auto
+  keep-md: false
 
 book:
   title: "Método PDCA e ferramentas da qualidade"
   author: "Marcelo Carvalho dos Anjos"
+  search: true
   repo-url: https://github.com/factorialmap/pdca
   date: today
+  downloads: [epub]
+  sharing: [twitter, facebook, linkedin]
+  sidebar: 
+    style: docked
+    background: light
+  reader-mode: true
+  bread-crumbs: false
   page-footer:
     left: |
-      Método PDCA e ferramentas da qualidade was written by Marcelo Carvalho dos Anjos.
+      This book was written by Marcelo Carvalho dos Anjos.
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
   cover-image: pdca_capa.PNG
@@ -35,7 +45,12 @@ book:
 
 format:
   html:
+    toc: true
     theme: flatly
     code-fold: true
+    callout-appearance: simple
+    
+comments: 
+  hypothesis: true
 
 

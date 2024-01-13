@@ -103,6 +103,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
 <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <script src="site_libs/d3-3.3.8/d3.min.js"></script>
 <script src="site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
@@ -115,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -124,9 +130,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./fluxograma-de-processos.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fluxograma de Processos</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fluxograma de Processos</span></h1>
+        </a>     
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -136,12 +142,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Método PDCA e ferramentas da qualidade</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/factorialmap/pdca" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./Método-PDCA-e-ferramentas-da-qualidade.epub" title="Download ePub" class="quarto-navigation-tool px-1" aria-label="Download ePub"><i class="bi bi-journal"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
     </div>
       </div>
@@ -254,7 +289,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fluxograma de Processos</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fluxograma de Processos</span></h1>
 </div>
 
 
@@ -273,12 +308,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="o-que-é" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
-<p>Representação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é permitir ao usuário ter uma visão do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.</p>
-<p>Não há uma data precisa do início do uso dessa ideia mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.</p>
+<p>Representação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é fornecer uma visão clara do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.</p>
+<p>Não há uma data precisa do início do uso dessa ideia, mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.</p>
 <div class="img-fluid quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/papiro_ani.jpg" class="img-fluid figure-img"></p>
-<figcaption>Figura 2 - Papiro de Ani:A pesagem do coração</figcaption>
+<figcaption>Figura 2 - Papiro de Ani: A pesagem do coração</figcaption>
 </figure>
 </div>
 <p>O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão.</p>
@@ -292,16 +327,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="qual-o-objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
 <ul>
-<li><p>Entender um processo e identificar as oportunidades de melhoria.</p></li>
+<li><p>Entender as etapas de um processo e identificar oportunidades de melhoria.</p></li>
 <li><p>Facilitar a comunicação através da visualização do todo e suas relações</p></li>
 <li><p>Facilitar a expressão de ideias, formulação de hipóteses e discussões.</p></li>
-<li><p>Analisar o fenômeno em diferentes perspectivas</p></li>
+<li><p>Analisar fenômenos em diferentes perspectivas.</p></li>
 </ul>
 </section>
 <section id="de-onde-vem" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
 <ul>
-<li>Da necessidade ter uma visão global do assunto que está sendo discutido e compreender melhor as relações e interações para que ideias sejam geradas e melhorias ou até estratégias ou planos táticos possam ser propostos.</li>
+<li>O fluxograma ou desenho de um processo vem da necessidade ter uma visão geral daquilo que está sendo analisado, estudado ou discutido para compreender melhor as relações e interações entre os elementos. Com isso, permitir que ideias, melhorias possam ser geradas ou até estratégias ou planos táticos possam ser propostos.</li>
 </ul>
 </section>
 <section id="como-fazer" class="level2 unnumbered">
@@ -334,8 +369,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-dddcc35e1f83d2db70d2" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dddcc35e1f83d2db70d2">{"x":{"diagram":"\ngraph LR\nA>Mat. prima]-->B[Produção]\nB-->C[Estoque PA]\nC-->D[Demanda]\nE>Mão obra]-->B\nF>Máquina]-->B\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b8c2c9fcc999cdc58fa5" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b8c2c9fcc999cdc58fa5">{"x":{"diagram":"\ngraph LR\nA>Mat. prima]-->B[Produção]\nB-->C[Estoque PA]\nC-->D[Demanda]\nE>Mão obra]-->B\nF>Máquina]-->B\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -360,8 +395,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-9e635b5989eb10798e37" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9e635b5989eb10798e37">{"x":{"diagram":"\ngraph LR\n\nsubgraph Cliente\nA[Vendido no limite]\nend\n\nsubgraph Corretora\nA-->B{Tem saldo?}\nB-->|Sim|C[Manter posição]\nC--> D[Novo pregão]\nD--> B\nend\n\nsubgraph Compliance\nB -->|Não| F[Encerra posição]\nend\n\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-bed647c8ddf70256d98c" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bed647c8ddf70256d98c">{"x":{"diagram":"\ngraph LR\n\nsubgraph Cliente\nA[Vendido no limite]\nend\n\nsubgraph Corretora\nA-->B{Tem saldo?}\nB-->|Sim|C[Manter posição]\nC--> D[Novo pregão]\nD--> B\nend\n\nsubgraph Compliance\nB -->|Não| F[Encerra posição]\nend\n\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -374,24 +409,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-ca82b79cbe0ee20a58b5" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ca82b79cbe0ee20a58b5">{"x":{"diagram":"\ngraph LR\n    A[Estoque MP] -->|materia prima| B(Produção)\n    B --> C{Sob pedido?}\n    C -->|Sim| D[Venda]\n    C -->|Não| E[Estoque Prod. Acabado]\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6296ba334c1f896c6329" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6296ba334c1f896c6329">{"x":{"diagram":"\ngraph LR\n    A[Estoque MP] -->|materia prima| B(Produção)\n    B --> C{Sob pedido?}\n    C -->|Sim| D[Venda]\n    C -->|Não| E[Estoque Prod. Acabado]\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
 <section id="pra-onde-vai" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
 <ul>
-<li>O fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias entre outras aplicações.</li>
+<li>O fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias, formulação de estratégias entre outras aplicações.</li>
 <li>Como se trata de uma ferramenta de análise de fenômeno ele fornece dados para o próximo passo que é a analise de causa raiz do problema</li>
 </ul>
 </section>
 <section id="qual-o-resultado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
 <ul>
-<li><p>Eficiência no aproveitamento de recurso de tempo e mão de obra atraves da facilidade de compreenção e geração de ideias.</p></li>
-<li><p>Engajamento da equipe uma vez que todos compreendem o assunto mesmo quando foge sua área de domínio.</p></li>
-<li><p>Fixação do assunto abordado na mente dos envolvidos pois simbolos e imagens são melhores armazenados na memória humana.</p></li>
+<li><p>Eficiência no aproveitamento de recurso de tempo e mão de obra através da facilidade de compreenção e geração de ideias contribuindo com mais clareza e velocidade.</p></li>
+<li><p>Maior engajamento da equipe uma vez que todos compreendem o processo de forma mais clara e precisa mesmo em situações em que foge da área de domínio.</p></li>
+<li><p>Maior rapidez na identificação de problemas e identificação de pontos de melhoria pois ilustrações e figuras são melhores armazenadas na memória humana.</p></li>
 </ul>
 
 
@@ -796,7 +831,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Método PDCA e ferramentas da qualidade was written by Marcelo Carvalho dos Anjos.</p>
+<p>This book was written by Marcelo Carvalho dos Anjos.</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
