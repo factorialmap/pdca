@@ -1,36 +1,38 @@
 # Método 5 porquês
 
-## O que é {-}
+## O que é {.unnumbered}
 
 Os cinco porquês é uma técnica desenvolvida no Japão por Sakichi Toyoda fundador da Toyota. A utilização é bastante simples e consiste em perguntar: Por que o fato ocorreu? Para a resposta, perguntar “por quê?” novamente, e assim seguir até encontrar o motivo real, a causa raiz. Não são necessárias exatamente cinco interações, podem ser menos ou mais. A ideia é realmente encontrar a causa raiz do problema, evitando tomar ações paliativas (MERIGHI, 2009).
 
 
-## Qual o objetivo {-}
+## Qual o objetivo {.unnumbered}
 
 - A
 - B
 - C
 
-## De onde vem {-}
+## De onde vem {.unnumbered}
 
 - A
 - B
 - C
 
-## Como fazer {-}
+## Como fazer {.unnumbered}
 
 - A
 - B
 - C
 
-## Pra onde vai {-}
+## Pra onde vai {.unnumbered}
 
 - A
 - B
 - C
 
-## Qual o resultado {-}
+## Qual o resultado {.unnumbered}
 
 - A
 - B
 - C
+
+## Referências {.unnumbered}

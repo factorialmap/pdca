@@ -35,3 +35,4 @@ O gráfico de Pareto ou gráfico 80/20 é um tipo específico de histograma orde
 - B
 - C
 
+## Referências {.unnumbered}

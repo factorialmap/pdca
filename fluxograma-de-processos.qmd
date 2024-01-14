@@ -90,3 +90,5 @@ graph LR
 -   Maior engajamento da equipe uma vez que todos compreendem o processo de forma mais clara e precisa mesmo em situações em que foge da área de domínio.
 
 -   Maior rapidez na identificação de problemas e identificação de pontos de melhoria pois ilustrações e figuras são melhores armazenadas na memória humana.
+
+##    Referências {.unnumbered}
