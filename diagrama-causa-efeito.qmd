@@ -1,4 +1,4 @@
-# Diagrama de Causa e Efeito(Ishikawa)
+# Diagrama de Causa e Efeito
 
 ## O que é {.unnumbered}
 

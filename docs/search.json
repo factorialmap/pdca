@@ -312,61 +312,61 @@
   {
     "objectID": "check-list.html#o-que-é",
     "href": "check-list.html#o-que-é",
-    "title": "6  Folha de verificação (Check-list)",
+    "title": "6  Check-list",
     "section": "O que é",
-    "text": "O que é\nA folha de verificação, check sheet ou check list como também é conhecida, trata-se de um formulário impresso ou por meio digital. É uma ferramenta bastante simples utilizada para a coleta de dados quantitativos e qualitativos em tempo real no local onde os dados são gerados. O objetivo principal da folha de verificação é a coleta de dados de forma estruturada e organizada, dispondo de dados autoexplicativos e que são rapidamente vistos e interpretados corretamente por todos (KUME, 1993).",
+    "text": "O que é\nO check list ou folha de verificação é uma ferramenta simples usada para coletar dados quantitativos e qualitativos no local onde os dados são gerados podendo ser impressa ou no formato digital. Também são ferramentas muito úteis como memória ou guia para execução de um procedimento padrão.\n\n\n\nFigura - Check list de oficina mecânica",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Check-list</span>"
     ]
   },
   {
     "objectID": "check-list.html#qual-o-objetivo",
     "href": "check-list.html#qual-o-objetivo",
-    "title": "6  Folha de verificação (Check-list)",
+    "title": "6  Check-list",
     "section": "Qual o objetivo",
-    "text": "Qual o objetivo\nAlguns benefícios do uso da folha de verificação na coleta de dados é a economia de tempo, pois elimina a necessidade de desenhar figuras ou escrever números repetitivos, e evita também que problemas como falhas na interpretação comprometam o tratamento e análise dos dados, principalmente em situações em que várias pessoas participam da etapa de coleta (WERKEMA, 1995).",
+    "text": "Qual o objetivo\n\nColetar de dados de forma estruturada e organizada, dispondo de dados autoexplicativos e que são rapidamente vistos e interpretados corretamente por todos Kume (1992).\nAuxiliar na aplicação e execussão de procedimento operacional padrão e que deve obedecer uma série de etapas para se obter um melhor desempenho ou eficácia.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Check-list</span>"
     ]
   },
   {
     "objectID": "check-list.html#de-onde-vem",
     "href": "check-list.html#de-onde-vem",
-    "title": "6  Folha de verificação (Check-list)",
+    "title": "6  Check-list",
     "section": "De onde vem",
-    "text": "De onde vem\nAlgumas características são comuns em uma folha de verificação, como a indicação dos itens que serão verificados, o período, o motivo e a frequência. Essa folha, relaciona-se com quase todas as demais ferramentas estatísticas, pois é a etapa inicial e onde se encontram os dados que serão analisados (WERKEMA, 1995).",
+    "text": "De onde vem\n\nNecessidade de coleta de dados e economia de tempo, pois elimina a necessidade de desenhar figuras ou escrever números repetitivos, e evita também que problemas como falhas na interpretação comprometam o tratamento e análise dos dados, principalmente em situações em que várias pessoas participam da etapa de coleta Werkema (2021). Exemplo em uma oficina de manutenção de equipamentos.\n\n\n\n\nFigura - Check list do serviço de manutenção do Tesla Model S\n\n\n\nNecessidade de execução de determinados procedimentos para garantir a melhor eficiência em um processo. Exemplo checklist ou lista de verificações pré voo em uma aeronave que são executadas pelos pilotos em momento diferentes durante um voo gerando mais eficiência e segurança.\nO cerebro humano tem mais facilidade em lidar com situações em que as operações são organizadas e ordenadas, neste sentido o check list auxilia no ganho de tempo e estabilidade principalmente em situações que demandam maior controle e precisão. Exemplo o pouso de um módulo na superfície da lua.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Check-list</span>"
     ]
   },
   {
     "objectID": "check-list.html#como-fazer",
     "href": "check-list.html#como-fazer",
-    "title": "6  Folha de verificação (Check-list)",
+    "title": "6  Check-list",
     "section": "Como fazer",
-    "text": "Como fazer\nSegundo Kume (1993), existem alguns preceitos básicos na elaboração de uma folha de verificação, que é o agrupamento de elementos com características semelhantes tendo causa e soluções comuns, além de dividi-los em algumas categorias:\n\nfolha de verificação para distribuição de processos de produção: coleta-se os dados de amostras de produção para se calcular a variação do processo produtivo;\nfolha de verificação para produtos defeituosos: coletam-se os dados para identificar os defeitos mais frequêntes, bem como o número de vezes de cada motivo;\nfolhas de verificação para localizar os defeitos: a coleta de dados geralmente é composta de um desenho, figura ou mapa do item a ser verificado no qual são assinalados o local e a forma da ocorrência dos defeitos;\nfolha de verificação de causa e defeitos: coleta de dados em que os dados relativos às causas e aos defeitos são dispostos de forma ordenada, tornando muito clara a relação entre eles. Brassard (1994), observa que as folhas de verificação (Figura 7), por serem uma ferramenta de fácil compreensão e fácil elaboração, são utilizadas na coleta de dados amostrais com o objetivo de se formar um modelo. É o ponto lógico de início na maioria dos ciclos de solução de problemas.",
+    "text": "Como fazer\nSegundo Kume (1992) , existem alguns preceitos básicos na elaboração de um check list, que é o agrupamento de elementos com características semelhantes tendo causa e soluções comuns, além de dividi-los em algumas categorias:\n\ncheck list para distribuição de processos de produção: coleta-se os dados de amostras de produção para se calcular a variação do processo produtivo;\ncheck list para produtos defeituosos: coletam-se os dados para identificar os defeitos mais frequêntes, bem como o número de vezes de cada motivo;\ncheck list para localizar os defeitos: a coleta de dados geralmente é composta de um desenho, figura ou mapa do item a ser verificado no qual são assinalados o local e a forma da ocorrência dos defeitos;\ncheck list de causa e defeitos: coleta de dados em que os dados relativos às causas e aos defeitos são dispostos de forma ordenada, tornando muito clara a relação entre eles.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Check-list</span>"
     ]
   },
   {
     "objectID": "check-list.html#pra-onde-vai",
     "href": "check-list.html#pra-onde-vai",
-    "title": "6  Folha de verificação (Check-list)",
+    "title": "6  Check-list",
     "section": "Pra onde vai",
-    "text": "Pra onde vai",
+    "text": "Pra onde vai\n\nO check-list estimula o cerebro na identificação de etapas, procedimentos ou ações necessárias para o bom desempenho de um processo ou alcance de um objetivo.\nOs dados coletados podem ser armazenados para registro de log, como rastreabilidade e histórico de serviços, para elaboração de modelos preditivos como por exemplo um modelo de machine learning para prever defeitos ou vida útil de equipamentos. Os dados também podem ser utilizados como previsão de demanda de materiais bem como na análise e melhoria de processos.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Check-list</span>"
     ]
   },
   {
     "objectID": "check-list.html#qual-o-resultado",
     "href": "check-list.html#qual-o-resultado",
-    "title": "6  Folha de verificação (Check-list)",
+    "title": "6  Check-list",
     "section": "Qual o resultado",
-    "text": "Qual o resultado",
+    "text": "Qual o resultado\n\nO uso do check-list pode proporcionar maior velocidade, confiabilidade e segurança na captura de dados e também na execução de procedimentos.\nComo as informações são padronizadas e claras, problemas como erros de interpretação por diferentes pessoas ou membros da equipe são minimizados ou totalmente neutralizados.\nMelhoria da produtividade e segurança em um processo através da redução de tempo, eliminação de desperdícios, erros, falhas de interpretação ou esquecimento.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Check-list</span>"
     ]
   },
   {
@@ -732,11 +732,11 @@
   {
     "objectID": "check-list.html#referências",
     "href": "check-list.html#referências",
-    "title": "6  Folha de verificação (Check-list)",
+    "title": "6  Check-list",
     "section": "Referências",
-    "text": "Referências",
+    "text": "Referências\n\n\n\n\nKume, Hitoshi. 1992. Metodos Estatisticos Para Melhoria Da Qualidade. 1ª edição. Vol. vol1. Productivity Press. https://www.amazon.com.br/Metodos-Estatisticos-Para-Melhoria-Qualidade/dp/8585247436/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=M%C3%A9todos+Estat%C3%ADsticos+para+melhoria+da+Qualidade&qid=1705377055&sr=8-1.\n\n\nWerkema, Cristina. 2021. Métodos PDCA e Demaic e Suas Ferramentas Analíticas. 1ª edição. GEN Atlas.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Folha de verificação (Check-list)</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Check-list</span>"
     ]
   },
   {

@@ -13,7 +13,6 @@ book:
   search: true
   repo-url: https://github.com/factorialmap/pdca
   date: today
-  downloads: [epub]
   sharing: [twitter, facebook, linkedin]
   sidebar: 
     style: docked
@@ -49,10 +48,9 @@ format:
     theme: flatly
     code-fold: true
     callout-appearance: simple
+    grid: 
+      sidebar-width: 370px
     
-comments: 
-  hypothesis: true
-
 
 bibliography: references.bib
 
