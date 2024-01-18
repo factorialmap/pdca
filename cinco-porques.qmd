@@ -2,37 +2,36 @@
 
 ## O que é {.unnumbered}
 
-Os cinco porquês é uma técnica desenvolvida no Japão por Sakichi Toyoda fundador da Toyota. A utilização é bastante simples e consiste em perguntar: Por que o fato ocorreu? Para a resposta, perguntar “por quê?” novamente, e assim seguir até encontrar o motivo real, a causa raiz. Não são necessárias exatamente cinco interações, podem ser menos ou mais. A ideia é realmente encontrar a causa raiz do problema, evitando tomar ações paliativas (MERIGHI, 2009).
+Os cinco porquês é uma técnica criada por Sakichi Toyoda no Japão e é utilizada para estimular a busca de causa raíz de um problema. Consiste em perguntar por que o fato ocorreu e ao obter a primeira resposta, perguntar “por quê?” novamente usando a resposta como base e seguir assim, até se aproximar da causa raiz evitando tomar ações paliativas que são ações que abrandam temporariamente um problema sem resolve-lo. O mais importante não é a quantidade de ciclos ou seja, cinco, seis ou sete porques, mas sim a ideia por traz da técnica que é de estimular o cerebro a buscar relações mais profundas a cerca de um problema.
 
+![Figura - Técnica dos cinco porques](images/five_whys.png)
 
 ## Qual o objetivo {.unnumbered}
 
-- A
-- B
-- C
+-   Buscar maior aproximação possível da causa raiz de um problema.
+-   Estimular a transição do pensamento heuristico para o pensamento racional durante o proceso de busca por relação causal de um problema.
+-   Treinar a mente para que esta atitude se transforme em habito evitando que decisões rápidas e com fundamentos limitados ou carregados de viéses cognitivos sejam tomadas. eliminando custos.
 
 ## De onde vem {.unnumbered}
 
-- A
-- B
-- C
+-   Conforme @Korteling2018, existem situações onde o uso de heurísticas pelo cerebro humano são mais predominantes como em condições com restrição de tempo, falta ou sobrecarga de informações relevantes. O uso do cinco porques pode ser muito útil nessas situações.
+-   Também pode ser muito útil em situações onde os problemas são muito familiares e a percepção do cerebro é que não é necessário reunir informações adicionais.
+-   Em situações onde as respostas parecem simples mas ao se aprofundar nas relações percebe-se que os efeitos exigem mais esforço da mente humana.
 
 ## Como fazer {.unnumbered}
 
-- A
-- B
-- C
+-   Como a técnica é muito simples, a parte mais dificil é lembrar dela no momento exato em que ela se faz necessária. Por exemplo em situações onde o tempo e informaçõse são escassas. É justamente nessas situações que tendemos a tomar decisõs paliativas.
+-   Um bom treinamento do método pode ser percebido pelos filhos em casa os quais nos perguntam os `por ques` várias vezes. Neste momento se percebermos bem, a mente deles se abrem para as respsotas e que quanto mais fundamentada, mais benefícios de longo prazo podem oferecer.
 
 ## Pra onde vai {.unnumbered}
 
-- A
-- B
-- C
+-   Os dados sobre o problema e a causa raiz são registrados e analisados e utilizados para a melhoria do processo e busca de melhores soluções.
+-   A técnica dos cinco porques é uma ferramenta complementar, nos dará a base e não as respostas para o problema. As respostas precisam de ações.
 
 ## Qual o resultado {.unnumbered}
 
-- A
-- B
-- C
+-   O habito de usar o cinco porques pode influenciar na visão que o ser humano tem do mundo onde as relações entre os diferentes elementos contidos no ambiente ficam mais claras e evidentes, logo, a forma de lidar também muda.
+-   A redução de soluções paliativas resultam em decisões mais economicas e mais bem fundamentadas criando estabilidade e melhorando a competitividade.
+-   O efeito gerado pelo habito do uso de métodos como o cinco porques estimulam o cerebro a buscar relações mais fundamentadas a respeito de um problema. Esses efeitos podem ser extrapolados do ambiente de trabalho e podem se espalhar por toda uma sociedade.
 
 ## Referências {.unnumbered}
