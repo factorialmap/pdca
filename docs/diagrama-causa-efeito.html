@@ -20,7 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -177,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./diagrama-causa-efeito.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diagrama de Causa e Efeito(Ishikawa)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diagrama de Causa e Efeito</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -260,7 +314,13 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="o-que-é" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
-<p>O diagrama de causa e efeito, diagrama de Ishikawa ou espinha de peixe, é uma ferramenta gráfica que facilita identificar uma relação significativa entre o efeito e suas possíveis causas (WERKEMA, 1995). Muito utilizada no gerenciamento de diversos processos e de diversos projetos. foi originalmente proposto pelo engenheiro químico japonês Kaoru Ishikawa em 1943, e aperfeiçoado nos anos seguintes.</p>
+<p>O diagrama de causa e efeito ou diagrama de Ishikawa é uma ferramenta gráfica que facilita identificar uma relação significativa sob diversos pontos de vista entre o efeito e suas possíveis causas <span class="citation" data-cites="werkema2021">Werkema (<a href="#ref-werkema2021" role="doc-biblioref">2021</a>)</span> . Foi originalmente proposto pelo engenheiro químico japonês Kaoru Ishikawa em 1943, e aperfeiçoado nos anos seguintes.</p>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/diagrama_causa_efeito.png" class="img-fluid figure-img"></p>
+<figcaption>Figura - Diagrama de causa e efeito</figcaption>
+</figure>
+</div>
 </section>
 <section id="qual-o-objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
@@ -273,41 +333,87 @@ ul.task-list li input[type="checkbox"] {
 <section id="de-onde-vem" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li>Necessidade de analisar um efeito sober diversos pontos de vista os quais podem estar relacionados ou não.</li>
+<li>De acordo com <span class="citation" data-cites="shatz2024">Shatz (<a href="#ref-shatz2024" role="doc-biblioref">2024</a>)</span>, um viés cognitivo conhecido como a maldição do conhecimento faz com que as pessoas não consigam compreender adequadamente a perspectiva de quem não possui tantas informações quanto elas. Uma pessoa experiente em uma tarefa pode ter dificuldades para ensinar iniciantes por pressupor intuitivamente que as coisas são obvias para eles, logo também são óbvias para o iniciante, mesmo que não seja o caso. O diagrama de causa e efeito pode ser útil nesses casos, pois quanto bem empregado rompe a barreira do medo e coleta a perspectiva de vários membros da equipe sobre determinado problema os quais os resultados podem ser reveladores e muito úteis.</li>
 </ul>
 </section>
 <section id="como-fazer" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li>Em uma ponta você colocar o efeito, e as ideias sobre as possíveis causas aparentes são coletadas de times multidisciplinares.</li>
+<li>Você pode usar uma folha de papel e se preferir usar o R você pode usar o pacote <code>qcc</code> criado por <span class="citation" data-cites="scrucca2004">Scrucca (<a href="#ref-scrucca2004" role="doc-biblioref">2004</a>)</span></li>
 </ul>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(qcc)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cause.and.effect</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">cause =</span> <span class="fu">list</span>(<span class="at">Equipamento =</span> <span class="fu">c</span>(<span class="st">"Problema freq. </span><span class="sc">\n</span><span class="st"> na maquina </span><span class="sc">\n</span><span class="st"> de montar caixas"</span>),</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">Processo =</span> <span class="fu">c</span>(<span class="st">"Manual </span><span class="sc">\n</span><span class="st"> desatualizado"</span>),</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">Pessoas =</span> <span class="fu">c</span>(<span class="st">"Rotatividade </span><span class="sc">\n</span><span class="st"> de pessoal"</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">Materiais =</span> <span class="fu">c</span>(<span class="st">"Embalagens com </span><span class="sc">\n</span><span class="st"> padrão diferente"</span>),</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">Ambiente =</span> <span class="fu">c</span>(<span class="st">"Variação brusca </span><span class="sc">\n</span><span class="st"> de temperatura"</span>),</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>               Gestão <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Indicador inadequado"</span>)),</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">effect=</span><span class="st">"Atrazo na </span><span class="sc">\n</span><span class="st"> entrega"</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Diagrama de causa e efeito"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="diagrama-causa-efeito_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="pra-onde-vai" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li>Os resultados coletados na análise do diagrama de causa e efeito são conhecidas como <code>causas aparentes</code> e são utilizados na identificação da <code>causa raiz</code> onde é possível usar a técnica de cinco porques. Enquanto a técnica dos cinco porques tem o foco na profundidade das relações de causa e efeito, o diagrama de causa e efeito tem o foco nas diferentes perspectivas nessas relações. Em resumo, mesmo os pontos de vista sendo diferentes por serem coletados por diferentes membros da equipe, eles tendem a convergir em relação ao problema. Por exemplo se considerarmos que a causa aparente do atrazo na entrega seja problemas frequentes na maquina de montar caixa. Quando usamos a técnica de cinco porques, poderia ficar assim:
+<ul>
+<li><strong>Por que a maquina de montar caixas tem problemas frequentes?</strong>
+<ul>
+<li>Por que as caixas possuem formatos diferentes, estão abauladas e as ventosas de sucção da maquina se desgastam rapidamente</li>
+</ul></li>
+<li><strong>Por que as caixas vem com padrão diferente?</strong>
+<ul>
+<li>Por que elas vem de plantas e fornecedores diferentes e sem controle muito rígido de forma e uniformidade.</li>
+</ul></li>
+<li><strong>Por que não tem controle de uniformidade?</strong>
+<ul>
+<li>Por que há necessidade de redução de custos e as compras são feitas em lotes muito grandes e com base no preço.</li>
+</ul></li>
+<li><strong>Por que as compras são feitas com base no preço?</strong>
+<ul>
+<li>Por que a consultoria que nos apóia e que sugeriu o procedimento tem sua receita baseada na economia que ela faz. Quanto mais custos ela cortar, melhor ela será recompensada mesmo que sem a intenção isso possa ampliar os problemas no longo prazo para o nosso negócio, portanto, o indicador é inadequado e é um problema de gestão.</li>
+</ul></li>
+</ul></li>
 </ul>
 </section>
 <section id="qual-o-resultado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li>Possibilita coletar, analisar e compreender os efeitos e possíveis causas de um problema sob diversos pontos de vista.</li>
+<li>Possibilia maior cooperação e participação de todos na busca da melhoria contínua dos processos.</li>
+<li>Geram dados importantes para estratégias de ação e comunicação a cerca de um determinado problema.</li>
 </ul>
-<p>Essa ferramenta foi utilizada pela primeira vez no Japão por volta de 1953, com o objetivo de sintetizar as opiniões dos engenheiros de uma fábrica quando estes discutem problemas referentes à qualidade dos produtos (SEBRAE, 2009),</p>
-<p>Esse sistema permite estruturar hierarquicamente as causas de determinado problema ou oportunidade de melhoria, bem como seus efeitos sobre a qualidade dos produtos. Permite também, estruturar qualquer sistema que necessite de resposta de forma gráfica e sintética, obtendo melhor visualização (SEBRAE, 2009).</p>
 </section>
 <section id="referências" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="referências">Referências</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-scrucca2004" class="csl-entry" role="listitem">
+Scrucca, Luca. 2004. <span>“Qcc: An R Package for Quality Control Charting and Statistical Process Control.”</span> <em>R News</em> 4/1: 11–17. <a href="https://cran.r-project.org/doc/Rnews/">https://cran.r-project.org/doc/Rnews/</a>.
+</div>
+<div id="ref-shatz2024" class="csl-entry" role="listitem">
+Shatz, Itamar. 2024. <span>“The Curse of Knowledge: A Difficulty in Understanding Less-Informed Perspectives <span></span> Effectiviology.”</span> <a href="https://effectiviology.com/curse-of-knowledge/">https://effectiviology.com/curse-of-knowledge/</a>.
+</div>
+<div id="ref-werkema2021" class="csl-entry" role="listitem">
+Werkema, Cristina. 2021. <em>Métodos PDCA e Demaic e Suas Ferramentas Analíticas</em>. 1ª edição. GEN Atlas.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
