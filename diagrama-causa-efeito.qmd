@@ -2,29 +2,51 @@
 
 ## O que é {.unnumbered}
 
-O diagrama de causa e efeito ou diagrama de Ishikawa é uma ferramenta gráfica que facilita identificar uma relação significativa sob diversos pontos de vista entre o efeito e suas possíveis causas @werkema2021 . Foi originalmente proposto pelo engenheiro químico japonês Kaoru Ishikawa em 1943, e aperfeiçoado nos anos seguintes.
+-   O diagrama de causa e efeito é uma ferramenta que ajuda a representar com certa facilidade a estrutura do pensamento humano diante de situações e problemas complicados de se resolver.
+
+-   Por se tratar de uma ferramenta gráfica, facilita identificar uma relação significativa sob diversos pontos de vista entre o efeito e suas possíveis causas @werkema2021.
+
+-   Conforme @Kume1987 construir um gráfico de causa e efeito que seja útil exige esforço, treinamento da equipe e tempo. Pessoas que tem sucesso na solução de problemas de controle de qualidade são aqueles bem sucedidas na construção de diagramas de causa e efeito úteis.
+
 
 ![Figura - Diagrama de causa e efeito](images/diagrama_causa_efeito.png)
 
 ## Qual o objetivo {.unnumbered}
 
--   Estimular a interação entre as pessoas, ambiente e instrumetos usados na busca de causas que unfluenciam no efeito.
+-   Estimular a interação entre as pessoas, processo, instrumentos, ambiente e sistemas na busca de possíveis causas que podem unfluenciar ou gerar um determinado efeito..
 
--   Permitir que todos os envolvidos contribuam com ideias e pontos de vista.
+-   Permitir que todos os envolvidos contribuam com ideias e pontos de vista..
 
--   Facilitar a identificação de possíveis causas sobre o efeito proposto.
+-   Facilitar a identificação de possíveis causas e os pesos dessas causas aparentes sobre o efeito observado.
 
 ## De onde vem {.unnumbered}
 
--   Necessidade de analisar um efeito sober diversos pontos de vista os quais podem estar relacionados ou não.
--   De acordo com @shatz2024, um viés cognitivo conhecido como a maldição do conhecimento faz com que as pessoas não consigam compreender adequadamente a perspectiva de quem não possui tantas informações quanto elas. Uma pessoa experiente em uma tarefa pode ter dificuldades para ensinar iniciantes por pressupor intuitivamente que as coisas são obvias para eles, logo também são óbvias para o iniciante, mesmo que não seja o caso. O diagrama de causa e efeito pode ser útil nesses casos, pois quanto bem empregado rompe a barreira do medo e coleta a perspectiva de vários membros da equipe sobre determinado problema os quais os resultados podem ser reveladores e muito úteis.
+-   Um professor na universidade de Tokyo Kaoru Ishikawa, usou um diagrama para sintetizar opiniões de engenheiros nas fábricas durante discussões sobre qualidade em 1953. Conforme Kume (1987), alunos de Ishikawa também empregaram o método para organizar fatores em suas atividades de pesquisa.
 
-## Como fazer {.unnumbered}
+-   Pela simplicidade e eficiência da ferramenta, ela foi adotada e incorporada aos JIS (Japanese Industrial Standards).
 
--   Em uma ponta você colocar o efeito, e as ideias sobre as possíveis causas aparentes são coletadas de times multidisciplinares.
--   Você pode usar uma folha de papel e se preferir usar o R você pode usar o pacote `qcc` criado por @scrucca2004
+-   De acordo com Shatz (2024) , um viés cognitivo conhecido como a maldição do conhecimento faz com que as pessoas não consigam compreender adequadamente a perspectiva de quem não possui tantas informações quanto elas. Uma pessoa experiente em uma tarefa pode ter dificuldades para ensinar iniciantes por pressupor intuitivamente que as coisas são obvias para eles, logo também são óbvias para o iniciante, mesmo que não seja o caso. O diagrama de causa e efeito pode ser útil nesses casos, pois quando bem empregado, rompe a barreira do medo e coleta a perspectiva de vários membros da equipe sobre determinado problema resultados os quais, podem ser reveladores e muito úteis.
 
-```{r message=FALSE}
+
+-   Obter pontos de vistas diferentes pode ser fundamental durante um processo de melhoria contínua. Conforme @helena2022, tente imaginar um fato **Um veículo bateu em um poste** e imagine também algumas versões desse fato.
+
+    -   **Versão física**: Um corpo foi machucado, um carro amassado e um poste derrubado.
+
+    -   **Versão economica**: O custo do medicamento, o custo do carro, o custo do poste, o tempo perdido, trabalho necessário para recompor o ambiente.
+
+    -   **Versão social**: Pessoas abaladas, assustadas, uma criança que passava no local chorou muito, e o motorista ficou em estado de choque.
+
+    -   **Versão analítica**: A velocidade não era adequada para pista, a posição do sinaleiro não dava uma boa visibilidade para o motorista, o automóvel tem uma característica mecanica que provoca frenagem muito brusca.
+
+    -   **Versão ampla**: Considerar as versões anteriores e trabalhar em uma decisão que beneficie os envolvidos, vendo a parcela de responsabilidade de cada um e como o problema pode ser resolvido com o mínimo dano. A ideia é reduzir os impactos negativos para a sociedade, ao memo tempo impedir que motorista seja massacrado e penalizado por aquilo que não tenha sido de seu controle. Que situações desse tipo, possam ser corrigidas e melhoradas minimizando ou neutralizando os fatores responsáveis pelo problema e reduzindo a probabilidade que o mesmo ocorra no futuro.
+
+    ## Como fazer {.unnumbered}
+
+1. Em uma ponta você colocar o efeito, e as ideias sobre as possíveis causas aparentes são coletadas de times multidisciplinares.
+2. Você pode usar uma folha de papel e se preferir usar o R você pode usar o pacote `qcc` criado por @scrucca2004
+3. A percepção e necessidade de inclusão de causas secundárias e terciárias virão com a prática. E isso significa o amadurecimendo da técnica que exigirá respostas cada vez mais elaboradas e com maior interação com o time.
+
+```{r message=FALSE, warning=FALSE}
 
 library(qcc)
 
@@ -43,22 +65,22 @@ cause.and.effect(
 
 ## Pra onde vai {.unnumbered}
 
--   Os resultados coletados na análise do diagrama de causa e efeito são conhecidas como `causas aparentes` e são utilizados na identificação da `causa raiz` onde é possível usar a técnica de cinco porques. Enquanto a técnica dos cinco porques tem o foco na profundidade das relações de causa e efeito, o diagrama de causa e efeito tem o foco nas diferentes perspectivas nessas relações. 
-Em resumo, mesmo os pontos de vista sendo diferentes por serem coletados por diferentes membros da equipe, eles tendem a convergir em relação ao problema. Por exemplo se considerarmos que a causa aparente do atrazo na entrega seja problemas frequentes na maquina de montar caixa. Quando usamos a técnica de cinco porques, poderia ficar assim:
+-   Os resultados coletados na análise do diagrama de causa e efeito são conhecidas como `causas aparentes` e são utilizados na identificação da `causa raiz` onde é possível usar a técnica de cinco porques. Enquanto a técnica dos cinco porques tem o foco na profundidade das relações de causa e efeito, o diagrama de causa e efeito tem o foco nas diferentes perspectivas nessas relações. Em resumo, mesmo os pontos de vista sendo diferentes por serem coletados por diferentes membros da equipe, eles tendem a convergir em relação ao problema. Por exemplo se considerarmos que a causa aparente do atrazo na entrega seja problemas frequentes na maquina de montar caixa. Quando usamos a técnica de cinco porques, poderia ficar assim:
     -   **Por que a maquina de montar caixas tem problemas frequentes?**
         -   Por que as caixas possuem formatos diferentes, estão abauladas e as ventosas de sucção da maquina se desgastam rapidamente
     -   **Por que as caixas vem com padrão diferente?**
-        - Por que elas vem de plantas e fornecedores diferentes e sem controle muito rígido de forma e uniformidade.
+        -   Por que elas vem de plantas e fornecedores diferentes e sem controle muito rígido de forma e uniformidade.
     -   **Por que não tem controle de uniformidade?**
-        - Por que há necessidade de redução de custos e as compras são feitas em lotes muito grandes e com base no preço.
+        -   Por que há necessidade de redução de custos e as compras são feitas em lotes muito grandes e com base no preço.
     -   **Por que as compras são feitas com base no preço?**
-        - Por que a consultoria que nos apóia e que sugeriu o procedimento tem sua receita baseada na economia que ela faz. Quanto mais custos ela cortar, melhor ela será recompensada mesmo que sem a intenção isso possa ampliar os problemas no longo prazo para o nosso negócio, portanto, o indicador é inadequado e é um problema de gestão.
+        -   Por que a consultoria que nos apóia e que sugeriu o procedimento tem sua receita baseada na economia que ela faz. Quanto mais custos ela cortar, melhor ela será recompensada mesmo que sem a intenção isso possa ampliar os problemas no longo prazo para o nosso negócio, portanto, o indicador é inadequado e é um problema de gestão.
 
 ## Qual o resultado {.unnumbered}
 
-- Possibilita coletar, analisar e compreender os efeitos e possíveis causas de um problema sob diversos pontos de vista.
-- Possibilia maior cooperação e participação de todos na busca da melhoria contínua dos processos.
-- Geram dados importantes para estratégias de ação e comunicação a cerca de um determinado problema.
+-   Possibilita coletar, analisar e compreender os efeitos e possíveis causas de um problema sob diversos pontos de vista.
 
+-   Possibilia maior cooperação e participação de todos na busca da melhoria contínua dos processos.
+
+-   Geram dados importantes para estratégias de ação e comunicação a cerca de um determinado problema.
 
 ## Referências {.unnumbered}
