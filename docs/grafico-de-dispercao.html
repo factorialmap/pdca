@@ -315,8 +315,8 @@ div.csl-indent {
 <section id="o-que-é" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
 <ul>
-<li>O gráfico de disperção é uma ferramenta estatística que organiza os dados e permite visualizar a relação entre duas variáveis quantitativas(numéricas).</li>
-<li>A dispersão nos mostra quantos os dados estão espalhados em relação uma média por exemplo tendo como a variância e desvio padrão as medidas de dispersão mais comuns.</li>
+<li><p>O gráfico de disperção é uma ferramenta estatística que organiza os dados e permite visualizar a relação entre duas variáveis quantitativas(numéricas).</p></li>
+<li><p>A dispersão nos mostra quantos os dados estão espalhados em relação uma média por exemplo tendo como a variância e desvio padrão as medidas de dispersão mais comuns.</p></li>
 </ul>
 <div class="img-fluid quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -328,15 +328,15 @@ div.csl-indent {
 <section id="qual-o-objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
 <ul>
-<li>Auxiliar na demonstração e identificação de padrões como por exemplo correlação, clusters, outliers, relações lineares e não lineares, disperção da média entre outros.</li>
-<li>Auxliar na análise do fenômeno durante a melhoria de processos.</li>
+<li><p>Auxiliar na demonstração e identificação de padrões como por exemplo correlação, clusters, outliers, relações lineares e não lineares, disperção da média entre outros.</p></li>
+<li><p>Auxliar na análise do fenômeno durante a melhoria de processos.</p></li>
 </ul>
 </section>
 <section id="de-onde-vem" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
 <ul>
-<li>Necessiade de uma ferramenta que forneça suporte visual com aparência simples e completa, que possa ser usado com variáveis dependentes ou independentes, que seja fácil de interpretar e possibilite comunicar os resultados com eficiência.</li>
-<li>Conforme <span class="citation" data-cites="Korteling2018">Korteling, Brouwer, and Toet (<a href="#ref-Korteling2018" role="doc-biblioref">2018</a>)</span>, o cerebro humano funciona de forma altamente associativa buscando por correlações e relações causais o tempo todo e essa característica confere ao ser humano uma capacidade inigualavel de reconhecer padrões regulares e ordenados e tendo dificuldade em lidar com aleatoriedade, imprevisibilidade e caos. Nestas situações, o gráfico de dispersão pode ser muito útil organizando e apresentados dados de uma forma que simplifica o trabalho para o cerebro humano.</li>
+<li><p>Necessiade de uma ferramenta que forneça suporte visual com aparência simples e completa, que possa ser usado com variáveis dependentes ou independentes, que seja fácil de interpretar e possibilite comunicar os resultados com eficiência.</p></li>
+<li><p>Conforme <span class="citation" data-cites="Korteling2018">Korteling, Brouwer, and Toet (<a href="#ref-Korteling2018" role="doc-biblioref">2018</a>)</span>, o cerebro humano funciona de forma altamente associativa buscando por correlações e relações causais o tempo todo e essa característica confere ao ser humano uma capacidade inigualavel de reconhecer padrões regulares e ordenados e tendo dificuldade em lidar com aleatoriedade, imprevisibilidade e caos. Nestas situações, o gráfico de dispersão pode ser muito útil organizando e apresentados dados de uma forma que simplifica o trabalho para o cerebro humano.</p></li>
 </ul>
 </section>
 <section id="como-fazer" class="level2 unnumbered">
@@ -393,18 +393,24 @@ div.csl-indent {
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data_crime <span class="ot">&lt;-</span> </span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/dspiegel29/ArtofStatistics/master/00-1-age-and-year-of-deathofharold-shipmans-victims/00-1-shipman-confirmed-victims-x.csv"</span>) <span class="sc">|&gt;</span>  </span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>()</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>data_crime <span class="sc">|&gt;</span> </span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggscatterhist</span>(<span class="at">x =</span> <span class="st">"fractional_death_year"</span>,</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                        <span class="at">y =</span> <span class="st">"age"</span>,</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                        <span class="at">color =</span> <span class="st">"gender2"</span>,</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                        <span class="at">margin.plot =</span> <span class="st">"histogram"</span>,</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>                        <span class="at">margin.ggtheme =</span> <span class="fu">theme_void</span>(),</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                        <span class="at">palette =</span> <span class="st">"uchicago"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>data_crime <span class="ot">&lt;-</span> </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/dspiegel29/ArtofStatistics/master/00-1-age-and-year-of-deathofharold-shipmans-victims/00-1-shipman-confirmed-victims-x.csv"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>()</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">#plot3 using ggpubr </span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>data_crime <span class="sc">|&gt;</span> </span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggscatterhist</span>(<span class="at">x =</span> <span class="st">"fractional_death_year"</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">y =</span> <span class="st">"age"</span>,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">color =</span> <span class="st">"gender2"</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">margin.plot =</span> <span class="st">"histogram"</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">margin.ggtheme =</span> <span class="fu">theme_void</span>(),</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">palette =</span> <span class="st">"uchicago"</span>,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>                <span class="at">xlab =</span> <span class="st">"Ano"</span>,</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>                <span class="at">ylab =</span> <span class="st">"Idade das vítimas"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -418,15 +424,17 @@ div.csl-indent {
 <section id="pra-onde-vai" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
 <ul>
-<li>No ciclo PDCA o gráfico de dispersão é utilizado principalmente na investigação das características específicas com visão ampla e sobre diversos pontos de vista. Após esta estapa, a próxima é descobrir as causas fundamentais.</li>
-<li>Para decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores. No exemplo apresentado em <span class="citation" data-cites="spiegelhalter2022">Spiegelhalter and Schlesinger (<a href="#ref-spiegelhalter2022" role="doc-biblioref">2022</a>)</span>, o gráfico de dispersão possibilidade visualizar um gap no número de crimes com determinadas características justamente no período em que o criminoso estava fora de ação.</li>
+<li><p>No ciclo PDCA o gráfico de dispersão é utilizado principalmente na investigação das características específicas com visão ampla e sobre diversos pontos de vista. Após esta estapa, a próxima é descobrir as causas fundamentais.</p></li>
+<li><p>Para decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores. No exemplo apresentado em <span class="citation" data-cites="spiegelhalter2022">Spiegelhalter and Schlesinger (<a href="#ref-spiegelhalter2022" role="doc-biblioref">2022</a>)</span>, o gráfico de dispersão possibilidade visualizar um gap no número de crimes com determinadas características justamente no período em que o criminoso estava fora de ação.</p></li>
 </ul>
 </section>
 <section id="qual-o-resultado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
 <ul>
-<li>Apresentar, analisar e comunicar dados de forma eficiente possibilitando a identificação de padrões nos dados e investigação de fenômenos sob diversos pontos de vista.</li>
-<li>Facilidade na leitura e interpretação dos resultados melhorando a compreensão de todos em relação ao problema ou fenômeno.</li>
+<li>Apresentar, analisar e comunicar dados de forma eficiente possibilitando a identificação de padrões nos dados e investigação de fenômenos sob diversos pontos de vista.<br>
+</li>
+<li>Facilidade na leitura e interpretação dos resultados melhorando a compreensão de todos em relação ao problema ou fenômeno.<br>
+</li>
 <li>Por ser uma ferramenta comum, possibilita a reprodutibilidade e uso em praticamente todas as áreas e lugares e por todos os tipos de profissionais que buscam melhorar seus processos.</li>
 </ul>
 </section>

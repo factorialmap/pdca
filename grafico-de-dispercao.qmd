@@ -3,6 +3,7 @@
 ## O que é {.unnumbered}
 
 -   O gráfico de disperção é uma ferramenta estatística que organiza os dados e permite visualizar a relação entre duas variáveis quantitativas(numéricas).
+
 -   A dispersão nos mostra quantos os dados estão espalhados em relação uma média por exemplo tendo como a variância e desvio padrão as medidas de dispersão mais comuns.
 
 ![Figura - Grafico de disperção](images/scatter_plot.png)
@@ -10,11 +11,13 @@
 ## Qual o objetivo {.unnumbered}
 
 -   Auxiliar na demonstração e identificação de padrões como por exemplo correlação, clusters, outliers, relações lineares e não lineares, disperção da média entre outros.
+
 -   Auxliar na análise do fenômeno durante a melhoria de processos.
 
 ## De onde vem {.unnumbered}
 
 -   Necessiade de uma ferramenta que forneça suporte visual com aparência simples e completa, que possa ser usado com variáveis dependentes ou independentes, que seja fácil de interpretar e possibilite comunicar os resultados com eficiência.
+
 -   Conforme @Korteling2018, o cerebro humano funciona de forma altamente associativa buscando por correlações e relações causais o tempo todo e essa característica confere ao ser humano uma capacidade inigualavel de reconhecer padrões regulares e ordenados e tendo dificuldade em lidar com aleatoriedade, imprevisibilidade e caos. Nestas situações, o gráfico de dispersão pode ser muito útil organizando e apresentados dados de uma forma que simplifica o trabalho para o cerebro humano.
 
 ## Como fazer {.unnumbered}
@@ -53,30 +56,36 @@ ames |>
 Neste exemplo temos um gráfico que nos mostra um gap entre os períodos de 1990 até 1992.
 
 ```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+library(ggpubr)
+
 data_crime <- 
-  read.csv("https://raw.githubusercontent.com/dspiegel29/ArtofStatistics/master/00-1-age-and-year-of-deathofharold-shipmans-victims/00-1-shipman-confirmed-victims-x.csv") |>  
+  read.csv("https://raw.githubusercontent.com/dspiegel29/ArtofStatistics/master/00-1-age-and-year-of-deathofharold-shipmans-victims/00-1-shipman-confirmed-victims-x.csv") %>% 
   janitor::clean_names()
 
 
+#plot3 using ggpubr 
 data_crime |> 
   ggscatterhist(x = "fractional_death_year",
-                        y = "age",
-                        color = "gender2",
-                        margin.plot = "histogram",
-                        margin.ggtheme = theme_void(),
-                        palette = "uchicago")
-
+                y = "age",
+                color = "gender2",
+                margin.plot = "histogram",
+                margin.ggtheme = theme_void(),
+                palette = "uchicago",
+                xlab = "Ano",
+                ylab = "Idade das vítimas")
 ```
 
 ## Pra onde vai {.unnumbered}
 
 -   No ciclo PDCA o gráfico de dispersão é utilizado principalmente na investigação das características específicas com visão ampla e sobre diversos pontos de vista. Após esta estapa, a próxima é descobrir as causas fundamentais.
+
 -   Para decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores. No exemplo apresentado em @spiegelhalter2022, o gráfico de dispersão possibilidade visualizar um gap no número de crimes com determinadas características justamente no período em que o criminoso estava fora de ação.
 
 ## Qual o resultado {.unnumbered}
 
--   Apresentar, analisar e comunicar dados de forma eficiente possibilitando a identificação de padrões nos dados e investigação de fenômenos sob diversos pontos de vista.
--   Facilidade na leitura e interpretação dos resultados melhorando a compreensão de todos em relação ao problema ou fenômeno.
+-   Apresentar, analisar e comunicar dados de forma eficiente possibilitando a identificação de padrões nos dados e investigação de fenômenos sob diversos pontos de vista.\
+-   Facilidade na leitura e interpretação dos resultados melhorando a compreensão de todos em relação ao problema ou fenômeno.\
 -   Por ser uma ferramenta comum, possibilita a reprodutibilidade e uso em praticamente todas as áreas e lugares e por todos os tipos de profissionais que buscam melhorar seus processos.
 
 ## Referências {.unnumbered}
