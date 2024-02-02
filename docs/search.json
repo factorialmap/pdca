@@ -254,7 +254,7 @@
     "href": "diagrama-causa-efeito.html#o-que-é",
     "title": "5  Diagrama de Causa e Efeito",
     "section": "O que é",
-    "text": "O que é\n\nO diagrama de causa e efeito é uma ferramenta que ajuda a representar com certa facilidade a estrutura do pensamento humano diante de situações e problemas complicados de se resolver.\nPor se tratar de uma ferramenta gráfica, facilita identificar uma relação significativa sob diversos pontos de vista entre o efeito e suas possíveis causas Werkema (2021).\nConforme (Kume1987?) construir um gráfico de causa e efeito que seja útil exige esforço, treinamento da equipe e tempo. Pessoas que tem sucesso na solução de problemas de controle de qualidade são aqueles bem sucedidas na construção de diagramas de causa e efeito úteis.\n\n\n\n\nFigura - Diagrama de causa e efeito",
+    "text": "O que é\n\nO diagrama de causa e efeito é uma ferramenta que ajuda a representar com certa facilidade a estrutura do pensamento humano diante de situações e problemas complicados de se resolver.\nPor se tratar de uma ferramenta gráfica, facilita identificar uma relação significativa sob diversos pontos de vista entre o efeito e suas possíveis causas Werkema (2021).\nConforme Kume (1987) construir um gráfico de causa e efeito que seja útil exige esforço, treinamento da equipe e tempo. Pessoas que tem sucesso na solução de problemas de controle de qualidade são aqueles bem sucedidas na construção de diagramas de causa e efeito úteis.\n\n\n\n\nFigura - Diagrama de causa e efeito",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagrama de Causa e Efeito</span>"
     ]
@@ -724,7 +724,7 @@
     "href": "diagrama-causa-efeito.html#referências",
     "title": "5  Diagrama de Causa e Efeito",
     "section": "Referências",
-    "text": "Referências\n\n\n\n\nHelena, Lucia. 2022. “EDUCAÇÃO MIDIÁTICA: Uma visão filosófica.” https://www.youtube.com/.\n\n\nScrucca, Luca. 2004. “Qcc: An R Package for Quality Control Charting and Statistical Process Control.” R News 4/1: 11–17. https://cran.r-project.org/doc/Rnews/.\n\n\nWerkema, Cristina. 2021. Métodos PDCA e Demaic e Suas Ferramentas Analíticas. 1ª edição. GEN Atlas.",
+    "text": "Referências\n\n\n\n\nHelena, Lucia. 2022. “EDUCAÇÃO MIDIÁTICA: Uma visão filosófica.” https://www.youtube.com/.\n\n\nKume, Hitoshi. 1987. Statistical Methods for Quality Improvement. 1ª edição. Tokyo: Productivity Press.\n\n\nScrucca, Luca. 2004. “Qcc: An R Package for Quality Control Charting and Statistical Process Control.” R News 4/1: 11–17. https://cran.r-project.org/doc/Rnews/.\n\n\nShatz, Itamar. 2024. “The Curse of Knowledge: A Difficulty in Understanding Less-Informed Perspectives  Effectiviology.” https://effectiviology.com/curse-of-knowledge/.\n\n\nWerkema, Cristina. 2021. Métodos PDCA e Demaic e Suas Ferramentas Analíticas. 1ª edição. GEN Atlas.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diagrama de Causa e Efeito</span>"
     ]
