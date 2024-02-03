@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -260,47 +294,86 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="o-que-é" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
-<p>O gráfico de Pareto ou gráfico 80/20 é um tipo específico de histograma ordenado por frequência de ocorrência da maior para a menor. Sua origem decorre de estudos do economista italiano Vilfredo Pareto, no qual ele afirma que para muitos fenômenos, 80% das consequências advêm de 20% das causas. Esses estudos foram aprofundados por Joseph Moses Juran, o qual expandiu essa lei para a esfera organizacional nos Estados Unidos a partir da década de 1930 (BRASSARD, 1994).</p>
+<ul>
+<li><p>É uma ferramenta usada na análise de fenômenos. O fenômeno pode ser um problema, uma falha, uma oportunidade ou outros tipos.</p></li>
+<li><p>O gráfico ordena os fatores de forma decrescente mostrando primeiro os mais frequentes considerados <strong>vitais</strong>, e na sequência os menos frequentes considerados <strong>triviais</strong>. Ao mesmo tempo, aprensenta uma linha que mostra a proporção acumulada desses fatores. Daí surge a ideia de que 80% dos problemas são causados por 20% das causas que no gráfico estão representados na cor vermelha.</p></li>
+<li><p>Foi criado pelo economista Vilfredo Pareto em 1897 que queria demonstrar a diferença na distribuição de renda da população, usando também por Lorenz em 1907. Na década de 60, foi usado por Joseph Moses Juran para classificar problemas de qualidade. Os resultados dos treinamentos e aplicação dessa e outro conjunto de ferramentas apareceram 20 anos depois quando em 1970 os produtos japoneses começaram a ser vistos como líderes em qualidade e permanecendo até os dias atuais.</p></li>
+</ul>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pareto.png" class="img-fluid figure-img"></p>
+<figcaption>Figura - Gráfico de Pareto</figcaption>
+</figure>
+</div>
 </section>
 <section id="qual-o-objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
 <ul>
-<li>Identificar quais causas seriam responsáveis pela maior parcela dos efeitos.</li>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>Permitir que o gestor consiga analisar o fenômeno com mais eficiência e com perspectivas diferentes como perspectiva de valume, custo, efeito e causa.</p></li>
+<li><p>Organizar a distribuição dos dados do maior para o menor, mostrar a proporção acumulada de forma clara e que todos consigam entender.</p></li>
+<li><p>Ser uma ferramenta simples para análise de fenômenos e ao mesmo tempo robusta, confiável e reproduzível.</p></li>
 </ul>
 </section>
 <section id="de-onde-vem" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>Necessidade de análise o fenômeno sob diversos pontos de vista. O pareto permite observar o fenômeno na perspectiva de volume, custo, causas e efeitos.</p></li>
+<li><p>Evitar o vies cognitivo como a ancoragem. explica que diferente do computador que quando não queremos uma informação apenas apagamos, a informação percebida e processada no cerebro humano não pode simplesmente ser ignorada ou posta de lado. Isso significa que o julgamento e as decisões são afetadas pelos efeitos persistentes de informação que foram fornecidas e processadas anteriormente. Nesta situação, o gráfico de pareto pode ser útil para evitar raciocínios tendenciosos como vies da ancoragem, efeito de dotação, vies retrospectivo e viés de resultado.</p></li>
 </ul>
 </section>
 <section id="como-fazer" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li>É recomendado fazer graficos de pareto para causa e para efeito. O gráfico de efeitos mostrará os efeitos é usado para identificar qual o maior problema. Já o de causa é usado para identificar quais as maiores causas.</li>
 </ul>
+<p>Exemplos</p>
+<pre><code>-   Efeito: defeitos, falhas, gastos, atrazos ne entrega, acidentes, enganos.
+
+-   Causa: experiência, lote, tipo, métodos, condições, equipamentos, modelos, instrumentos.</code></pre>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggQC)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">type_nc =</span> <span class="fu">c</span>(<span class="st">"scratch"</span>,<span class="st">"spots"</span>,<span class="st">"folds"</span>,<span class="st">"holes"</span>,<span class="st">"rips"</span>),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">qty =</span> <span class="fu">c</span>(<span class="dv">201</span>,<span class="dv">78</span>,<span class="dv">47</span>,<span class="dv">31</span>,<span class="dv">15</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">cost =</span> <span class="fu">c</span>(<span class="dv">4287</span>,<span class="dv">2423</span>,<span class="dv">1119</span>,<span class="dv">8947</span>,<span class="dv">1864</span>))</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span>  </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(cost)) <span class="sc">|&gt;</span>  </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">type_nc =</span> <span class="fu">fct_reorder</span>(type_nc, <span class="fu">desc</span>(cost))) <span class="sc">|&gt;</span>  </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> type_nc, </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>             <span class="at">y =</span> cost))<span class="sc">+</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_pareto</span>(<span class="at">point.color =</span> <span class="st">"darkgray"</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>              <span class="at">point.size =</span> <span class="dv">2</span>,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>              <span class="at">line.color =</span> <span class="st">"darkgray"</span>,</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>              <span class="at">bars.fill =</span> <span class="fu">c</span>(<span class="st">"#ee3a58"</span>,<span class="st">"#46b29e"</span>))<span class="sc">+</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Tipo não conformidade"</span>,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Custo"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="grafico-pareto_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="pra-onde-vai" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>A análise do fenômeno é a etapa 2 do ciclo PDCA sendo assim o próximo passo é a identificação da causa raiz responsável pelo efeito.</p></li>
+<li><p>Em situações quem a solução para determinado problema seja de fácil tratamento, esta pode ser realizada imediatamente não sendo necessário os demais passos.</p></li>
 </ul>
 </section>
 <section id="qual-o-resultado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>Clareza, facilidade e confiabilidade na análise de fenômenos.</p></li>
+<li><p>Melhora a compreensão da equipe a respeito do problema que está sendo investigado com dados para dar suporte as intuições.</p></li>
+<li><p>Potencializa as capacidades de análises mais profundas sobre fenômenos, evitando medidas paliativas.</p></li>
 </ul>
 </section>
 <section id="referências" class="level2 unnumbered">
