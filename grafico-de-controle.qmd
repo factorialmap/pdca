@@ -25,6 +25,7 @@ Uma das dificuldades das empresas ao trabalhar com gráficos de controle, é dif
 
 Nas causas comuns, as características são bem diferentes pois apresentam na maioria das vezes, grandes perdas monetárias, a visibilidade do problema se torna difícil por causa da natureza contínua, a coleta e análise dos dados se tornam complexas e devem ser realizadas por equipe técnica cuja responsabilidade para as ações fica por conta da administração, pois se trata de mudanças no sistema ou projeto (DEMING, 2003).
 
+O estatístico Shewhart propôs para a industria japonesa um gráfico de controle para análise de dados resultantes de inspeção. Isso fez com que a importância dada a procedimentos de inspeção e correção de produtos defeituosos começasse a ser substituída por estudos e prevenção dos problemas relacionados à qualidade garantindo que o possível defeito do produto fosse eliminado durante o processo e não após o término @ferro1997.
 
 
 ## Qual o objetivo {.unnumbered}
@@ -56,5 +57,7 @@ Nas causas comuns, as características são bem diferentes pois apresentam na ma
 - A
 - B
 - C
+
+![Figura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado](images/step_67.png)
 
 ## Referências {.unnumbered}

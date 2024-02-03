@@ -28,6 +28,8 @@ Os cinco porquês é uma técnica criada por Sakichi Toyoda no Japão e é utili
 -   Os dados sobre o problema e a causa raiz são registrados e analisados e utilizados para a melhoria do processo e busca de melhores soluções.
 -   A técnica dos cinco porques é uma ferramenta complementar, nos dará a base e não as respostas para o problema. As respostas precisam de ações.
 
+![Figura - Etapa 3 do PDCA: Descobrir causa raíz do problema](images/step_3.png)
+
 ## Qual o resultado {.unnumbered}
 
 -   O habito de usar o cinco porques pode influenciar na visão que o ser humano tem do mundo onde as relações entre os diferentes elementos contidos no ambiente ficam mais claras e evidentes, logo, a forma de lidar também muda.

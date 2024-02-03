@@ -81,7 +81,10 @@ graph LR
 ## Pra onde vai {.unnumbered}
 
 -   O fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias, formulação de estratégias entre outras aplicações.
--   Como se trata de uma ferramenta de análise de fenômeno ele fornece dados para o próximo passo que é a analise de causa raiz do problema
+
+-   Uma das aplicações do fluxograma de processos é na etapa 1 do PDCA que trata da definição e reconhecimento do problema. Após o desenho do processo e reconhecimento do problema a próxima etapa é a análise do fenômeno sob diversos pontos de vista.
+
+![Figura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância](images/step_1.png)
 
 ## Qual o resultado {.unnumbered}
 
@@ -91,4 +94,4 @@ graph LR
 
 -   Maior rapidez na identificação de problemas e identificação de pontos de melhoria pois ilustrações e figuras são melhores armazenadas na memória humana.
 
-##    Referências {.unnumbered}
+## Referências {.unnumbered}

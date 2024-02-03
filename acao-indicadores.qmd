@@ -1,0 +1,40 @@
+# Gráfico de controle
+
+## O que é {.unnumbered}
+
+O gráfico de controle ou carta de controle como também é conhecido, é uma ferramenta gráfica criada pelo estatístico americano Walter Andrew Shewhart em 1924 como um método de analisar e ajustar variações de um processo em função do tempo. 
+
+
+## Qual o objetivo {.unnumbered}
+
+- A
+- B
+- C
+
+## De onde vem {.unnumbered}
+
+- A
+- B
+- C
+
+## Como fazer {.unnumbered}
+
+- A
+- B
+- C
+
+## Pra onde vai {.unnumbered}
+
+- A
+- B
+- C
+
+![Figura - Etapa 5 do PDCA: Aplicar as ações e criar indicadores para avaliar os resultados](images/step_5.png)
+
+## Qual o resultado {.unnumbered}
+
+- A
+- B
+- C
+
+## Referências {.unnumbered}

@@ -12,7 +12,7 @@
 
 ## Qual o objetivo {.unnumbered}
 
--   Permitir que o gestor consiga analisar o fenômeno com mais eficiência e com perspectivas diferentes como perspectiva de valume, custo, efeito e causa.
+-   Permitir que o gestor consiga analisar o fenômeno com mais eficiência e com perspectivas diferentes como perspectiva de volume(frequencia, quantidade), custo, efeito e causa.
 
 -   Organizar a distribuição dos dados do maior para o menor, mostrar a proporção acumulada de forma clara e que todos consigam entender.
 
@@ -62,6 +62,9 @@ df |>
 -   A análise do fenômeno é a etapa 2 do ciclo PDCA sendo assim o próximo passo é a identificação da causa raiz responsável pelo efeito.
 
 -   Em situações quem a solução para determinado problema seja de fácil tratamento, esta pode ser realizada imediatamente não sendo necessário os demais passos.
+
+![Figura - Etapa 2 do PDCA: Análise do fenômeno](images/step_2.png)
+
 
 ## Qual o resultado {.unnumbered}
 

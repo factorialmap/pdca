@@ -23,6 +23,8 @@ O check list ou folha de verificação é uma ferramenta simples usada para cole
 
 -   O cerebro humano tem mais facilidade em lidar com situações em que as operações são organizadas e ordenadas, neste sentido o check list auxilia no ganho de tempo e estabilidade principalmente em situações que demandam maior controle e precisão. Exemplo o pouso de um módulo na superfície da lua.
 
+![Figura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância](images/step_1.png)
+
 ## Como fazer {.unnumbered}
 
 Segundo @kume1992 , existem alguns preceitos básicos na elaboração de um check list, que é o agrupamento de elementos com características semelhantes tendo causa e soluções comuns, além de dividi-los em algumas categorias:

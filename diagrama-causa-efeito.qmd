@@ -72,6 +72,8 @@ cause.and.effect(
         -   Por que há necessidade de redução de custos e as compras são feitas em lotes muito grandes e com base no preço.
     -   **Por que as compras são feitas com base no preço?**
         -   Por que a consultoria que nos apóia e que sugeriu o procedimento tem sua receita baseada na economia que ela faz. Quanto mais custos ela cortar, melhor ela será recompensada mesmo que sem a intenção isso possa ampliar os problemas no longo prazo para o nosso negócio, portanto, o indicador é inadequado e é um problema de gestão.
+        
+![Figura - Etapa 3 do PDCA: Descobrir causa raíz do problema](images/step_3.png)
 
 ## Qual o resultado {.unnumbered}
 

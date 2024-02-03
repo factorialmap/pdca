@@ -31,16 +31,18 @@ book:
     - index.qmd
     - intro.qmd
     - conceitos.qmd
-    - fluxograma-de-processos.qmd
     - cinco-s.qmd
-    - cinco-porques.qmd
-    - diagrama-causa-efeito.qmd
     - check-list.qmd
-    - grafico-de-dispercao.qmd
+    - fluxograma-de-processos.qmd
     - grafico-pareto.qmd
-    - grafico-de-controle.qmd
+    - grafico-de-dispercao.qmd
+    - diagrama-causa-efeito.qmd
+    - cinco-porques.qmd
     - plano-de-acao.qmd
+    - acao-indicadores.qmd
+    - grafico-de-controle.qmd
     - relatorio-tres-geracoes.qmd
+    - padronizacao.qmd
 
 format:
   html:
