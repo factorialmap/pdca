@@ -18,10 +18,11 @@ O check list ou folha de verificação é uma ferramenta simples usada para cole
 
 ![Figura - Check list do serviço de manutenção do Tesla Model S](images/check_list.jpg)
 
-
 -   Necessidade de execução de determinados procedimentos para garantir a melhor eficiência em um processo. Exemplo checklist ou lista de verificações pré voo em uma aeronave que são executadas pelos pilotos em momento diferentes durante um voo gerando mais eficiência e segurança.
 
 -   O cerebro humano tem mais facilidade em lidar com situações em que as operações são organizadas e ordenadas, neste sentido o check list auxilia no ganho de tempo e estabilidade principalmente em situações que demandam maior controle e precisão. Exemplo o pouso de um módulo na superfície da lua.
+
+-   Necessidade de definir claramente o problema e reconhecer sua importância. Esta ferramenta é usada na etapa 1 do método PDCA.
 
 ![Figura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância](images/step_1.png)
 
@@ -42,6 +43,8 @@ Segundo @kume1992 , existem alguns preceitos básicos na elaboração de um chec
 -   O check-list estimula o cerebro na identificação de etapas, procedimentos ou ações necessárias para o bom desempenho de um processo ou alcance de um objetivo.
 
 -   Os dados coletados podem ser armazenados para registro de log, como rastreabilidade e histórico de serviços, para elaboração de modelos preditivos como por exemplo um modelo de machine learning para prever defeitos ou vida útil de equipamentos. Os dados também podem ser utilizados como previsão de demanda de materiais bem como na análise e melhoria de processos.
+
+![Figura - Etapa 2 do PDCA: Análise do fenômeno](images/step_2.png)
 
 ## Qual o resultado {.unnumbered}
 

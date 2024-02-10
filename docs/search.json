@@ -174,7 +174,7 @@
     "href": "check-list.html#de-onde-vem",
     "title": "3  Check-list",
     "section": "De onde vem",
-    "text": "De onde vem\n\nNecessidade de coleta de dados e economia de tempo, pois elimina a necessidade de desenhar figuras ou escrever números repetitivos, e evita também que problemas como falhas na interpretação comprometam o tratamento e análise dos dados, principalmente em situações em que várias pessoas participam da etapa de coleta Werkema (2021). Exemplo em uma oficina de manutenção de equipamentos.\n\n\n\n\nFigura - Check list do serviço de manutenção do Tesla Model S\n\n\n\nNecessidade de execução de determinados procedimentos para garantir a melhor eficiência em um processo. Exemplo checklist ou lista de verificações pré voo em uma aeronave que são executadas pelos pilotos em momento diferentes durante um voo gerando mais eficiência e segurança.\nO cerebro humano tem mais facilidade em lidar com situações em que as operações são organizadas e ordenadas, neste sentido o check list auxilia no ganho de tempo e estabilidade principalmente em situações que demandam maior controle e precisão. Exemplo o pouso de um módulo na superfície da lua.\n\n\n\n\nFigura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância",
+    "text": "De onde vem\n\nNecessidade de coleta de dados e economia de tempo, pois elimina a necessidade de desenhar figuras ou escrever números repetitivos, e evita também que problemas como falhas na interpretação comprometam o tratamento e análise dos dados, principalmente em situações em que várias pessoas participam da etapa de coleta Werkema (2021). Exemplo em uma oficina de manutenção de equipamentos.\n\n\n\n\nFigura - Check list do serviço de manutenção do Tesla Model S\n\n\n\nNecessidade de execução de determinados procedimentos para garantir a melhor eficiência em um processo. Exemplo checklist ou lista de verificações pré voo em uma aeronave que são executadas pelos pilotos em momento diferentes durante um voo gerando mais eficiência e segurança.\nO cerebro humano tem mais facilidade em lidar com situações em que as operações são organizadas e ordenadas, neste sentido o check list auxilia no ganho de tempo e estabilidade principalmente em situações que demandam maior controle e precisão. Exemplo o pouso de um módulo na superfície da lua.\nNecessidade de definir claramente o problema e reconhecer sua importância. Esta ferramenta é usada na etapa 1 do método PDCA.\n\n\n\n\nFigura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Check-list</span>"
     ]
@@ -194,7 +194,7 @@
     "href": "check-list.html#pra-onde-vai",
     "title": "3  Check-list",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nO check-list estimula o cerebro na identificação de etapas, procedimentos ou ações necessárias para o bom desempenho de um processo ou alcance de um objetivo.\nOs dados coletados podem ser armazenados para registro de log, como rastreabilidade e histórico de serviços, para elaboração de modelos preditivos como por exemplo um modelo de machine learning para prever defeitos ou vida útil de equipamentos. Os dados também podem ser utilizados como previsão de demanda de materiais bem como na análise e melhoria de processos.",
+    "text": "Pra onde vai\n\nO check-list estimula o cerebro na identificação de etapas, procedimentos ou ações necessárias para o bom desempenho de um processo ou alcance de um objetivo.\nOs dados coletados podem ser armazenados para registro de log, como rastreabilidade e histórico de serviços, para elaboração de modelos preditivos como por exemplo um modelo de machine learning para prever defeitos ou vida útil de equipamentos. Os dados também podem ser utilizados como previsão de demanda de materiais bem como na análise e melhoria de processos.\n\n\n\n\nFigura - Etapa 2 do PDCA: Análise do fenômeno",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Check-list</span>"
     ]
@@ -244,7 +244,7 @@
     "href": "fluxograma-de-processos.html#de-onde-vem",
     "title": "4  Fluxograma de Processos",
     "section": "De onde vem",
-    "text": "De onde vem\n\nO fluxograma ou desenho de um processo vem da necessidade ter uma visão geral daquilo que está sendo analisado, estudado ou discutido para compreender melhor as relações e interações entre os elementos. Com isso, permitir que ideias, melhorias possam ser geradas ou até estratégias ou planos táticos possam ser propostos.",
+    "text": "De onde vem\n\nO fluxograma ou desenho de um processo vem da necessidade ter uma visão geral daquilo que está sendo analisado, estudado ou discutido para compreender melhor as relações e interações entre os elementos. Com isso, permitir que ideias, melhorias possam ser geradas ou até estratégias ou planos táticos possam ser propostos.\n\n\n\n\nFigura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
     ]
@@ -264,7 +264,7 @@
     "href": "fluxograma-de-processos.html#pra-onde-vai",
     "title": "4  Fluxograma de Processos",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nO fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias, formulação de estratégias entre outras aplicações.\nUma das aplicações do fluxograma de processos é na etapa 1 do PDCA que trata da definição e reconhecimento do problema. Após o desenho do processo e reconhecimento do problema a próxima etapa é a análise do fenômeno sob diversos pontos de vista.\n\n\n\n\nFigura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância",
+    "text": "Pra onde vai\n\nO fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias, formulação de estratégias entre outras aplicações.\nUma das aplicações do fluxograma de processos é na etapa 1 do PDCA que trata da definição e reconhecimento do problema. Após o desenho do processo e reconhecimento do problema a próxima etapa é a análise do fenômeno sob diversos pontos de vista.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
     ]
@@ -314,7 +314,7 @@
     "href": "grafico-pareto.html#de-onde-vem",
     "title": "5  Gráfico de Pareto",
     "section": "De onde vem",
-    "text": "De onde vem\n\nNecessidade de análise o fenômeno sob diversos pontos de vista. O pareto permite observar o fenômeno na perspectiva de volume, custo, causas e efeitos.\nEvitar o vies cognitivo como a ancoragem. explica que diferente do computador que quando não queremos uma informação apenas apagamos, a informação percebida e processada no cerebro humano não pode simplesmente ser ignorada ou posta de lado. Isso significa que o julgamento e as decisões são afetadas pelos efeitos persistentes de informação que foram fornecidas e processadas anteriormente. Nesta situação, o gráfico de pareto pode ser útil para evitar raciocínios tendenciosos como vies da ancoragem, efeito de dotação, vies retrospectivo e viés de resultado.",
+    "text": "De onde vem\n\nNecessidade de análise o fenômeno sob diversos pontos de vista. O pareto permite observar o fenômeno na perspectiva de volume, custo, causas e efeitos.\nEvitar o vies cognitivo como a ancoragem. explica que diferente do computador que quando não queremos uma informação apenas apagamos, a informação percebida e processada no cerebro humano não pode simplesmente ser ignorada ou posta de lado. Isso significa que o julgamento e as decisões são afetadas pelos efeitos persistentes de informação que foram fornecidas e processadas anteriormente. Nesta situação, o gráfico de pareto pode ser útil para evitar raciocínios tendenciosos como vies da ancoragem, efeito de dotação, vies retrospectivo e viés de resultado.\n\n\n\n\nFigura - Etapa 2 do PDCA: Análise do fenômeno",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gráfico de Pareto</span>"
     ]
@@ -334,7 +334,7 @@
     "href": "grafico-pareto.html#pra-onde-vai",
     "title": "5  Gráfico de Pareto",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nA análise do fenômeno é a etapa 2 do ciclo PDCA sendo assim o próximo passo é a identificação da causa raiz responsável pelo efeito.\nEm situações quem a solução para determinado problema seja de fácil tratamento, esta pode ser realizada imediatamente não sendo necessário os demais passos.\n\n\n\n\nFigura - Etapa 2 do PDCA: Análise do fenômeno",
+    "text": "Pra onde vai\n\nA análise do fenômeno é a etapa 2 do ciclo PDCA sendo assim o próximo passo é a identificação da causa raiz responsável pelo efeito.\nEm situações quem a solução para determinado problema seja de fácil tratamento, esta pode ser realizada imediatamente não sendo necessário os demais passos.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gráfico de Pareto</span>"
     ]
@@ -384,7 +384,7 @@
     "href": "grafico-de-dispercao.html#de-onde-vem",
     "title": "6  Gráfico de Disperção",
     "section": "De onde vem",
-    "text": "De onde vem\n\nNecessiade de uma ferramenta que forneça suporte visual com aparência simples e completa, que possa ser usado com variáveis dependentes ou independentes, que seja fácil de interpretar e possibilite comunicar os resultados com eficiência.\nConforme Korteling, Brouwer, and Toet (2018), o cerebro humano funciona de forma altamente associativa buscando por correlações e relações causais o tempo todo e essa característica confere ao ser humano uma capacidade inigualavel de reconhecer padrões regulares e ordenados e tendo dificuldade em lidar com aleatoriedade, imprevisibilidade e caos. Nestas situações, o gráfico de dispersão pode ser muito útil organizando e apresentados dados de uma forma que simplifica o trabalho para o cerebro humano.",
+    "text": "De onde vem\n\nNecessiade de uma ferramenta que forneça suporte visual com aparência simples e completa, que possa ser usado com variáveis dependentes ou independentes, que seja fácil de interpretar e possibilite comunicar os resultados com eficiência.\nConforme Korteling, Brouwer, and Toet (2018), o cerebro humano funciona de forma altamente associativa buscando por correlações e relações causais o tempo todo e essa característica confere ao ser humano uma capacidade inigualavel de reconhecer padrões regulares e ordenados e tendo dificuldade em lidar com aleatoriedade, imprevisibilidade e caos. Nestas situações, o gráfico de dispersão pode ser muito útil organizando e apresentados dados de uma forma que simplifica o trabalho para o cerebro humano.\n\n\n\n\nFigura - Etapa 2 do PDCA: Análise do fenômeno",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
     ]
@@ -404,7 +404,7 @@
     "href": "grafico-de-dispercao.html#pra-onde-vai",
     "title": "6  Gráfico de Disperção",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nNo ciclo PDCA o gráfico de dispersão é utilizado principalmente na investigação das características específicas com visão ampla e sobre diversos pontos de vista. Após esta estapa, a próxima é descobrir as causas fundamentais.\nPara decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores. No exemplo apresentado em Spiegelhalter and Schlesinger (2022), o gráfico de dispersão possibilidade visualizar um gap no número de crimes com determinadas características justamente no período em que o criminoso estava fora de ação.\n\n\n\n\nFigura - Etapa 2 do PDCA: Análise do fenômeno",
+    "text": "Pra onde vai\n\nNo ciclo PDCA o gráfico de dispersão é utilizado principalmente na investigação das características específicas com visão ampla e sobre diversos pontos de vista. Após esta estapa, a próxima é descobrir as causas fundamentais.\nPara decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores. No exemplo apresentado em Spiegelhalter and Schlesinger (2022), o gráfico de dispersão possibilidade visualizar um gap no número de crimes com determinadas características justamente no período em que o criminoso estava fora de ação.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
     ]
@@ -454,7 +454,17 @@
     "href": "diagrama-causa-efeito.html#de-onde-vem",
     "title": "7  Diagrama de Causa e Efeito",
     "section": "De onde vem",
-    "text": "De onde vem\n\nUm professor na universidade de Tokyo Kaoru Ishikawa, usou um diagrama para sintetizar opiniões de engenheiros nas fábricas durante discussões sobre qualidade em 1953. Conforme Kume (1987), alunos de Ishikawa também empregaram o método para organizar fatores em suas atividades de pesquisa.\nPela simplicidade e eficiência da ferramenta, ela foi adotada e incorporada aos JIS (Japanese Industrial Standards).\nDe acordo com Shatz (2024) , um viés cognitivo conhecido como a maldição do conhecimento faz com que as pessoas não consigam compreender adequadamente a perspectiva de quem não possui tantas informações quanto elas. Uma pessoa experiente em uma tarefa pode ter dificuldades para ensinar iniciantes por pressupor intuitivamente que as coisas são obvias para eles, logo também são óbvias para o iniciante, mesmo que não seja o caso. O diagrama de causa e efeito pode ser útil nesses casos, pois quando bem empregado, rompe a barreira do medo e coleta a perspectiva de vários membros da equipe sobre determinado problema resultados os quais, podem ser reveladores e muito úteis.\nObter pontos de vistas diferentes pode ser fundamental durante um processo de melhoria contínua. Conforme Helena (2022), tente imaginar um fato Um veículo bateu em um poste e imagine também algumas versões desse fato.\n\nVersão física: Um corpo foi machucado, um carro amassado e um poste derrubado.\nVersão economica: O custo do medicamento, o custo do carro, o custo do poste, o tempo perdido, trabalho necessário para recompor o ambiente.\nVersão social: Pessoas abaladas, assustadas, uma criança que passava no local chorou muito, e o motorista ficou em estado de choque.\nVersão analítica: A velocidade não era adequada para pista, a posição do sinaleiro não dava uma boa visibilidade para o motorista, o automóvel tem uma característica mecanica que provoca frenagem muito brusca.\nVersão ampla: Considerar as versões anteriores e trabalhar em uma decisão que beneficie os envolvidos, vendo a parcela de responsabilidade de cada um e como o problema pode ser resolvido com o mínimo dano. A ideia é reduzir os impactos negativos para a sociedade, ao memo tempo impedir que motorista seja massacrado e penalizado por aquilo que não tenha sido de seu controle. Que situações desse tipo, possam ser corrigidas e melhoradas minimizando ou neutralizando os fatores responsáveis pelo problema e reduzindo a probabilidade que o mesmo ocorra no futuro.\n\nComo fazer\n\n\nEm uma ponta você colocar o efeito, e as ideias sobre as possíveis causas aparentes são coletadas de times multidisciplinares.\nVocê pode usar uma folha de papel e se preferir usar o R você pode usar o pacote qcc criado por Scrucca (2004)\nA percepção e necessidade de inclusão de causas secundárias e terciárias virão com a prática. E isso significa o amadurecimendo da técnica que exigirá respostas cada vez mais elaboradas e com maior interação com o time.\n\n\n\nCode\nlibrary(qcc)\n\ncause.and.effect(\n  cause = list(Equipamento = c(\"Problema freq. \\n na maquina \\n de montar caixas\"),\n               Processo = c(\"Manual \\n desatualizado\"),\n               Pessoas = c(\"Rotatividade \\n de pessoal\"),\n               Materiais = c(\"Embalagens com \\n padrão diferente\"),\n               Ambiente = c(\"Variação brusca \\n de temperatura\"),\n               Gestão = c(\"Indicador inadequado\")),\n  effect=\"Atrazo na \\n entrega\",\n  title = \"Diagrama de causa e efeito\")",
+    "text": "De onde vem\n\nUm professor na universidade de Tokyo Kaoru Ishikawa, usou um diagrama para sintetizar opiniões de engenheiros nas fábricas durante discussões sobre qualidade em 1953. Conforme Kume (1987), alunos de Ishikawa também empregaram o método para organizar fatores em suas atividades de pesquisa.\nPela simplicidade e eficiência da ferramenta, ela foi adotada e incorporada aos JIS (Japanese Industrial Standards).\n\n\n\n\nFigura - Etapa 3 do PDCA: Descobrir causa raíz do problema\n\n\n\nDe acordo com Shatz (2024) , um viés cognitivo conhecido como a maldição do conhecimento faz com que as pessoas não consigam compreender adequadamente a perspectiva de quem não possui tantas informações quanto elas. Uma pessoa experiente em uma tarefa pode ter dificuldades para ensinar iniciantes por pressupor intuitivamente que as coisas são obvias para eles, logo também são óbvias para o iniciante, mesmo que não seja o caso. O diagrama de causa e efeito pode ser útil nesses casos, pois quando bem empregado, rompe a barreira do medo e coleta a perspectiva de vários membros da equipe sobre determinado problema resultados os quais, podem ser reveladores e muito úteis.\nObter pontos de vistas diferentes pode ser fundamental durante um processo de melhoria contínua. Conforme Helena (2022), tente imaginar um fato Um veículo bateu em um poste e imagine também algumas versões desse fato.\n\nVersão física: Um corpo foi machucado, um carro amassado e um poste derrubado.\nVersão economica: O custo do medicamento, o custo do carro, o custo do poste, o tempo perdido, trabalho necessário para recompor o ambiente.\nVersão social: Pessoas abaladas, assustadas, uma criança que passava no local chorou muito, e o motorista ficou em estado de choque.\nVersão analítica: A velocidade não era adequada para pista, a posição do sinaleiro não dava uma boa visibilidade para o motorista, o automóvel tem uma característica mecanica que provoca frenagem muito brusca.\nVersão ampla: Considerar as versões anteriores e trabalhar em uma decisão que beneficie os envolvidos, vendo a parcela de responsabilidade de cada um e como o problema pode ser resolvido com o mínimo dano. A ideia é reduzir os impactos negativos para a sociedade, ao memo tempo impedir que motorista seja massacrado e penalizado por aquilo que não tenha sido de seu controle. Que situações desse tipo, possam ser corrigidas e melhoradas minimizando ou neutralizando os fatores responsáveis pelo problema e reduzindo a probabilidade que o mesmo ocorra no futuro.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Diagrama de Causa e Efeito</span>"
+    ]
+  },
+  {
+    "objectID": "diagrama-causa-efeito.html#como-fazer",
+    "href": "diagrama-causa-efeito.html#como-fazer",
+    "title": "7  Diagrama de Causa e Efeito",
+    "section": "Como fazer",
+    "text": "Como fazer\n\nEm uma ponta você colocar o efeito, e as ideias sobre as possíveis causas aparentes são coletadas de times multidisciplinares.\nVocê pode usar uma folha de papel e se preferir usar o R você pode usar o pacote qcc criado por Scrucca (2004)\nA percepção e necessidade de inclusão de causas secundárias e terciárias virão com a prática. E isso significa o amadurecimendo da técnica que exigirá respostas cada vez mais elaboradas e com maior interação com o time.\n\n\n\nCode\nlibrary(qcc)\n\ncause.and.effect(\n  cause = list(Equipamento = c(\"Problema freq. \\n na maquina \\n de montar caixas\"),\n               Processo = c(\"Manual \\n desatualizado\"),\n               Pessoas = c(\"Rotatividade \\n de pessoal\"),\n               Materiais = c(\"Embalagens com \\n padrão diferente\"),\n               Ambiente = c(\"Variação brusca \\n de temperatura\"),\n               Gestão = c(\"Indicador inadequado\")),\n  effect=\"Atrazo na \\n entrega\",\n  title = \"Diagrama de causa e efeito\")",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Diagrama de Causa e Efeito</span>"
     ]
@@ -464,7 +474,7 @@
     "href": "diagrama-causa-efeito.html#pra-onde-vai",
     "title": "7  Diagrama de Causa e Efeito",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nOs resultados coletados na análise do diagrama de causa e efeito são conhecidas como causas aparentes e são utilizados na identificação da causa raiz onde é possível usar a técnica de cinco porques. Enquanto a técnica dos cinco porques tem o foco na profundidade das relações de causa e efeito, o diagrama de causa e efeito tem o foco nas diferentes perspectivas nessas relações. Em resumo, mesmo os pontos de vista sendo diferentes por serem coletados por diferentes membros da equipe, eles tendem a convergir em relação ao problema. Por exemplo se considerarmos que a causa aparente do atrazo na entrega seja problemas frequentes na maquina de montar caixa. Quando usamos a técnica de cinco porques, poderia ficar assim:\n\nPor que a maquina de montar caixas tem problemas frequentes?\n\nPor que as caixas possuem formatos diferentes, estão abauladas e as ventosas de sucção da maquina se desgastam rapidamente\n\nPor que as caixas vem com padrão diferente?\n\nPor que elas vem de plantas e fornecedores diferentes e sem controle muito rígido de forma e uniformidade.\n\nPor que não tem controle de uniformidade?\n\nPor que há necessidade de redução de custos e as compras são feitas em lotes muito grandes e com base no preço.\n\nPor que as compras são feitas com base no preço?\n\nPor que a consultoria que nos apóia e que sugeriu o procedimento tem sua receita baseada na economia que ela faz. Quanto mais custos ela cortar, melhor ela será recompensada mesmo que sem a intenção isso possa ampliar os problemas no longo prazo para o nosso negócio, portanto, o indicador é inadequado e é um problema de gestão.\n\n\n\n\n\n\nFigura - Etapa 3 do PDCA: Descobrir causa raíz do problema",
+    "text": "Pra onde vai\n\nOs resultados coletados na análise do diagrama de causa e efeito são conhecidas como causas aparentes e são utilizados na identificação da causa raiz onde é possível usar a técnica de cinco porques. Enquanto a técnica dos cinco porques tem o foco na profundidade das relações de causa e efeito, o diagrama de causa e efeito tem o foco nas diferentes perspectivas nessas relações. Em resumo, mesmo os pontos de vista sendo diferentes por serem coletados por diferentes membros da equipe, eles tendem a convergir em relação ao problema. Por exemplo se considerarmos que a causa aparente do atrazo na entrega seja problemas frequentes na maquina de montar caixa. Quando usamos a técnica de cinco porques, poderia ficar assim:\n\nPor que a maquina de montar caixas tem problemas frequentes?\n\nPor que as caixas possuem formatos diferentes, estão abauladas e as ventosas de sucção da maquina se desgastam rapidamente\n\nPor que as caixas vem com padrão diferente?\n\nPor que elas vem de plantas e fornecedores diferentes e sem controle muito rígido de forma e uniformidade.\n\nPor que não tem controle de uniformidade?\n\nPor que há necessidade de redução de custos e as compras são feitas em lotes muito grandes e com base no preço.\n\nPor que as compras são feitas com base no preço?\n\nPor que a consultoria que nos apóia e que sugeriu o procedimento tem sua receita baseada na economia que ela faz. Quanto mais custos ela cortar, melhor ela será recompensada mesmo que sem a intenção isso possa ampliar os problemas no longo prazo para o nosso negócio, portanto, o indicador é inadequado e é um problema de gestão.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Diagrama de Causa e Efeito</span>"
     ]
@@ -514,7 +524,7 @@
     "href": "cinco-porques.html#de-onde-vem",
     "title": "8  Método 5 porquês",
     "section": "De onde vem",
-    "text": "De onde vem\n\nConforme Korteling, Brouwer, and Toet (2018), existem situações onde o uso de heurísticas pelo cerebro humano são mais predominantes como em condições com restrição de tempo, falta ou sobrecarga de informações relevantes. O uso do cinco porques pode ser muito útil nessas situações.\nTambém pode ser muito útil em situações onde os problemas são muito familiares e a percepção do cerebro é que não é necessário reunir informações adicionais.\nEm situações onde as respostas parecem simples mas ao se aprofundar nas relações percebe-se que os efeitos exigem mais esforço da mente humana.",
+    "text": "De onde vem\n\nConforme Korteling, Brouwer, and Toet (2018), existem situações onde o uso de heurísticas pelo cerebro humano são mais predominantes como em condições com restrição de tempo, falta ou sobrecarga de informações relevantes. O uso do cinco porques pode ser muito útil nessas situações.\nTambém pode ser muito útil em situações onde os problemas são muito familiares e a percepção do cerebro é que não é necessário reunir informações adicionais.\nEm situações onde as respostas parecem simples mas ao se aprofundar nas relações percebe-se que os efeitos exigem mais esforço da mente humana.\n\n\n\n\nFigura - Etapa 3 do PDCA: Descobrir causa raíz do problema",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Método 5 porquês</span>"
     ]
@@ -534,7 +544,7 @@
     "href": "cinco-porques.html#pra-onde-vai",
     "title": "8  Método 5 porquês",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nOs dados sobre o problema e a causa raiz são registrados e analisados e utilizados para a melhoria do processo e busca de melhores soluções.\nA técnica dos cinco porques é uma ferramenta complementar, nos dará a base e não as respostas para o problema. As respostas precisam de ações.\n\n\n\n\nFigura - Etapa 3 do PDCA: Descobrir causa raíz do problema",
+    "text": "Pra onde vai\n\nOs dados sobre o problema e a causa raiz são registrados e analisados e utilizados para a melhoria do processo e busca de melhores soluções.\nA técnica dos cinco porques é uma ferramenta complementar, nos dará a base e não as respostas para o problema. As respostas precisam de ações.",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Método 5 porquês</span>"
     ]
@@ -584,7 +594,7 @@
     "href": "plano-de-acao.html#de-onde-vem",
     "title": "9  Plano de Ação",
     "section": "De onde vem",
-    "text": "De onde vem\n\nA\nB\nC",
+    "text": "De onde vem\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 4 do PDCA: Elaborar plano de ação detalhado",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Plano de Ação</span>"
     ]
@@ -604,7 +614,7 @@
     "href": "plano-de-acao.html#pra-onde-vai",
     "title": "9  Plano de Ação",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 4 do PDCA: Elaborar plano de ação detalhado",
+    "text": "Pra onde vai\n\nA\nB\nC",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Plano de Ação</span>"
     ]
@@ -654,7 +664,7 @@
     "href": "acao-indicadores.html#de-onde-vem",
     "title": "10  Gráfico de controle",
     "section": "De onde vem",
-    "text": "De onde vem\n\nA\nB\nC",
+    "text": "De onde vem\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 5 do PDCA: Aplicar as ações e criar indicadores para avaliar os resultados",
     "crumbs": [
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
@@ -674,7 +684,7 @@
     "href": "acao-indicadores.html#pra-onde-vai",
     "title": "10  Gráfico de controle",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 5 do PDCA: Aplicar as ações e criar indicadores para avaliar os resultados",
+    "text": "Pra onde vai\n\nA\nB\nC",
     "crumbs": [
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
@@ -794,7 +804,7 @@
     "href": "relatorio-tres-geracoes.html#de-onde-vem",
     "title": "12  Relatório de três gerações",
     "section": "De onde vem",
-    "text": "De onde vem\n\nA\nB\nC",
+    "text": "De onde vem\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -814,7 +824,7 @@
     "href": "relatorio-tres-geracoes.html#pra-onde-vai",
     "title": "12  Relatório de três gerações",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
+    "text": "Pra onde vai\n\nA\nB\nC",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -864,7 +874,7 @@
     "href": "padronizacao.html#de-onde-vem",
     "title": "13  Relatório de três gerações",
     "section": "De onde vem",
-    "text": "De onde vem\n\nA\nB\nC",
+    "text": "De onde vem\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -884,7 +894,7 @@
     "href": "padronizacao.html#pra-onde-vai",
     "title": "13  Relatório de três gerações",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
+    "text": "Pra onde vai\n\nA\nB\nC",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -907,6 +917,76 @@
     "text": "Referências",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "glossario.html#o-que-é",
+    "href": "glossario.html#o-que-é",
+    "title": "14  Relatório de três gerações",
+    "section": "O que é",
+    "text": "O que é\nO relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:\n\nPassado – o que foi planejado e o que foi feito.\nPresente – o resultado obtido e os problemas existentes.\nFuturo – mais propostas de solução.",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "glossario.html#qual-o-objetivo",
+    "href": "glossario.html#qual-o-objetivo",
+    "title": "14  Relatório de três gerações",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nO objetivo principal do relatório de três gerações é relatar, avaliar os esforços que foram feitos para resolver um determinado problema e obter uma visão geral dos resultados e ao mesmo tempo, identificar se há possibilidade imediata de propostas para resolução desses problemas (WERKEMA, 1995).\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "glossario.html#de-onde-vem",
+    "href": "glossario.html#de-onde-vem",
+    "title": "14  Relatório de três gerações",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "glossario.html#como-fazer",
+    "href": "glossario.html#como-fazer",
+    "title": "14  Relatório de três gerações",
+    "section": "Como fazer",
+    "text": "Como fazer\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "glossario.html#pra-onde-vai",
+    "href": "glossario.html#pra-onde-vai",
+    "title": "14  Relatório de três gerações",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "glossario.html#qual-o-resultado",
+    "href": "glossario.html#qual-o-resultado",
+    "title": "14  Relatório de três gerações",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nA\nB\nC",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Relatório de três gerações</span>"
+    ]
+  },
+  {
+    "objectID": "glossario.html#referências",
+    "href": "glossario.html#referências",
+    "title": "14  Relatório de três gerações",
+    "section": "Referências",
+    "text": "Referências",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
   }
 ]

@@ -18,6 +18,8 @@ Os cinco porquês é uma técnica criada por Sakichi Toyoda no Japão e é utili
 -   Também pode ser muito útil em situações onde os problemas são muito familiares e a percepção do cerebro é que não é necessário reunir informações adicionais.
 -   Em situações onde as respostas parecem simples mas ao se aprofundar nas relações percebe-se que os efeitos exigem mais esforço da mente humana.
 
+![Figura - Etapa 3 do PDCA: Descobrir causa raíz do problema](images/step_3.png)
+
 ## Como fazer {.unnumbered}
 
 -   Como a técnica é muito simples, a parte mais dificil é lembrar dela no momento exato em que ela se faz necessária. Por exemplo em situações onde o tempo e informaçõse são escassas. É justamente nessas situações que tendemos a tomar decisõs paliativas.
@@ -27,8 +29,6 @@ Os cinco porquês é uma técnica criada por Sakichi Toyoda no Japão e é utili
 
 -   Os dados sobre o problema e a causa raiz são registrados e analisados e utilizados para a melhoria do processo e busca de melhores soluções.
 -   A técnica dos cinco porques é uma ferramenta complementar, nos dará a base e não as respostas para o problema. As respostas precisam de ações.
-
-![Figura - Etapa 3 do PDCA: Descobrir causa raíz do problema](images/step_3.png)
 
 ## Qual o resultado {.unnumbered}
 

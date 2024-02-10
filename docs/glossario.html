@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Método PDCA e ferramentas da qualidade - 1&nbsp; Conceitos</title>
+<title>Método PDCA e ferramentas da qualidade - 14&nbsp; Relatório de três gerações</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,8 +30,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./cinco-s.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./padronizacao.html" rel="prev">
 <link href="./pdca_capa.PNG" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -103,7 +82,7 @@ div.csl-indent {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Conceitos</span></h1>
+          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Relatório de três gerações</span></h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -172,7 +151,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./conceitos.html" class="sidebar-item-text sidebar-link active">
+  <a href="./conceitos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Conceitos</span></span></a>
   </div>
 </li>
@@ -250,7 +229,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./glossario.html" class="sidebar-item-text sidebar-link">
+  <a href="./glossario.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Relatório de três gerações</span></span></a>
   </div>
 </li>
@@ -264,8 +243,12 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#método-pdca" id="toc-método-pdca" class="nav-link active" data-scroll-target="#método-pdca"><span class="header-section-number">1.1</span> Método PDCA</a></li>
-  <li><a href="#ferramentas-da-qualidade" id="toc-ferramentas-da-qualidade" class="nav-link" data-scroll-target="#ferramentas-da-qualidade"><span class="header-section-number">1.2</span> Ferramentas da qualidade</a></li>
+  <li><a href="#o-que-é" id="toc-o-que-é" class="nav-link active" data-scroll-target="#o-que-é">O que é</a></li>
+  <li><a href="#qual-o-objetivo" id="toc-qual-o-objetivo" class="nav-link" data-scroll-target="#qual-o-objetivo">Qual o objetivo</a></li>
+  <li><a href="#de-onde-vem" id="toc-de-onde-vem" class="nav-link" data-scroll-target="#de-onde-vem">De onde vem</a></li>
+  <li><a href="#como-fazer" id="toc-como-fazer" class="nav-link" data-scroll-target="#como-fazer">Como fazer</a></li>
+  <li><a href="#pra-onde-vai" id="toc-pra-onde-vai" class="nav-link" data-scroll-target="#pra-onde-vai">Pra onde vai</a></li>
+  <li><a href="#qual-o-resultado" id="toc-qual-o-resultado" class="nav-link" data-scroll-target="#qual-o-resultado">Qual o resultado</a></li>
   <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
   </ul>
 </nav>
@@ -275,7 +258,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Conceitos</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Relatório de três gerações</span></h1>
 </div>
 
 
@@ -292,69 +275,65 @@ div.csl-indent {
 </header>
 
 
-<section id="método-pdca" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="método-pdca"><span class="header-section-number">1.1</span> Método PDCA</h2>
-<p>O PDCA é um método criado para auxiliar os gestores na identificação e solução de problemas. Ele mostra de forma simplificada e organizada o caminho a ser percorrido na busca de melhoria contínua.</p>
-<p>A figura abaixo ilustra o método PDCA sendo:</p>
+<section id="o-que-é" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
+<p>O relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:</p>
 <ul>
-<li>PDCA mostra a parte no ciclo (P = Planejamento, D = Execução, C = Medição, A = Padronização)</li>
-<li>Fluxo mostra como o processo deve ser seguido.</li>
-<li>Etapa mostra um resumo do que é feito em cada ponto do processo.</li>
-<li>Objetivo mostra o por que de cada etapa juntamente com a ferramenta de apoio representados pelas figuras.</li>
+<li><p><strong>Passado</strong> – o que foi planejado e o que foi feito.</p></li>
+<li><p><strong>Presente</strong> – o resultado obtido e os problemas existentes.</p></li>
+<li><p><strong>Futuro</strong> – mais propostas de solução.</p></li>
+</ul>
+</section>
+<section id="qual-o-objetivo" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
+<ul>
+<li><p>O objetivo principal do relatório de três gerações é relatar, avaliar os esforços que foram feitos para resolver um determinado problema e obter uma visão geral dos resultados e ao mesmo tempo, identificar se há possibilidade imediata de propostas para resolução desses problemas (WERKEMA, 1995).</p></li>
+<li><p>B</p></li>
+<li><p>C</p></li>
+</ul>
+</section>
+<section id="de-onde-vem" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
+<ul>
+<li>A</li>
+<li>B</li>
+<li>C</li>
 </ul>
 <div class="img-fluid quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/pdca_chart.png" class="img-fluid figure-img"></p>
-<figcaption>Figura 1 - Ilustração método PDCA</figcaption>
+<p><img src="images/step_67.png" class="img-fluid figure-img"></p>
+<figcaption>Figura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado</figcaption>
 </figure>
 </div>
-<p>Também conhecido como ciclo de Shewhart ou ciclo de Deming, foi concluído em 1930 por Walter Shewhart no Bell Laboratories que analisando estatisticamente o controle de processos, criou um modelo que poderia ser aplicado em qualquer situação <span class="citation" data-cites="werkema2021">Werkema (<a href="#ref-werkema2021" role="doc-biblioref">2021</a>)</span>.</p>
-<p>O estatístico William Edwards Deming <span class="citation" data-cites="deming2018">Deming, Cahill, and Allan (<a href="#ref-deming2018" role="doc-biblioref">2018</a>)</span> foi o responsável por propagar a idéia no Japão após a segunda guerra mundial. Desde então, obteve-se a popularização ao redor do mundo, das técnicas e da qualidade dos produtos japoneses(veículos, eletronicos, frutas etc), os quais antes da guerra competiam no mercado internacional de produção em massa apenas em preço e não em qualidade.</p>
-<p>Segundo <span class="citation" data-cites="campos1992">Campos (<a href="#ref-campos1992" role="doc-biblioref">1992</a>)</span>, o ciclo PDCA tem por princípio tornar mais claras e ágeis as etapas no processo de gerenciamento as quais são assim divididas:</p>
+</section>
+<section id="como-fazer" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
 <ul>
-<li><p><strong>PLAN (Planejamento)</strong> - Etapa onde se busca identificar oportunidades ou problemas, analisar os fenômenos, detectar causas reais, definir metas, criar procedimentos para execussão com prazos e metricas para avaliação.</p></li>
-<li><p><strong>DO (Execução)</strong> - Etapa em que as ações propostas em <strong>Plan</strong> são executadas por meio da busca pelo aprendizado.</p></li>
-<li><p><strong>CHECK (Medição)</strong> – Etapa de validação através de avaliação, monitoramento e controle das ações em execussão, comparando os resultados com o que foi planejado em <strong>Plan</strong>.</p></li>
-<li><p><strong>ACT (Padronização)</strong> - Etapa onde as ações que foram validadas em <strong>Check</strong> são adotados como padrão, aplicadas, reproduzidas e ensinadas para os demais.</p></li>
+<li>A</li>
+<li>B</li>
+<li>C</li>
 </ul>
 </section>
-<section id="ferramentas-da-qualidade" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="ferramentas-da-qualidade"><span class="header-section-number">1.2</span> Ferramentas da qualidade</h2>
-<p>As ferramentas da qualidade são instrumentos que auxiliam no processo de execução do PDCA dando suporte técnico a intuição. Imagine que fossemos construir uma casa(solução para um problema de moradia) e pra isso usaríamos ferramentas como martelo, conceitos de engenharia, software, betoneira entre outros. No PDCA é a mesma coisa.</p>
-<p>Algumas ferramentas da qualidade são listadas abaixo. A ideia por traz de cada etapa também foi incluída para caso você esteja lendo esse livro no futuro, e essas ferramentas estejam obsoletas:</p>
+<section id="pra-onde-vai" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
 <ul>
-<li><p><strong>Identificação do problema</strong> reuniões com gestores e equipes, sensores, formulários de pesquisa, check list, fluxograma de processos, desenhos, comentários, reviews, sugestões em redes socais entre outros. A ideia é definir e deixar claro o problema e conhecer sua importância.</p></li>
-<li><p><strong>Observação do fenômeno</strong> gráfico de pareto, histograma, gráfico de correlação, gráfico de dispersão, gráfico de candlestick, gráfico waterfall e gráficos de controle. A ideia é investigar as características específicas com visão ampla e sobre diversos pontos de vista.</p></li>
-<li><p><strong>Análise da causa raiz</strong> diagrama de causa e efeito, método dos cinco porquês, regressão linear, regressão logística, testes-t, anova etc. A ideia é descobrir as causas fundamentais para agir na causa e não no efeito(sintoma) do problema. Como um exemplo podemos citar uma dor de cabeça e febre como sintoma e não causa de um problema. A causa pode ser um ataque bacteriano por exemplo e pra ter certeza disso, exames e avaliação médica podem ser necessárias para então aplicar o medicamento adequado. Por outro lado, ao optar intuitivamente por tomar um remédio para dor de cabeça, o problema pode ser amenizado inicialmente e agravado no longo prazo.</p></li>
-<li><p><strong>Plano de ação</strong> Plano de Ação 5W2H (<em>What, Why, Where, When, Who, How e How Much</em>) que traduzindo ficaria (<strong>O que, Por que, Onde, Quando, Quem, Como e Quanto custa</strong>). A ideia é elaborar um plano para tratar as causas fundamentais e que nele esteja os detalhes do que vai ser feito, quem será o responsável pela execução, quando será feito, quanto custa, como será medido e onde será comunicado os resultados para que possa ser avaliado.</p></li>
-<li><p><strong>Ação</strong> A liderança tem papel cruciar nessa etapa e a clareza e articulação na comunicação são ferramentas poderosas na mão de um líder. É abundante os dados que revelam que sem uma meta e método mas com liderança, aleatoriamente se chega a algum lugar. Por outro lado, mesmo tendo metas bem definidas e excelentes métodos, sem liderança, dificilmente se chegará a algum lugar.</p></li>
-<li><p><strong>Medição</strong> gráficos de tendência, gráficos de controle, indicadores direcionadores, indicadores de resultados, testes a/b ou caso controle, painel de gestão a vista com os resultados das ações executadas, relatório de três gerações(passado, presente e futuro). A ideia é monitorar e avaliar os resultados das ações que estão sendo executadas, auxiliar no engajamento e geração de novas ideias ou ações que auxiliem tratamento do problema.</p></li>
-<li><p><strong>Validação</strong> equipe multidisciplinar. A ideia é definir se os resultados foram safisfatórios com visão no todo. Em alguns casos o resultados da ação não impactaram na causa definida, mas pode ser muito relevante em outras. Por exemplo na descoberta do velcro, que não resolveu um problema da moda que era um objetivo inicial de Georges de Mestral seu criador. Por outro lado, a NASA viu naqulo uma oportunidade e usou em trajes de voo para proteger itens em gravidade zero expandindo o uso também para outros campos.</p></li>
-<li><p><strong>Padronização</strong> são normas, manuais, regras, procedimento operacional padrão, processos, fichas técnicas. A ideia é facilitar a reprodução e aprendizado do que foi bem sucedido e gerando novas ideias para prevenir o reaparecimento do problema.</p></li>
-<li><p><strong>Conclusão</strong> registro, publicação científica, livros, revistas, repositório no github, zenodo etc. A ideia é gerar um legado que possa ser usado no futuro em prol do desenvolvimento de quem usa-lo. Que novas ideias possam ser criadas a partir dessas.</p></li>
+<li>A</li>
+<li>B</li>
+<li>C</li>
 </ul>
-<p>Após a segunda guerra mundial, o Japão em especial, passou por uma verdadeira revolução, onde a qualidade dos produtos e serviços nunca foi tão discutida, estudada e aplicada. Grandes nomes como Shewhart, Deming, Juran e Ishikawa, desenvolveram ou ajudaram a disseminar algumas ferramentas que permitiram um maior controle dos processos ou melhoria nas tomadas de decisões <span class="citation" data-cites="campos1992">Campos (<a href="#ref-campos1992" role="doc-biblioref">1992</a>)</span>.</p>
-<p>Nas décadas de 1970 e 1980, essas técnicas e ferramentas começaram a ser introduzidas em empresas de diversos países da Ásia, Europa, América do Norte e América Latina, influenciados principalmente pela maior competitividade dos produtos japoneses por meio de alta qualidade e preços competitivos <span class="citation" data-cites="ferro1997">Ferro and Grande (<a href="#ref-ferro1997" role="doc-biblioref">1997</a>)</span> .</p>
-<p>No Brasil, o uso de ferramentas da qualidade na gestão de empresas ocorreu por volta de 1970, sendo introduzido em algumas empresas como Volkswagen, Johnson &amp; Johnson e Embraer, tendo seu movimento impulsionado em 1986, quando o professor Ishikawa esteve no país.</p>
+</section>
+<section id="qual-o-resultado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
+<ul>
+<li>A</li>
+<li>B</li>
+<li>C</li>
+</ul>
 </section>
 <section id="referências" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="referências">Referências</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-campos1992" class="csl-entry" role="listitem">
-Campos, Vicenti Falconi. 1992. <em>Controle Da Qualidade Total</em>. 5ª edição. Vicente Falconi Campos.
-</div>
-<div id="ref-deming2018" class="csl-entry" role="listitem">
-Deming, W. Edwards, Kevin Edwards Cahill, and Kelly L. Allan. 2018. <em>Out of the Crisis, Reissue</em>. Reissue ed. edição. Cambridge, Massachsetts: MIT Press.
-</div>
-<div id="ref-ferro1997" class="csl-entry" role="listitem">
-Ferro, José Roberto, and Márcia Mazzeo Grande. 1997. <span>“Círculos de Controle Da Qualidade (CCQs) No Brasil: Sobrevivendo Ao <span>"</span>Modismo<span>"</span>.”</span> <em>RAE - Revista de Administracao de Empresas</em> 37 (4): 78–88. <a href="https://periodicos.fgv.br/rae/article/view/37972">https://periodicos.fgv.br/rae/article/view/37972</a>.
-</div>
-<div id="ref-werkema2021" class="csl-entry" role="listitem">
-Werkema, Cristina. 2021. <em>Métodos PDCA e Demaic e Suas Ferramentas Analíticas</em>. 1ª edição. GEN Atlas.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -742,14 +721,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link  aria-label=" introdução"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introdução</span>
+      <a href="./padronizacao.html" class="pagination-link  aria-label=" &lt;span="" de="" três="" gerações&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Relatório de três gerações</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./cinco-s.html" class="pagination-link" aria-label="<span class='chapter-number'>2</span>&nbsp; <span class='chapter-title'>OS 5S</span>">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">OS 5S</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

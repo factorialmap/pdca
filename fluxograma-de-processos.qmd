@@ -26,6 +26,9 @@ O uso de descrições detalhadas das etapas em um processo nos permite compreend
 
 -   O fluxograma ou desenho de um processo vem da necessidade ter uma visão geral daquilo que está sendo analisado, estudado ou discutido para compreender melhor as relações e interações entre os elementos. Com isso, permitir que ideias, melhorias possam ser geradas ou até estratégias ou planos táticos possam ser propostos.
 
+![Figura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância](images/step_1.png)
+
+
 ## Como fazer {.unnumbered}
 
 Existem várias formas de criar um fluxograma de processos sendo o lápis e o papel um dos mais eficiêntes por outro lado no R também é possível criar vários modelos de fluxogramas os quais citarei alguns usando o pacote `DiagrammeR` onde:
@@ -83,8 +86,6 @@ graph LR
 -   O fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias, formulação de estratégias entre outras aplicações.
 
 -   Uma das aplicações do fluxograma de processos é na etapa 1 do PDCA que trata da definição e reconhecimento do problema. Após o desenho do processo e reconhecimento do problema a próxima etapa é a análise do fenômeno sob diversos pontos de vista.
-
-![Figura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância](images/step_1.png)
 
 ## Qual o resultado {.unnumbered}
 

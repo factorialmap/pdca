@@ -24,6 +24,8 @@
 
 -   Pela simplicidade e eficiência da ferramenta, ela foi adotada e incorporada aos JIS (Japanese Industrial Standards).
 
+![Figura - Etapa 3 do PDCA: Descobrir causa raíz do problema](images/step_3.png)
+
 -   De acordo com @shatz2024 , um viés cognitivo conhecido como a maldição do conhecimento faz com que as pessoas não consigam compreender adequadamente a perspectiva de quem não possui tantas informações quanto elas. Uma pessoa experiente em uma tarefa pode ter dificuldades para ensinar iniciantes por pressupor intuitivamente que as coisas são obvias para eles, logo também são óbvias para o iniciante, mesmo que não seja o caso. O diagrama de causa e efeito pode ser útil nesses casos, pois quando bem empregado, rompe a barreira do medo e coleta a perspectiva de vários membros da equipe sobre determinado problema resultados os quais, podem ser reveladores e muito úteis.
 
 -   Obter pontos de vistas diferentes pode ser fundamental durante um processo de melhoria contínua. Conforme @helena2022, tente imaginar um fato **Um veículo bateu em um poste** e imagine também algumas versões desse fato.
@@ -38,7 +40,7 @@
 
     -   **Versão ampla**: Considerar as versões anteriores e trabalhar em uma decisão que beneficie os envolvidos, vendo a parcela de responsabilidade de cada um e como o problema pode ser resolvido com o mínimo dano. A ideia é reduzir os impactos negativos para a sociedade, ao memo tempo impedir que motorista seja massacrado e penalizado por aquilo que não tenha sido de seu controle. Que situações desse tipo, possam ser corrigidas e melhoradas minimizando ou neutralizando os fatores responsáveis pelo problema e reduzindo a probabilidade que o mesmo ocorra no futuro.
 
-    ## Como fazer {.unnumbered}
+## Como fazer {.unnumbered}
 
 1.  Em uma ponta você colocar o efeito, e as ideias sobre as possíveis causas aparentes são coletadas de times multidisciplinares.
 2.  Você pode usar uma folha de papel e se preferir usar o R você pode usar o pacote `qcc` criado por @scrucca2004
@@ -72,8 +74,6 @@ cause.and.effect(
         -   Por que há necessidade de redução de custos e as compras são feitas em lotes muito grandes e com base no preço.
     -   **Por que as compras são feitas com base no preço?**
         -   Por que a consultoria que nos apóia e que sugeriu o procedimento tem sua receita baseada na economia que ela faz. Quanto mais custos ela cortar, melhor ela será recompensada mesmo que sem a intenção isso possa ampliar os problemas no longo prazo para o nosso negócio, portanto, o indicador é inadequado e é um problema de gestão.
-        
-![Figura - Etapa 3 do PDCA: Descobrir causa raíz do problema](images/step_3.png)
 
 ## Qual o resultado {.unnumbered}
 

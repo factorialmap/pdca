@@ -270,6 +270,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Relatório de três gerações</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossario.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Relatório de três gerações</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -344,6 +350,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>O fluxograma ou desenho de um processo vem da necessidade ter uma visão geral daquilo que está sendo analisado, estudado ou discutido para compreender melhor as relações e interações entre os elementos. Com isso, permitir que ideias, melhorias possam ser geradas ou até estratégias ou planos táticos possam ser propostos.</li>
 </ul>
+<div class="img-fluid quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/step_1.png" class="img-fluid figure-img"></p>
+<figcaption>Figura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância</figcaption>
+</figure>
+</div>
 </section>
 <section id="como-fazer" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
@@ -375,8 +387,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-c5301fbff5454fafbd70" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c5301fbff5454fafbd70">{"x":{"diagram":"\ngraph LR\nA>Mat. prima]-->B[Produção]\nB-->C[Estoque PA]\nC-->D[Demanda]\nE>Mão obra]-->B\nF>Máquina]-->B\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9c0c46a9a3cde636f603" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9c0c46a9a3cde636f603">{"x":{"diagram":"\ngraph LR\nA>Mat. prima]-->B[Produção]\nB-->C[Estoque PA]\nC-->D[Demanda]\nE>Mão obra]-->B\nF>Máquina]-->B\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -401,8 +413,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-c9936f13bea001e9ce7f" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c9936f13bea001e9ce7f">{"x":{"diagram":"\ngraph LR\n\nsubgraph Cliente\nA[Vendido no limite]\nend\n\nsubgraph Corretora\nA-->B{Tem saldo?}\nB-->|Sim|C[Manter posição]\nC--> D[Novo pregão]\nD--> B\nend\n\nsubgraph Compliance\nB -->|Não| F[Encerra posição]\nend\n\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0fad3828bcabceb35539" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0fad3828bcabceb35539">{"x":{"diagram":"\ngraph LR\n\nsubgraph Cliente\nA[Vendido no limite]\nend\n\nsubgraph Corretora\nA-->B{Tem saldo?}\nB-->|Sim|C[Manter posição]\nC--> D[Novo pregão]\nD--> B\nend\n\nsubgraph Compliance\nB -->|Não| F[Encerra posição]\nend\n\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -415,8 +427,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-5ce0f87a8f1d6724c24b" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5ce0f87a8f1d6724c24b">{"x":{"diagram":"\ngraph LR\n    A[Estoque MP] -->|materia prima| B(Produção)\n    B --> C{Sob pedido?}\n    C -->|Sim| D[Venda]\n    C -->|Não| E[Estoque Prod. Acabado]\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f15216bb9c8d979df2a0" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f15216bb9c8d979df2a0">{"x":{"diagram":"\ngraph LR\n    A[Estoque MP] -->|materia prima| B(Produção)\n    B --> C{Sob pedido?}\n    C -->|Sim| D[Venda]\n    C -->|Não| E[Estoque Prod. Acabado]\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -426,12 +438,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>O fluxograma pode ser utilizado em vários estudos, como mapeamento de processos de produção, percurso de uma fatura, fases de uma operação de venda, fluxo de matérias, formulação de estratégias entre outras aplicações.</p></li>
 <li><p>Uma das aplicações do fluxograma de processos é na etapa 1 do PDCA que trata da definição e reconhecimento do problema. Após o desenho do processo e reconhecimento do problema a próxima etapa é a análise do fenômeno sob diversos pontos de vista.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/step_1.png" class="img-fluid figure-img"></p>
-<figcaption>Figura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância</figcaption>
-</figure>
-</div>
 </section>
 <section id="qual-o-resultado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>

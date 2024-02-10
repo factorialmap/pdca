@@ -20,6 +20,8 @@
 
 -   Conforme @Korteling2018, o cerebro humano funciona de forma altamente associativa buscando por correlações e relações causais o tempo todo e essa característica confere ao ser humano uma capacidade inigualavel de reconhecer padrões regulares e ordenados e tendo dificuldade em lidar com aleatoriedade, imprevisibilidade e caos. Nestas situações, o gráfico de dispersão pode ser muito útil organizando e apresentados dados de uma forma que simplifica o trabalho para o cerebro humano.
 
+![Figura - Etapa 2 do PDCA: Análise do fenômeno](images/step_2.png)
+
 ## Como fazer {.unnumbered}
 
 -   O gráfico de disperção por sem simples é possível ser feito em planilhas e também em ferramentas de business intelligence ou ferramentas estatísticas como o R. Apresento aqui alguns modelos.
@@ -82,7 +84,7 @@ data_crime |>
 
 -   Para decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores. No exemplo apresentado em @spiegelhalter2022, o gráfico de dispersão possibilidade visualizar um gap no número de crimes com determinadas características justamente no período em que o criminoso estava fora de ação.
 
-![Figura - Etapa 2 do PDCA: Análise do fenômeno](images/step_2.png)
+
 
 
 ## Qual o resultado {.unnumbered}

@@ -43,7 +43,8 @@ book:
     - grafico-de-controle.qmd
     - relatorio-tres-geracoes.qmd
     - padronizacao.qmd
-
+    - glossario.qmd
+    
 format:
   html:
     toc: true

@@ -17,6 +17,8 @@ O gráfico de controle ou carta de controle como também é conhecido, é uma fe
 - B
 - C
 
+![Figura - Etapa 5 do PDCA: Aplicar as ações e criar indicadores para avaliar os resultados](images/step_5.png)
+
 ## Como fazer {.unnumbered}
 
 - A
@@ -28,8 +30,6 @@ O gráfico de controle ou carta de controle como também é conhecido, é uma fe
 - A
 - B
 - C
-
-![Figura - Etapa 5 do PDCA: Aplicar as ações e criar indicadores para avaliar os resultados](images/step_5.png)
 
 ## Qual o resultado {.unnumbered}
 

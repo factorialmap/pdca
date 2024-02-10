@@ -24,6 +24,8 @@ O relatório de três gerações é uma ferramenta que apresenta os dados agrupa
 - B
 - C
 
+![Figura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado](images/step_67.png)
+
 ## Como fazer {.unnumbered}
 
 - A
@@ -35,8 +37,6 @@ O relatório de três gerações é uma ferramenta que apresenta os dados agrupa
 - A
 - B
 - C
-
-![Figura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado](images/step_67.png)
 
 ## Qual o resultado {.unnumbered}
 

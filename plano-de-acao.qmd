@@ -28,6 +28,8 @@ O plano de ação após serem definidas todas essas etapas, deve ficar em local 
 - B
 - C
 
+![Figura - Etapa 4 do PDCA: Elaborar plano de ação detalhado](images/step_4.png)
+
 ## Como fazer {.unnumbered}
 
 - A
@@ -39,8 +41,6 @@ O plano de ação após serem definidas todas essas etapas, deve ficar em local 
 - A
 - B
 - C
-
-![Figura - Etapa 4 do PDCA: Elaborar plano de ação detalhado](images/step_4.png)
 
 ## Qual o resultado {.unnumbered}
 

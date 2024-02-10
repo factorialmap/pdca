@@ -24,6 +24,8 @@
 
 -   Evitar o vies cognitivo como a ancoragem. explica que diferente do computador que quando não queremos uma informação apenas apagamos, a informação percebida e processada no cerebro humano não pode simplesmente ser ignorada ou posta de lado. Isso significa que o julgamento e as decisões são afetadas pelos efeitos persistentes de informação que foram fornecidas e processadas anteriormente. Nesta situação, o gráfico de pareto pode ser útil para evitar raciocínios tendenciosos como vies da ancoragem, efeito de dotação, vies retrospectivo e viés de resultado.
 
+![Figura - Etapa 2 do PDCA: Análise do fenômeno](images/step_2.png)
+
 ## Como fazer {.unnumbered}
 
 -   É recomendado fazer graficos de pareto para causa e para efeito. O gráfico de efeitos mostrará os efeitos é usado para identificar qual o maior problema. Já o de causa é usado para identificar quais as maiores causas.
@@ -62,8 +64,6 @@ df |>
 -   A análise do fenômeno é a etapa 2 do ciclo PDCA sendo assim o próximo passo é a identificação da causa raiz responsável pelo efeito.
 
 -   Em situações quem a solução para determinado problema seja de fácil tratamento, esta pode ser realizada imediatamente não sendo necessário os demais passos.
-
-![Figura - Etapa 2 do PDCA: Análise do fenômeno](images/step_2.png)
 
 
 ## Qual o resultado {.unnumbered}
