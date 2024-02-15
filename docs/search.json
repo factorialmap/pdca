@@ -574,7 +574,7 @@
     "href": "plano-de-acao.html#o-que-é",
     "title": "9  Plano de Ação",
     "section": "O que é",
-    "text": "O que é\nO plano de ação ou 5W2H é uma ferramenta utilizada para detalhar e organizar todas as tarefas a serem executadas para a resolução do problema, assegurando a sua implementação efetiva, e é considerada a etapa principal do ciclo PDCA, onde as ações são implementadas (CAMPOS, 1994).\nO nome 5W2H surgiu do conjunto das primeiras letras (em inglês) das diretrizes utilizadas no plano de ação, sendo cinco delas iniciadas em “W” e duas delas em “H”, e são classificadas em:\n\nWhat – O que será feito (etapas);\nWho – Quem o fará (responsabilidade);\nWhen – Quando será feito (tempo);\nWhere – Onde será feito (local);\nWhy – Por que será feito (justificativa);\nHow – Como será feito (método);\nHow much – Quanto custará para ser feito (custo).\n\nO plano de ação após serem definidas todas essas etapas, deve ficar em local visível por toda a equipe para que as ações passem a ser executadas efetivamente",
+    "text": "O que é\n\nO plano de ação é uma ferramenta utilizada para detalhar e organizar todas as tarefas a serem executadas para a resolução do problema(CAMPOS, 1994).\nA ferramenta também é conhecida pela sigla 5W2H que se refere as primeiras letras das diretrizes utilizadas no plano de ação, sendo cinco delas iniciadas em “W” e duas delas em “H” no idioma inglês, e são classificadas em:\n\nWhat – O que será feito (etapas).\nWhere – Onde será feito (local).\nWhy – Por que será feito (justificativa).\nWhen – Quando será feito (tempo).\nWho – Quem o fará (responsabilidade).\nHow – Como será feito (método).\nHow much – Quanto custará para ser feito (custo).\n\nA ferramenta deve ficar em local visível para que todo o time envolvido possa ver as ações que estão sendo executadas, os detalhes e prazos.\n\n\n\n\nFigura - Plano de ação",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Plano de Ação</span>"
     ]
@@ -584,7 +584,7 @@
     "href": "plano-de-acao.html#qual-o-objetivo",
     "title": "9  Plano de Ação",
     "section": "Qual o objetivo",
-    "text": "Qual o objetivo\n\nA\nB\nC",
+    "text": "Qual o objetivo\n\nOrganizar as tarefas em um padrão lógico para que fique claro para todos como as ações serão executadas.\nFacilitar o detalhamento das ações, evitando ambiguidade ou a falta de algum detalhe que possa comprometer a execução das ações.\nSer uma ferramenta simples de fácil acesso e que possibilite o acompanhamento das ações em execução.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Plano de Ação</span>"
     ]
@@ -594,7 +594,7 @@
     "href": "plano-de-acao.html#de-onde-vem",
     "title": "9  Plano de Ação",
     "section": "De onde vem",
-    "text": "De onde vem\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 4 do PDCA: Elaborar plano de ação detalhado",
+    "text": "De onde vem\n\nOportunidade de ver com clareza as ações que serão feitas para solução do problema.\nPossibilidade de ter maior transparência e clareza na comunicação e de poder acompanhar os resultados através dos indicadores atrelados as ações que estão sendo executadas.\nPossibilidade de usar os registros para avaliação de problemas similares no futuro.\nNecessidade de ter os detalhes das ações em andamento para que possa ser executada com mais eficiência.\n\n\n\n\nFigura - Etapa 4 do PDCA: Elaborar plano de ação detalhado",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Plano de Ação</span>"
     ]
@@ -604,7 +604,7 @@
     "href": "plano-de-acao.html#como-fazer",
     "title": "9  Plano de Ação",
     "section": "Como fazer",
-    "text": "Como fazer\n\nA\nB\nC",
+    "text": "Como fazer\n\nPode ser feito usando editor de textos, planilhas ou sistemas especializados.\nInserir detalhes que transmitam informações com clareza como\n\nNome do plano para que fique fácil entender do que se trata.\nArea envolvida\nObjetivo estratégico se refere aos efeitos que serão sentidos por todo o negócio da empresa.\nObjetivo do plano se refere aos efeitos que serão sentidos inicialmente na área que está sendo feita as ações.\nIndicador atrelado para que os resultados das ações possam ser acompanhadas e avaliadas se estão surtindo resultados esperados ou será necessário ajustes ou correções.\nO que será feito, é uma descrição geral do que se pretende fazer para eliminar o problema.\nOnde será feito, são as áreas, setores ou lugares onde as ações serão executadas.\nPor que será feito, é um maior detalhamento sobre a justificativa das ações e serão muito úteis principalmente no futuro caso problemas similares ocorram, poupando muito tempo e dinheiro.\nComo será feito são detalhes mais técnicos, a ideia é criar um gancho para a memória em caso de ocorrência de problemas similares no futuro. Onde essas ideias são usadas como complemento facilitando todo um trabalho que poderá ser feito.\nQuem fará, é uma informação importante tanto para interessados no projeto quanto para os responsáveis que terão os projetos atrelados as suas carreiras enriquecendo o currículo e criando oportunidades.\nQuando será feito, é o prazo máximo em que a ação deverá ser concluída.\nQuanto custará, é uma informação importante para alocação de recursos e orçamento quanto para avaliar o retorno sobre investimento em caso de projetos de expansão por exemplo.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Plano de Ação</span>"
     ]
@@ -614,7 +614,7 @@
     "href": "plano-de-acao.html#pra-onde-vai",
     "title": "9  Plano de Ação",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nA\nB\nC",
+    "text": "Pra onde vai\n\nO próximo passo após o início da execução das ações e a análise de resultados.\nOs resultados serão medidos por indicadores e que podem ser divididos em indicadores direcionadores e de resultado.\nImagine que o objetivo é perder peso. O indicador de resultado é o peso na balança após a dieta ou tratamento. Já o indicador direcionador pode ser o volume de alimentos consumidos diariamente, tipo de alimentos consumidos, intensidade de exercícios entre outros.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Plano de Ação</span>"
     ]
@@ -624,7 +624,7 @@
     "href": "plano-de-acao.html#qual-o-resultado",
     "title": "9  Plano de Ação",
     "section": "Qual o resultado",
-    "text": "Qual o resultado\n\nA\nB\nC",
+    "text": "Qual o resultado\n\nMelhoria da comunicação na execução de ações para solução de problemas através de detalhes claros sobre o que deve ser feito e como será medido.\nFacilidade de compreensão dos detalhes por estarem em uma sequencia lógica que vai se tornando cultura com o passar do tempo.\nMelhoria na probabilidade de sucesso na solução de problemas pelo uso racional dos recursos envolvidos. Da liderança ao time de operação, todos sabem o que deve ser feito, como avaliar e como agir a partir dos dados que são coletados nos resultados de avaliação.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Plano de Ação</span>"
     ]
@@ -924,7 +924,7 @@
     "href": "glossario.html",
     "title": "14  Glossário",
     "section": "",
-    "text": "01 point of Deming: Create constancy of purpose for improving product and services.\n03 point of Deming: Cease dependence on inspection to achieve quality\n04 point of Deming: End the practice of awarding business on price alone;intead, minimize total cost by working with a single supplier.\n05 point of Deming: Improve constantly and forever every process for planning, production and service.\n06 point of Deming: Institute training on the job.\n07 point of Deming: Adopt and institute leadership.\n08 point of Deming: Drive out fear.\n09 point of Deming: BReak down barriers between staff areas.\n10 point of Deming: Eliminate slogans, exhortations, and target for the workforce.\n11 point of Deming: Eliminate numerical quotas for the workforce and numerical goals for management.\n12 point of Deming: Remove barriers that rob people of pride of workmanship, and eliminate the annual rating or merit system.",
+    "text": "Algorítmo: regra de calculo que processo variáveis de entrada produzindo um resultado.\n01 point of Deming: Create constancy of purpose for improving product and services.\n03 point of Deming: Cease dependence on inspection to achieve quality\n04 point of Deming: End the practice of awarding business on price alone;intead, minimize total cost by working with a single supplier.\n05 point of Deming: Improve constantly and forever every process for planning, production and service.\n06 point of Deming: Institute training on the job.\n07 point of Deming: Adopt and institute leadership.\n08 point of Deming: Drive out fear.\n09 point of Deming: Break down barriers between staff areas.\n10 point of Deming: Eliminate slogans, exhortations, and target for the workforce.\n11 point of Deming: Eliminate numerical quotas for the workforce and numerical goals for management.\n12 point of Deming: Remove barriers that rob people of pride of workmanship, and eliminate the annual rating or merit system.",
     "crumbs": [
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Glossário</span>"
     ]

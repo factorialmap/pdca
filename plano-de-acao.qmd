@@ -2,50 +2,75 @@
 
 ## O que é {.unnumbered}
 
-O plano de ação ou 5W2H é uma ferramenta utilizada para detalhar e organizar todas as tarefas a serem executadas para a resolução do problema, assegurando a sua implementação efetiva, e é considerada a etapa principal do ciclo PDCA, onde as ações são implementadas (CAMPOS, 1994). 
+-   O plano de ação é uma ferramenta utilizada para detalhar e organizar todas as tarefas a serem executadas para a resolução do problema(CAMPOS, 1994).
 
-O nome 5W2H surgiu do conjunto das primeiras letras (em inglês) das diretrizes utilizadas no plano de ação, sendo cinco delas iniciadas em “W” e duas delas em “H”, e são classificadas em: 
+-   A ferramenta também é conhecida pela sigla 5W2H que se refere as primeiras letras das diretrizes utilizadas no plano de ação, sendo cinco delas iniciadas em “W” e duas delas em “H” no idioma inglês, e são classificadas em:
 
-- **What** – O que será feito (etapas);
-- **Who** – Quem o fará (responsabilidade);
-- **When** – Quando será feito (tempo);
-- **Where** – Onde será feito (local);
-- **Why** – Por que será feito (justificativa);
-- **How** – Como será feito (método);
-- **How much** – Quanto custará para ser feito (custo).
+    -   **What** – O que será feito (etapas).
+    -   **Where** – Onde será feito (local).
+    -   **Why** – Por que será feito (justificativa).
+    -   **When** – Quando será feito (tempo).
+    -   **Who** – Quem o fará (responsabilidade).
+    -   **How** – Como será feito (método).
+    -   **How much** – Quanto custará para ser feito (custo).
 
-O plano de ação após serem definidas todas essas etapas, deve ficar em local visível por toda a equipe para que as ações passem a ser executadas efetivamente
+-   A ferramenta deve ficar em local visível para que todo o time envolvido possa ver as ações que estão sendo executadas, os detalhes e prazos.
+
+![Figura - Plano de ação](images/action_plan.png)
 
 ## Qual o objetivo {.unnumbered}
 
-- A
-- B
-- C
+-   Organizar as tarefas em um padrão lógico para que fique claro para todos **como** as ações serão executadas.
+
+-   Facilitar o detalhamento das ações, evitando ambiguidade ou a falta de algum detalhe que possa comprometer a execução das ações.
+
+-   Ser uma ferramenta simples de fácil acesso e que possibilite o acompanhamento das ações em execução.
 
 ## De onde vem {.unnumbered}
 
-- A
-- B
-- C
+-   Oportunidade de ver com clareza as ações que serão feitas para solução do problema.
+
+-   Possibilidade de ter maior transparência e clareza na comunicação e de poder acompanhar os resultados através dos indicadores atrelados as ações que estão sendo executadas.
+
+-   Possibilidade de usar os registros para avaliação de problemas similares no futuro.
+
+-   Necessidade de ter os detalhes das ações em andamento para que possa ser executada com mais eficiência.
 
 ![Figura - Etapa 4 do PDCA: Elaborar plano de ação detalhado](images/step_4.png)
 
 ## Como fazer {.unnumbered}
 
-- A
-- B
-- C
+-   Pode ser feito usando editor de textos, planilhas ou sistemas especializados.
+
+-   Inserir detalhes que transmitam informações com clareza como
+
+    -   Nome do plano para que fique fácil entender do que se trata.
+    -   Area envolvida
+    -   Objetivo estratégico se refere aos efeitos que serão sentidos por todo o negócio da empresa.
+    -   Objetivo do plano se refere aos efeitos que serão sentidos inicialmente na área que está sendo feita as ações.
+    -   Indicador atrelado para que os resultados das ações possam ser acompanhadas e avaliadas se estão surtindo resultados esperados ou será necessário ajustes ou correções.
+    -   O que será feito, é uma descrição geral do que se pretende fazer para eliminar o problema.
+    -   Onde será feito, são as áreas, setores ou lugares onde as ações serão executadas.
+    -   Por que será feito, é um maior detalhamento sobre a justificativa das ações e serão muito úteis principalmente no futuro caso problemas similares ocorram, poupando muito tempo e dinheiro.
+    -   Como será feito são detalhes mais técnicos, a ideia é criar um gancho para a memória em caso de ocorrência de problemas similares no futuro. Onde essas ideias são usadas como complemento facilitando todo um trabalho que poderá ser feito.
+    -   Quem fará, é uma informação importante tanto para interessados no projeto quanto para os responsáveis que terão os projetos atrelados as suas carreiras enriquecendo o currículo e criando oportunidades.
+    -   Quando será feito, é o prazo máximo em que a ação deverá ser concluída.
+    -   Quanto custará, é uma informação importante para alocação de recursos e orçamento quanto para avaliar o retorno sobre investimento em caso de projetos de expansão por exemplo.
 
 ## Pra onde vai {.unnumbered}
 
-- A
-- B
-- C
+-   O próximo passo após o início da execução das ações e a análise de resultados.
+
+-   Os resultados serão medidos por indicadores e que podem ser divididos em indicadores direcionadores e de resultado.
+
+-   Imagine que o objetivo é perder peso. O indicador de resultado é o peso na balança após a dieta ou tratamento. Já o indicador direcionador pode ser o volume de alimentos consumidos diariamente, tipo de alimentos consumidos, intensidade de exercícios entre outros.
 
 ## Qual o resultado {.unnumbered}
 
-- A
-- B
-- C
+-   Melhoria da comunicação na execução de ações para solução de problemas através de detalhes claros sobre o que deve ser feito e como será medido.
+
+-   Facilidade de compreensão dos detalhes por estarem em uma sequencia lógica que vai se tornando cultura com o passar do tempo.
+
+-   Melhoria na probabilidade de sucesso na solução de problemas pelo uso racional dos recursos envolvidos. Da liderança ao time de operação, todos sabem o que deve ser feito, como avaliar e como agir a partir dos dados que são coletados nos resultados de avaliação.
 
 ## Referências {.unnumbered}
