@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.531">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -317,7 +317,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>O gráfico ordena os fatores de forma decrescente mostrando primeiro os mais frequentes considerados <strong>vitais</strong>, e na sequência os menos frequentes considerados <strong>triviais</strong>. Ao mesmo tempo, aprensenta uma linha que mostra a proporção acumulada desses fatores. Daí surge a ideia de que 80% dos problemas são causados por 20% das causas que no gráfico estão representados na cor vermelha.</p></li>
 <li><p>Foi criado pelo economista Vilfredo Pareto em 1897 que queria demonstrar a diferença na distribuição de renda da população, usando também por Lorenz em 1907. Na década de 60, foi usado por Joseph Moses Juran para classificar problemas de qualidade. Os resultados dos treinamentos e aplicação dessa e outro conjunto de ferramentas apareceram 20 anos depois quando em 1970 os produtos japoneses começaram a ser vistos como líderes em qualidade e permanecendo até os dias atuais.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/pareto.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Gráfico de Pareto</figcaption>
@@ -338,7 +338,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Necessidade de análise o fenômeno sob diversos pontos de vista. O pareto permite observar o fenômeno na perspectiva de volume, custo, causas e efeitos.</p></li>
 <li><p>Evitar o vies cognitivo como a ancoragem. explica que diferente do computador que quando não queremos uma informação apenas apagamos, a informação percebida e processada no cerebro humano não pode simplesmente ser ignorada ou posta de lado. Isso significa que o julgamento e as decisões são afetadas pelos efeitos persistentes de informação que foram fornecidas e processadas anteriormente. Nesta situação, o gráfico de pareto pode ser útil para evitar raciocínios tendenciosos como vies da ancoragem, efeito de dotação, vies retrospectivo e viés de resultado.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/step_2.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Etapa 2 do PDCA: Análise do fenômeno</figcaption>
@@ -568,7 +568,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -791,12 +796,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./fluxograma-de-processos.html" class="pagination-link  aria-label=" &lt;span="" de="" processos&lt;="" span&gt;"="">
+      <a href="./fluxograma-de-processos.html" class="pagination-link" aria-label="Fluxograma de Processos">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Fluxograma de Processos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./grafico-de-dispercao.html" class="pagination-link" aria-label="<span class='chapter-number'>6</span>&nbsp; <span class='chapter-title'>Gráfico de Disperção</span>">
+      <a href="./grafico-de-dispercao.html" class="pagination-link" aria-label="Gráfico de Disperção">
         <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Gráfico de Disperção</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

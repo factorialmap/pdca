@@ -2,62 +2,134 @@
 
 ## O que é {.unnumbered}
 
-O gráfico de controle ou carta de controle como também é conhecido, é uma ferramenta gráfica criada pelo estatístico americano Walter Andrew Shewhart em 1924 como um método de analisar e ajustar variações de um processo em função do tempo. 
+-   O gráfico de controle é uma ferramenta útil para avaliar o comportamento de um processo e servir como baes para previsões.
 
-Duas características fundamentais descreviam os processos: centralização, que era determinada pela média representada por limite de controle (LC), e dispersão, que era determinada pelo desvio-padrão ou amplitude.
+-   O gráfico mostra algumas características fundamentais que descrevem um processo como:
 
-O desvio-padrão nos gráficos de controle, é representado por linhas paralelas em relação à média, as quais são chamadas de limites de controle, sendo, limite superior de controle (LSC), que é a linha superior à média, e limite inferior de controle (LIC), que é a linha inferior à média e não pode ser menor que zero. Um valor comum utilizado no estabelecimento de limites em um gráfico de controle é  e pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994).
+    -   Centralização que é determinada pela média.
+    -   Dispersão, que representa o desvio-padrão ou amplitude
+    -   Limites de controle (LC) ou em inglês CL que significa control limits.
 
-Em algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para   quando os custos de investigação das causas forem muito grandes e reduzir para   quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto (DEMING, 2003).
+Imagine um experimento onde o objetivo é medir o tempo médio gasto para fatiar tomates com a mesma espessura. Para isso, eu pego uma amostra de 100 tomates, meço o tempo gasto para fatiar cada tomate. O tempo médio gasto para fatiar cada tomate será representada pela linha central enquanto o limite superior e inferior de controle terão três desvios padrão dessa média.
 
-Os gráficos de controle são divididos em dois grupos: de controle por variáveis e por atributos. O gráfico de controle por variáveis é formado por dados quantitativos, mensuráveis ou que variam continuamente, e é utilizado quando as amostras são expressas em unidades quantitativas de medida tais como comprimento, largura, peso, tempo. O mais comum desses gráficos é o Xbarra-R ou  , onde se determinam a média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992).
+::: callout-note
+## Nota
 
-O gráfico de controle por atributos é representado por dados que só podem ser contados ou classificados e é utilizado quando as amostras refletem características qualitativas como defeituoso ou não, passa ou não passa, entre outros. Para esse tipo de controle é comumente utilizado o gráfico P, NP, C e U, os quais serão apresentados nos apêncides B, C, D, E. Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).
+E por que +/- 3 desvios padrão da média?
 
-Os gráficos P e NP são utilizados quando os atributos são do tipo classificação, por exemplo, SIM ou NÃO, PASSA ou NÃO PASSA, onde em classificações com tamanhos de amostra variável, é mais indicado o gráfico P.
-Os limites de controle para o gráfico P, de fração defeituosa total na
-amostra, são:
- 
-Deming (1997), descreve que Shewhart descobriu duas formas de variações em um processo as quais ele classificou como causas comuns, as quais afetam todos os valores individuais do resultado do processo mas que se enquadram dentro dos limites de controle e representam um processo estável, e as causas especiais, que compreendem as variações intermitentes, imprevisíveis ou instáveis, e são sinalizadas de várias formas, como um ponto fora dos limites de controle, ausência de padrões não aleatórios ou tendências dentro do limite de controle (Figura 10).
- 
+A resposta é que considerando a distribuição normal de probabilidades, 99.7% dos dados estão variando em até 3 desvios padrão da média. Neste caso, qualquer variação dentro desses limites é considerando dentro do normal. Um valor comum de três desvios padrão pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994)
+:::
 
-Uma das dificuldades das empresas ao trabalhar com gráficos de controle, é diferenciar as causas que geraram o problema, se são comuns ou especiais, no entanto, existem diferenças em alguns aspectos. As causas especiais geralmente apresentam pequenas perdas monetárias, grandes visibilidades do problema por causa da variação súbita, facilidade na coleta e análise dos dados e a responsabilidade para as ações de restabelecer o nível anterior fica por conta do pessoal envolvido no processo. 
+![Figura - Gráfico de controle](images\control_chart.png)
 
-Nas causas comuns, as características são bem diferentes pois apresentam na maioria das vezes, grandes perdas monetárias, a visibilidade do problema se torna difícil por causa da natureza contínua, a coleta e análise dos dados se tornam complexas e devem ser realizadas por equipe técnica cuja responsabilidade para as ações fica por conta da administração, pois se trata de mudanças no sistema ou projeto (DEMING, 2003).
+-   @deming2018, descreve que Shewhart em 1924, descobriu duas formas de variações em um processo as quais ele classificou como causas comuns e causas especiais e como os processos sujeitos a variação de causas especiais eram imprevisíveis, as técnicas de probabilidade não poderiam ser usadas para separar um tipo de variação de outra e por isso, ele criou um gráfico de controle estatístico como uma heurística para distinguir esses dois tipos de variação, pois cada tipo necessita tratamentos diferentes.
 
-O estatístico Shewhart propôs para a industria japonesa um gráfico de controle para análise de dados resultantes de inspeção. Isso fez com que a importância dada a procedimentos de inspeção e correção de produtos defeituosos começasse a ser substituída por estudos e prevenção dos problemas relacionados à qualidade garantindo que o possível defeito do produto fosse eliminado durante o processo e não após o término @ferro1997.
+    **Causa comum**
 
+    -   Fenômenos constantemente observados, ativos no sistema.
+
+    -   Variações previsíveis probabilisticamente e quantificáveis.
+
+    -   Falta significância nos valores individuais seja pra cima ou pra abaixo da média.
+
+    -   Exemplos(falta de manutenção de maquinas, falta de procedimento operacional padrão ou inadequados, materias primas de qualidade ruim, iluminação ruim, sujeira ou ruídos excessivos, problemas no design).
+
+    **Causa especial**
+
+    -   Fenômenos imprevistos, emergentes.
+
+    -   Variação imprevisível e não quantificáveis.
+
+    -   Variação fora da faixa histórica
+
+    -   Presença de significância que evidencia alguma mudança ou percepção no sistema.
+
+    -   Exemplos (Pane no servidor, falta de operador da maquina, quebra da maquina, lote diferente na matéria prima, falta ou oscilações na energia eletrica, controladores defeituosos)
+
+    -   Pode ser corrigida alterando o componente ou processo.
+
+::: callout-note
+## Nota
+
+Em algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto (DEMING, 2003).
+:::
+
+-   Os gráficos de controle são divididos em dois grupos sendo o controle por variáveis e por atributos.
+
+    **Por variáveis ou valor contínuo**
+
+    -   É formado por dados quantitativos (variável contínua).
+    -   É utilizado quando as amostras são expressas em unidades quantitativas de medida tais como comprimento(12,3 cm), largura(10 mm), peso(12,7 kgs), tempo (2,9 horas) entre outras.
+    -   O mais comum é o Xbarra-R que significa média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992)
+
+    **Por atributos ou valor discreto**
+
+    -   É formado por dados qualitativos (variáveis discreta e categóricas).
+    -   É utilizado quando as amostras refletem características qualitativas como defeituoso(SIM ou NÃO), passa ou não passa(0 ou 1), unidades contáveis(12 furos no tecido) entre outros.
+    -   Para esse tipo de controle é comumente utilizado o gráfico P, NP, C e U.
+    -   Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).
+
+| Tipo de valor | Nome do gráfico                                          |
+|---------------|----------------------------------------------------------|
+| Contínuo      | Gráfico $\bar{x}$ - $R$ ou gráfico média e amplitude     |
+| Contínuo      | Gráfico $x$ ou gráfico de valor individual               |
+| Discreto      | Gráfico $NP$ ou gráfico de número de defeitos            |
+| Discreto      | Gráfico $p$ ou gráfico de fração defeituosa              |
+| Discreto      | Gráfico $c$ ou gráfico de número de defeitos             |
+| Discreto      | Gráfico $u$ ou gráfico de número de defeitos por unidade |
+
+: Tipos de gráficos de controle
+
+::: {.callout-caution appearance="simple"}
+## Atenção
+
+A linha inferior de controle não pode ser menor que zero.
+:::
 
 ## Qual o objetivo {.unnumbered}
 
-- A
-- B
-- C
+-   Fornecer para o gestor informações sobre o comportamento do processo.
+
+-   Facilitar a realização de análises, ações ou ajustes nos casos em que os processos apresentarem comportamentos considerados fora do padrão normal aleatório.
 
 ## De onde vem {.unnumbered}
 
-- A
-- B
-- C
+-   Necessidade de monitoramento e avaliação de um processo. De acordo com @deming2018, não se melhora a qualidade através da inspeção pois o defeito já vem com o produto quando ele deixa a maquina antes de inspecioná-lo. É importante avaliar o defeito no momento em que ele está acontecendo ou está prestes a acontecer, nisso o gráfico de controle pode ser uma ferramenta útil.
+
+-   Necessidade de ferramenta versátil, que possibilite visualizar e identificar vários tipos de comportamentos como pontos fora do controle, formação de tendências ou padrões repetidos.
+
+-   Verificar resultados parciais as ações em andamento e checar resultados.
+
+![Figura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado](images/step_67.png)
 
 ## Como fazer {.unnumbered}
 
-- A
-- B
-- C
+-   A
+-   B
+-   Montgomery, 2009 regras para reconhecimento de padrões não aleatórios que indicam se o processo pode estar fora de controle.
+    -   Regra1 Qualquer ponto fora do limite de 3 da linha central seja pra cima ou pra baixo
+    -   Regra 2 Dois em cada 3 pontos consectivos fora do limite de 2 sigmas
+    -   Regra 3 Quatro em cadas cinco pontos consectivos fora do limite de 1 sigma do mesmo lado da linha central.
+    -   Regra 4 Oito pontos consectivos do mesmo lado da linha central.
+
+A escolha do gráfico mais adequado para cada situação e calculo de limites de controle
+
+![Figura - Escolha do gráfico de controle e calculo de limites de controle](images/control_limits.png)
+Onde: D3, D4 e E3 são constantes para gráfico de controle.
+
+
+
 
 ## Pra onde vai {.unnumbered}
 
-- A
-- B
-- C
+-   Após o monitoramento e avaliação das ações, a próxima etapa é a padronização para que o procedimento possa ser replicado para os demais processos semelhantes.
 
 ## Qual o resultado {.unnumbered}
 
-- A
-- B
-- C
+-   Melhoria na avaliação das ações que estão sendo executadas através da identificação de comportamento do processo.
 
-![Figura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado](images/step_67.png)
+-   Melhoria do equilibrio no ambiente e do trabalho da equipe pois permite tomar ações preventivas e preditivas minimizando as pressões e stress durante a solução de um problema.
+
+-   Melhoria da qualidade e sustentabilidade nas relações no longo prazo. Por exemplo um produto uniforme terá menos defeitos, com menos defeitos durará mais, durando mais o consumidor fica satisfeito, o consumidor ficando satisfeito ele recomenda o produto e novos consumidores comparão o produto.
 
 ## Referências {.unnumbered}

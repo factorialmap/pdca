@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.531">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -302,7 +302,7 @@ div.csl-indent {
 <li><p>Ação é a execução pratica daquilo que foi planejado. É atraves da ação que as mudanças acontecem.</p></li>
 <li><p>Indicadores são unidades de medida que permitem ao ser humano, avaliar se os efeitos gerados pelas ações estão sendo efetivas ou não.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images\action_indicator.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Liderança, objetivo e método</figcaption>
@@ -328,11 +328,10 @@ div.csl-indent {
 <section id="de-onde-vem" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
 <ul>
-<li><p>Por mais trivial e obvio que pareça, existem situações onde a ação exige uma alta capacidade de liderança.</p></li>
-<li><p>Necessidade de transformação e mudança através de atitude</p></li>
 <li><p>Necessidade de aplicar aquilo que foi planejado e proposto e medir o progresso pava avaliar se os resultados estão sendo efetivos ou não.</p></li>
+<li><p>Necessidade de transformação e mudança através de atitude.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/step_5.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Etapa 5 do PDCA: Aplicar as ações e criar indicadores para avaliar os resultados</figcaption>
@@ -342,11 +341,11 @@ div.csl-indent {
 <section id="como-fazer" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
 <ul>
-<li><p>Como citado anteriormente, agir significa mudar o comportamento padronizado estabelecendo novo meio de fazer algo e isso exige capacidade de liderança ou apoio da liderança em caso de tarefas em processos de fabricação.</p></li>
-<li><p>O plano de ação é uma ferramenta de apoio para aplicação daquilo que foi planejado, servindo como instrumento guia com as etapas, procedimentos e todos os detalhes necessários para o agente e sua equipe agir.</p></li>
-<li><p>Quanto aos indicadores, geralmente eles estão atrelados as ações para que seja possível avaliar os resultados parciais e finais.</p></li>
+<li><p>Como citado anteriormente, agir significa mudar o comportamento padronizado estabelecendo novo meio de fazer algo e isso exige capacidade de liderança e ou apoio da liderança por exemplo no caso de tarefas em um processo de fabricação.</p></li>
+<li><p>O plano de ação é uma ferramenta de apoio útil durante a aplicação daquilo que foi planejado, servindo como instrumento guia com as etapas, procedimentos e todos os detalhes necessários para o agente e sua equipe agir.</p></li>
+<li><p>Quanto aos indicadores, geralmente eles estão atrelados as ações para que seja possível avaliar os resultados parciais e finais. Na figura abaixo é possível notar que existem indicadores atrelados as ações e também atrelados aos objetivos estratégicos.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images\indicators.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Estratégia, ação e indicadores</figcaption>
@@ -366,7 +365,7 @@ div.csl-indent {
 <section id="qual-o-resultado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
 <ul>
-<li><p>Melhoria da conciência de que a transformação é resultado da ação e esta, deve ser avaliada para medir se os resultados estão sendo efetivos para a solução do problema.</p></li>
+<li><p>Melhoria da conciência de que a transformação é resultado da ação e esta, deve ter um indicador atrelado para medir se os resultados estão sendo efetivos para a solução do problema.</p></li>
 <li><p>Melhoria no etimulo, inspiração e engajamento da equipe na busca por melhoria continua, solução de problemas e avaliação dos resultados das ações.</p></li>
 <li><p>Melhoria no aproveitamento de recursos, pois todos os esforços empregados até então são realmente compensados pelos resultados obtidos atraves da aplicação das ações planejadas.</p></li>
 </ul>
@@ -544,7 +543,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -767,12 +771,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./plano-de-acao.html" class="pagination-link  aria-label=" &lt;span="" de="" ação&lt;="" span&gt;"="">
+      <a href="./plano-de-acao.html" class="pagination-link" aria-label="Plano de Ação">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Plano de Ação</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./grafico-de-controle.html" class="pagination-link" aria-label="<span class='chapter-number'>11</span>&nbsp; <span class='chapter-title'>Gráfico de controle</span>">
+      <a href="./grafico-de-controle.html" class="pagination-link" aria-label="Gráfico de controle">
         <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Gráfico de controle</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

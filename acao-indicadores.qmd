@@ -26,21 +26,19 @@
 
 ## De onde vem {.unnumbered}
 
--   Por mais trivial e obvio que pareça, existem situações onde a ação exige uma alta capacidade de liderança.
-
--   Necessidade de transformação e mudança através de atitude
-
 -   Necessidade de aplicar aquilo que foi planejado e proposto e medir o progresso pava avaliar se os resultados estão sendo efetivos ou não.
+
+-   Necessidade de transformação e mudança através de atitude.
 
 ![Figura - Etapa 5 do PDCA: Aplicar as ações e criar indicadores para avaliar os resultados](images/step_5.png)
 
 ## Como fazer {.unnumbered}
 
--   Como citado anteriormente, agir significa mudar o comportamento padronizado estabelecendo novo meio de fazer algo e isso exige capacidade de liderança ou apoio da liderança em caso de tarefas em processos de fabricação.
+-   Como citado anteriormente, agir significa mudar o comportamento padronizado estabelecendo novo meio de fazer algo e isso exige capacidade de liderança e ou apoio da liderança por exemplo no caso de tarefas em um processo de fabricação.
 
--   O plano de ação é uma ferramenta de apoio para aplicação daquilo que foi planejado, servindo como instrumento guia com as etapas, procedimentos e todos os detalhes necessários para o agente e sua equipe agir.
+-   O plano de ação é uma ferramenta de apoio útil durante a aplicação daquilo que foi planejado, servindo como instrumento guia com as etapas, procedimentos e todos os detalhes necessários para o agente e sua equipe agir.
 
--   Quanto aos indicadores, geralmente eles estão atrelados as ações para que seja possível avaliar os resultados parciais e finais.
+-   Quanto aos indicadores, geralmente eles estão atrelados as ações para que seja possível avaliar os resultados parciais e finais. Na figura abaixo é possível notar que existem indicadores atrelados as ações e também atrelados aos objetivos estratégicos.
 
 ![Figura - Estratégia, ação e indicadores](images\indicators.png)
 
@@ -54,7 +52,7 @@
 
 ## Qual o resultado {.unnumbered}
 
--   Melhoria da conciência de que a transformação é resultado da ação e esta, deve ser avaliada para medir se os resultados estão sendo efetivos para a solução do problema.
+-   Melhoria da conciência de que a transformação é resultado da ação e esta, deve ter um indicador atrelado para medir se os resultados estão sendo efetivos para a solução do problema.
 
 -   Melhoria no etimulo, inspiração e engajamento da equipe na busca por melhoria continua, solução de problemas e avaliação dos resultados das ações.
 

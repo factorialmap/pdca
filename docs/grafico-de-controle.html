@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.531">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -90,6 +90,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -298,71 +327,195 @@ div.csl-indent {
 
 <section id="o-que-é" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
-<p>O gráfico de controle ou carta de controle como também é conhecido, é uma ferramenta gráfica criada pelo estatístico americano Walter Andrew Shewhart em 1924 como um método de analisar e ajustar variações de um processo em função do tempo.</p>
-<p>Duas características fundamentais descreviam os processos: centralização, que era determinada pela média representada por limite de controle (LC), e dispersão, que era determinada pelo desvio-padrão ou amplitude.</p>
-<p>O desvio-padrão nos gráficos de controle, é representado por linhas paralelas em relação à média, as quais são chamadas de limites de controle, sendo, limite superior de controle (LSC), que é a linha superior à média, e limite inferior de controle (LIC), que é a linha inferior à média e não pode ser menor que zero. Um valor comum utilizado no estabelecimento de limites em um gráfico de controle é e pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994).</p>
+<ul>
+<li><p>O gráfico de controle é uma ferramenta útil para avaliar o comportamento de um processo e servir como baes para previsões.</p></li>
+<li><p>O gráfico mostra algumas características fundamentais que descrevem um processo como:</p>
+<ul>
+<li>Centralização que é determinada pela média.</li>
+<li>Dispersão, que representa o desvio-padrão ou amplitude</li>
+<li>Limites de controle (LC) ou em inglês CL que significa control limits.</li>
+</ul></li>
+</ul>
+<p>Imagine um experimento onde o objetivo é medir o tempo médio gasto para fatiar tomates com a mesma espessura. Para isso, eu pego uma amostra de 100 tomates, meço o tempo gasto para fatiar cada tomate. O tempo médio gasto para fatiar cada tomate será representada pela linha central enquanto o limite superior e inferior de controle terão três desvios padrão dessa média.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>E por que +/- 3 desvios padrão da média?</p>
+<p>A resposta é que considerando a distribuição normal de probabilidades, 99.7% dos dados estão variando em até 3 desvios padrão da média. Neste caso, qualquer variação dentro desses limites é considerando dentro do normal. Um valor comum de três desvios padrão pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994)</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images\control_chart.png" class="img-fluid figure-img"></p>
+<figcaption>Figura - Gráfico de controle</figcaption>
+</figure>
+</div>
+<ul>
+<li><p><span class="citation" data-cites="deming2018">Deming, Cahill, and Allan (<a href="#ref-deming2018" role="doc-biblioref">2018</a>)</span>, descreve que Shewhart em 1924, descobriu duas formas de variações em um processo as quais ele classificou como causas comuns e causas especiais e como os processos sujeitos a variação de causas especiais eram imprevisíveis, as técnicas de probabilidade não poderiam ser usadas para separar um tipo de variação de outra e por isso, ele criou um gráfico de controle estatístico como uma heurística para distinguir esses dois tipos de variação, pois cada tipo necessita tratamentos diferentes.</p>
+<p><strong>Causa comum</strong></p>
+<ul>
+<li><p>Fenômenos constantemente observados, ativos no sistema.</p></li>
+<li><p>Variações previsíveis probabilisticamente e quantificáveis.</p></li>
+<li><p>Falta significância nos valores individuais seja pra cima ou pra abaixo da média.</p></li>
+<li><p>Exemplos(falta de manutenção de maquinas, falta de procedimento operacional padrão ou inadequados, materias primas de qualidade ruim, iluminação ruim, sujeira ou ruídos excessivos, problemas no design).</p></li>
+</ul>
+<p><strong>Causa especial</strong></p>
+<ul>
+<li><p>Fenômenos imprevistos, emergentes.</p></li>
+<li><p>Variação imprevisível e não quantificáveis.</p></li>
+<li><p>Variação fora da faixa histórica</p></li>
+<li><p>Presença de significância que evidencia alguma mudança ou percepção no sistema.</p></li>
+<li><p>Exemplos (Pane no servidor, falta de operador da maquina, quebra da maquina, lote diferente na matéria prima, falta ou oscilações na energia eletrica, controladores defeituosos)</p></li>
+<li><p>Pode ser corrigida alterando o componente ou processo.</p></li>
+</ul></li>
+</ul>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Em algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto (DEMING, 2003).</p>
-<p>Os gráficos de controle são divididos em dois grupos: de controle por variáveis e por atributos. O gráfico de controle por variáveis é formado por dados quantitativos, mensuráveis ou que variam continuamente, e é utilizado quando as amostras são expressas em unidades quantitativas de medida tais como comprimento, largura, peso, tempo. O mais comum desses gráficos é o Xbarra-R ou , onde se determinam a média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992).</p>
-<p>O gráfico de controle por atributos é representado por dados que só podem ser contados ou classificados e é utilizado quando as amostras refletem características qualitativas como defeituoso ou não, passa ou não passa, entre outros. Para esse tipo de controle é comumente utilizado o gráfico P, NP, C e U, os quais serão apresentados nos apêncides B, C, D, E. Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).</p>
-<p>Os gráficos P e NP são utilizados quando os atributos são do tipo classificação, por exemplo, SIM ou NÃO, PASSA ou NÃO PASSA, onde em classificações com tamanhos de amostra variável, é mais indicado o gráfico P. Os limites de controle para o gráfico P, de fração defeituosa total na amostra, são:</p>
-<p>Deming (1997), descreve que Shewhart descobriu duas formas de variações em um processo as quais ele classificou como causas comuns, as quais afetam todos os valores individuais do resultado do processo mas que se enquadram dentro dos limites de controle e representam um processo estável, e as causas especiais, que compreendem as variações intermitentes, imprevisíveis ou instáveis, e são sinalizadas de várias formas, como um ponto fora dos limites de controle, ausência de padrões não aleatórios ou tendências dentro do limite de controle (Figura 10).</p>
-<p>Uma das dificuldades das empresas ao trabalhar com gráficos de controle, é diferenciar as causas que geraram o problema, se são comuns ou especiais, no entanto, existem diferenças em alguns aspectos. As causas especiais geralmente apresentam pequenas perdas monetárias, grandes visibilidades do problema por causa da variação súbita, facilidade na coleta e análise dos dados e a responsabilidade para as ações de restabelecer o nível anterior fica por conta do pessoal envolvido no processo.</p>
-<p>Nas causas comuns, as características são bem diferentes pois apresentam na maioria das vezes, grandes perdas monetárias, a visibilidade do problema se torna difícil por causa da natureza contínua, a coleta e análise dos dados se tornam complexas e devem ser realizadas por equipe técnica cuja responsabilidade para as ações fica por conta da administração, pois se trata de mudanças no sistema ou projeto (DEMING, 2003).</p>
-<p>O estatístico Shewhart propôs para a industria japonesa um gráfico de controle para análise de dados resultantes de inspeção. Isso fez com que a importância dada a procedimentos de inspeção e correção de produtos defeituosos começasse a ser substituída por estudos e prevenção dos problemas relacionados à qualidade garantindo que o possível defeito do produto fosse eliminado durante o processo e não após o término <span class="citation" data-cites="ferro1997">Ferro and Grande (<a href="#ref-ferro1997" role="doc-biblioref">1997</a>)</span>.</p>
+</div>
+</div>
+<ul>
+<li><p>Os gráficos de controle são divididos em dois grupos sendo o controle por variáveis e por atributos.</p>
+<p><strong>Por variáveis ou valor contínuo</strong></p>
+<ul>
+<li>É formado por dados quantitativos (variável contínua).</li>
+<li>É utilizado quando as amostras são expressas em unidades quantitativas de medida tais como comprimento(12,3 cm), largura(10 mm), peso(12,7 kgs), tempo (2,9 horas) entre outras.</li>
+<li>O mais comum é o Xbarra-R que significa média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992)</li>
+</ul>
+<p><strong>Por atributos ou valor discreto</strong></p>
+<ul>
+<li>É formado por dados qualitativos (variáveis discreta e categóricas).</li>
+<li>É utilizado quando as amostras refletem características qualitativas como defeituoso(SIM ou NÃO), passa ou não passa(0 ou 1), unidades contáveis(12 furos no tecido) entre outros.</li>
+<li>Para esse tipo de controle é comumente utilizado o gráfico P, NP, C e U.</li>
+<li>Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).</li>
+</ul></li>
+</ul>
+<table class="table">
+<caption>Tipos de gráficos de controle</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 79%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo de valor</th>
+<th>Nome do gráfico</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Contínuo</td>
+<td>Gráfico <span class="math inline">\(\bar{x}\)</span> - <span class="math inline">\(R\)</span> ou gráfico média e amplitude</td>
+</tr>
+<tr class="even">
+<td>Contínuo</td>
+<td>Gráfico <span class="math inline">\(x\)</span> ou gráfico de valor individual</td>
+</tr>
+<tr class="odd">
+<td>Discreto</td>
+<td>Gráfico <span class="math inline">\(NP\)</span> ou gráfico de número de defeitos</td>
+</tr>
+<tr class="even">
+<td>Discreto</td>
+<td>Gráfico <span class="math inline">\(p\)</span> ou gráfico de fração defeituosa</td>
+</tr>
+<tr class="odd">
+<td>Discreto</td>
+<td>Gráfico <span class="math inline">\(c\)</span> ou gráfico de número de defeitos</td>
+</tr>
+<tr class="even">
+<td>Discreto</td>
+<td>Gráfico <span class="math inline">\(u\)</span> ou gráfico de número de defeitos por unidade</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-simple callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Atenção
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A linha inferior de controle não pode ser menor que zero.</p>
+</div>
+</div>
 </section>
 <section id="qual-o-objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>Fornecer para o gestor informações sobre o comportamento do processo.</p></li>
+<li><p>Facilitar a realização de análises, ações ou ajustes nos casos em que os processos apresentarem comportamentos considerados fora do padrão normal aleatório.</p></li>
 </ul>
 </section>
 <section id="de-onde-vem" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>Necessidade de monitoramento e avaliação de um processo. De acordo com <span class="citation" data-cites="deming2018">Deming, Cahill, and Allan (<a href="#ref-deming2018" role="doc-biblioref">2018</a>)</span>, não se melhora a qualidade através da inspeção pois o defeito já vem com o produto quando ele deixa a maquina antes de inspecioná-lo. É importante avaliar o defeito no momento em que ele está acontecendo ou está prestes a acontecer, nisso o gráfico de controle pode ser uma ferramenta útil.</p></li>
+<li><p>Necessidade de ferramenta versátil, que possibilite visualizar e identificar vários tipos de comportamentos como pontos fora do controle, formação de tendências ou padrões repetidos.</p></li>
+<li><p>Verificar resultados parciais as ações em andamento e checar resultados.</p></li>
 </ul>
-</section>
-<section id="como-fazer" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
-<ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
-</ul>
-</section>
-<section id="pra-onde-vai" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
-<ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
-</ul>
-</section>
-<section id="qual-o-resultado" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
-<ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
-</ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/step_67.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado</figcaption>
 </figure>
 </div>
 </section>
+<section id="como-fazer" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
+<ul>
+<li>A</li>
+<li>B</li>
+<li>Montgomery, 2009 regras para reconhecimento de padrões não aleatórios que indicam se o processo pode estar fora de controle.
+<ul>
+<li>Regra1 Qualquer ponto fora do limite de 3 da linha central seja pra cima ou pra baixo</li>
+<li>Regra 2 Dois em cada 3 pontos consectivos fora do limite de 2 sigmas</li>
+<li>Regra 3 Quatro em cadas cinco pontos consectivos fora do limite de 1 sigma do mesmo lado da linha central.</li>
+<li>Regra 4 Oito pontos consectivos do mesmo lado da linha central.</li>
+</ul></li>
+</ul>
+<p>A escolha do gráfico mais adequado para cada situação e calculo de limites de controle</p>
+<p><img src="images/control_limits.png" class="img-fluid" alt="Figura - Escolha do gráfico de controle e calculo de limites de controle"> Onde: D3, D4 e E3 são constantes para gráfico de controle.</p>
+</section>
+<section id="pra-onde-vai" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
+<ul>
+<li>Após o monitoramento e avaliação das ações, a próxima etapa é a padronização para que o procedimento possa ser replicado para os demais processos semelhantes.</li>
+</ul>
+</section>
+<section id="qual-o-resultado" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
+<ul>
+<li><p>Melhoria na avaliação das ações que estão sendo executadas através da identificação de comportamento do processo.</p></li>
+<li><p>Melhoria do equilibrio no ambiente e do trabalho da equipe pois permite tomar ações preventivas e preditivas minimizando as pressões e stress durante a solução de um problema.</p></li>
+<li><p>Melhoria da qualidade e sustentabilidade nas relações no longo prazo. Por exemplo um produto uniforme terá menos defeitos, com menos defeitos durará mais, durando mais o consumidor fica satisfeito, o consumidor ficando satisfeito ele recomenda o produto e novos consumidores comparão o produto.</p></li>
+</ul>
+</section>
 <section id="referências" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="referências">Referências</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-ferro1997" class="csl-entry" role="listitem">
-Ferro, José Roberto, and Márcia Mazzeo Grande. 1997. <span>“Círculos de Controle Da Qualidade (CCQs) No Brasil: Sobrevivendo Ao <span>"</span>Modismo<span>"</span>.”</span> <em>RAE - Revista de Administracao de Empresas</em> 37 (4): 78–88. <a href="https://periodicos.fgv.br/rae/article/view/37972">https://periodicos.fgv.br/rae/article/view/37972</a>.
+<div id="ref-deming2018" class="csl-entry" role="listitem">
+Deming, W. Edwards, Kevin Edwards Cahill, and Kelly L. Allan. 2018. <em>Out of the Crisis, Reissue</em>. Reissue ed. edição. Cambridge, Massachsetts: MIT Press.
 </div>
 </div>
 </section>
@@ -529,7 +682,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -752,12 +910,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./acao-indicadores.html" class="pagination-link  aria-label=" &lt;span="" e="" indicadores&lt;="" span&gt;"="">
+      <a href="./acao-indicadores.html" class="pagination-link" aria-label="Ação e Indicadores">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Ação e Indicadores</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./relatorio-tres-geracoes.html" class="pagination-link" aria-label="<span class='chapter-number'>12</span>&nbsp; <span class='chapter-title'>Relatório de três gerações</span>">
+      <a href="./relatorio-tres-geracoes.html" class="pagination-link" aria-label="Relatório de três gerações">
         <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Relatório de três gerações</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

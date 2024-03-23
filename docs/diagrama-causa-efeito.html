@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.531">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -337,7 +337,7 @@ div.csl-indent {
 <li><p>Por se tratar de uma ferramenta gráfica, facilita identificar uma relação significativa sob diversos pontos de vista entre o efeito e suas possíveis causas <span class="citation" data-cites="werkema2021">Werkema (<a href="#ref-werkema2021" role="doc-biblioref">2021</a>)</span>.</p></li>
 <li><p>Conforme <span class="citation" data-cites="kume1987">Kume (<a href="#ref-kume1987" role="doc-biblioref">1987</a>)</span> construir um gráfico de causa e efeito que seja útil exige esforço, treinamento da equipe e tempo. Pessoas que tem sucesso na solução de problemas de controle de qualidade são aqueles bem sucedidas na construção de diagramas de causa e efeito úteis.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/diagrama_causa_efeito.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Diagrama de causa e efeito</figcaption>
@@ -358,7 +358,7 @@ div.csl-indent {
 <li><p>Um professor na universidade de Tokyo Kaoru Ishikawa, usou um diagrama para sintetizar opiniões de engenheiros nas fábricas durante discussões sobre qualidade em 1953. Conforme <span class="citation" data-cites="kume1987">Kume (<a href="#ref-kume1987" role="doc-biblioref">1987</a>)</span>, alunos de Ishikawa também empregaram o método para organizar fatores em suas atividades de pesquisa.</p></li>
 <li><p>Pela simplicidade e eficiência da ferramenta, ela foi adotada e incorporada aos JIS (Japanese Industrial Standards).</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/step_3.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Etapa 3 do PDCA: Descobrir causa raíz do problema</figcaption>
@@ -624,7 +624,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -847,12 +852,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./grafico-de-dispercao.html" class="pagination-link  aria-label=" &lt;span="" de="" disperção&lt;="" span&gt;"="">
+      <a href="./grafico-de-dispercao.html" class="pagination-link" aria-label="Gráfico de Disperção">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Gráfico de Disperção</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./cinco-porques.html" class="pagination-link" aria-label="<span class='chapter-number'>8</span>&nbsp; <span class='chapter-title'>Método 5 porquês</span>">
+      <a href="./cinco-porques.html" class="pagination-link" aria-label="Método 5 porquês">
         <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Método 5 porquês</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

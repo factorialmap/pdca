@@ -50,11 +50,21 @@
     ]
   },
   {
+    "objectID": "conceitos.html",
+    "href": "conceitos.html",
+    "title": "1  Conceitos",
+    "section": "",
+    "text": "1.1 Método PDCA\nO PDCA é um método criado para auxiliar os gestores na identificação e solução de problemas. Ele mostra de forma simplificada e organizada o caminho a ser percorrido na busca de melhoria contínua.\nA figura abaixo ilustra o método PDCA sendo:\nTambém conhecido como ciclo de Shewhart ou ciclo de Deming, foi concluído em 1930 por Walter Shewhart no Bell Laboratories que analisando estatisticamente o controle de processos, criou um modelo que poderia ser aplicado em qualquer situação Werkema (2021).\nO estatístico William Edwards Deming Deming, Cahill, and Allan (2018) foi o responsável por propagar a idéia no Japão após a segunda guerra mundial. Desde então, obteve-se a popularização ao redor do mundo, das técnicas e da qualidade dos produtos japoneses(veículos, eletronicos, frutas etc), os quais antes da guerra competiam no mercado internacional de produção em massa apenas em preço e não em qualidade.\nSegundo Campos (1992), o ciclo PDCA tem por princípio tornar mais claras e ágeis as etapas no processo de gerenciamento as quais são assim divididas:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Conceitos</span>"
+    ]
+  },
+  {
     "objectID": "conceitos.html#método-pdca",
     "href": "conceitos.html#método-pdca",
     "title": "1  Conceitos",
-    "section": "1.1 Método PDCA",
-    "text": "1.1 Método PDCA\nO PDCA é um método criado para auxiliar os gestores na identificação e solução de problemas. Ele mostra de forma simplificada e organizada o caminho a ser percorrido na busca de melhoria contínua.\nA figura abaixo ilustra o método PDCA sendo:\n\nPDCA mostra a parte no ciclo (P = Planejamento, D = Execução, C = Medição, A = Padronização)\nFluxo mostra como o processo deve ser seguido.\nEtapa mostra um resumo do que é feito em cada ponto do processo.\nObjetivo mostra o por que de cada etapa juntamente com a ferramenta de apoio representados pelas figuras.\n\n\n\n\nFigura 1 - Ilustração método PDCA\n\n\nTambém conhecido como ciclo de Shewhart ou ciclo de Deming, foi concluído em 1930 por Walter Shewhart no Bell Laboratories que analisando estatisticamente o controle de processos, criou um modelo que poderia ser aplicado em qualquer situação Werkema (2021).\nO estatístico William Edwards Deming Deming, Cahill, and Allan (2018) foi o responsável por propagar a idéia no Japão após a segunda guerra mundial. Desde então, obteve-se a popularização ao redor do mundo, das técnicas e da qualidade dos produtos japoneses(veículos, eletronicos, frutas etc), os quais antes da guerra competiam no mercado internacional de produção em massa apenas em preço e não em qualidade.\nSegundo Campos (1992), o ciclo PDCA tem por princípio tornar mais claras e ágeis as etapas no processo de gerenciamento as quais são assim divididas:\n\nPLAN (Planejamento) - Etapa onde se busca identificar oportunidades ou problemas, analisar os fenômenos, detectar causas reais, definir metas, criar procedimentos para execussão com prazos e metricas para avaliação.\nDO (Execução) - Etapa em que as ações propostas em Plan são executadas por meio da busca pelo aprendizado.\nCHECK (Medição) – Etapa de validação através de avaliação, monitoramento e controle das ações em execussão, comparando os resultados com o que foi planejado em Plan.\nACT (Padronização) - Etapa onde as ações que foram validadas em Check são adotados como padrão, aplicadas, reproduzidas e ensinadas para os demais.",
+    "section": "",
+    "text": "PDCA mostra a parte no ciclo (P = Planejamento, D = Execução, C = Medição, A = Padronização)\nFluxo mostra como o processo deve ser seguido.\nEtapa mostra um resumo do que é feito em cada ponto do processo.\nObjetivo mostra o por que de cada etapa juntamente com a ferramenta de apoio representados pelas figuras.\n\n\n\n\nFigura 1 - Ilustração método PDCA\n\n\n\n\n\n\nPLAN (Planejamento) - Etapa onde se busca identificar oportunidades ou problemas, analisar os fenômenos, detectar causas reais, definir metas, criar procedimentos para execussão com prazos e metricas para avaliação.\nDO (Execução) - Etapa em que as ações propostas em Plan são executadas por meio da busca pelo aprendizado.\nCHECK (Medição) – Etapa de validação através de avaliação, monitoramento e controle das ações em execussão, comparando os resultados com o que foi planejado em Plan.\nACT (Padronização) - Etapa onde as ações que foram validadas em Check são adotados como padrão, aplicadas, reproduzidas e ensinadas para os demais.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Conceitos</span>"
     ]
@@ -80,11 +90,21 @@
     ]
   },
   {
+    "objectID": "cinco-s.html",
+    "href": "cinco-s.html",
+    "title": "2  OS 5S",
+    "section": "",
+    "text": "O que é",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>OS 5S</span>"
+    ]
+  },
+  {
     "objectID": "cinco-s.html#o-que-é",
     "href": "cinco-s.html#o-que-é",
     "title": "2  OS 5S",
-    "section": "O que é",
-    "text": "O que é\n\nO 5S é uma prática propagada no Japão que ensina que bons hábitos, eliminação de desperdícios e perdas são capazes de modificar o humor, harmonizar o ambiente e a maneira da condução das atividades de todos.\nA prática foi desenvolvida a partir dos hábitos das mães de família japonesas e introduzida no meio empresarial logo após a segunda guerra mundial. O objetivo principal na época era combater a sujeira das fábricas e desde então, é ensinado como princípio educacional para a formação dos indivíduos Carvalho (2018).\n\n\n\n\nFigura - 5S cinco sensos\n\n\n\nO nome 5S vem das cinco palavras do vocabulário japonês Seiri, Seiton, Seiso, Seiketsu, Shitsuke e o princípio é uma aplicação da sabedoria filosofica com o propósito de melhorar o ambiente seja no trabalho ou em outros lugares.\n\n\nSeiri - Arrumação\n\nDe acordo com o dicionário da língua japonesa shogakukan, Seiri significa dispor em perfeita ordem as coisas que estão em desordem ou que estão em situação confusa, afastar coisas inúteis ou descartá-las. É comum ver situações de desorganização no cotidiano das pessoas, desde “Onde deixei minhas chaves?“, até “Onde coloquei os relatórios?”. Estas são situações que podem facilmente ser evitadas com a aplicação do seiri Nakata, Kenji (2000).\nNa filosofia dos 5S no Japão, a aplicação do seiri obedece a uma ordem de classificação.\n\nDesnecessárias: coisas que não são utilizadas como ferramentas avariadas, moldes, materiais fora de linha, peças e materiais não conformes, equipamentos antigos ou em desuso e até ideias ultrapassadas e pensamentos ruins a respeito de algo ou alguém.\nNão essenciais: coisas necessárias, porém, não são utilizadas com muita frequência.\nEssenciais: coisas necessárias e que são utilizadas frequentemente.\n\n\nUma das barreiras na execução do seiri é o pensamento de que os objetos que estão atualmente em desuso irão ser utilizados algum dia, ficando meses ou até anos armazenados sem que haja utilização Nakata, Kenji (2000).\n\n\nSeiton - Ordenação\n\nNo dicionário da língua japonesa shogakukan, Seiton significa organizar os objetos e as coisas que estão em desordem ou dispor as coisas necessárias em perfeita ordem e indicá-las de forma que qualquer pessoa possa encontrá-las.\nRefere-se à disposição de ferramentas, equipamentos ou materiais de forma que melhore o fluxo de trabalho, onde os objetos são claramente identificados com relação ao local, conteúdo, quantidade e disposição eliminando movimentos desnecessários economizando tempo e agilizando a localização.\n\n\n\nSeiso - Manter limpo\n\nDe acordo com o dicionário da língua japonesa shogakukan, a palavra Seiso significa fazer uma perfeita operação de remoção de sujeira.\nManter limpo é diferente de limpar. Por exemplo. Imagine que alguem em um dia ruim lhe perturbe no transito com o palavrão. O ato de compreender que talvez a pessoa tenha tido um dia ruim e com isso ignorar, é manter a mente limpa. Por outro lado, se o pensamento for limpar, você poderá retribuir a provocação e talvez iniciar uma discusão gerando stress para então posteriormente ter que limpar a mente. Manter limpo, é diferente de limpar, e isso vale para ideias, pensamentos, ambientes e revelam um outro estágio de conciência.\nEm um processo de produção, refere-se à necessidade de manter o mais limpo possível o local de trabalho e de realizar inspeções periódicas, utilizando efetivamente os cinco sentidos, verificando-se a existência de anormalidades e falhas minúsculas, ou seja, todas as fontes de sujeira, devem ser eliminadas e deve ser criada uma rotina de limpeza que envolva os operadores de cada máquina, equipamento ou estação de trabalho. Essas práticas, auxiliam na prevenção de acidentes, além de melhorar as condições de trabalho de todas as pessoas dentro da empresa Haroldo Ribeiro (2006).\n\n\n\nSeiketsu – Higiene\n\nA palavra Seiketsu, no dicionário da língua japonesa shogakukan, significa limpo, isento de sujeira. Ambiente com excelentes condições sanitárias e ainda pessoa com retidão de caráter e conduta Nakata, Kenji (2000).\nNa filosofia dos 5S japonesa, higiene se refere à manutenção dos três sensos anteriores, ou seja, arrumação, ordenação e limpeza. Cria-se dessa forma um ambiente com boas condições de saúde física e mental. Significa ainda garantir que informações e comunicação sejam feitas de forma simples e claras, e que todas as pessoas consigam compreender Nakata, Kenji (2000).\n\n\n\nShitsuke – Se colocar no lugar do outro\n\nA palavra Shitsuke, no dicionário da língua japonesa shogakukan significa dotar-se de boas maneiras ou já dotado de boas maneiras. Refere-se ao ato de desenvolver hábitos de cumprir os deveres como membro da sociedade. Vem a ser também um movimento de educação pessoal para desenvolver as potencialidades do ser humano, ou seja, saber imaginar situações nas quais se colocam no lugar do outro e atuar com os sentimentos que eles teriam naquelas circunstâncias, de modo a tornar isso um hábito Nakata, Kenji (2000).\nConforme Nakata, Kenji (2000), o shitsuke seria o principal objetivo a ser perseguido pelas empresas, pela sociedade e pelo país, considerando que a implementação do 5S é uma técnica de melhoria.\nOs efeitos da aplicação do 5S são de uma mudança cultural dentro e fora das empresas, mudando o jeito de pensar das pessoas, direcionando-as a um comportamento melhor, e que serão aplicados para toda a vida. Não deve ser tratado apenas como um programa de limpeza, mas sim uma nova maneira de conduzir uma organização a ganhos expressivos de produtividade e melhorar a qualidade de vida das pessoas.",
+    "section": "",
+    "text": "O 5S é uma prática propagada no Japão que ensina que bons hábitos, eliminação de desperdícios e perdas são capazes de modificar o humor, harmonizar o ambiente e a maneira da condução das atividades de todos.\nA prática foi desenvolvida a partir dos hábitos das mães de família japonesas e introduzida no meio empresarial logo após a segunda guerra mundial. O objetivo principal na época era combater a sujeira das fábricas e desde então, é ensinado como princípio educacional para a formação dos indivíduos Carvalho (2018).\n\n\n\n\nFigura - 5S cinco sensos\n\n\n\nO nome 5S vem das cinco palavras do vocabulário japonês Seiri, Seiton, Seiso, Seiketsu, Shitsuke e o princípio é uma aplicação da sabedoria filosofica com o propósito de melhorar o ambiente seja no trabalho ou em outros lugares.\n\n\nSeiri - Arrumação\n\nDe acordo com o dicionário da língua japonesa shogakukan, Seiri significa dispor em perfeita ordem as coisas que estão em desordem ou que estão em situação confusa, afastar coisas inúteis ou descartá-las. É comum ver situações de desorganização no cotidiano das pessoas, desde “Onde deixei minhas chaves?“, até “Onde coloquei os relatórios?”. Estas são situações que podem facilmente ser evitadas com a aplicação do seiri Nakata, Kenji (2000).\nNa filosofia dos 5S no Japão, a aplicação do seiri obedece a uma ordem de classificação.\n\nDesnecessárias: coisas que não são utilizadas como ferramentas avariadas, moldes, materiais fora de linha, peças e materiais não conformes, equipamentos antigos ou em desuso e até ideias ultrapassadas e pensamentos ruins a respeito de algo ou alguém.\nNão essenciais: coisas necessárias, porém, não são utilizadas com muita frequência.\nEssenciais: coisas necessárias e que são utilizadas frequentemente.\n\n\nUma das barreiras na execução do seiri é o pensamento de que os objetos que estão atualmente em desuso irão ser utilizados algum dia, ficando meses ou até anos armazenados sem que haja utilização Nakata, Kenji (2000).\n\n\nSeiton - Ordenação\n\nNo dicionário da língua japonesa shogakukan, Seiton significa organizar os objetos e as coisas que estão em desordem ou dispor as coisas necessárias em perfeita ordem e indicá-las de forma que qualquer pessoa possa encontrá-las.\nRefere-se à disposição de ferramentas, equipamentos ou materiais de forma que melhore o fluxo de trabalho, onde os objetos são claramente identificados com relação ao local, conteúdo, quantidade e disposição eliminando movimentos desnecessários economizando tempo e agilizando a localização.\n\n\n\nSeiso - Manter limpo\n\nDe acordo com o dicionário da língua japonesa shogakukan, a palavra Seiso significa fazer uma perfeita operação de remoção de sujeira.\nManter limpo é diferente de limpar. Por exemplo. Imagine que alguem em um dia ruim lhe perturbe no transito com o palavrão. O ato de compreender que talvez a pessoa tenha tido um dia ruim e com isso ignorar, é manter a mente limpa. Por outro lado, se o pensamento for limpar, você poderá retribuir a provocação e talvez iniciar uma discusão gerando stress para então posteriormente ter que limpar a mente. Manter limpo, é diferente de limpar, e isso vale para ideias, pensamentos, ambientes e revelam um outro estágio de conciência.\nEm um processo de produção, refere-se à necessidade de manter o mais limpo possível o local de trabalho e de realizar inspeções periódicas, utilizando efetivamente os cinco sentidos, verificando-se a existência de anormalidades e falhas minúsculas, ou seja, todas as fontes de sujeira, devem ser eliminadas e deve ser criada uma rotina de limpeza que envolva os operadores de cada máquina, equipamento ou estação de trabalho. Essas práticas, auxiliam na prevenção de acidentes, além de melhorar as condições de trabalho de todas as pessoas dentro da empresa Haroldo Ribeiro (2006).\n\n\n\nSeiketsu – Higiene\n\nA palavra Seiketsu, no dicionário da língua japonesa shogakukan, significa limpo, isento de sujeira. Ambiente com excelentes condições sanitárias e ainda pessoa com retidão de caráter e conduta Nakata, Kenji (2000).\nNa filosofia dos 5S japonesa, higiene se refere à manutenção dos três sensos anteriores, ou seja, arrumação, ordenação e limpeza. Cria-se dessa forma um ambiente com boas condições de saúde física e mental. Significa ainda garantir que informações e comunicação sejam feitas de forma simples e claras, e que todas as pessoas consigam compreender Nakata, Kenji (2000).\n\n\n\nShitsuke – Se colocar no lugar do outro\n\nA palavra Shitsuke, no dicionário da língua japonesa shogakukan significa dotar-se de boas maneiras ou já dotado de boas maneiras. Refere-se ao ato de desenvolver hábitos de cumprir os deveres como membro da sociedade. Vem a ser também um movimento de educação pessoal para desenvolver as potencialidades do ser humano, ou seja, saber imaginar situações nas quais se colocam no lugar do outro e atuar com os sentimentos que eles teriam naquelas circunstâncias, de modo a tornar isso um hábito Nakata, Kenji (2000).\nConforme Nakata, Kenji (2000), o shitsuke seria o principal objetivo a ser perseguido pelas empresas, pela sociedade e pelo país, considerando que a implementação do 5S é uma técnica de melhoria.\nOs efeitos da aplicação do 5S são de uma mudança cultural dentro e fora das empresas, mudando o jeito de pensar das pessoas, direcionando-as a um comportamento melhor, e que serão aplicados para toda a vida. Não deve ser tratado apenas como um programa de limpeza, mas sim uma nova maneira de conduzir uma organização a ganhos expressivos de produtividade e melhorar a qualidade de vida das pessoas.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>OS 5S</span>"
     ]
@@ -150,11 +170,21 @@
     ]
   },
   {
+    "objectID": "check-list.html",
+    "href": "check-list.html",
+    "title": "3  Check-list",
+    "section": "",
+    "text": "O que é\nO check list ou folha de verificação é uma ferramenta simples usada para coletar dados quantitativos e qualitativos no local onde os dados são gerados podendo ser impressa ou no formato digital. Também são ferramentas muito úteis como memória ou guia para execução de um procedimento padrão.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Check-list</span>"
+    ]
+  },
+  {
     "objectID": "check-list.html#o-que-é",
     "href": "check-list.html#o-que-é",
     "title": "3  Check-list",
-    "section": "O que é",
-    "text": "O que é\nO check list ou folha de verificação é uma ferramenta simples usada para coletar dados quantitativos e qualitativos no local onde os dados são gerados podendo ser impressa ou no formato digital. Também são ferramentas muito úteis como memória ou guia para execução de um procedimento padrão.\n\n\n\nFigura - Check list de oficina mecânica",
+    "section": "",
+    "text": "Figura - Check list de oficina mecânica",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Check-list</span>"
     ]
@@ -220,11 +250,21 @@
     ]
   },
   {
+    "objectID": "fluxograma-de-processos.html",
+    "href": "fluxograma-de-processos.html",
+    "title": "4  Fluxograma de Processos",
+    "section": "",
+    "text": "O que é\nRepresentação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é fornecer uma visão clara do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.\nNão há uma data precisa do início do uso dessa ideia, mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.\nO uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
+    ]
+  },
+  {
     "objectID": "fluxograma-de-processos.html#o-que-é",
     "href": "fluxograma-de-processos.html#o-que-é",
     "title": "4  Fluxograma de Processos",
-    "section": "O que é",
-    "text": "O que é\nRepresentação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é fornecer uma visão clara do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.\nNão há uma data precisa do início do uso dessa ideia, mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.\n\n\n\nFigura 2 - Papiro de Ani: A pesagem do coração\n\n\nO uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão.\n\n\n\nFigura 3 - fluxograma de processo industrial de metais",
+    "section": "",
+    "text": "Figura 2 - Papiro de Ani: A pesagem do coração\n\n\n\n\n\n\nFigura 3 - fluxograma de processo industrial de metais",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
     ]
@@ -290,11 +330,21 @@
     ]
   },
   {
+    "objectID": "grafico-pareto.html",
+    "href": "grafico-pareto.html",
+    "title": "5  Gráfico de Pareto",
+    "section": "",
+    "text": "O que é",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gráfico de Pareto</span>"
+    ]
+  },
+  {
     "objectID": "grafico-pareto.html#o-que-é",
     "href": "grafico-pareto.html#o-que-é",
     "title": "5  Gráfico de Pareto",
-    "section": "O que é",
-    "text": "O que é\n\nÉ uma ferramenta usada na análise de fenômenos. O fenômeno pode ser um problema, uma falha, uma oportunidade ou outros tipos.\nO gráfico ordena os fatores de forma decrescente mostrando primeiro os mais frequentes considerados vitais, e na sequência os menos frequentes considerados triviais. Ao mesmo tempo, aprensenta uma linha que mostra a proporção acumulada desses fatores. Daí surge a ideia de que 80% dos problemas são causados por 20% das causas que no gráfico estão representados na cor vermelha.\nFoi criado pelo economista Vilfredo Pareto em 1897 que queria demonstrar a diferença na distribuição de renda da população, usando também por Lorenz em 1907. Na década de 60, foi usado por Joseph Moses Juran para classificar problemas de qualidade. Os resultados dos treinamentos e aplicação dessa e outro conjunto de ferramentas apareceram 20 anos depois quando em 1970 os produtos japoneses começaram a ser vistos como líderes em qualidade e permanecendo até os dias atuais.\n\n\n\n\nFigura - Gráfico de Pareto",
+    "section": "",
+    "text": "É uma ferramenta usada na análise de fenômenos. O fenômeno pode ser um problema, uma falha, uma oportunidade ou outros tipos.\nO gráfico ordena os fatores de forma decrescente mostrando primeiro os mais frequentes considerados vitais, e na sequência os menos frequentes considerados triviais. Ao mesmo tempo, aprensenta uma linha que mostra a proporção acumulada desses fatores. Daí surge a ideia de que 80% dos problemas são causados por 20% das causas que no gráfico estão representados na cor vermelha.\nFoi criado pelo economista Vilfredo Pareto em 1897 que queria demonstrar a diferença na distribuição de renda da população, usando também por Lorenz em 1907. Na década de 60, foi usado por Joseph Moses Juran para classificar problemas de qualidade. Os resultados dos treinamentos e aplicação dessa e outro conjunto de ferramentas apareceram 20 anos depois quando em 1970 os produtos japoneses começaram a ser vistos como líderes em qualidade e permanecendo até os dias atuais.\n\n\n\n\nFigura - Gráfico de Pareto",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Gráfico de Pareto</span>"
     ]
@@ -360,11 +410,21 @@
     ]
   },
   {
+    "objectID": "grafico-de-dispercao.html",
+    "href": "grafico-de-dispercao.html",
+    "title": "6  Gráfico de Disperção",
+    "section": "",
+    "text": "O que é",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
+    ]
+  },
+  {
     "objectID": "grafico-de-dispercao.html#o-que-é",
     "href": "grafico-de-dispercao.html#o-que-é",
     "title": "6  Gráfico de Disperção",
-    "section": "O que é",
-    "text": "O que é\n\nO gráfico de disperção é uma ferramenta estatística que organiza os dados e permite visualizar a relação entre duas variáveis quantitativas(numéricas).\nA dispersão nos mostra quantos os dados estão espalhados em relação uma média por exemplo tendo como a variância e desvio padrão as medidas de dispersão mais comuns.\n\n\n\n\nFigura - Grafico de disperção",
+    "section": "",
+    "text": "O gráfico de disperção é uma ferramenta estatística que organiza os dados e permite visualizar a relação entre duas variáveis quantitativas(numéricas).\nA dispersão nos mostra quantos os dados estão espalhados em relação uma média por exemplo tendo como a variância e desvio padrão as medidas de dispersão mais comuns.\n\n\n\n\nFigura - Grafico de disperção",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
     ]
@@ -430,11 +490,21 @@
     ]
   },
   {
+    "objectID": "diagrama-causa-efeito.html",
+    "href": "diagrama-causa-efeito.html",
+    "title": "7  Diagrama de Causa e Efeito",
+    "section": "",
+    "text": "O que é",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Diagrama de Causa e Efeito</span>"
+    ]
+  },
+  {
     "objectID": "diagrama-causa-efeito.html#o-que-é",
     "href": "diagrama-causa-efeito.html#o-que-é",
     "title": "7  Diagrama de Causa e Efeito",
-    "section": "O que é",
-    "text": "O que é\n\nO diagrama de causa e efeito é uma ferramenta que ajuda a representar com certa facilidade a estrutura do pensamento humano diante de situações e problemas complicados de se resolver.\nPor se tratar de uma ferramenta gráfica, facilita identificar uma relação significativa sob diversos pontos de vista entre o efeito e suas possíveis causas Werkema (2021).\nConforme Kume (1987) construir um gráfico de causa e efeito que seja útil exige esforço, treinamento da equipe e tempo. Pessoas que tem sucesso na solução de problemas de controle de qualidade são aqueles bem sucedidas na construção de diagramas de causa e efeito úteis.\n\n\n\n\nFigura - Diagrama de causa e efeito",
+    "section": "",
+    "text": "O diagrama de causa e efeito é uma ferramenta que ajuda a representar com certa facilidade a estrutura do pensamento humano diante de situações e problemas complicados de se resolver.\nPor se tratar de uma ferramenta gráfica, facilita identificar uma relação significativa sob diversos pontos de vista entre o efeito e suas possíveis causas Werkema (2021).\nConforme Kume (1987) construir um gráfico de causa e efeito que seja útil exige esforço, treinamento da equipe e tempo. Pessoas que tem sucesso na solução de problemas de controle de qualidade são aqueles bem sucedidas na construção de diagramas de causa e efeito úteis.\n\n\n\n\nFigura - Diagrama de causa e efeito",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Diagrama de Causa e Efeito</span>"
     ]
@@ -500,11 +570,21 @@
     ]
   },
   {
+    "objectID": "cinco-porques.html",
+    "href": "cinco-porques.html",
+    "title": "8  Método 5 porquês",
+    "section": "",
+    "text": "O que é\nOs cinco porquês é uma técnica criada por Sakichi Toyoda no Japão e é utilizada para estimular a busca de causa raíz de um problema. Consiste em perguntar por que o fato ocorreu e ao obter a primeira resposta, perguntar “por quê?” novamente usando a resposta como base e seguir assim, até se aproximar da causa raiz evitando tomar ações paliativas que são ações que abrandam temporariamente um problema sem resolve-lo. O mais importante não é a quantidade de ciclos ou seja, cinco, seis ou sete porques, mas sim a ideia por traz da técnica que é de estimular o cerebro a buscar relações mais profundas a cerca de um problema.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Método 5 porquês</span>"
+    ]
+  },
+  {
     "objectID": "cinco-porques.html#o-que-é",
     "href": "cinco-porques.html#o-que-é",
     "title": "8  Método 5 porquês",
-    "section": "O que é",
-    "text": "O que é\nOs cinco porquês é uma técnica criada por Sakichi Toyoda no Japão e é utilizada para estimular a busca de causa raíz de um problema. Consiste em perguntar por que o fato ocorreu e ao obter a primeira resposta, perguntar “por quê?” novamente usando a resposta como base e seguir assim, até se aproximar da causa raiz evitando tomar ações paliativas que são ações que abrandam temporariamente um problema sem resolve-lo. O mais importante não é a quantidade de ciclos ou seja, cinco, seis ou sete porques, mas sim a ideia por traz da técnica que é de estimular o cerebro a buscar relações mais profundas a cerca de um problema.\n\n\n\nFigura - Técnica dos cinco porques",
+    "section": "",
+    "text": "Figura - Técnica dos cinco porques",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Método 5 porquês</span>"
     ]
@@ -570,11 +650,21 @@
     ]
   },
   {
+    "objectID": "plano-de-acao.html",
+    "href": "plano-de-acao.html",
+    "title": "9  Plano de Ação",
+    "section": "",
+    "text": "O que é",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Plano de Ação</span>"
+    ]
+  },
+  {
     "objectID": "plano-de-acao.html#o-que-é",
     "href": "plano-de-acao.html#o-que-é",
     "title": "9  Plano de Ação",
-    "section": "O que é",
-    "text": "O que é\n\nO plano de ação é uma ferramenta utilizada para detalhar e organizar todas as tarefas a serem executadas para a resolução do problema(CAMPOS, 1994).\nA ferramenta também é conhecida pela sigla 5W2H que se refere as primeiras letras das diretrizes utilizadas no plano de ação, sendo cinco delas iniciadas em “W” e duas delas em “H” no idioma inglês, e são classificadas em:\n\nWhat – O que será feito (etapas).\nWhere – Onde será feito (local).\nWhy – Por que será feito (justificativa).\nWhen – Quando será feito (tempo).\nWho – Quem o fará (responsabilidade).\nHow – Como será feito (método).\nHow much – Quanto custará para ser feito (custo).\n\nA ferramenta deve ficar em local visível para que todo o time envolvido possa ver as ações que estão sendo executadas, os detalhes e prazos.\n\n\n\n\nFigura - Plano de ação",
+    "section": "",
+    "text": "O plano de ação é uma ferramenta utilizada para detalhar e organizar todas as tarefas a serem executadas para a resolução do problema(CAMPOS, 1994).\nA ferramenta também é conhecida pela sigla 5W2H que se refere as primeiras letras das diretrizes utilizadas no plano de ação, sendo cinco delas iniciadas em “W” e duas delas em “H” no idioma inglês, e são classificadas em:\n\nWhat – O que será feito (etapas).\nWhere – Onde será feito (local).\nWhy – Por que será feito (justificativa).\nWhen – Quando será feito (tempo).\nWho – Quem o fará (responsabilidade).\nHow – Como será feito (método).\nHow much – Quanto custará para ser feito (custo).\n\nA ferramenta deve ficar em local visível para que todo o time envolvido possa ver as ações que estão sendo executadas, os detalhes e prazos.\n\n\n\n\nFigura - Plano de ação",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Plano de Ação</span>"
     ]
@@ -640,11 +730,21 @@
     ]
   },
   {
+    "objectID": "acao-indicadores.html",
+    "href": "acao-indicadores.html",
+    "title": "10  Ação e Indicadores",
+    "section": "",
+    "text": "O que é",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ação e Indicadores</span>"
+    ]
+  },
+  {
     "objectID": "acao-indicadores.html#o-que-é",
     "href": "acao-indicadores.html#o-que-é",
     "title": "10  Ação e Indicadores",
-    "section": "O que é",
-    "text": "O que é\n\nAção é a execução pratica daquilo que foi planejado. É atraves da ação que as mudanças acontecem.\nIndicadores são unidades de medida que permitem ao ser humano, avaliar se os efeitos gerados pelas ações estão sendo efetivas ou não.\n\n\n\n\nFigura - Liderança, objetivo e método\n\n\n\nImagine um paciênte durante um tratamento de saúde. Ação, seria tomar o medicamento na quantidade, forma e horário recomendado. O indicador, seriam os sintomas e os resultados de exames pós tratamento.\nAgir significa mudar de um comportamento padronizado com resultados conhecidos e recompensas rápidas, para outro até então desconhecido. Isso pode ser percebido pelo cerebro como desequilibrio entre a quantidade de energia consumida e prazo para que a recompensa ou retorno do investimento seja recuperado. As redes neurais biológicas, foram otmizadas ao longo do tempo para buscar equilibrio entre gasto e retorno. Portando, resistência inicial a mudanças poderá ser observada até que ela seja percebida pelo cerebro como uma recompensa e não um gasto ou apenas uma tarefa.\nPatt, Anthony (2000) descobriram que os decisores tendem a optar mais por ações de melhoria do que por ações de prevenção de um fenômeno, mesmo tendo informações limitadas sobre o defecho de ambos. Isso significa que é mais fácil observar o emprego de ação pelo ser humano diante se uma reação do que uma iniciativa de prevenção.\nImagine uma situação em que meu médico diz que eu corro o risco de vida devido a obesidade, e então, a partir daí eu começo a cuidar da alimentação, ao invés desde cedo, criar o habito de alimentação saudável como medida de bem estar e prevenção de doenças no futuro. Considerando este apecto peculiar do comportamento humano, a ação pode ser estimulada através de experimentos e simulações planejadas com o objetivo de reproduzir cenários de grande efeito trazendo clareza e sentido para a decisão de agir sem no entanto, estar diante dos riscos existentes em uma situação real. Exemplo de experimento planejado.\n\nFederal Reserve anualmente faz stress test simulando ambiente de mudanças bruscas em variáveis economicas para avaliar a capacidade de reação dos agentes diante desses fenômenos calculando assim os possíveis efeitos para a sociedade e possíveis contramedidas necessárias.",
+    "section": "",
+    "text": "Ação é a execução pratica daquilo que foi planejado. É atraves da ação que as mudanças acontecem.\nIndicadores são unidades de medida que permitem ao ser humano, avaliar se os efeitos gerados pelas ações estão sendo efetivas ou não.\n\n\n\n\nFigura - Liderança, objetivo e método\n\n\n\nImagine um paciênte durante um tratamento de saúde. Ação, seria tomar o medicamento na quantidade, forma e horário recomendado. O indicador, seriam os sintomas e os resultados de exames pós tratamento.\nAgir significa mudar de um comportamento padronizado com resultados conhecidos e recompensas rápidas, para outro até então desconhecido. Isso pode ser percebido pelo cerebro como desequilibrio entre a quantidade de energia consumida e prazo para que a recompensa ou retorno do investimento seja recuperado. As redes neurais biológicas, foram otmizadas ao longo do tempo para buscar equilibrio entre gasto e retorno. Portando, resistência inicial a mudanças poderá ser observada até que ela seja percebida pelo cerebro como uma recompensa e não um gasto ou apenas uma tarefa.\nPatt, Anthony (2000) descobriram que os decisores tendem a optar mais por ações de melhoria do que por ações de prevenção de um fenômeno, mesmo tendo informações limitadas sobre o defecho de ambos. Isso significa que é mais fácil observar o emprego de ação pelo ser humano diante se uma reação do que uma iniciativa de prevenção.\nImagine uma situação em que meu médico diz que eu corro o risco de vida devido a obesidade, e então, a partir daí eu começo a cuidar da alimentação, ao invés desde cedo, criar o habito de alimentação saudável como medida de bem estar e prevenção de doenças no futuro. Considerando este apecto peculiar do comportamento humano, a ação pode ser estimulada através de experimentos e simulações planejadas com o objetivo de reproduzir cenários de grande efeito trazendo clareza e sentido para a decisão de agir sem no entanto, estar diante dos riscos existentes em uma situação real. Exemplo de experimento planejado.\n\nFederal Reserve anualmente faz stress test simulando ambiente de mudanças bruscas em variáveis economicas para avaliar a capacidade de reação dos agentes diante desses fenômenos calculando assim os possíveis efeitos para a sociedade e possíveis contramedidas necessárias.",
     "crumbs": [
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ação e Indicadores</span>"
     ]
@@ -664,7 +764,7 @@
     "href": "acao-indicadores.html#de-onde-vem",
     "title": "10  Ação e Indicadores",
     "section": "De onde vem",
-    "text": "De onde vem\n\nPor mais trivial e obvio que pareça, existem situações onde a ação exige uma alta capacidade de liderança.\nNecessidade de transformação e mudança através de atitude\nNecessidade de aplicar aquilo que foi planejado e proposto e medir o progresso pava avaliar se os resultados estão sendo efetivos ou não.\n\n\n\n\nFigura - Etapa 5 do PDCA: Aplicar as ações e criar indicadores para avaliar os resultados",
+    "text": "De onde vem\n\nNecessidade de aplicar aquilo que foi planejado e proposto e medir o progresso pava avaliar se os resultados estão sendo efetivos ou não.\nNecessidade de transformação e mudança através de atitude.\n\n\n\n\nFigura - Etapa 5 do PDCA: Aplicar as ações e criar indicadores para avaliar os resultados",
     "crumbs": [
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ação e Indicadores</span>"
     ]
@@ -674,7 +774,7 @@
     "href": "acao-indicadores.html#como-fazer",
     "title": "10  Ação e Indicadores",
     "section": "Como fazer",
-    "text": "Como fazer\n\nComo citado anteriormente, agir significa mudar o comportamento padronizado estabelecendo novo meio de fazer algo e isso exige capacidade de liderança ou apoio da liderança em caso de tarefas em processos de fabricação.\nO plano de ação é uma ferramenta de apoio para aplicação daquilo que foi planejado, servindo como instrumento guia com as etapas, procedimentos e todos os detalhes necessários para o agente e sua equipe agir.\nQuanto aos indicadores, geralmente eles estão atrelados as ações para que seja possível avaliar os resultados parciais e finais.\n\n\n\n\nFigura - Estratégia, ação e indicadores\n\n\n\nOs indicadores podem ser divididos em indicadores direcionadores, e indicadores de resultado. Imagine que o objetivo é perder peso. O indicador de resultado é o peso final na balança no final do perído de exercícios, já o idicador direcionador podem ser a quantidade de alimentos consumidos, os tipos de alimentos, a quantidade de treino diário entre outros.",
+    "text": "Como fazer\n\nComo citado anteriormente, agir significa mudar o comportamento padronizado estabelecendo novo meio de fazer algo e isso exige capacidade de liderança e ou apoio da liderança por exemplo no caso de tarefas em um processo de fabricação.\nO plano de ação é uma ferramenta de apoio útil durante a aplicação daquilo que foi planejado, servindo como instrumento guia com as etapas, procedimentos e todos os detalhes necessários para o agente e sua equipe agir.\nQuanto aos indicadores, geralmente eles estão atrelados as ações para que seja possível avaliar os resultados parciais e finais. Na figura abaixo é possível notar que existem indicadores atrelados as ações e também atrelados aos objetivos estratégicos.\n\n\n\n\nFigura - Estratégia, ação e indicadores\n\n\n\nOs indicadores podem ser divididos em indicadores direcionadores, e indicadores de resultado. Imagine que o objetivo é perder peso. O indicador de resultado é o peso final na balança no final do perído de exercícios, já o idicador direcionador podem ser a quantidade de alimentos consumidos, os tipos de alimentos, a quantidade de treino diário entre outros.",
     "crumbs": [
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ação e Indicadores</span>"
     ]
@@ -694,7 +794,7 @@
     "href": "acao-indicadores.html#qual-o-resultado",
     "title": "10  Ação e Indicadores",
     "section": "Qual o resultado",
-    "text": "Qual o resultado\n\nMelhoria da conciência de que a transformação é resultado da ação e esta, deve ser avaliada para medir se os resultados estão sendo efetivos para a solução do problema.\nMelhoria no etimulo, inspiração e engajamento da equipe na busca por melhoria continua, solução de problemas e avaliação dos resultados das ações.\nMelhoria no aproveitamento de recursos, pois todos os esforços empregados até então são realmente compensados pelos resultados obtidos atraves da aplicação das ações planejadas.",
+    "text": "Qual o resultado\n\nMelhoria da conciência de que a transformação é resultado da ação e esta, deve ter um indicador atrelado para medir se os resultados estão sendo efetivos para a solução do problema.\nMelhoria no etimulo, inspiração e engajamento da equipe na busca por melhoria continua, solução de problemas e avaliação dos resultados das ações.\nMelhoria no aproveitamento de recursos, pois todos os esforços empregados até então são realmente compensados pelos resultados obtidos atraves da aplicação das ações planejadas.",
     "crumbs": [
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ação e Indicadores</span>"
     ]
@@ -710,11 +810,21 @@
     ]
   },
   {
+    "objectID": "grafico-de-controle.html",
+    "href": "grafico-de-controle.html",
+    "title": "11  Gráfico de controle",
+    "section": "",
+    "text": "O que é\nImagine um experimento onde o objetivo é medir o tempo médio gasto para fatiar tomates com a mesma espessura. Para isso, eu pego uma amostra de 100 tomates, meço o tempo gasto para fatiar cada tomate. O tempo médio gasto para fatiar cada tomate será representada pela linha central enquanto o limite superior e inferior de controle terão três desvios padrão dessa média.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
+    ]
+  },
+  {
     "objectID": "grafico-de-controle.html#o-que-é",
     "href": "grafico-de-controle.html#o-que-é",
     "title": "11  Gráfico de controle",
-    "section": "O que é",
-    "text": "O que é\nO gráfico de controle ou carta de controle como também é conhecido, é uma ferramenta gráfica criada pelo estatístico americano Walter Andrew Shewhart em 1924 como um método de analisar e ajustar variações de um processo em função do tempo.\nDuas características fundamentais descreviam os processos: centralização, que era determinada pela média representada por limite de controle (LC), e dispersão, que era determinada pelo desvio-padrão ou amplitude.\nO desvio-padrão nos gráficos de controle, é representado por linhas paralelas em relação à média, as quais são chamadas de limites de controle, sendo, limite superior de controle (LSC), que é a linha superior à média, e limite inferior de controle (LIC), que é a linha inferior à média e não pode ser menor que zero. Um valor comum utilizado no estabelecimento de limites em um gráfico de controle é e pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994).\nEm algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto (DEMING, 2003).\nOs gráficos de controle são divididos em dois grupos: de controle por variáveis e por atributos. O gráfico de controle por variáveis é formado por dados quantitativos, mensuráveis ou que variam continuamente, e é utilizado quando as amostras são expressas em unidades quantitativas de medida tais como comprimento, largura, peso, tempo. O mais comum desses gráficos é o Xbarra-R ou , onde se determinam a média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992).\nO gráfico de controle por atributos é representado por dados que só podem ser contados ou classificados e é utilizado quando as amostras refletem características qualitativas como defeituoso ou não, passa ou não passa, entre outros. Para esse tipo de controle é comumente utilizado o gráfico P, NP, C e U, os quais serão apresentados nos apêncides B, C, D, E. Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).\nOs gráficos P e NP são utilizados quando os atributos são do tipo classificação, por exemplo, SIM ou NÃO, PASSA ou NÃO PASSA, onde em classificações com tamanhos de amostra variável, é mais indicado o gráfico P. Os limites de controle para o gráfico P, de fração defeituosa total na amostra, são:\nDeming (1997), descreve que Shewhart descobriu duas formas de variações em um processo as quais ele classificou como causas comuns, as quais afetam todos os valores individuais do resultado do processo mas que se enquadram dentro dos limites de controle e representam um processo estável, e as causas especiais, que compreendem as variações intermitentes, imprevisíveis ou instáveis, e são sinalizadas de várias formas, como um ponto fora dos limites de controle, ausência de padrões não aleatórios ou tendências dentro do limite de controle (Figura 10).\nUma das dificuldades das empresas ao trabalhar com gráficos de controle, é diferenciar as causas que geraram o problema, se são comuns ou especiais, no entanto, existem diferenças em alguns aspectos. As causas especiais geralmente apresentam pequenas perdas monetárias, grandes visibilidades do problema por causa da variação súbita, facilidade na coleta e análise dos dados e a responsabilidade para as ações de restabelecer o nível anterior fica por conta do pessoal envolvido no processo.\nNas causas comuns, as características são bem diferentes pois apresentam na maioria das vezes, grandes perdas monetárias, a visibilidade do problema se torna difícil por causa da natureza contínua, a coleta e análise dos dados se tornam complexas e devem ser realizadas por equipe técnica cuja responsabilidade para as ações fica por conta da administração, pois se trata de mudanças no sistema ou projeto (DEMING, 2003).\nO estatístico Shewhart propôs para a industria japonesa um gráfico de controle para análise de dados resultantes de inspeção. Isso fez com que a importância dada a procedimentos de inspeção e correção de produtos defeituosos começasse a ser substituída por estudos e prevenção dos problemas relacionados à qualidade garantindo que o possível defeito do produto fosse eliminado durante o processo e não após o término Ferro and Grande (1997).",
+    "section": "",
+    "text": "O gráfico de controle é uma ferramenta útil para avaliar o comportamento de um processo e servir como baes para previsões.\nO gráfico mostra algumas características fundamentais que descrevem um processo como:\n\nCentralização que é determinada pela média.\nDispersão, que representa o desvio-padrão ou amplitude\nLimites de controle (LC) ou em inglês CL que significa control limits.\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nE por que +/- 3 desvios padrão da média?\nA resposta é que considerando a distribuição normal de probabilidades, 99.7% dos dados estão variando em até 3 desvios padrão da média. Neste caso, qualquer variação dentro desses limites é considerando dentro do normal. Um valor comum de três desvios padrão pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994)\n\n\n\n\n\nFigura - Gráfico de controle\n\n\n\nDeming, Cahill, and Allan (2018), descreve que Shewhart em 1924, descobriu duas formas de variações em um processo as quais ele classificou como causas comuns e causas especiais e como os processos sujeitos a variação de causas especiais eram imprevisíveis, as técnicas de probabilidade não poderiam ser usadas para separar um tipo de variação de outra e por isso, ele criou um gráfico de controle estatístico como uma heurística para distinguir esses dois tipos de variação, pois cada tipo necessita tratamentos diferentes.\nCausa comum\n\nFenômenos constantemente observados, ativos no sistema.\nVariações previsíveis probabilisticamente e quantificáveis.\nFalta significância nos valores individuais seja pra cima ou pra abaixo da média.\nExemplos(falta de manutenção de maquinas, falta de procedimento operacional padrão ou inadequados, materias primas de qualidade ruim, iluminação ruim, sujeira ou ruídos excessivos, problemas no design).\n\nCausa especial\n\nFenômenos imprevistos, emergentes.\nVariação imprevisível e não quantificáveis.\nVariação fora da faixa histórica\nPresença de significância que evidencia alguma mudança ou percepção no sistema.\nExemplos (Pane no servidor, falta de operador da maquina, quebra da maquina, lote diferente na matéria prima, falta ou oscilações na energia eletrica, controladores defeituosos)\nPode ser corrigida alterando o componente ou processo.\n\n\n\n\n\n\n\n\nNota\n\n\n\nEm algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto (DEMING, 2003).\n\n\n\nOs gráficos de controle são divididos em dois grupos sendo o controle por variáveis e por atributos.\nPor variáveis ou valor contínuo\n\nÉ formado por dados quantitativos (variável contínua).\nÉ utilizado quando as amostras são expressas em unidades quantitativas de medida tais como comprimento(12,3 cm), largura(10 mm), peso(12,7 kgs), tempo (2,9 horas) entre outras.\nO mais comum é o Xbarra-R que significa média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992)\n\nPor atributos ou valor discreto\n\nÉ formado por dados qualitativos (variáveis discreta e categóricas).\nÉ utilizado quando as amostras refletem características qualitativas como defeituoso(SIM ou NÃO), passa ou não passa(0 ou 1), unidades contáveis(12 furos no tecido) entre outros.\nPara esse tipo de controle é comumente utilizado o gráfico P, NP, C e U.\nOs gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).\n\n\n\nTipos de gráficos de controle\n\n\n\n\n\n\nTipo de valor\nNome do gráfico\n\n\n\n\nContínuo\nGráfico \\(\\bar{x}\\) - \\(R\\) ou gráfico média e amplitude\n\n\nContínuo\nGráfico \\(x\\) ou gráfico de valor individual\n\n\nDiscreto\nGráfico \\(NP\\) ou gráfico de número de defeitos\n\n\nDiscreto\nGráfico \\(p\\) ou gráfico de fração defeituosa\n\n\nDiscreto\nGráfico \\(c\\) ou gráfico de número de defeitos\n\n\nDiscreto\nGráfico \\(u\\) ou gráfico de número de defeitos por unidade\n\n\n\n\n\n\n\n\n\nAtenção\n\n\n\nA linha inferior de controle não pode ser menor que zero.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
@@ -724,7 +834,7 @@
     "href": "grafico-de-controle.html#qual-o-objetivo",
     "title": "11  Gráfico de controle",
     "section": "Qual o objetivo",
-    "text": "Qual o objetivo\n\nA\nB\nC",
+    "text": "Qual o objetivo\n\nFornecer para o gestor informações sobre o comportamento do processo.\nFacilitar a realização de análises, ações ou ajustes nos casos em que os processos apresentarem comportamentos considerados fora do padrão normal aleatório.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
@@ -734,7 +844,7 @@
     "href": "grafico-de-controle.html#de-onde-vem",
     "title": "11  Gráfico de controle",
     "section": "De onde vem",
-    "text": "De onde vem\n\nA\nB\nC",
+    "text": "De onde vem\n\nNecessidade de monitoramento e avaliação de um processo. De acordo com Deming, Cahill, and Allan (2018), não se melhora a qualidade através da inspeção pois o defeito já vem com o produto quando ele deixa a maquina antes de inspecioná-lo. É importante avaliar o defeito no momento em que ele está acontecendo ou está prestes a acontecer, nisso o gráfico de controle pode ser uma ferramenta útil.\nNecessidade de ferramenta versátil, que possibilite visualizar e identificar vários tipos de comportamentos como pontos fora do controle, formação de tendências ou padrões repetidos.\nVerificar resultados parciais as ações em andamento e checar resultados.\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
@@ -744,7 +854,7 @@
     "href": "grafico-de-controle.html#como-fazer",
     "title": "11  Gráfico de controle",
     "section": "Como fazer",
-    "text": "Como fazer\n\nA\nB\nC",
+    "text": "Como fazer\n\nA\nB\nMontgomery, 2009 regras para reconhecimento de padrões não aleatórios que indicam se o processo pode estar fora de controle.\n\nRegra1 Qualquer ponto fora do limite de 3 da linha central seja pra cima ou pra baixo\nRegra 2 Dois em cada 3 pontos consectivos fora do limite de 2 sigmas\nRegra 3 Quatro em cadas cinco pontos consectivos fora do limite de 1 sigma do mesmo lado da linha central.\nRegra 4 Oito pontos consectivos do mesmo lado da linha central.\n\n\nA escolha do gráfico mais adequado para cada situação e calculo de limites de controle\n Onde: D3, D4 e E3 são constantes para gráfico de controle.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
@@ -754,7 +864,7 @@
     "href": "grafico-de-controle.html#pra-onde-vai",
     "title": "11  Gráfico de controle",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nA\nB\nC",
+    "text": "Pra onde vai\n\nApós o monitoramento e avaliação das ações, a próxima etapa é a padronização para que o procedimento possa ser replicado para os demais processos semelhantes.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
@@ -764,7 +874,7 @@
     "href": "grafico-de-controle.html#qual-o-resultado",
     "title": "11  Gráfico de controle",
     "section": "Qual o resultado",
-    "text": "Qual o resultado\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
+    "text": "Qual o resultado\n\nMelhoria na avaliação das ações que estão sendo executadas através da identificação de comportamento do processo.\nMelhoria do equilibrio no ambiente e do trabalho da equipe pois permite tomar ações preventivas e preditivas minimizando as pressões e stress durante a solução de um problema.\nMelhoria da qualidade e sustentabilidade nas relações no longo prazo. Por exemplo um produto uniforme terá menos defeitos, com menos defeitos durará mais, durando mais o consumidor fica satisfeito, o consumidor ficando satisfeito ele recomenda o produto e novos consumidores comparão o produto.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
@@ -774,17 +884,27 @@
     "href": "grafico-de-controle.html#referências",
     "title": "11  Gráfico de controle",
     "section": "Referências",
-    "text": "Referências\n\n\n\n\nFerro, José Roberto, and Márcia Mazzeo Grande. 1997. “Círculos de Controle Da Qualidade (CCQs) No Brasil: Sobrevivendo Ao \"Modismo\".” RAE - Revista de Administracao de Empresas 37 (4): 78–88. https://periodicos.fgv.br/rae/article/view/37972.",
+    "text": "Referências\n\n\n\n\nDeming, W. Edwards, Kevin Edwards Cahill, and Kelly L. Allan. 2018. Out of the Crisis, Reissue. Reissue ed. edição. Cambridge, Massachsetts: MIT Press.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
+    ]
+  },
+  {
+    "objectID": "relatorio-tres-geracoes.html",
+    "href": "relatorio-tres-geracoes.html",
+    "title": "12  Relatório de três gerações",
+    "section": "",
+    "text": "O que é\nO relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
   },
   {
     "objectID": "relatorio-tres-geracoes.html#o-que-é",
     "href": "relatorio-tres-geracoes.html#o-que-é",
     "title": "12  Relatório de três gerações",
-    "section": "O que é",
-    "text": "O que é\nO relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:\n\nPassado – o que foi planejado e o que foi feito.\nPresente – o resultado obtido e os problemas existentes.\nFuturo – mais propostas de solução.",
+    "section": "",
+    "text": "Passado – o que foi planejado e o que foi feito.\nPresente – o resultado obtido e os problemas existentes.\nFuturo – mais propostas de solução.",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -850,11 +970,21 @@
     ]
   },
   {
+    "objectID": "padronizacao.html",
+    "href": "padronizacao.html",
+    "title": "13  Padronização",
+    "section": "",
+    "text": "O que é",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
+    ]
+  },
+  {
     "objectID": "padronizacao.html#o-que-é",
     "href": "padronizacao.html#o-que-é",
     "title": "13  Padronização",
-    "section": "O que é",
-    "text": "O que é\n\nA\nB\nC",
+    "section": "",
+    "text": "A\nB\nC",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
     ]

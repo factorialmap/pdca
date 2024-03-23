@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.531">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -302,7 +302,7 @@ div.csl-indent {
 <li><p>O 5S é uma prática propagada no Japão que ensina que bons hábitos, eliminação de desperdícios e perdas são capazes de modificar o humor, harmonizar o ambiente e a maneira da condução das atividades de todos.</p></li>
 <li><p>A prática foi desenvolvida a partir dos hábitos das mães de família japonesas e introduzida no meio empresarial logo após a segunda guerra mundial. O objetivo principal na época era combater a sujeira das fábricas e desde então, é ensinado como princípio educacional para a formação dos indivíduos <span class="citation" data-cites="carvalho2018">Carvalho (<a href="#ref-carvalho2018" role="doc-biblioref">2018</a>)</span>.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/five_s.jpg" class="img-fluid figure-img"></p>
 <figcaption>Figura - 5S cinco sensos</figcaption>
@@ -580,7 +580,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -803,12 +808,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./conceitos.html" class="pagination-link  aria-label=" &lt;span="">
+      <a href="./conceitos.html" class="pagination-link" aria-label="Conceitos">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Conceitos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./check-list.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Check-list</span>">
+      <a href="./check-list.html" class="pagination-link" aria-label="Check-list">
         <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Check-list</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

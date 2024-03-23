@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.531">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -322,14 +322,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
 <p>Representação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é fornecer uma visão clara do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.</p>
 <p>Não há uma data precisa do início do uso dessa ideia, mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.</p>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/papiro_ani.jpg" class="img-fluid figure-img"></p>
 <figcaption>Figura 2 - Papiro de Ani: A pesagem do coração</figcaption>
 </figure>
 </div>
 <p>O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão.</p>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/figura_processo.png" class="img-fluid figure-img"></p>
 <figcaption>Figura 3 - fluxograma de processo industrial de metais</figcaption>
@@ -350,7 +350,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>O fluxograma ou desenho de um processo vem da necessidade ter uma visão geral daquilo que está sendo analisado, estudado ou discutido para compreender melhor as relações e interações entre os elementos. Com isso, permitir que ideias, melhorias possam ser geradas ou até estratégias ou planos táticos possam ser propostos.</li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/step_1.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância</figcaption>
@@ -615,7 +615,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -838,12 +843,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./check-list.html" class="pagination-link  aria-label=" &lt;span="">
+      <a href="./check-list.html" class="pagination-link" aria-label="Check-list">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Check-list</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./grafico-pareto.html" class="pagination-link" aria-label="<span class='chapter-number'>5</span>&nbsp; <span class='chapter-title'>Gráfico de Pareto</span>">
+      <a href="./grafico-pareto.html" class="pagination-link" aria-label="Gráfico de Pareto">
         <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gráfico de Pareto</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

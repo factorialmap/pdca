@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.531">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -299,7 +299,7 @@ div.csl-indent {
 <section id="o-que-é" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
 <p>O check list ou folha de verificação é uma ferramenta simples usada para coletar dados quantitativos e qualitativos no local onde os dados são gerados podendo ser impressa ou no formato digital. Também são ferramentas muito úteis como memória ou guia para execução de um procedimento padrão.</p>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/check_list_oficina.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Check list de oficina mecânica</figcaption>
@@ -318,7 +318,7 @@ div.csl-indent {
 <ul>
 <li>Necessidade de coleta de dados e economia de tempo, pois elimina a necessidade de desenhar figuras ou escrever números repetitivos, e evita também que problemas como falhas na interpretação comprometam o tratamento e análise dos dados, principalmente em situações em que várias pessoas participam da etapa de coleta <span class="citation" data-cites="werkema2021">Werkema (<a href="#ref-werkema2021" role="doc-biblioref">2021</a>)</span>. Exemplo em uma oficina de manutenção de equipamentos.</li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/check_list.jpg" class="img-fluid figure-img"></p>
 <figcaption>Figura - Check list do serviço de manutenção do Tesla Model S</figcaption>
@@ -329,7 +329,7 @@ div.csl-indent {
 <li><p>O cerebro humano tem mais facilidade em lidar com situações em que as operações são organizadas e ordenadas, neste sentido o check list auxilia no ganho de tempo e estabilidade principalmente em situações que demandam maior controle e precisão. Exemplo o pouso de um módulo na superfície da lua.</p></li>
 <li><p>Necessidade de definir claramente o problema e reconhecer sua importância. Esta ferramenta é usada na etapa 1 do método PDCA.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/step_1.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância</figcaption>
@@ -352,7 +352,7 @@ div.csl-indent {
 <li><p>O check-list estimula o cerebro na identificação de etapas, procedimentos ou ações necessárias para o bom desempenho de um processo ou alcance de um objetivo.</p></li>
 <li><p>Os dados coletados podem ser armazenados para registro de log, como rastreabilidade e histórico de serviços, para elaboração de modelos preditivos como por exemplo um modelo de machine learning para prever defeitos ou vida útil de equipamentos. Os dados também podem ser utilizados como previsão de demanda de materiais bem como na análise e melhoria de processos.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/step_2.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Etapa 2 do PDCA: Análise do fenômeno</figcaption>
@@ -543,7 +543,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -766,12 +771,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./cinco-s.html" class="pagination-link  aria-label=" &lt;span="" 5s&lt;="" span&gt;"="">
+      <a href="./cinco-s.html" class="pagination-link" aria-label="OS 5S">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">OS 5S</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./fluxograma-de-processos.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>Fluxograma de Processos</span>">
+      <a href="./fluxograma-de-processos.html" class="pagination-link" aria-label="Fluxograma de Processos">
         <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Fluxograma de Processos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

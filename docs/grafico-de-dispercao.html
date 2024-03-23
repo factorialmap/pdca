@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.531">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -336,7 +336,7 @@ div.csl-indent {
 <li><p>O gráfico de disperção é uma ferramenta estatística que organiza os dados e permite visualizar a relação entre duas variáveis quantitativas(numéricas).</p></li>
 <li><p>A dispersão nos mostra quantos os dados estão espalhados em relação uma média por exemplo tendo como a variância e desvio padrão as medidas de dispersão mais comuns.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/scatter_plot.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Grafico de disperção</figcaption>
@@ -356,7 +356,7 @@ div.csl-indent {
 <li><p>Necessiade de uma ferramenta que forneça suporte visual com aparência simples e completa, que possa ser usado com variáveis dependentes ou independentes, que seja fácil de interpretar e possibilite comunicar os resultados com eficiência.</p></li>
 <li><p>Conforme <span class="citation" data-cites="Korteling2018">Korteling, Brouwer, and Toet (<a href="#ref-Korteling2018" role="doc-biblioref">2018</a>)</span>, o cerebro humano funciona de forma altamente associativa buscando por correlações e relações causais o tempo todo e essa característica confere ao ser humano uma capacidade inigualavel de reconhecer padrões regulares e ordenados e tendo dificuldade em lidar com aleatoriedade, imprevisibilidade e caos. Nestas situações, o gráfico de dispersão pode ser muito útil organizando e apresentados dados de uma forma que simplifica o trabalho para o cerebro humano.</p></li>
 </ul>
-<div class="img-fluid quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/step_2.png" class="img-fluid figure-img"></p>
 <figcaption>Figura - Etapa 2 do PDCA: Análise do fenômeno</figcaption>
@@ -638,7 +638,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -861,12 +866,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./grafico-pareto.html" class="pagination-link  aria-label=" &lt;span="" de="" pareto&lt;="" span&gt;"="">
+      <a href="./grafico-pareto.html" class="pagination-link" aria-label="Gráfico de Pareto">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gráfico de Pareto</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./diagrama-causa-efeito.html" class="pagination-link" aria-label="<span class='chapter-number'>7</span>&nbsp; <span class='chapter-title'>Diagrama de Causa e Efeito</span>">
+      <a href="./diagrama-causa-efeito.html" class="pagination-link" aria-label="Diagrama de Causa e Efeito">
         <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Diagrama de Causa e Efeito</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
