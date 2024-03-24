@@ -2,15 +2,25 @@
 
 ## O que é {.unnumbered}
 
--   O gráfico de controle é uma ferramenta útil para avaliar o comportamento de um processo e servir como baes para previsões.
+### Característias técnicas {.unnumbered}
+
+-   O gráfico de controle é uma ferramenta útil para avaliar o comportamento de um processo e também fornecer bases para previsões de comportamentos futuros.
 
 -   O gráfico mostra algumas características fundamentais que descrevem um processo como:
 
     -   Centralização que é determinada pela média.
-    -   Dispersão, que representa o desvio-padrão ou amplitude
+    -   Dispersão, que representa o desvio-padrão ou amplitude. O quanto os pontos de dados estão distantes da média.
     -   Limites de controle (LC) ou em inglês CL que significa control limits.
 
-Imagine um experimento onde o objetivo é medir o tempo médio gasto para fatiar tomates com a mesma espessura. Para isso, eu pego uma amostra de 100 tomates, meço o tempo gasto para fatiar cada tomate. O tempo médio gasto para fatiar cada tomate será representada pela linha central enquanto o limite superior e inferior de controle terão três desvios padrão dessa média.
+-   Imagine uma linha de produção de alimentos (tomates cortados em rodelas) onde o objetivo avaliar se o processo está uniforme e sob controle estatístico. Para isso eu uso um gráfico de controle e insiro os dados de tempo médio gasto para fatiar tomates com a mesma espessura.
+
+    > 1.  Pego uma amostra de 100 tomates.
+    > 2.  Registro o tempo gasto para fatiar cada tomate.
+    > 3.  O tempo médio gasto para fatiar cada tomate será representada pela linha central $\bar{x}$ enquanto o limite superior e inferior de controle terão três desvios padrão dessa média representados pela equação matemática $\pm3\sigma$. Qualquer variação aleatória dentro desses limites, eu considero que o processo está normal ou sob controle.
+    > 4.  Agora imagine que a partir do 10º tomate o gráfico apresente um padrão onde o tempo começa a aumentar sistematicamente até sair dos limites de controle.
+    > 5.  Ao avaliar, percebi que a faca foi perdendo o fio necessitando de mais movimentos para romper a pele do tomate. Como reflexo desse padrão, mais tempo foi gasto, o risco das fatias terem dimensões diferentes aumentaram e os padrões de qualidade do produto e do processo foram impactadas.
+
+![Figura - Gráfico de controle](images\control_chart.png){width="699"}
 
 ::: callout-note
 ## Nota
@@ -20,27 +30,28 @@ E por que +/- 3 desvios padrão da média?
 A resposta é que considerando a distribuição normal de probabilidades, 99.7% dos dados estão variando em até 3 desvios padrão da média. Neste caso, qualquer variação dentro desses limites é considerando dentro do normal. Um valor comum de três desvios padrão pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994)
 :::
 
-![Figura - Gráfico de controle](images\control_chart.png)
+### Informações apresentadas no gráfico {.unnumbered}
 
--   @deming2018, descreve que Shewhart em 1924, descobriu duas formas de variações em um processo as quais ele classificou como causas comuns e causas especiais e como os processos sujeitos a variação de causas especiais eram imprevisíveis, as técnicas de probabilidade não poderiam ser usadas para separar um tipo de variação de outra e por isso, ele criou um gráfico de controle estatístico como uma heurística para distinguir esses dois tipos de variação, pois cada tipo necessita tratamentos diferentes.
+-   @deming2018, descrevem que Shewhart em 1924, descobriu duas formas de variações em um processo as quais ele classificou como **causas comuns** e **causas especiais**.\
+    Como os processos sujeitos a variação de causas especiais eram imprevisíveis, as técnicas de probabilidade não poderiam ser usadas para separar um tipo de variação de outra e por isso, Shewhart criou um gráfico de controle estatístico como uma heurística para distinguir esses dois tipos de variação, pois cada tipo, requer tratamentos diferentes.
 
-    **Causa comum**
+    **Variações por causa comum**
 
-    -   Fenômenos constantemente observados, ativos no sistema.
+    -   Fenômenos constantemente observados, também chamados de padrões naturais.
 
-    -   Variações previsíveis probabilisticamente e quantificáveis.
+    -   As variações são previsíveis e quantificáveis.
 
     -   Falta significância nos valores individuais seja pra cima ou pra abaixo da média.
 
     -   Exemplos(falta de manutenção de maquinas, falta de procedimento operacional padrão ou inadequados, materias primas de qualidade ruim, iluminação ruim, sujeira ou ruídos excessivos, problemas no design).
 
-    **Causa especial**
+    **Variações por causa especial ou assinalável**
 
-    -   Fenômenos imprevistos, emergentes.
+    -   Fenômenos imprevistos, emergentes ou anteriomente negligenciados.
 
-    -   Variação imprevisível e não quantificáveis.
+    -   As variações são imprevisível e não quantificáveis.
 
-    -   Variação fora da faixa histórica
+    -   Variação fora da faixa registrada nos dados históricos.
 
     -   Presença de significância que evidencia alguma mudança ou percepção no sistema.
 
@@ -54,29 +65,34 @@ A resposta é que considerando a distribuição normal de probabilidades, 99.7% 
 Em algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto (DEMING, 2003).
 :::
 
--   Os gráficos de controle são divididos em dois grupos sendo o controle por variáveis e por atributos.
+### Gráficos de controle para cada tipo de dados {.unnumbered}
 
-    **Por variáveis ou valor contínuo**
+-   Para que o gráfico consiga capturar e mostrar informações relevantes e precisas a respeito do processo, houve a necessidade de fazer adaptações nos gráficos de acordo com os dados disponíveis durante o processo de fabricação. A figura abaixo auxilia na escolha do gráfico mais adequados para cada tipo de situação e dados disponíveis.\
+    \
+    ![Figura - Escolha do gráfico de controle e calculo de limites de controle](images/control_limits.png){alt="Figura - Escolha do gráfico de controle e calculo de limites de controle" width="1385"}D3, D4 e E3 são constantes para gráfico de controle. A tabela estará no apêndice do livro e geralmente os softwares estatísticos já possuem os valores da tabela em seus cálculos.
 
-    -   É formado por dados quantitativos (variável contínua).
-    -   É utilizado quando as amostras são expressas em unidades quantitativas de medida tais como comprimento(12,3 cm), largura(10 mm), peso(12,7 kgs), tempo (2,9 horas) entre outras.
+    **Gráfico de controle por variáveis ou valor contínuo**
+
+    -   É formado por dados quantitativos (variável contínua) que são aquelas que se movem lentamente em uma direção tais como comprimento(12,3 cm), largura(10 mm), peso(12,7 kgs), tempo (2,9 horas) entre outras.
     -   O mais comum é o Xbarra-R que significa média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992)
 
-    **Por atributos ou valor discreto**
+    **Gráfico de controle por atributos ou valor discreto**
 
-    -   É formado por dados qualitativos (variáveis discreta e categóricas).
-    -   É utilizado quando as amostras refletem características qualitativas como defeituoso(SIM ou NÃO), passa ou não passa(0 ou 1), unidades contáveis(12 furos no tecido) entre outros.
+    -   É formado por dados qualitativos (variáveis discretas) que são aquelas que se movem em saltos como defeituoso(SIM ou NÃO), passa ou não passa(0 ou 1), unidades contáveis(12 furos no tecido) entre outros.
     -   Para esse tipo de controle é comumente utilizado o gráfico P, NP, C e U.
     -   Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).
 
-| Tipo de valor | Nome do gráfico                                          |
-|---------------|----------------------------------------------------------|
-| Contínuo      | Gráfico $\bar{x}$ - $R$ ou gráfico média e amplitude     |
-| Contínuo      | Gráfico $x$ ou gráfico de valor individual               |
-| Discreto      | Gráfico $NP$ ou gráfico de número de defeitos            |
-| Discreto      | Gráfico $p$ ou gráfico de fração defeituosa              |
-| Discreto      | Gráfico $c$ ou gráfico de número de defeitos             |
-| Discreto      | Gráfico $u$ ou gráfico de número de defeitos por unidade |
+**A tabela abaixo mostra as subdivisões dos gráficos de controle**
+
+| Tipo de valor | Nome do gráfico                                                                |
+|-----------------|-------------------------------------------------------|
+| Contínuo      | Gráfico $x$ ou gráfico de valor individual onde \$\$n =1\$\$                   |
+| Contínuo      | Gráfico $\bar{x}$ - $R$ ou gráfico média e amplitude onde \$\$n \> 2 \< 10\$\$ |
+| Contínuo      | Gráfico $\bar{x}$ - $S$ ou gráfico média e amplitude com \$\$n \> 10\$\$       |
+| Discreto      | Gráfico $c$ ou gráfico de número de defeitos                                   |
+| Discreto      | Gráfico $u$ ou gráfico de número de defeitos por unidade                       |
+| Discreto      | Gráfico $np$ ou gráfico de número de defeitos                                  |
+| Discreto      | Gráfico $p$ ou gráfico de fração defeituosa                                    |
 
 : Tipos de gráficos de controle
 
@@ -104,21 +120,71 @@ A linha inferior de controle não pode ser menor que zero.
 
 ## Como fazer {.unnumbered}
 
--   A
--   B
--   Montgomery, 2009 regras para reconhecimento de padrões não aleatórios que indicam se o processo pode estar fora de controle.
-    -   Regra1 Qualquer ponto fora do limite de 3 da linha central seja pra cima ou pra baixo
-    -   Regra 2 Dois em cada 3 pontos consectivos fora do limite de 2 sigmas
-    -   Regra 3 Quatro em cadas cinco pontos consectivos fora do limite de 1 sigma do mesmo lado da linha central.
-    -   Regra 4 Oito pontos consectivos do mesmo lado da linha central.
+-   Definir qual tipo de dado disponível ou que pretende utilizar para avaliar o processo, se é um dado contínuo ou um dado discreto.
+-   Com base no tipo de dado disponível, escolher o gráfico adequado e inserir os dados.
+-   No R os gráficos de controle podem ser feitos usando os pacotes `qcc` e `ggQC`
 
-A escolha do gráfico mais adequado para cada situação e calculo de limites de controle
+**Gráfico XmR onde o valor do subgrupo é 1**
 
-![Figura - Escolha do gráfico de controle e calculo de limites de controle](images/control_limits.png)
-Onde: D3, D4 e E3 são constantes para gráfico de controle.
+O gráfico XmR também conhecido como gráfico de controle de Shewhart é usando quando cada ponto de dados consite em uma obervação de dados contínuos(numericos). Como exemplos práticos de uso são usados para controlar temperatura de cada peça, processos biológicos, orçamentos e vendas mensais, reclamações de clisntes, inventário, reações quimicas entre outros.
 
+Neste exemplo avaliamos o processo onde os dados são a temperatura individuais em 20 fixadores de aço.
 
+```{r warning=FALSE, message=FALSE}
 
+#package
+library(tidyverse)
+library(ggQC)
+
+#data
+data_fixadores_xmr <- 
+  tribble(~sample,~temperature,
+          1,35.1,
+          2,24.3,
+          3,33.5,
+          4,36.1,
+          5,33.4,
+          6,28.1,
+          7,39.2,
+          8,35.1,
+          9,38.3,
+          10,31.1,
+          11,28.4,
+          12,31.5,
+          13,36.6,
+          14,24.5,
+          15,26.2,
+          16,29.2,
+          17,28.5,
+          18,33.4,
+          19,31.2,
+          20,30.2 )
+
+#XmR control chart
+data_fixadores_xmr |> 
+  ggplot(aes(x = sample, y = temperature))+
+  geom_point()+
+  geom_line()+
+  stat_QC(method = "XmR",
+          auto.label = TRUE,
+          label.digits = 2,
+          show.1n2.sigma = TRUE)+
+  stat_QC(method = "mR",
+          auto.label = TRUE,
+          label.digits = 2)
+```
+
+**Gráfico XbarR onde o valor do subgrupo está entre 2 e 10**
+
+**Gráfico XbarS onde o valor do subgrupo é maior que 10**
+
+**Gráfico** $c$ **ou gráfico de número de defeitos**
+
+**Gráfico** $u$ **ou gráfico de número de defeitos por unidade**
+
+**Gráfico** $np$ **ou gráfico de número de defeitos**
+
+**Gráfico** $p$ **ou gráfico de fração defeituosa**
 
 ## Pra onde vai {.unnumbered}
 

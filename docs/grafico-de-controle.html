@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -293,7 +327,12 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#o-que-é" id="toc-o-que-é" class="nav-link active" data-scroll-target="#o-que-é">O que é</a></li>
+  <li><a href="#o-que-é" id="toc-o-que-é" class="nav-link active" data-scroll-target="#o-que-é">O que é</a>
+  <ul class="collapse">
+  <li><a href="#característias-técnicas" id="toc-característias-técnicas" class="nav-link" data-scroll-target="#característias-técnicas">Característias técnicas</a></li>
+  <li><a href="#informações-apresentadas-no-gráfico" id="toc-informações-apresentadas-no-gráfico" class="nav-link" data-scroll-target="#informações-apresentadas-no-gráfico">Informações apresentadas no gráfico</a></li>
+  <li><a href="#gráficos-de-controle-para-cada-tipo-de-dados" id="toc-gráficos-de-controle-para-cada-tipo-de-dados" class="nav-link" data-scroll-target="#gráficos-de-controle-para-cada-tipo-de-dados">Gráficos de controle para cada tipo de dados</a></li>
+  </ul></li>
   <li><a href="#qual-o-objetivo" id="toc-qual-o-objetivo" class="nav-link" data-scroll-target="#qual-o-objetivo">Qual o objetivo</a></li>
   <li><a href="#de-onde-vem" id="toc-de-onde-vem" class="nav-link" data-scroll-target="#de-onde-vem">De onde vem</a></li>
   <li><a href="#como-fazer" id="toc-como-fazer" class="nav-link" data-scroll-target="#como-fazer">Como fazer</a></li>
@@ -327,16 +366,33 @@ window.Quarto = {
 
 <section id="o-que-é" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
+<section id="característias-técnicas" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="característias-técnicas">Característias técnicas</h3>
 <ul>
-<li><p>O gráfico de controle é uma ferramenta útil para avaliar o comportamento de um processo e servir como baes para previsões.</p></li>
+<li><p>O gráfico de controle é uma ferramenta útil para avaliar o comportamento de um processo e também fornecer bases para previsões de comportamentos futuros.</p></li>
 <li><p>O gráfico mostra algumas características fundamentais que descrevem um processo como:</p>
 <ul>
 <li>Centralização que é determinada pela média.</li>
-<li>Dispersão, que representa o desvio-padrão ou amplitude</li>
+<li>Dispersão, que representa o desvio-padrão ou amplitude. O quanto os pontos de dados estão distantes da média.</li>
 <li>Limites de controle (LC) ou em inglês CL que significa control limits.</li>
 </ul></li>
+<li><p>Imagine uma linha de produção de alimentos (tomates cortados em rodelas) onde o objetivo avaliar se o processo está uniforme e sob controle estatístico. Para isso eu uso um gráfico de controle e insiro os dados de tempo médio gasto para fatiar tomates com a mesma espessura.</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Pego uma amostra de 100 tomates.</li>
+<li>Registro o tempo gasto para fatiar cada tomate.</li>
+<li>O tempo médio gasto para fatiar cada tomate será representada pela linha central <span class="math inline">\(\bar{x}\)</span> enquanto o limite superior e inferior de controle terão três desvios padrão dessa média representados pela equação matemática <span class="math inline">\(\pm3\sigma\)</span>. Qualquer variação aleatória dentro desses limites, eu considero que o processo está normal ou sob controle.</li>
+<li>Agora imagine que a partir do 10º tomate o gráfico apresente um padrão onde o tempo começa a aumentar sistematicamente até sair dos limites de controle.</li>
+<li>Ao avaliar, percebi que a faca foi perdendo o fio necessitando de mais movimentos para romper a pele do tomate. Como reflexo desse padrão, mais tempo foi gasto, o risco das fatias terem dimensões diferentes aumentaram e os padrões de qualidade do produto e do processo foram impactadas.</li>
+</ol>
+</blockquote></li>
 </ul>
-<p>Imagine um experimento onde o objetivo é medir o tempo médio gasto para fatiar tomates com a mesma espessura. Para isso, eu pego uma amostra de 100 tomates, meço o tempo gasto para fatiar cada tomate. O tempo médio gasto para fatiar cada tomate será representada pela linha central enquanto o limite superior e inferior de controle terão três desvios padrão dessa média.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images\control_chart.png" class="img-fluid figure-img" width="699"></p>
+<figcaption>Figura - Gráfico de controle</figcaption>
+</figure>
+</div>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -351,26 +407,24 @@ Nota
 <p>A resposta é que considerando a distribuição normal de probabilidades, 99.7% dos dados estão variando em até 3 desvios padrão da média. Neste caso, qualquer variação dentro desses limites é considerando dentro do normal. Um valor comum de três desvios padrão pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994)</p>
 </div>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images\control_chart.png" class="img-fluid figure-img"></p>
-<figcaption>Figura - Gráfico de controle</figcaption>
-</figure>
-</div>
+</section>
+<section id="informações-apresentadas-no-gráfico" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="informações-apresentadas-no-gráfico">Informações apresentadas no gráfico</h3>
 <ul>
-<li><p><span class="citation" data-cites="deming2018">Deming, Cahill, and Allan (<a href="#ref-deming2018" role="doc-biblioref">2018</a>)</span>, descreve que Shewhart em 1924, descobriu duas formas de variações em um processo as quais ele classificou como causas comuns e causas especiais e como os processos sujeitos a variação de causas especiais eram imprevisíveis, as técnicas de probabilidade não poderiam ser usadas para separar um tipo de variação de outra e por isso, ele criou um gráfico de controle estatístico como uma heurística para distinguir esses dois tipos de variação, pois cada tipo necessita tratamentos diferentes.</p>
-<p><strong>Causa comum</strong></p>
+<li><p><span class="citation" data-cites="deming2018">Deming, Cahill, and Allan (<a href="#ref-deming2018" role="doc-biblioref">2018</a>)</span>, descrevem que Shewhart em 1924, descobriu duas formas de variações em um processo as quais ele classificou como <strong>causas comuns</strong> e <strong>causas especiais</strong>.<br>
+Como os processos sujeitos a variação de causas especiais eram imprevisíveis, as técnicas de probabilidade não poderiam ser usadas para separar um tipo de variação de outra e por isso, Shewhart criou um gráfico de controle estatístico como uma heurística para distinguir esses dois tipos de variação, pois cada tipo, requer tratamentos diferentes.</p>
+<p><strong>Variações por causa comum</strong></p>
 <ul>
-<li><p>Fenômenos constantemente observados, ativos no sistema.</p></li>
-<li><p>Variações previsíveis probabilisticamente e quantificáveis.</p></li>
+<li><p>Fenômenos constantemente observados, também chamados de padrões naturais.</p></li>
+<li><p>As variações são previsíveis e quantificáveis.</p></li>
 <li><p>Falta significância nos valores individuais seja pra cima ou pra abaixo da média.</p></li>
 <li><p>Exemplos(falta de manutenção de maquinas, falta de procedimento operacional padrão ou inadequados, materias primas de qualidade ruim, iluminação ruim, sujeira ou ruídos excessivos, problemas no design).</p></li>
 </ul>
-<p><strong>Causa especial</strong></p>
+<p><strong>Variações por causa especial ou assinalável</strong></p>
 <ul>
-<li><p>Fenômenos imprevistos, emergentes.</p></li>
-<li><p>Variação imprevisível e não quantificáveis.</p></li>
-<li><p>Variação fora da faixa histórica</p></li>
+<li><p>Fenômenos imprevistos, emergentes ou anteriomente negligenciados.</p></li>
+<li><p>As variações são imprevisível e não quantificáveis.</p></li>
+<li><p>Variação fora da faixa registrada nos dados históricos.</p></li>
 <li><p>Presença de significância que evidencia alguma mudança ou percepção no sistema.</p></li>
 <li><p>Exemplos (Pane no servidor, falta de operador da maquina, quebra da maquina, lote diferente na matéria prima, falta ou oscilações na energia eletrica, controladores defeituosos)</p></li>
 <li><p>Pode ser corrigida alterando o componente ou processo.</p></li>
@@ -389,27 +443,31 @@ Nota
 <p>Em algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto (DEMING, 2003).</p>
 </div>
 </div>
+</section>
+<section id="gráficos-de-controle-para-cada-tipo-de-dados" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="gráficos-de-controle-para-cada-tipo-de-dados">Gráficos de controle para cada tipo de dados</h3>
 <ul>
-<li><p>Os gráficos de controle são divididos em dois grupos sendo o controle por variáveis e por atributos.</p>
-<p><strong>Por variáveis ou valor contínuo</strong></p>
+<li><p>Para que o gráfico consiga capturar e mostrar informações relevantes e precisas a respeito do processo, houve a necessidade de fazer adaptações nos gráficos de acordo com os dados disponíveis durante o processo de fabricação. A figura abaixo auxilia na escolha do gráfico mais adequados para cada tipo de situação e dados disponíveis.<br>
+<br>
+<img src="images/control_limits.png" class="img-fluid" alt="Figura - Escolha do gráfico de controle e calculo de limites de controle" width="1385">D3, D4 e E3 são constantes para gráfico de controle. A tabela estará no apêndice do livro e geralmente os softwares estatísticos já possuem os valores da tabela em seus cálculos.</p>
+<p><strong>Gráfico de controle por variáveis ou valor contínuo</strong></p>
 <ul>
-<li>É formado por dados quantitativos (variável contínua).</li>
-<li>É utilizado quando as amostras são expressas em unidades quantitativas de medida tais como comprimento(12,3 cm), largura(10 mm), peso(12,7 kgs), tempo (2,9 horas) entre outras.</li>
+<li>É formado por dados quantitativos (variável contínua) que são aquelas que se movem lentamente em uma direção tais como comprimento(12,3 cm), largura(10 mm), peso(12,7 kgs), tempo (2,9 horas) entre outras.</li>
 <li>O mais comum é o Xbarra-R que significa média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992)</li>
 </ul>
-<p><strong>Por atributos ou valor discreto</strong></p>
+<p><strong>Gráfico de controle por atributos ou valor discreto</strong></p>
 <ul>
-<li>É formado por dados qualitativos (variáveis discreta e categóricas).</li>
-<li>É utilizado quando as amostras refletem características qualitativas como defeituoso(SIM ou NÃO), passa ou não passa(0 ou 1), unidades contáveis(12 furos no tecido) entre outros.</li>
+<li>É formado por dados qualitativos (variáveis discretas) que são aquelas que se movem em saltos como defeituoso(SIM ou NÃO), passa ou não passa(0 ou 1), unidades contáveis(12 furos no tecido) entre outros.</li>
 <li>Para esse tipo de controle é comumente utilizado o gráfico P, NP, C e U.</li>
 <li>Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).</li>
 </ul></li>
 </ul>
+<p><strong>A tabela abaixo mostra as subdivisões dos gráficos de controle</strong></p>
 <table class="table">
 <caption>Tipos de gráficos de controle</caption>
 <colgroup>
-<col style="width: 20%">
-<col style="width: 79%">
+<col style="width: 23%">
+<col style="width: 76%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -420,27 +478,31 @@ Nota
 <tbody>
 <tr class="odd">
 <td>Contínuo</td>
-<td>Gráfico <span class="math inline">\(\bar{x}\)</span> - <span class="math inline">\(R\)</span> ou gráfico média e amplitude</td>
+<td>Gráfico <span class="math inline">\(x\)</span> ou gráfico de valor individual onde $$n =1$$</td>
 </tr>
 <tr class="even">
 <td>Contínuo</td>
-<td>Gráfico <span class="math inline">\(x\)</span> ou gráfico de valor individual</td>
+<td>Gráfico <span class="math inline">\(\bar{x}\)</span> - <span class="math inline">\(R\)</span> ou gráfico média e amplitude onde $$n &gt; 2 &lt; 10$$</td>
 </tr>
 <tr class="odd">
-<td>Discreto</td>
-<td>Gráfico <span class="math inline">\(NP\)</span> ou gráfico de número de defeitos</td>
+<td>Contínuo</td>
+<td>Gráfico <span class="math inline">\(\bar{x}\)</span> - <span class="math inline">\(S\)</span> ou gráfico média e amplitude com $$n &gt; 10$$</td>
 </tr>
 <tr class="even">
-<td>Discreto</td>
-<td>Gráfico <span class="math inline">\(p\)</span> ou gráfico de fração defeituosa</td>
-</tr>
-<tr class="odd">
 <td>Discreto</td>
 <td>Gráfico <span class="math inline">\(c\)</span> ou gráfico de número de defeitos</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Discreto</td>
 <td>Gráfico <span class="math inline">\(u\)</span> ou gráfico de número de defeitos por unidade</td>
+</tr>
+<tr class="even">
+<td>Discreto</td>
+<td>Gráfico <span class="math inline">\(np\)</span> ou gráfico de número de defeitos</td>
+</tr>
+<tr class="odd">
+<td>Discreto</td>
+<td>Gráfico <span class="math inline">\(p\)</span> ou gráfico de fração defeituosa</td>
 </tr>
 </tbody>
 </table>
@@ -457,6 +519,7 @@ Atenção
 <p>A linha inferior de controle não pode ser menor que zero.</p>
 </div>
 </div>
+</section>
 </section>
 <section id="qual-o-objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
@@ -482,18 +545,71 @@ Atenção
 <section id="como-fazer" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>Montgomery, 2009 regras para reconhecimento de padrões não aleatórios que indicam se o processo pode estar fora de controle.
-<ul>
-<li>Regra1 Qualquer ponto fora do limite de 3 da linha central seja pra cima ou pra baixo</li>
-<li>Regra 2 Dois em cada 3 pontos consectivos fora do limite de 2 sigmas</li>
-<li>Regra 3 Quatro em cadas cinco pontos consectivos fora do limite de 1 sigma do mesmo lado da linha central.</li>
-<li>Regra 4 Oito pontos consectivos do mesmo lado da linha central.</li>
-</ul></li>
+<li>Definir qual tipo de dado disponível ou que pretende utilizar para avaliar o processo, se é um dado contínuo ou um dado discreto.</li>
+<li>Com base no tipo de dado disponível, escolher o gráfico adequado e inserir os dados.</li>
+<li>No R os gráficos de controle podem ser feitos usando os pacotes <code>qcc</code> e <code>ggQC</code></li>
 </ul>
-<p>A escolha do gráfico mais adequado para cada situação e calculo de limites de controle</p>
-<p><img src="images/control_limits.png" class="img-fluid" alt="Figura - Escolha do gráfico de controle e calculo de limites de controle"> Onde: D3, D4 e E3 são constantes para gráfico de controle.</p>
+<p><strong>Gráfico XmR onde o valor do subgrupo é 1</strong></p>
+<p>O gráfico XmR também conhecido como gráfico de controle de Shewhart é usando quando cada ponto de dados consite em uma obervação de dados contínuos(numericos). Como exemplos práticos de uso são usados para controlar temperatura de cada peça, processos biológicos, orçamentos e vendas mensais, reclamações de clisntes, inventário, reações quimicas entre outros.</p>
+<p>Neste exemplo avaliamos o processo onde os dados são a temperatura individuais em 20 fixadores de aço.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#package</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggQC)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#data</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>data_fixadores_xmr <span class="ot">&lt;-</span> </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tribble</span>(<span class="sc">~</span>sample,<span class="sc">~</span>temperature,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>          <span class="dv">1</span>,<span class="fl">35.1</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>          <span class="dv">2</span>,<span class="fl">24.3</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>          <span class="dv">3</span>,<span class="fl">33.5</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>          <span class="dv">4</span>,<span class="fl">36.1</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>          <span class="dv">5</span>,<span class="fl">33.4</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>          <span class="dv">6</span>,<span class="fl">28.1</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>          <span class="dv">7</span>,<span class="fl">39.2</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>          <span class="dv">8</span>,<span class="fl">35.1</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>          <span class="dv">9</span>,<span class="fl">38.3</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>          <span class="dv">10</span>,<span class="fl">31.1</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>          <span class="dv">11</span>,<span class="fl">28.4</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>          <span class="dv">12</span>,<span class="fl">31.5</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>          <span class="dv">13</span>,<span class="fl">36.6</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>          <span class="dv">14</span>,<span class="fl">24.5</span>,</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>          <span class="dv">15</span>,<span class="fl">26.2</span>,</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>          <span class="dv">16</span>,<span class="fl">29.2</span>,</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>          <span class="dv">17</span>,<span class="fl">28.5</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>          <span class="dv">18</span>,<span class="fl">33.4</span>,</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>          <span class="dv">19</span>,<span class="fl">31.2</span>,</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>          <span class="dv">20</span>,<span class="fl">30.2</span> )</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">#XmR control chart</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>data_fixadores_xmr <span class="sc">|&gt;</span> </span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> sample, <span class="at">y =</span> temperature))<span class="sc">+</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()<span class="sc">+</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_QC</span>(<span class="at">method =</span> <span class="st">"XmR"</span>,</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>          <span class="at">auto.label =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>          <span class="at">label.digits =</span> <span class="dv">2</span>,</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>          <span class="at">show.1n2.sigma =</span> <span class="cn">TRUE</span>)<span class="sc">+</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_QC</span>(<span class="at">method =</span> <span class="st">"mR"</span>,</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>          <span class="at">auto.label =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>          <span class="at">label.digits =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="grafico-de-controle_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Gráfico XbarR onde o valor do subgrupo está entre 2 e 10</strong></p>
+<p><strong>Gráfico XbarS onde o valor do subgrupo é maior que 10</strong></p>
+<p><strong>Gráfico</strong> <span class="math inline">\(c\)</span> <strong>ou gráfico de número de defeitos</strong></p>
+<p><strong>Gráfico</strong> <span class="math inline">\(u\)</span> <strong>ou gráfico de número de defeitos por unidade</strong></p>
+<p><strong>Gráfico</strong> <span class="math inline">\(np\)</span> <strong>ou gráfico de número de defeitos</strong></p>
+<p><strong>Gráfico</strong> <span class="math inline">\(p\)</span> <strong>ou gráfico de fração defeituosa</strong></p>
 </section>
 <section id="pra-onde-vai" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
