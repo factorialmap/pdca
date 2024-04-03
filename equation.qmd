@@ -1,0 +1,36 @@
+# Equações Latex
+
+Para aplicar equações matematicas em r markdown é bastante simples. Você precisará usar os simbolos `$` ou `$$` com os detalhes da equação dentro desses simbolos por exemplo `$E=m.c^2$` que ficaria $E=m.c^2$
+
+## Notações para estatística
+
+|                                     |                                         |     |
+|-------------------|-----------------------|-----------------|
+| $\overline{x}$                      | `$\overline{x}$`                        |     |
+| $\mu$                               | `$\mu$`                                 |     |
+| $\mu_0$                             | `$\mu_0$`                               |     |
+| $\sigma$                            | `$\sigma$`                              |     |
+| $\sum$                              | `$\sum$`                                |     |
+| $\beta$                             | `$\beta$`                               |     |
+| $s$                                 | `$s$`                                   |     |
+| $\alpha$                            | `$\alpha$`                              |     |
+| $H_0:\mu_1 = \mu_2$                 | `$H_0:\mu_1 = \mu_2`                    |     |
+| $H_0$                               | `$H_0$`                                 |     |
+| $H_1$                               | `$H_1$`                                 |     |
+| $H_i$                               | `$H_i$`                                 |     |
+| $|\mu|$                             | `$|\mu|$`                               |     |
+| $\lambda$                           | `$\lambda$`                             |     |
+| $\theta$                            | `$\theta$`                              |     |
+| $Pr(>|z|)$                          | `$Pr(>|z|)$`                            |     |
+| $x = y$                             | `$x = y$`                               |     |
+| $x < y$                             | `$x < y$`                               |     |
+| $x \geq y$                          | `$x \geq y$`                            |     |
+| $x \leq y$                          | `$x \leq y$`                            |     |
+| $x \neq y$                          | `$x \neq y$`                            |     |
+| $\sum_{i=1}^{n}$                    | `$\sum_{i=1}{n}$`                       |     |
+| $Y_i \sim N(\mu,\sigma)$            | `$Y_i \sim N(\mu,\sigma)$`              |     |
+| $N(\mu, \sigma^2)$                  | `$N(\mu \sigma^2)$`                     |     |
+| $X\sim N(\mu, \sigma^2)$            | `$X\sim N(\mu,\sigma^2)$`               |     |
+| $\bar{x}=\frac{1}{n}\sum_{i=1}^{n}$ | \`\$$\bar{x}=\frac{1}{n}\sum_{i=1}^{n}$ |     |
+
+## 

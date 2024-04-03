@@ -44,7 +44,7 @@ book:
     - relatorio-tres-geracoes.qmd
     - padronizacao.qmd
     - glossario.qmd
-    
+    - equation.qmd
 format:
   html:
     toc: true
