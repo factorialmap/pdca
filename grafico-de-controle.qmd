@@ -84,15 +84,15 @@ Em algumas situações particulares, os limites de controle poderão ser ajustad
 
 **A tabela abaixo mostra as subdivisões dos gráficos de controle**
 
-| Tipo de valor | Nome do gráfico                                                                |
-|-----------------|-------------------------------------------------------|
-| Contínuo      | Gráfico $x$ ou gráfico de valor individual onde \$\$n =1\$\$                   |
-| Contínuo      | Gráfico $\bar{x}$ - $R$ ou gráfico média e amplitude onde \$\$n \> 2 \< 10\$\$ |
-| Contínuo      | Gráfico $\bar{x}$ - $S$ ou gráfico média e amplitude com \$\$n \> 10\$\$       |
-| Discreto      | Gráfico $c$ ou gráfico de número de defeitos                                   |
-| Discreto      | Gráfico $u$ ou gráfico de número de defeitos por unidade                       |
-| Discreto      | Gráfico $np$ ou gráfico de número de defeitos                                  |
-| Discreto      | Gráfico $p$ ou gráfico de fração defeituosa                                    |
+| Tipo de valor | Nome do gráfico                                          |
+|---------------|----------------------------------------------------------|
+| Contínuo      | Gráfico $x$ ou gráfico de valor individual               |
+| Contínuo      | Gráfico $\bar{x}$ - $R$ ou gráfico média e amplitude     |
+| Contínuo      | Gráfico $\bar{x}$ - $S$ ou gráfico média e amplitude     |
+| Discreto      | Gráfico $c$ ou gráfico de número de defeitos             |
+| Discreto      | Gráfico $u$ ou gráfico de número de defeitos por unidade |
+| Discreto      | Gráfico $np$ ou gráfico de número de defeitos            |
+| Discreto      | Gráfico $p$ ou gráfico de fração defeituosa              |
 
 : Tipos de gráficos de controle
 
