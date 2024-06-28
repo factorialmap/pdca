@@ -1,20 +1,105 @@
 # Glossário
 
--   Algorítmo: regra de calculo que processo variáveis de entrada produzindo um resultado.
--   01 point of Deming: Create constancy of purpose for improving product and services.
--   03 point of Deming: Cease dependence on inspection to achieve quality
--   04 point of Deming: End the practice of awarding business on price alone;intead, minimize total cost by working with a single supplier.
--   05 point of Deming: Improve constantly and forever every process for planning, production and service.
--   06 point of Deming: Institute training on the job.
--   07 point of Deming: Adopt and institute leadership.
--   08 point of Deming: Drive out fear.
--   09 point of Deming: Break down barriers between staff areas.
--   10 point of Deming: Eliminate slogans, exhortations, and target for the workforce.
--   11 point of Deming: Eliminate numerical quotas for the workforce and numerical goals for management.
--   12 point of Deming: Remove barriers that rob people of pride of workmanship, and eliminate the annual rating or merit system.
+### Objetivo {.unnumbered}
 
--   
--   
--   
--   
--   
+-   A ideia do glossário é auxiliar o iniciante em sua jornada de aprendizado.
+-   Juntando descrição técnica + analogias para que a **ideia do termo utilizado** faça sentido para os que não ainda não possuem familiaridade com ele.
+-   Por estar em uma linguagem simples, não significa que o contexto seja simples havendo necessidade de aprofundar-se no tema. Portanto, este é apenas um mecanismo para auxiliar a rede neural biologica(cerebro) **associar** o novo contexto ao contexto usado no dia-a-dia permitindo assim, a entrada e processado da informação através da perspectiva da **associação**. Em resumo seria a percepção **Ahh, agora isso fez sentido!**
+
+**Algorítmo**:
+
+**Calibração**:
+
+**Machine learning**:
+
+**Odds ratio**:
+
+**Correção de Bonferroni**:
+
+**Documento reproduzível**:
+
+**Desvio padrão**:
+
+**Erro padrão**:
+
+**Variável binária**:
+
+**Falso negativo**:
+
+**Falso positivo**:
+
+**Teste A/B**:
+
+**Teste caso/controle**:
+
+**Grupo controle**:
+
+**Grupo tratamento**:
+
+**Placebo**:
+
+**Sabedoria das multidões**:
+
+**Significancia estatística**: **Hipótese nula**:
+
+**Variável discreta**:
+
+**Variável contínua**:
+
+**Variável dependente**:
+
+**Variável de desfecho**:
+
+**Variável de resposta**:
+
+**Variável independente**:
+
+**Variável preditora**:
+
+**Cp**:
+
+**Cpk**:
+
+**Preditores**:
+
+**Distribuição normal**:
+
+**Distribuição binomial**:
+
+**Distribuição Bernoulli**:
+
+**Distribuição Poisson**:
+
+**Feature engineering**:
+
+**Erro do tipo I**:
+
+**Erro do tipo II**:
+
+**Erro do tipo III**:
+
+**Ponto 1 de Deming**: Crie constancia de propósito para melhorar continuamente produtos e serviços.
+
+**Ponto 3 de Deming**: Opte por melhorar a qualidade ao inves de inspeções em massa.
+
+**Ponto 4 de Deming**: Evite premiar negócios com base no preço inicial. Pense no custo total e quanto as variações influenciam na qualidade.
+
+**Ponto 5 de Deming**: Melhorar constantemente independente do ciclo economico, seja de expansão ou retração.
+
+**Ponto 6 de Deming**: Instituir treinamento de trabalho.
+
+**Ponto 7 de Deming**: Ter em mente que o objetivo da supervisão é ajudar as pessoas, maquinas e dispositivos a fazere um trabalho melhor.
+
+**Ponto 8 de Deming**: Afastar o medo para que todos possam trabalhar de forma eficaz para a empresa.
+
+**Ponto 9 de Deming**: Derrubar barreiras entre departamentos. Promover a cooperação e intetração entre os times de pesquisa, design, vendas e produção.
+
+**Ponto 10 de Deming**: Eliminar slogans e exortações e metas para forçar o trabalho pedindo zero defeitos e novos níveis de produtividade.
+
+**Ponto 11 de Deming**: Eliminar cotas de trabalho no chão da fabrica.
+
+**Ponto 12 de Deming**: Eliminar gestão por objetivos de curto prazo.Remover as barreiras de roubam as pessoas o seu direito ao orgulho do seu trabalho.
+
+**Ponto 13 de Deming**: Instituir programa vigoroso de educação e auto aperfeiçoamento.
+
+**Ponto 14 de Deming**: Colocar todos para trabalhar para realizar a transformação. A transformação é tarefa de todos(Deming, W. Edwards. Fora da crise (MIT Press) (pp. 23-24) )

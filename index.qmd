@@ -17,7 +17,9 @@ Para facilitar a compreensão e busca dos temas, os capítulos serão organizado
 -   **Pra onde vai**: quem é o consumidor disso. Qual a aplicação prática disso.
 -   **Qual o resultado**: descrição dos resultados previstos ou comprovados.
 
-## Objetivo {.unnumbered}
+A ideia desse modelo remete a @bonvillian2021, que é estimular e potencializar as habilidades de pensamento crítico do leitor. Em outras palavras seria como melhorar as capacidades de resolver problemas compreendendo uma operação ou tarefa específica e ao mesmo tempo, compreender o funcionamento do sistema como um todo e as relações de causa-e-efeito(e.g processos, logistica, finanças, sustentabilidade no longo prazo).
+
+## Qual o objetivo do livro {.unnumbered}
 
 Possibilitar que as ideias e conceitos sobre PDCA e ferramentas da qualidade possam ser usados para o desenvolvimento humano no presente e no futuro. Para facilitar a compreensão, alguns cuidados foram tomados:
 
@@ -28,6 +30,20 @@ Possibilitar que as ideias e conceitos sobre PDCA e ferramentas da qualidade pos
 -   Explorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal, ou seja, se as ferramentas mudarem, as ideias continuarão sendo úteis.
 
 -   Ser um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.
+
+## Qual o tempo de leitura do livro {.unnumbered}
+
+A ideia é que o leitor leia pausadamente ou em momentos que houver necessidade, retornando periodicamente para revisão do conteúdo.
+
+Essa ideia também remete a @bonvillian2021, em como lidar com a curva de esquecimento e com a curva de aprendizado.
+
+Na figura abaixo, conforme a pesquisa de Ebbinhaus de 1880 denominada método de poupança de aprendizado e replicada por @murre2015, é possível observar que o esquecimento sobre um assunto abordado(linha vermelha) é neutralizado pelo reforço no aprendizado em períodos subsequentes(linhas verdes), tendo como resultado a redução do esquecimento daquilo que se aprendeu.
+
+![Curva de esquecimento de Ebbinhaus](images/ebbinhaus_fortetting_curve.png)
+
+A ideia expressa pela figura abaixo extraída de @quinn2011, demonstra que quanto maior o tempo e espaçamento do aprendizado juntamente com trabalho prático associado(training), mais lenta será a curva de esquecimento do tema estudado(test).
+
+![Design mLearning de Clark Quinn](images/design_mlearnin_clark.png)
 
 ## Agradecimento {.unnumbered}
 
