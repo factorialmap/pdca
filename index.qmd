@@ -2,7 +2,7 @@
 
 **A melhoria de processos** envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios, perdas, atender determinados padrões de qualidade, especificação e melhorar a experiência de consumidores de produtos, serviços ou ideias.
 
-**O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade** são conceitos utilizados na identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras desses conceitos, implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.
+**O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade** são conceitos e princípios utilizados na identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras desses conceitos, implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.
 
 Os conceitos abordados no livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados, melhorados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores ao redor do mundo.
 
