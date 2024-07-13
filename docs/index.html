@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Marcelo Carvalho dos Anjos">
-<meta name="dcterms.date" content="2024-04-02">
+<meta name="dcterms.date" content="2024-07-12">
 
 <title>Método PDCA e ferramentas da qualidade</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -238,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./equation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Equações Latex</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Equações matemáticas LaTeX</span></span></a>
   </div>
 </li>
     </ul>
@@ -254,7 +274,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
   <ul class="collapse">
   <li><a href="#como-o-livro-é-organizado" id="toc-como-o-livro-é-organizado" class="nav-link" data-scroll-target="#como-o-livro-é-organizado">Como o livro é organizado</a></li>
-  <li><a href="#objetivo" id="toc-objetivo" class="nav-link" data-scroll-target="#objetivo">Objetivo</a></li>
+  <li><a href="#qual-o-objetivo-do-livro" id="toc-qual-o-objetivo-do-livro" class="nav-link" data-scroll-target="#qual-o-objetivo-do-livro">Qual o objetivo do livro</a></li>
+  <li><a href="#qual-o-tempo-de-leitura-do-livro" id="toc-qual-o-tempo-de-leitura-do-livro" class="nav-link" data-scroll-target="#qual-o-tempo-de-leitura-do-livro">Qual o tempo de leitura do livro</a></li>
   <li><a href="#agradecimento" id="toc-agradecimento" class="nav-link" data-scroll-target="#agradecimento">Agradecimento</a></li>
   </ul></li>
   </ul>
@@ -282,7 +303,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 2, 2024</p>
+      <p class="date">July 12, 2024</p>
     </div>
   </div>
   
@@ -297,8 +318,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="preface" class="level1 unnumbered">
 <h1 class="unnumbered">Preface</h1><p><img src="pdca_capa.PNG" title="Método PDCA e ferramentas da qualidade" class="quarto-cover-image img-fluid"></p>
-<p><strong>A melhoria de processos</strong> envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios, perdas, atender determinados padrões de qualidade e especificação e melhorar a experiência de consumidores de produtos, serviços ou ideias.</p>
-<p><strong>O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade</strong> são conceitos utilizados na identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras desses conceitos, implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.</p>
+<p><strong>A melhoria de processos</strong> envolve a prática de identificar, analisar e melhorar processos com objetivo de reduzir desperdícios, perdas, atender determinados padrões de qualidade, especificação e melhorar a experiência de consumidores de produtos, serviços ou ideias.</p>
+<p><strong>O método PDCA (Plan-Do-Check-Action) e ferramentas da qualidade</strong> são conceitos e princípios utilizados na identificação e solução de problemas. Este livro foi criado para que o leitor possa compreender as ideias por tras desses conceitos, implementá-las em seu ambiente ou até mesmo desenvolver seu próprio estilo. Para tornar as coisas mais claras, foram adicionados desenhos, exemplos práticos e código na linguagem R.</p>
 <p>Os conceitos abordados no livro tiveram seu desenvolvimento iniciado a mais de 60 anos anos e vem sendo testados, validados, melhorados e usados em muitas áreas por pesquisadores, engenheiros, cientístas e gestores ao redor do mundo.</p>
 <section id="como-o-livro-é-organizado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-o-livro-é-organizado">Como o livro é organizado</h2>
@@ -311,22 +332,53 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Pra onde vai</strong>: quem é o consumidor disso. Qual a aplicação prática disso.</li>
 <li><strong>Qual o resultado</strong>: descrição dos resultados previstos ou comprovados.</li>
 </ul>
+<p>A ideia desse modelo remete a <span class="citation" data-cites="bonvillian2021">Bonvillian and Sarma (<a href="#ref-bonvillian2021" role="doc-biblioref">2021</a>)</span>, que é estimular e potencializar as habilidades de pensamento crítico do leitor. Em outras palavras seria como melhorar as capacidades de resolver problemas em uma operação ou tarefa específica e ao mesmo tempo, compreender o funcionamento do sistema como um todo e as relações de causa-e-efeito(e.g processos, logistica, finanças, sustentabilidade no longo prazo).</p>
 </section>
-<section id="objetivo" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="objetivo">Objetivo</h2>
-<p>Possibilitar que as ideias e conceitos sobre PDCA e ferramentas da qualidade possam ser usados para o desenvolvimento humano no presente e no futuro. Para facilitar a compreensão, alguns cuidados foram tomados:</p>
+<section id="qual-o-objetivo-do-livro" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo-do-livro">Qual o objetivo do livro</h2>
+<p>Possibilitar que as ideias e conceitos sobre PDCA e ferramentas da qualidade possam ser usados para o desenvolvimento humano no presente e no futuro. Para isso, alguns cuidados foram tomados:</p>
 <ul>
-<li><p>Usar uma linguagem simples e exemplos práticos.</p></li>
-<li><p>Permitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.</p></li>
-<li><p>Explorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal, ou seja, se as ferramentas mudarem, as ideias continuarão sendo úteis.</p></li>
+<li><p>Usar linguagem simples e exemplos práticos.</p></li>
+<li><p>Permitir reprodução dos exemplos em ferramenta com linguagem R.</p></li>
+<li><p>Explorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal. Neste caso, se as ferramentas mudarem, as ideias continuarão sendo úteis.</p></li>
 <li><p>Ser um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.</p></li>
 </ul>
+</section>
+<section id="qual-o-tempo-de-leitura-do-livro" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="qual-o-tempo-de-leitura-do-livro">Qual o tempo de leitura do livro</h2>
+<p>Foi criado para ser uma leitura com pausas ou para momentos onde houver necessidade, podendo o leitor, retornar periodicamente para revisão do conteúdo.</p>
+<p>Essa ideia também remete a <span class="citation" data-cites="bonvillian2021">Bonvillian and Sarma (<a href="#ref-bonvillian2021" role="doc-biblioref">2021</a>)</span>, em como lidar com a curva de esquecimento e com a curva de aprendizado.</p>
+<p>Na figura abaixo, conforme a pesquisa de Ebbinhaus de 1880 denominada método de poupança de aprendizado e replicada por <span class="citation" data-cites="murre2015">Murre and Dros (<a href="#ref-murre2015" role="doc-biblioref">2015</a>)</span>, é possível observar que o esquecimento sobre um assunto abordado(linha vermelha) é neutralizado pelo reforço de aprendizado em períodos subsequentes(linhas verdes), tendo como resultado a redução do esquecimento daquilo que se aprendeu.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ebbinhaus_fortetting_curve.png" class="img-fluid figure-img"></p>
+<figcaption>Curva de esquecimento de Ebbinhaus</figcaption>
+</figure>
+</div>
+<p>Já na figura abaixo extraída de <span class="citation" data-cites="quinn2011">Quinn (<a href="#ref-quinn2011" role="doc-biblioref">2011</a>)</span>, demonstra que quanto maior o tempo e espaçamento do aprendizado juntamente com trabalho prático associado(training), menos acentuada será a curva de esquecimento do tema estudado(test).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/design_mlearnin_clark.png" class="img-fluid figure-img"></p>
+<figcaption>Design mLearning de Clark Quinn</figcaption>
+</figure>
+</div>
 </section>
 <section id="agradecimento" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="agradecimento">Agradecimento</h2>
 <p>Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, paulinyzito, SilvioBras, priscilazavadil, Ana Incerti, Muxtaa, FlávioCorrêa e factorialmap.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bonvillian2021" class="csl-entry" role="listitem">
+Bonvillian, William B., and Sanjay E. Sarma. 2021. <em>Workforce Education: A New Roadmap</em>. The MIT Press.
+</div>
+<div id="ref-murre2015" class="csl-entry" role="listitem">
+Murre, Jaap M. J., and Joeri Dros. 2015. <span>“Replication and Analysis of Ebbinghaus<span>’</span> Forgetting Curve.”</span> <em>PLOS ONE</em> 10 (7): 1–23. <a href="https://doi.org/10.1371/journal.pone.0120644">https://doi.org/10.1371/journal.pone.0120644</a>.
+</div>
+<div id="ref-quinn2011" class="csl-entry" role="listitem">
+Quinn, Clark N. 2011. <em>Designing mLearning: Tapping into the Mobile Revolution for Organizational Performance</em>. Independently published.
+</div>
+</div>
 </section>
 </section>
 
