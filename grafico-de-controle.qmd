@@ -126,9 +126,9 @@ A linha inferior de controle não pode ser menor que zero.
 
 **Gráfico XmR onde o valor do subgrupo é 1**
 
-O gráfico XmR também conhecido como gráfico de controle de Shewhart é usando quando cada ponto de dados consite em uma obervação de dados contínuos(numericos).
+O gráfico XmR também conhecido como gráfico de controle de Shewhart é usado quando cada ponto de dados consite em uma obervação de dados contínuos(numéricos).
 
-Como exemplos práticos de uso podemos citar o controle de temperatura de cada peça, processos biológicos, orçamentos e vendas mensais, reclamações de clientes, inventário, reações quimicas entre outros.
+Como exemplos práticos de uso, podemos citar o controle de temperatura de cada peça, processos biológicos, orçamentos e vendas mensais, reclamações de clientes, inventário, reações quimicas entre outros.
 
 No exemplo abaixo, avaliamos a temperatura individual em 20 fixadores de aço.
 
