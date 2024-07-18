@@ -48,3 +48,5 @@ Já na figura abaixo extraída de @quinn2011, demonstra que quanto maior o tempo
 ## Agradecimento {.unnumbered}
 
 Agradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, paulinyzito, SilvioBras, priscilazavadil, Ana Incerti, Muxtaa, FlávioCorrêa e factorialmap.
+
+## Referências {.unnumbered}

@@ -2,34 +2,52 @@
 
 ## O que é {.unnumbered}
 
--   A
--   B
--   C
+-   Padronização é a atapa onde os registros das ações realizadas que se comprovarão eficazes são consolidados, os documentos e normas são desenvolvidas e publicadas. Como exemplos os POP(procedimento operacaional padrão) e os treinamentos são realizados.
+-   A padronização envolve estabelecer e seguir um conjunto de regras ou especificações sobre como realizar uma determinada tarefa ou atividade.
+-   Aplicação do conceito de compliance que é o ato ou processo de cumprimento de uma regra, norma ou aquilo que foi proposto para evitar que problemas apareçam ou sejam reincidentes. Esta relacionado a conformidade no cumprimento de requisitos oficiais.
+
+![Figura - Procedimento operacional padrão](images/pop.png)
 
 ## Qual o objetivo {.unnumbered}
 
--   A
--   B
--   C
+-   Permitir a reprodução de processos considerandos eficientes, reduzindo a variação, o desperdício de recursos e os custos de produção melhorando a competitividade.
+
+-   Ajuda a garantir que os processos sejam consistentes, eficientes e eficazes melhorando o desempenho e resultados por seguir as melhores práticas.
+
+-   Melhorar a comunicação e colaboração entre os envolvidos usando formatos e linguagens comuns tornando os processos mais simples de serem monitorados e ajustados.
+
+-   Auxiliar na criação e cumprimento das regras e normas.
 
 ## De onde vem {.unnumbered}
 
--   A
--   B
--   C
+-   Vem da observação de benchmarks do setor, feedback de consumidores, requisitos regulatórios e conhecimento interno vindos através de sugestões.
+-   Encurtar o tempo na implantação e adaptação de modelos que foram testados e que apresentaram resultados positivos, reduzindo custos.
+-   
+-   Da necessidade de evitar a reincidências de problemas.
 
 ![Figura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado](images/step_67.png)
 
 ## Como fazer {.unnumbered}
 
--   A
--   B
--   C
+-   Replicar as atividades que funcionaram conforme planejados e foram consideradas eficazes.
+-   Documentar os padrões que servirá como orientação para o processo como especificações, regras e melhores práticas que garantam a consistência e qualidade no processo. Como exemplo pode-se considerar procedimentos, diretrizes, listas de verificação, modelos, metricas e políticas.
+-   Revisar as ações que não tiveram um bom desempenho e propor mudanças.
+-   Adotar soluções como padrão.
+-   Planejar monitoramento contínuo das soluções padronizadas.
+-   Verificar se o padrão está sendo seguido
+-   Medir o indicador comparando com a linha de base e registrando os resultados.
+-   Verificar o que está funcionando e o que não está
+-   Identificar se há mudanças sistemáticas
+-   Praticar e melhorar as atividades de acordo com o método definido.
+-   Procurar a próxima oportunidade de melhoria.
+-   Comunicar bem e em linguagem consistente e que seja fácil de ser compreendida, pode ser utilizadas fluxogramas, diagramas, vídeos e manuais com a ideia da comunicação ser clara e concisa.
+-   Treinar pessoas e fornecer os recursos, ferramentas e suporte necessário que permita a execussão do processo padronizado com foco na formação de cultura de melhoria contínua.
+-   Medir e acommpanhar o desempenho dos resultados do processo. Indicadores como tempo, custo, qualidade e satisfação podem ser utilizadas e apresentados em ferramentas como paineis, relatórios e sistemas ed feedback. A coleta de dados pode ser feita com auxilio de pesquisas, auditorias e análise para avaliar e melhorar os padrões.
 
 ## Pra onde vai {.unnumbered}
 
--   A
--   B
+-   Após a etapa de padronização, o PDCA é reiniciado como parte do processo de melhoria contínua seja no processo existente, um novo.
+-   
 -   C
 
 ## Qual o resultado {.unnumbered}

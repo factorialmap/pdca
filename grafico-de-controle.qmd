@@ -126,47 +126,33 @@ A linha inferior de controle não pode ser menor que zero.
 
 **Gráfico XmR onde o valor do subgrupo é 1**
 
-O gráfico XmR também conhecido como gráfico de controle de Shewhart é usado quando cada ponto de dados consite em uma obervação de dados contínuos(numéricos).
+O gráfico XmR também conhecido como I-MR e gráfico de controle de Shewhart é um gráfico de controle de variação de processo onde cada ponto é uma obervação de dados contínuos(numéricos).
+
+O gráfico de controle XmR geralmente são usados para monitorar estabilidade do processo durante correções ou ajuste no processo, determinar se um processo está pronto para ser melhorado e também fornecer informações sobre os efeitos da melhoria através da visualização dos dados.
 
 Como exemplos práticos de uso, podemos citar o controle de temperatura de cada peça, processos biológicos, orçamentos e vendas mensais, reclamações de clientes, inventário, reações quimicas entre outros.
 
-No exemplo abaixo, avaliamos a temperatura individual em 20 fixadores de aço.
+No exemplo abaixo, avaliamos a quebra de resfriamento após 24 na câmara fria em 20 produtos alimentícios individuais.
 
 ```{r}
+#| label: xmr_chart
 #| warning: false
 #| messsage: false
 
 #package
 library(tidyverse)
 library(ggQC)
+library(patchwork)
+library(qicharts2)
 
 #data
-data_fixadores_xmr <- 
-  tribble(~sample,~temperature,
-          1,35.1,
-          2,24.3,
-          3,33.5,
-          4,36.1,
-          5,33.4,
-          6,28.1,
-          7,39.2,
-          8,35.1,
-          9,38.3,
-          10,31.1,
-          11,28.4,
-          12,31.5,
-          13,36.6,
-          14,24.5,
-          15,26.2,
-          16,29.2,
-          17,28.5,
-          18,33.4,
-          19,31.2,
-          20,30.2 )
+data_xmr <- tibble(sample = c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20),
+                  quebra_frio =c(1.24,1.23,1.27,1.23,1.50,1.54,1.37,1.39,1.35,1.47,1.29,1.42,1.24,1.36,1.38,1.37,1.55,1.64,1.44,1.40))
+
 
 #XmR control chart
-data_fixadores_xmr |> 
-  ggplot(aes(x = sample, y = temperature))+
+data_xmr |> 
+  ggplot(aes(x = sample, y = quebra_frio))+
   geom_point()+
   geom_line()+
   stat_QC(method = "XmR",
@@ -175,20 +161,145 @@ data_fixadores_xmr |>
           show.1n2.sigma = TRUE)+
   stat_QC(method = "mR",
           auto.label = TRUE,
-          label.digits = 2)
+          label.digits = 2)+
+  labs(title = "Gráfico XmR de quebra de resfriamento",
+       subtitle = "")+
+  ggthemes::theme_base()
 ```
 
 **Gráfico XbarR onde o valor do subgrupo está entre 2 e 10**
 
+```{r}
+#| label: xbar_chart
+#| warning: false
+#| messsage: false
+
+data_xbar <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_xbarr_96.csv")
+
+#using ggQC plot xbar
+plot_xbar <- 
+  data_xbar %>%
+  pivot_longer(cols = - sub_group,
+               names_to = "sample",
+               values_to = "value") %>% 
+  ggplot(aes(x = sub_group, y= value, group = 1))+
+  stat_summary(fun = mean, geom = "point")+
+  stat_summary(fun = mean, geom = "line")+
+  stat_QC(method = "xBar.rBar",
+          auto.label = TRUE)+
+  ggthemes::theme_base()+
+  labs(title = "Gráfico Xbar")
+
+#using ggQC plot range
+plot_range <- 
+  data_xbar %>%
+  pivot_longer(cols = - sub_group,
+               names_to = "sample",
+               values_to = "value") %>% 
+  ggplot(aes(x = sub_group, y= value, group =1 ))+
+  stat_summary(fun = QCrange, geom = "point")+
+  stat_summary(fun = QCrange, geom = "line")+
+  stat_QC(method = "rBar",
+          auto.label = TRUE)+
+  ggthemes::theme_base()+
+  labs(title = "Gráfico de amplitude")
+
+#using ggQC plot two charts at the same time
+plot_xbar / plot_range
+
+
+```
+
 **Gráfico XbarS onde o valor do subgrupo é maior que 10**
+
+```{r}
+#| label: sbar_chart
+#| warning: false
+#| messsage: false
+
+
+```
 
 **Gráfico** $c$ **ou gráfico de número de defeitos**
 
+```{r}
+#| label: c_chart
+#| warning: false
+#| messsage: false
+
+#using ggQC
+set.seed(5555)
+data_c <- tibble(process_run_id = 1:30,
+                 counts = rpois(n = 30, lambda = 25))
+
+#plot c chart
+data_c %>% 
+  ggplot(aes(x = process_run_id, 
+             y = counts))+
+  geom_point()+
+  geom_line()+
+  stat_QC(method = "c",
+          auto.label = TRUE,
+          label.digits = 2)
+
+
+```
+
 **Gráfico** $u$ **ou gráfico de número de defeitos por unidade**
+
+```{r}
+#| label: u_chart
+#| warning: false
+#| messsage: false
+
+qic(y = n,
+    x = month,
+    data = cdi,
+    chart = "u",
+    part = 24,
+    title = "Hospital acquired Clostridium difficile infections(U chart)",
+    ylab = "Cases per 10,000 risk days",
+    xlab = "Month")
+
+```
 
 **Gráfico** $np$ **ou gráfico de número de defeitos**
 
+```{r}
+#| label: np_chart
+#| warning: false
+#| messsage: false
+
+# np       ----------------------------------------------------------------
+data_np <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_np_104.csv")
+
+data_np %>% 
+  ggplot(aes(x =sub_group, 
+             y = num_defective_units))+
+  geom_point()+
+  geom_line()+
+  stat_QC(method = "np",
+          n = 100, 
+          auto.label = TRUE,
+          label.digits = 2
+  )+
+  labs(title = "np charts",
+       subtitle = "n = 100",
+       y = "# defective units",
+       x = "Units")
+
+```
+
 **Gráfico** $p$ **ou gráfico de fração defeituosa**
+
+```{r}
+#| label: p_chart
+#| warning: false
+#| messsage: false
+
+
+
+```
 
 ## Pra onde vai {.unnumbered}
 

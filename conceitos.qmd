@@ -33,7 +33,7 @@ As ferramentas da qualidade são instrumentos que auxiliam no processo de execu�
 
 Algumas ferramentas da qualidade são listadas abaixo. A ideia por traz de cada etapa também foi incluída para caso você esteja lendo esse livro no futuro, e essas ferramentas estejam obsoletas:
 
--   **Identificação do problema** reuniões com gestores e equipes, sensores, formulários de pesquisa, check list, fluxograma de processos, desenhos, comentários, reviews, sugestões em redes socais entre outros. A ideia é definir e deixar claro o problema e conhecer sua importância.
+-   **Identificação do problema** reuniões com gestores e equipes, sensores, formulários de pesquisa, check list, fluxograma de processos, desenhos, comentários, reviews, sugestões em redes socais entre outros. A ideia é definir e deixar claro o problema e conhecer sua importância ao invés de focar naquilo que pode ser um efeito de um real problema.
 
 -   **Observação do fenômeno** gráfico de pareto, histograma, gráfico de correlação, gráfico de dispersão, gráfico de candlestick, gráfico waterfall e gráficos de controle. A ideia é investigar as características específicas com visão ampla e sobre diversos pontos de vista.
 
@@ -41,20 +41,20 @@ Algumas ferramentas da qualidade são listadas abaixo. A ideia por traz de cada 
 
 -   **Plano de ação** Plano de Ação 5W2H (*What, Why, Where, When, Who, How e How Much*) que traduzindo ficaria (**O que, Por que, Onde, Quando, Quem, Como e Quanto custa**). A ideia é elaborar um plano para tratar as causas fundamentais e que nele esteja os detalhes do que vai ser feito, quem será o responsável pela execução, quando será feito, quanto custa, como será medido e onde será comunicado os resultados para que possa ser avaliado.
 
--   **Ação** A liderança tem papel cruciar nessa etapa e a clareza e articulação na comunicação são ferramentas poderosas na mão de um líder. É abundante os dados que revelam que sem uma meta e método mas com liderança, aleatoriamente se chega a algum lugar. Por outro lado, mesmo tendo metas bem definidas e excelentes métodos, sem liderança, dificilmente se chegará a algum lugar.
+-   **Ação** A liderança tem papel crucial nessa etapa e a clareza e articulação na comunicação são ferramentas poderosas na mão de um líder. É abundante os dados que revelam que sem uma meta e método mas com liderança, aleatoriamente se chega a algum lugar. Por outro lado, mesmo tendo metas bem definidas e excelentes métodos, sem liderança, dificilmente se chegará a algum lugar.
 
 -   **Medição** gráficos de tendência, gráficos de controle, indicadores direcionadores, indicadores de resultados, testes a/b ou caso controle, painel de gestão a vista com os resultados das ações executadas, relatório de três gerações(passado, presente e futuro). A ideia é monitorar e avaliar os resultados das ações que estão sendo executadas, auxiliar no engajamento e geração de novas ideias ou ações que auxiliem tratamento do problema.
 
 -   **Validação** equipe multidisciplinar. A ideia é definir se os resultados foram safisfatórios com visão no todo. Em alguns casos o resultados da ação não impactaram na causa definida, mas pode ser muito relevante em outras. Por exemplo na descoberta do velcro, que não resolveu um problema da moda que era um objetivo inicial de Georges de Mestral seu criador. Por outro lado, a NASA viu naqulo uma oportunidade e usou em trajes de voo para proteger itens em gravidade zero expandindo o uso também para outros campos.
 
--   **Padronização** são normas, manuais, regras, procedimento operacional padrão, processos, fichas técnicas. A ideia é facilitar a reprodução e aprendizado do que foi bem sucedido e gerando novas ideias para prevenir o reaparecimento do problema.
+-   **Padronização** são normas, manuais, regras, procedimento operacional padrão, processos, fichas técnicas e treinamentos. A ideia é facilitar a reprodução e aprendizado do que foi bem sucedido e gerar ideias para prevenir o reaparecimento do problema.
 
--   **Conclusão** registro, publicação científica, livros, revistas, repositório no github, zenodo etc. A ideia é gerar um legado que possa ser usado no futuro em prol do desenvolvimento de quem usa-lo. Que novas ideias possam ser criadas a partir dessas.
+-   **Conclusão** registro, publicação científica, livros, revistas, repositório no github, zenodo etc. A ideia é gerar um legado que possa ser usado no futuro em prol do desenvolvimento de quem usá-lo. Que novas ideias possam ser criadas a partir dessas.
 
 Após a segunda guerra mundial, o Japão em especial, passou por uma verdadeira revolução, onde a qualidade dos produtos e serviços nunca foi tão discutida, estudada e aplicada. Grandes nomes como Shewhart, Deming, Juran e Ishikawa, desenvolveram ou ajudaram a disseminar algumas ferramentas que permitiram um maior controle dos processos ou melhoria nas tomadas de decisões @campos1992.
 
 Nas décadas de 1970 e 1980, essas técnicas e ferramentas começaram a ser introduzidas em empresas de diversos países da Ásia, Europa, América do Norte e América Latina, influenciados principalmente pela maior competitividade dos produtos japoneses por meio de alta qualidade e preços competitivos @ferro1997 .
 
-No Brasil, o uso de ferramentas da qualidade na gestão de empresas ocorreu por volta de 1970, sendo introduzido em algumas empresas como Volkswagen, Johnson & Johnson e Embraer, tendo seu movimento impulsionado em 1986, quando o professor Ishikawa esteve no país.
+Em 2022 esses principios e ferramentas são padrão em processos de manufatura ao redor do mundo e com os avanços tecnológicos como a popularização de modelos machine learning, intelligência artificial e capacidade computacional, eles podem ser incorporados e integrados em sistemas potencializando as capacidades de adoção e uso dessas ferramentas e consequentemente a obtenção dos resultados que elas proporcionam.
 
 ## Referências {.unnumbered}
