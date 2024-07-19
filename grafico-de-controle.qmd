@@ -83,7 +83,7 @@ Em algumas situações particulares, os limites de controle poderão ser ajustad
 **A tabela abaixo mostra as subdivisões dos gráficos de controle**
 
 | Tipo de valor | Nome do gráfico                                                       |
-|----------------|--------------------------------------------------------|
+|-------------------|-----------------------------------------------------|
 | Contínuo      | Gráfico $x$ ou $I-MR$ gráfico de valor individual                     |
 | Contínuo      | Gráfico $\bar{x}$ - $R$ ou gráfico média e amplitude c/ subgrupo 2-10 |
 | Contínuo      | Gráfico $\bar{x}$ - $S$ ou gráfico média e amplitude c/ subgrupo \>10 |
@@ -130,6 +130,8 @@ O gráfico de controle XmR geralmente é usado para monitorar estabilidade do pr
 
 Como exemplos práticos de uso, podemos citar o controle de temperatura de cada peça, processos biológicos, orçamentos e vendas mensais, reclamações de clientes, inventário, reações quimicas entre outros.
 
+Alguns exemplos abaixo serão feitos usando o R (software livre para computação científica e data science) onde será necessário carregar os pacotes `tidyverse`, `ggQC`, `patchwork`, `ggthemes` e `flextable`
+
 Uma fábrica de produto quimico quer avaliar o processo de produção para garantir a qualidade do produto. O teor de pureza de 85% é uma característica de qualidade de interesse e é especificado pelo consumidor. O produto é feito em batelada em um reator(imagine uma panela de pressão com sopa, onde qualquer região que você coletar a amostra, terá a mesma característica de qualidade) e portanto, teremos uma amostra por dia com apenas um subgrupo em 24 dias trabalhados totalizando 24 amostras.
 
 ```{r}
@@ -141,7 +143,6 @@ Uma fábrica de produto quimico quer avaliar o processo de produção para garan
 library(tidyverse)
 library(ggQC)
 library(patchwork)
-library(qicharts2)
 library(flextable)
 
 
@@ -161,7 +162,7 @@ plot_x <-
           auto.label = TRUE,
           label.digits = 2)+
     labs(title = "Gráfico XmR/I-MR",
-       x = "Amostra",
+       x = "Amostras",
        y = "% de pureza")+
   ggthemes::theme_base()
 
@@ -172,7 +173,7 @@ plot_mr <-
   stat_QC(method = "mR",
           auto.label = TRUE)+
   labs(title = "Gráfico MR de amplitude ",
-       x = "Amostra",
+       x = "Amostras",
        y = "Amplitude móvel")+
   ggthemes::theme_base()
 
@@ -210,7 +211,7 @@ plot_xbar <-
           label.digits = 3)+
   ggthemes::theme_base()+
   labs(title = "Gráfico Xbar de médias dos subgrupos",
-       x = "Sub grupo",
+       x = "Amostras",
        y = "Média")
 
 #using ggQC plot range
@@ -227,7 +228,7 @@ plot_range <-
           label.digits = 3)+
   ggthemes::theme_base()+
   labs(title = "Gráfico de amplitude",
-       x = "Sub grupos",
+       x = "Amostras",
        y = "Amplitude média")
 
 #using ggQC plot two charts at the same time
@@ -264,7 +265,7 @@ plot_sbar <-
           label.digits = 3)+
   ggthemes::theme_base()+
   labs(title = "Gráfico Xbar de médias dos subgrupos",
-       x = "Sub grupo",
+       x = "Amostras",
        y = "Média")
 
 #using ggQC plot range
@@ -281,7 +282,7 @@ plot_sd <-
           label.digits = 3)+
   ggthemes::theme_base()+
   labs(title = "Gráfico desvio padrão da média",
-       x = "Sub grupos",
+       x = "Amostras",
        y = "Amplitude média")
 
 #using ggQC plot two charts at the same time
@@ -312,7 +313,7 @@ data_c %>%
           auto.label = TRUE,
           label.digits = 2)+
   ggthemes::theme_base()+
-  labs(title = "Gráfico C de número de defeitos",
+  labs(title = "Gráfico C: Número de defeitos",
        x = "Amostras",
        y = "Número de defeitos")
 
@@ -341,7 +342,9 @@ data_u %>%
           auto.label = TRUE,
           label.digits = 3)+
   ggthemes::theme_base()+
-  labs(title = "Gráfico U de número de defeitos por unidade")
+  labs(title = "Gráfico U: Número de defeitos por unidade",
+       x = "Amostras",
+       y = "# defeiros \n por unidade")
 
 ```
 
@@ -368,10 +371,10 @@ data_np %>%
           n = 200,    #lembrar de alterar 
           auto.label = TRUE,
           label.digits = 3)+
-  labs(title = "Gráfico NP de número de defeitos",
+  labs(title = "Gráfico NP: Número de itens defeituosos",
        subtitle = "n = 200",
-       y = "# unidades com defeito",
-       x = "Unidades")+
+       x = "Amostras",
+       y = "Itens defeituosos")+
   ggthemes::theme_base()
 
 ```
@@ -402,7 +405,7 @@ p_chart %>%
           label.digits = 3)+
   scale_y_continuous(labels = scales::label_percent())+
   ggthemes::theme_base()+
-  labs(title = "Gráfico P de proporção de itens defeitos",
+  labs(title = "Gráfico P: Proporção de itens com defeitos",
        x = "Amostras",
        y = "Proporção de itens \n c/ defeito")
   
