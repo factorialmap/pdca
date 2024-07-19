@@ -10,24 +10,22 @@
 
     -   Centralização que é determinada pela média.
     -   Dispersão, que representa o desvio-padrão ou amplitude. O quanto os pontos de dados estão distantes da média.
-    -   Limites de controle (LC) ou em inglês CL que significa control limits.
+    -   Limites de controle (LC) que sinalizam se o processo está sob controle ou fora de controle.
 
--   Imagine uma linha de produção de alimentos (tomates cortados em rodelas) onde o objetivo avaliar se o processo está uniforme e sob controle estatístico. Para isso eu uso um gráfico de controle e insiro os dados de tempo médio gasto para fatiar tomates com a mesma espessura.
+-   Imagine uma linha de produção de alimentos (tomates cortados em rodelas) onde o objetivo é produzir uniformemente todas as rodelas de tomates, ou seja na mesma espessura e no mesmo tempo. O gráfico de controle ajuda avaliar se o processo está uniforme e sob controle estatístico, se possui variações e quais são essas variações. Eu insiro os dados de tempo médio gasto para fatiar tomates com a mesma espessura em em gráfico de controle.
 
     > 1.  Pego uma amostra de 100 tomates.
     > 2.  Registro o tempo gasto para fatiar cada tomate.
     > 3.  O tempo médio gasto para fatiar cada tomate será representada pela linha central $\bar{x}$ enquanto o limite superior e inferior de controle terão três desvios padrão dessa média representados pela equação matemática $\pm3\sigma$. Qualquer variação aleatória dentro desses limites, eu considero que o processo está normal ou sob controle.
     > 4.  Agora imagine que a partir do 10º tomate o gráfico apresente um padrão onde o tempo começa a aumentar sistematicamente até sair dos limites de controle.
-    > 5.  Ao avaliar, percebi que a faca foi perdendo o fio necessitando de mais movimentos para romper a pele do tomate. Como reflexo desse padrão, mais tempo foi gasto, o risco das fatias terem dimensões diferentes aumentaram e os padrões de qualidade do produto e do processo foram impactadas.
+    > 5.  Ao avaliar, percebi que a faca foi perdendo o fio necessitando de mais movimentos para romper a pele do tomate. Como efeito desse fenomeno, mais tempo foi gasto, o risco das fatias terem dimensões diferentes aumentaram e os padrões de qualidade do produto e do processo foram impactadas. As informações sobre padrões e variações podem ser vistas em um gráfico de controle.
 
 ![Figura - Gráfico de controle](images\control_chart.png){width="699"}
 
 ::: callout-note
-## Nota
+## E por que +/- 3 desvios padrão da média?
 
-E por que +/- 3 desvios padrão da média?
-
-A resposta é que considerando a distribuição normal de probabilidades, 99.7% dos dados estão variando em até 3 desvios padrão da média. Neste caso, qualquer variação dentro desses limites é considerando dentro do normal. Um valor comum de três desvios padrão pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados (BRASSARD, 1994)
+A resposta é que considerando a distribuição normal de probabilidades, 99.7% dos dados estão variando em até 3 desvios padrão da média. Neste caso, qualquer variação dentro desses limites é considerando dentro do normal. Um valor comum de três desvios padrão pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados @brassard1991
 :::
 
 ### Informações apresentadas no gráfico {.unnumbered}
@@ -35,23 +33,23 @@ A resposta é que considerando a distribuição normal de probabilidades, 99.7% 
 -   @deming2018, descrevem que Shewhart em 1924, descobriu duas formas de variações em um processo as quais ele classificou como **causas comuns** e **causas especiais**.\
     Como os processos sujeitos a variação de causas especiais eram imprevisíveis, as técnicas de probabilidade não poderiam ser usadas para separar um tipo de variação de outra e por isso, Shewhart criou um gráfico de controle estatístico como uma heurística para distinguir esses dois tipos de variação, pois cada tipo, requer tratamentos diferentes.
 
-    **Variações por causa comum**
+    **Variações por causas comuns ou aleatórias.**
 
-    -   Fenômenos constantemente observados, também chamados de padrões naturais.
+    -   Fenômenos constantemente observados, variabilidade natural do processo.
 
-    -   As variações são previsíveis e quantificáveis.
+    -   As variações são previsíveis e quantificáveis e a variabilidade se mantem em uma faixa estável e que neste caso dizemos que o processo está sob controle estatístico.
 
     -   Falta significância nos valores individuais seja pra cima ou pra abaixo da média.
 
-    -   Exemplos(falta de manutenção de maquinas, falta de procedimento operacional padrão ou inadequados, materias primas de qualidade ruim, iluminação ruim, sujeira ou ruídos excessivos, problemas no design).
+    -   Exemplos(processos em que há falta de manutenção de maquinas, inexistência de procedimento operacional padrão ou inadequados, materias primas de qualidade ruim, iluminação ruim, sujeira ou ruídos excessivos, problemas no design entre outros).
 
-    **Variações por causa especial ou assinalável**
+    **Variações por causas especiais ou assinaláveis.**
 
     -   Fenômenos imprevistos, emergentes ou anteriomente negligenciados.
 
-    -   As variações são imprevisível e não quantificáveis.
+    -   Faz com que o processo se comporte de um modo completamente diferente do usual.
 
-    -   Variação fora da faixa registrada nos dados históricos.
+    -   Variação fora da faixa registrada nos dados históricos deslocando o nível de qualidade.
 
     -   Presença de significância que evidencia alguma mudança ou percepção no sistema.
 
@@ -60,39 +58,39 @@ A resposta é que considerando a distribuição normal de probabilidades, 99.7% 
     -   Pode ser corrigida alterando o componente ou processo.
 
 ::: callout-note
-## Nota
+## Nota sobre os limites de controle
 
-Em algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto (DEMING, 2003).
+Em algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto @deming2018.
 :::
 
-### Gráficos de controle para cada tipo de dados {.unnumbered}
+### Tipos de gráficos de controle {.unnumbered}
 
 -   Para que o gráfico consiga capturar e mostrar informações relevantes e precisas a respeito do processo, houve a necessidade de fazer adaptações nos gráficos de acordo com os dados disponíveis durante o processo de fabricação. A figura abaixo auxilia na escolha do gráfico mais adequados para cada tipo de situação e dados disponíveis.\
     \
     ![Figura - Escolha do gráfico de controle e calculo de limites de controle](images/control_limits.png){alt="Figura - Escolha do gráfico de controle e calculo de limites de controle" width="1385"}D3, D4 e E3 são constantes para gráfico de controle. A tabela estará no apêndice do livro e geralmente os softwares estatísticos já possuem os valores da tabela em seus cálculos.
 
-    **Gráfico de controle por variáveis ou valor contínuo**
+    **Gráfico de controle de variável contínua**
 
-    -   É formado por dados quantitativos (variável contínua) que são aquelas que se movem lentamente em uma direção tais como comprimento(12,3 cm), largura(10 mm), peso(12,7 kgs), tempo (2,9 horas) entre outras.
-    -   O mais comum é o Xbarra-R que significa média e amplitude das amostras de cada grupo (VIEIRA e WADA,1992)
+    -   É formado por dados quantitativos que são aqueles que se movem lentamente em uma direção tais como comprimento(12,3 cm), largura(10,2 mm), peso(12,7 kgs), tempo (2,9 horas) entre outras.
+    -   O mais comum é o Xbarra-R que significa média e amplitude das amostras de cada subgrupo. Imagine 100 observações onde dividimos em 20 subgrupos com 5 medições em cada um. Em seguida fazemos a média de cada sub-grupo e plotamos a média de cada sub-grupo no gráfico. @vieiras1992
 
-    **Gráfico de controle por atributos ou valor discreto**
+    **Gráfico de controle de variável discreta ou gráfico de atributos**
 
-    -   É formado por dados qualitativos (variáveis discretas) que são aquelas que se movem em saltos como defeituoso(SIM ou NÃO), passa ou não passa(0 ou 1), unidades contáveis(12 furos no tecido) entre outros.
-    -   Para esse tipo de controle é comumente utilizado o gráfico P, NP, C e U.
-    -   Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável transmite mais informação do que atributos (BRASSARD, 1994).
+    -   É formado por dados qualitativos que são contáveis e se movem em saltos. Por exemplo número de defeitos, número de defeitos em um item(e.g. 12 furos no tecido, 8 riscos em uma superfície metálica), número de itens defeituosos em uma placa eletronica, proporção de defeitos em conjunto de peças entre outros.
+    -   Para esse tipo de controle é comumente utilizado o gráfico C, U, NP, P.
+    -   Os gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável contínua transmite mais informação do que variáveis discreta/atributos @brassard1991
 
 **A tabela abaixo mostra as subdivisões dos gráficos de controle**
 
-| Tipo de valor | Nome do gráfico                                          |
-|---------------|----------------------------------------------------------|
-| Contínuo      | Gráfico $x$ ou gráfico de valor individual               |
-| Contínuo      | Gráfico $\bar{x}$ - $R$ ou gráfico média e amplitude     |
-| Contínuo      | Gráfico $\bar{x}$ - $S$ ou gráfico média e amplitude     |
-| Discreto      | Gráfico $c$ ou gráfico de número de defeitos             |
-| Discreto      | Gráfico $u$ ou gráfico de número de defeitos por unidade |
-| Discreto      | Gráfico $np$ ou gráfico de número de defeitos            |
-| Discreto      | Gráfico $p$ ou gráfico de fração defeituosa              |
+| Tipo de valor | Nome do gráfico                                                       |
+|----------------|--------------------------------------------------------|
+| Contínuo      | Gráfico $x$ ou $I-MR$ gráfico de valor individual                     |
+| Contínuo      | Gráfico $\bar{x}$ - $R$ ou gráfico média e amplitude c/ subgrupo 2-10 |
+| Contínuo      | Gráfico $\bar{x}$ - $S$ ou gráfico média e amplitude c/ subgrupo \>10 |
+| Discreto      | Gráfico $c$ ou gráfico de número de defeitos                          |
+| Discreto      | Gráfico $u$ ou gráfico de número de defeitos por unidade              |
+| Discreto      | Gráfico $np$ ou gráfico de número de defeitos                         |
+| Discreto      | Gráfico $p$ ou gráfico de fração defeituosa                           |
 
 : Tipos de gráficos de controle
 
@@ -124,15 +122,15 @@ A linha inferior de controle não pode ser menor que zero.
 -   Com base no tipo de dado disponível, escolher o gráfico adequado e inserir os dados.
 -   No R os gráficos de controle podem ser feitos usando os pacotes `qcc` e `ggQC`
 
-**Gráfico XmR onde o valor do subgrupo é 1**
+**Gráfico XmR : Sub-grupo é 1 ou seja, valor individual.**
 
-O gráfico XmR também conhecido como I-MR e gráfico de controle de Shewhart é um gráfico de controle de variação de processo onde cada ponto é uma obervação de dados contínuos(numéricos).
+O gráfico XmR também conhecido como I-MR ou gráfico de controle de Shewhart, mostra a variação de processo onde cada ponto é uma obervação de dados contínuos(numéricos), diferentemente do Xbar onde cada ponto, representa uma média dos elementos do sub-grupo.
 
-O gráfico de controle XmR geralmente são usados para monitorar estabilidade do processo durante correções ou ajuste no processo, determinar se um processo está pronto para ser melhorado e também fornecer informações sobre os efeitos da melhoria através da visualização dos dados.
+O gráfico de controle XmR geralmente é usado para monitorar estabilidade do processo durante correções ou ajuste no processo, determinar se um processo está pronto para ser melhorado e também fornecer informações sobre os efeitos da melhoria através da visualização dos dados.
 
 Como exemplos práticos de uso, podemos citar o controle de temperatura de cada peça, processos biológicos, orçamentos e vendas mensais, reclamações de clientes, inventário, reações quimicas entre outros.
 
-No exemplo abaixo, avaliamos a quebra de resfriamento após 24 na câmara fria em 20 produtos alimentícios individuais.
+Uma fábrica de produto quimico quer avaliar o processo de produção para garantir a qualidade do produto. O teor de pureza de 85% é uma característica de qualidade de interesse e é especificado pelo consumidor. O produto é feito em batelada em um reator(imagine uma panela de pressão com sopa, onde qualquer região que você coletar a amostra, terá a mesma característica de qualidade) e portanto, teremos uma amostra por dia com apenas um subgrupo em 24 dias trabalhados totalizando 24 amostras.
 
 ```{r}
 #| label: xmr_chart
@@ -144,37 +142,59 @@ library(tidyverse)
 library(ggQC)
 library(patchwork)
 library(qicharts2)
+library(flextable)
+
 
 #data
-data_xmr <- tibble(sample = c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20),
-                  quebra_frio =c(1.24,1.23,1.27,1.23,1.50,1.54,1.37,1.39,1.35,1.47,1.29,1.42,1.24,1.36,1.38,1.37,1.55,1.64,1.44,1.40))
+data_xmr <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_imr_quimico.csv")
+
+data_xmr %>% as_flextable()
 
 
 #XmR control chart
-data_xmr |> 
-  ggplot(aes(x = sample, y = quebra_frio))+
+plot_x <- 
+  data_xmr |> 
+  ggplot(aes(x = num_amostra, y = teor_pureza_percent))+
   geom_point()+
   geom_line()+
   stat_QC(method = "XmR",
           auto.label = TRUE,
-          label.digits = 2,
-          show.1n2.sigma = TRUE)+
-  stat_QC(method = "mR",
-          auto.label = TRUE,
           label.digits = 2)+
-  labs(title = "Gráfico XmR de quebra de resfriamento",
-       subtitle = "")+
+    labs(title = "Gráfico XmR/I-MR",
+       x = "Amostra",
+       y = "% de pureza")+
   ggthemes::theme_base()
+
+plot_mr <- 
+  data_xmr |> 
+  ggplot(aes(x = num_amostra,
+             y = teor_pureza_percent))+
+  stat_QC(method = "mR",
+          auto.label = TRUE)+
+  labs(title = "Gráfico MR de amplitude ",
+       x = "Amostra",
+       y = "Amplitude móvel")+
+  ggthemes::theme_base()
+
+plot_x / plot_mr
 ```
 
-**Gráfico XbarR onde o valor do subgrupo está entre 2 e 10**
+**Gráfico XbarR: Para este gráfico o número de subgrupos vão de 2 e 10.**
+
+Numa fábrica de auto peças, a característica de qualidade de interessse é o diametro primitivo usinado da rosca feita em uma maquina CNC (torno computadorizado). Para avaliar o processo, foram utilizadas 25 amostras com 5 medições cada(5 subgrupos) do diâmetro das peças em milímetros. Como se trata de uma variável contínua ou seja, uma medida(mm), será usado o gráfico Xbar-R conhecido como gráfico de controle por médias(Xbar) e amplitude(R ou range).
 
 ```{r}
 #| label: xbar_chart
 #| warning: false
 #| messsage: false
 
-data_xbar <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_xbarr_96.csv")
+library(tidyverse)
+library(ggQC)
+library(patchwork)
+
+data_xbar <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_xbar_cnc_rosca.csv")
+
+data_xbar %>% as_flextable()
 
 #using ggQC plot xbar
 plot_xbar <- 
@@ -186,9 +206,12 @@ plot_xbar <-
   stat_summary(fun = mean, geom = "point")+
   stat_summary(fun = mean, geom = "line")+
   stat_QC(method = "xBar.rBar",
-          auto.label = TRUE)+
+          auto.label = TRUE,
+          label.digits = 3)+
   ggthemes::theme_base()+
-  labs(title = "Gráfico Xbar")
+  labs(title = "Gráfico Xbar de médias dos subgrupos",
+       x = "Sub grupo",
+       y = "Média")
 
 #using ggQC plot range
 plot_range <- 
@@ -200,70 +223,131 @@ plot_range <-
   stat_summary(fun = QCrange, geom = "point")+
   stat_summary(fun = QCrange, geom = "line")+
   stat_QC(method = "rBar",
-          auto.label = TRUE)+
+          auto.label = TRUE,
+          label.digits = 3)+
   ggthemes::theme_base()+
-  labs(title = "Gráfico de amplitude")
+  labs(title = "Gráfico de amplitude",
+       x = "Sub grupos",
+       y = "Amplitude média")
 
 #using ggQC plot two charts at the same time
 plot_xbar / plot_range
 
-
 ```
 
 **Gráfico XbarS onde o valor do subgrupo é maior que 10**
+
+Numa fábrica de auto peças, a característica de qualidade de interessse é o diametro primitivo usinado da rosca feita em uma maquina CNC (torno computadorizado). Para avaliar o processo, foram utilizadas 25 amostras com 5 medições cada(5 subgrupos) do diâmetro das peças em milímetros.
+
+Como se trata de uma variável contínua ou seja, uma medida(mm), será usado o gráfico Xbar-S conhecido como gráfico de controle por médias(Xbar) e desvio padrão (S ou standard deviation).
 
 ```{r}
 #| label: sbar_chart
 #| warning: false
 #| messsage: false
 
+data_xbar <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_xbar_cnc_rosca.csv")
+
+data_xbar %>% as_flextable()
+
+#using ggQC plot xbar
+plot_sbar <- 
+  data_xbar %>%
+  pivot_longer(cols = - sub_group,
+               names_to = "sample",
+               values_to = "value") %>% 
+  ggplot(aes(x = sub_group, y= value))+
+  stat_summary(fun = mean, geom = "point")+
+  stat_summary(fun = mean, geom = "line")+
+  stat_QC(method = "xBar.sBar",
+          auto.label = TRUE,
+          label.digits = 3)+
+  ggthemes::theme_base()+
+  labs(title = "Gráfico Xbar de médias dos subgrupos",
+       x = "Sub grupo",
+       y = "Média")
+
+#using ggQC plot range
+plot_sd <- 
+  data_xbar %>%
+  pivot_longer(cols = - sub_group,
+               names_to = "sample",
+               values_to = "value") %>% 
+  ggplot(aes(x = sub_group, y= value, group =1 ))+
+  stat_summary(fun = sd , geom = "point")+
+  stat_summary(fun = sd, geom = "line")+
+  stat_QC(method = "sBar",
+          auto.label = TRUE,
+          label.digits = 3)+
+  ggthemes::theme_base()+
+  labs(title = "Gráfico desvio padrão da média",
+       x = "Sub grupos",
+       y = "Amplitude média")
+
+#using ggQC plot two charts at the same time
+plot_sbar / plot_sd
 
 ```
 
 **Gráfico** $c$ **ou gráfico de número de defeitos**
+
+Em uma fábrica de circuito impresso, o engenheiro deseja avaliar a estabilidade do processo com o objetivo de melhorar a qualidade do produto. Para isso, foram registrados o número de defeitos observados em 26 amostras sucessivas com 100 placas de circuito impresso em cada amostra. Como o número de defeitos é uma variável discreta(se move em saltos), o engenheiro optou por usar o gráfico de controle tipo c.
 
 ```{r}
 #| label: c_chart
 #| warning: false
 #| messsage: false
 
-#using ggQC
-set.seed(5555)
-data_c <- tibble(process_run_id = 1:30,
-                 counts = rpois(n = 30, lambda = 25))
+data_c <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_c_circuito_imp.csv")
+
+data_c %>% as_flextable()
 
 #plot c chart
 data_c %>% 
-  ggplot(aes(x = process_run_id, 
-             y = counts))+
+  ggplot(aes(x = sub_group, 
+             y = num_defective_units))+
   geom_point()+
   geom_line()+
   stat_QC(method = "c",
           auto.label = TRUE,
-          label.digits = 2)
-
+          label.digits = 2)+
+  ggthemes::theme_base()+
+  labs(title = "Gráfico C de número de defeitos",
+       x = "Amostras",
+       y = "Número de defeitos")
 
 ```
 
 **Gráfico** $u$ **ou gráfico de número de defeitos por unidade**
+
+Com objetivo de melhorar a excelencia operacional, um fabricante de computadores optou por usar um gráfico de controle para não conformidades por unidade em uma linha de montagem final para monitorar e avaliar o processo de produção. Uma amostra foi coletada em cada um dos 20 dias úteis de produção coletando-se 5 unidades por amostra.
 
 ```{r}
 #| label: u_chart
 #| warning: false
 #| messsage: false
 
-qic(y = n,
-    x = month,
-    data = cdi,
-    chart = "u",
-    part = 24,
-    title = "Hospital acquired Clostridium difficile infections(U chart)",
-    ylab = "Cases per 10,000 risk days",
-    xlab = "Month")
+data_u <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_u_computer.csv")
+
+data_u %>% as_flextable()
+
+data_u %>% 
+  ggplot(aes(x = sample_number , 
+             y = num_nonconformities ,
+             n = sample_size))+
+  geom_point()+
+  geom_line()+
+  stat_QC(method = "c",
+          auto.label = TRUE,
+          label.digits = 3)+
+  ggthemes::theme_base()+
+  labs(title = "Gráfico U de número de defeitos por unidade")
 
 ```
 
 **Gráfico** $np$ **ou gráfico de número de defeitos**
+
+Uma fábrica de sapatos quer avaliar a estabilidade do processo e melhorar a qualidade do produto. Durante 25 dias úteis de produção foi coletado uma amostra por dia com 200 pares de sapato cada amostra e registrado o número de unidades com defeitos. nessas amostras. Como o tipo de dado é uma variável binomial (tem defeito ou não tem defeito) optou-se por utilizar o gráfico np para avaliar o processo.
 
 ```{r}
 #| label: np_chart
@@ -271,7 +355,9 @@ qic(y = n,
 #| messsage: false
 
 # np       ----------------------------------------------------------------
-data_np <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_np_104.csv")
+data_np <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_np_sapatos.csv")
+
+data_np %>% as_flextable()
 
 data_np %>% 
   ggplot(aes(x =sub_group, 
@@ -279,18 +365,20 @@ data_np %>%
   geom_point()+
   geom_line()+
   stat_QC(method = "np",
-          n = 100, 
+          n = 200,    #lembrar de alterar 
           auto.label = TRUE,
-          label.digits = 2
-  )+
-  labs(title = "np charts",
-       subtitle = "n = 100",
-       y = "# defective units",
-       x = "Units")
+          label.digits = 3)+
+  labs(title = "Gráfico NP de número de defeitos",
+       subtitle = "n = 200",
+       y = "# unidades com defeito",
+       x = "Unidades")+
+  ggthemes::theme_base()
 
 ```
 
 **Gráfico** $p$ **ou gráfico de fração defeituosa**
+
+Uma fábrica de baterias resolve avaliar a estabilidade de um processo usando gráficos de controle. Devido a características técnicas do processo o tamanho do subgrupo é variável partindo de 80 até 120 unidades por amotra sendo o número de defeitos por unidade o que deseja-se avaliar. Como o tipo de dado é uma variável discreta, optou-se por usar o gráfico p analisando os dados de 25 dias úteis de trabalho na fábrica.
 
 ```{r}
 #| label: p_chart
@@ -298,7 +386,26 @@ data_np %>%
 #| messsage: false
 
 
+p_chart <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_p_baterias.csv")
 
+p_chart %>% as_flextable()
+
+p_chart %>% 
+  mutate(prop_defeitos = num_defective_units/sub_group_size) %>% 
+  ggplot(aes(x = sub_group,
+             y = prop_defeitos,
+             n = sub_group_size))+
+  geom_point()+
+  geom_line()+
+  stat_QC(method = "p",
+          auto.label = TRUE,
+          label.digits = 3)+
+  scale_y_continuous(labels = scales::label_percent())+
+  ggthemes::theme_base()+
+  labs(title = "Gráfico P de proporção de itens defeitos",
+       x = "Amostras",
+       y = "Proporção de itens \n c/ defeito")
+  
 ```
 
 ## Pra onde vai {.unnumbered}
