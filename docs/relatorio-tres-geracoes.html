@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -284,27 +304,41 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="o-que-é" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
-<p>O relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:</p>
+<ul>
+<li>O relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:
 <ul>
 <li><p><strong>Passado</strong> – o que foi planejado e o que foi feito.</p></li>
 <li><p><strong>Presente</strong> – o resultado obtido e os problemas existentes.</p></li>
-<li><p><strong>Futuro</strong> – mais propostas de solução.</p></li>
+<li><p><strong>Futuro</strong> – mais propostas de solução ou padronização.</p></li>
+</ul></li>
+<li>Por armazenar uma boa quantidade de informação, os registros de relatórios três gerações podem ser uma opção importante para uso em aplicações RAG(retrieval-augmented generation) que fornecem contextos e referências que podem ser utilizados em sistemas de inteligência artificial generativa.</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images\three_generation_report.png" class="img-fluid figure-img" width="699"></p>
+<figcaption>Figura - Relatório de três gerações</figcaption>
+</figure>
+</div>
 </section>
 <section id="qual-o-objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
 <ul>
-<li><p>O objetivo principal do relatório de três gerações é relatar, avaliar os esforços que foram feitos para resolver um determinado problema e obter uma visão geral dos resultados e ao mesmo tempo, identificar se há possibilidade imediata de propostas para resolução desses problemas (WERKEMA, 1995).</p></li>
-<li><p>B</p></li>
-<li><p>C</p></li>
+<li><p>Relatar em um mesmo registro, os esforços que foram feitos para resolver um determinado problema, obter uma visão geral dos resultados, identificar se houveram problemas durante a implementação da ação e se há possibilidade imediata de propostas para solução defenitiva do problema, <span class="citation" data-cites="cristina1995">Cristina (<a href="#ref-cristina1995" role="doc-biblioref">1995</a>)</span></p></li>
+<li><p>Servir como base de dados de apoio e referência bibliográfica que poderão ser usados durante o processo de solução de problemas futuros, que possuam características similares ou que estejam em diferentes localidades.</p></li>
+<li><p>Um exemplo prático que demonstra a ideia por traz do relatório de três gerações pode ser visto em <span class="citation" data-cites="vitruvius2009">Vitruvius (<a href="#ref-vitruvius2009" role="doc-biblioref">2009</a>)</span>. A obra, reune uma série de situações com assuntos, procedimentos, técnicas e princípios atemporais que puderam e foram utilizados no futuro.</p></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/tres_geracoes_vitruvio.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figura - Referência bibliografica escrita pelo arquiteto e engenheiro militar romano Marcus Vitruvius em 25 antes de Cristo</figcaption>
+</figure>
+</div>
 </section>
 <section id="de-onde-vem" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>Da necessidade de detalhes e procedimentos durante as ações que foram realizadas para solução de determinados problemas, sendo que esses registros serão utilizados como bases de referência para problemas futuros ou situações parecidas poupando recursos valiosos.</p></li>
+<li><p>Da necessidade de visualizar, apresentar, comunicar e compartilhar detalhes sobre as soluções de problemas, bem como resultados, lições aprendidas e desafios.</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -316,31 +350,39 @@ ul.task-list li input[type="checkbox"] {
 <section id="como-fazer" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>Durante a execução das ações relatar com o maximo detalhe possível os materiais, métodos e medidas utilizadas para solução do problema.</p></li>
+<li><p>Revisar os temas e elencar os que tiveram mais impacto, bem como seus resultados e desafios encontrados durante o percurso.</p></li>
+<li><p>Caso não seja possível dar prosseguimento na ação a solução do problema, é ideal que se relate os motivos. Isso gera informação valiosa sobre possíveis pitfalls ou caso as barreiras que inviabilizaram as ações hoje sejam superados no futuro, estas possam ser implementadas gerando resultados diferentes.</p></li>
 </ul>
 </section>
 <section id="pra-onde-vai" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>Após as apresentações do relatório de três gerações o próximo passo é a consolidação da soluções, padronização e treinamento das equipes para replicação das ações como padrão.</p></li>
+<li><p>Os dados serão armazenados em base de dados para utilização em soluções RAG(retrieval-augmented generation)</p></li>
+<li><p>As soluções com maiores impactos poderão ser compiladas em manuais e guias para outros profissionais e ou treinamentos na etapa Padronização.</p></li>
 </ul>
 </section>
 <section id="qual-o-resultado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><p>Ampliar base de conhecimento e reconhecimento através dos registros, aplicações e compartilhamento de ideias a respeito de soluções de problemas.</p></li>
+<li><p>Aumentar o estímulo dos profissionais em experimentos em busca de soluções</p></li>
+<li><p>Melhorar a velocidade nas respostas a problemas reincidentes ou novos mas que possuam similaridades com os existentes. Bem como criar uma cultura a qual compreende melhor as relações de causa e efeito entre um problema e uma solução.</p></li>
 </ul>
 </section>
 <section id="referências" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="referências">Referências</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-cristina1995" class="csl-entry" role="listitem">
+Cristina, Werkema. 1995. <em>Ferramentas Da Qualidade No Gerenciamento de Processos</em>. 1ª edição. Edg.
+</div>
+<div id="ref-vitruvius2009" class="csl-entry" role="listitem">
+Vitruvius, Marcus. 2009. <em>Vitrúvio. Tratado de Arquitectura</em>. 3ª edição. IST Press. <a href="https://www.amazon.com.br/Vitr%C3%BAvio-Tratado-Arquitectura-Vitr%C3%BAvio-Poli%C3%A3o/dp/9728469438/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=22J001EB3VBHW&amp;dib=eyJ2IjoiMSJ9.4k0P1xBs9HaX-nYjQhSggLZXZZx3AFUJIQlflIsGB6vVGug82pXTH1e4epgjVCb5I6Idtmw58f8N8LLHuz5xpeDoL3x_22BxRXyRNLN_ImjFleoKnXBYxzgUZTIo_nAC8Q03AxHLFCYymFU2F5q6mo2RN5OH4UNY_ajeVYltrvqLIdQzTBuULPPrlA1alQJugb7E9JAK0LOEz-_UNV8Aesu6KvEvDU3xvr2wFGilidacxQYO-T20QiFAMyf10h2_BzuzUfzWFSwX240-k9a5RepBr-DJRG78Irv-q1iVsV8.ioV8gj-22t22Nkfhhk2eRLGjHh2MeLVPJSR-nSFBvvA&amp;dib_tag=se&amp;keywords=vitruvius&amp;qid=1721506511&amp;sprefix=vitruviu%2Caps%2C320&amp;sr=8-4&amp;ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12#detailBullets_feature_div">https://www.amazon.com.br/Vitr%C3%BAvio-Tratado-Arquitectura-Vitr%C3%BAvio-Poli%C3%A3o/dp/9728469438/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=22J001EB3VBHW&amp;dib=eyJ2IjoiMSJ9.4k0P1xBs9HaX-nYjQhSggLZXZZx3AFUJIQlflIsGB6vVGug82pXTH1e4epgjVCb5I6Idtmw58f8N8LLHuz5xpeDoL3x_22BxRXyRNLN_ImjFleoKnXBYxzgUZTIo_nAC8Q03AxHLFCYymFU2F5q6mo2RN5OH4UNY_ajeVYltrvqLIdQzTBuULPPrlA1alQJugb7E9JAK0LOEz-_UNV8Aesu6KvEvDU3xvr2wFGilidacxQYO-T20QiFAMyf10h2_BzuzUfzWFSwX240-k9a5RepBr-DJRG78Irv-q1iVsV8.ioV8gj-22t22Nkfhhk2eRLGjHh2MeLVPJSR-nSFBvvA&amp;dib_tag=se&amp;keywords=vitruvius&amp;qid=1721506511&amp;sprefix=vitruviu%2Caps%2C320&amp;sr=8-4&amp;ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12#detailBullets_feature_div</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

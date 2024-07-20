@@ -474,7 +474,7 @@
     "href": "grafico-de-dispercao.html#qual-o-resultado",
     "title": "6  Gráfico de Disperção",
     "section": "Qual o resultado",
-    "text": "Qual o resultado\n\nApresentar, analisar e comunicar dados de forma eficiente possibilitando a identificação de padrões nos dados e investigação de fenômenos sob diversos pontos de vista.\n\nFacilidade na leitura e interpretação dos resultados melhorando a compreensão de todos em relação ao problema ou fenômeno.\n\nPor ser uma ferramenta comum, possibilita a reprodutibilidade e uso em praticamente todas as áreas e lugares e por todos os tipos de profissionais que buscam melhorar seus processos.",
+    "text": "Qual o resultado\n\nApresentar, analisar e comunicar dados de forma eficiente possibilitando a identificação de padrões nos dados e investigação de fenômenos sob diversos pontos de vista.\nFacilidade na leitura e interpretação dos resultados melhorando a compreensão de todos em relação ao problema ou fenômeno.\nPor ser uma ferramenta comum, possibilita a reprodutibilidade e uso em praticamente todas as áreas e lugares e por todos os tipos de profissionais que buscam melhorar seus processos.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gráfico de Disperção</span>"
     ]
@@ -834,7 +834,7 @@
     "href": "grafico-de-controle.html#qual-o-objetivo",
     "title": "11  Gráfico de controle",
     "section": "Qual o objetivo",
-    "text": "Qual o objetivo\n\nFornecer para o gestor informações sobre o comportamento do processo.\nFacilitar a realização de análises, ações ou ajustes nos casos em que os processos apresentarem comportamentos considerados fora do padrão normal aleatório.",
+    "text": "Qual o objetivo\n\nFornecer para o gestor informações sobre o comportamento do processo.\nFacilitar a realização de análises, ações ou ajustes nos casos em que os processos apresentarem comportamentos considerados fora do padrão normal aleatório.\n\n\n\n\nFigura - Gráfico de controle",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
@@ -894,7 +894,7 @@
     "href": "relatorio-tres-geracoes.html",
     "title": "12  Relatório de três gerações",
     "section": "",
-    "text": "O que é\nO relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:",
+    "text": "O que é",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -904,7 +904,7 @@
     "href": "relatorio-tres-geracoes.html#o-que-é",
     "title": "12  Relatório de três gerações",
     "section": "",
-    "text": "Passado – o que foi planejado e o que foi feito.\nPresente – o resultado obtido e os problemas existentes.\nFuturo – mais propostas de solução.",
+    "text": "O relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:\n\nPassado – o que foi planejado e o que foi feito.\nPresente – o resultado obtido e os problemas existentes.\nFuturo – mais propostas de solução ou padronização.\n\nPor armazenar uma boa quantidade de informação, os registros de relatórios três gerações podem ser uma opção importante para uso em aplicações RAG(retrieval-augmented generation) que fornecem contextos e referências que podem ser utilizados em sistemas de inteligência artificial generativa.\n\n\n\n\nFigura - Relatório de três gerações",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -914,7 +914,7 @@
     "href": "relatorio-tres-geracoes.html#qual-o-objetivo",
     "title": "12  Relatório de três gerações",
     "section": "Qual o objetivo",
-    "text": "Qual o objetivo\n\nO objetivo principal do relatório de três gerações é relatar, avaliar os esforços que foram feitos para resolver um determinado problema e obter uma visão geral dos resultados e ao mesmo tempo, identificar se há possibilidade imediata de propostas para resolução desses problemas (WERKEMA, 1995).\nB\nC",
+    "text": "Qual o objetivo\n\nRelatar em um mesmo registro, os esforços que foram feitos para resolver um determinado problema, obter uma visão geral dos resultados, identificar se houveram problemas durante a implementação da ação e se há possibilidade imediata de propostas para solução defenitiva do problema, Cristina (1995)\nServir como base de dados de apoio e referência bibliográfica que poderão ser usados durante o processo de solução de problemas futuros, que possuam características similares ou que estejam em diferentes localidades.\nUm exemplo prático que demonstra a ideia por traz do relatório de três gerações pode ser visto em Vitruvius (2009). A obra, reune uma série de situações com assuntos, procedimentos, técnicas e princípios atemporais que puderam e foram utilizados no futuro.\n\n\n\n\nFigura - Referência bibliografica escrita pelo arquiteto e engenheiro militar romano Marcus Vitruvius em 25 antes de Cristo",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -924,7 +924,7 @@
     "href": "relatorio-tres-geracoes.html#de-onde-vem",
     "title": "12  Relatório de três gerações",
     "section": "De onde vem",
-    "text": "De onde vem\n\nA\nB\nC\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
+    "text": "De onde vem\n\nDa necessidade de detalhes e procedimentos durante as ações que foram realizadas para solução de determinados problemas, sendo que esses registros serão utilizados como bases de referência para problemas futuros ou situações parecidas poupando recursos valiosos.\nDa necessidade de visualizar, apresentar, comunicar e compartilhar detalhes sobre as soluções de problemas, bem como resultados, lições aprendidas e desafios.\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -934,7 +934,7 @@
     "href": "relatorio-tres-geracoes.html#como-fazer",
     "title": "12  Relatório de três gerações",
     "section": "Como fazer",
-    "text": "Como fazer\n\nA\nB\nC",
+    "text": "Como fazer\n\nDurante a execução das ações relatar com o maximo detalhe possível os materiais, métodos e medidas utilizadas para solução do problema.\nRevisar os temas e elencar os que tiveram mais impacto, bem como seus resultados e desafios encontrados durante o percurso.\nCaso não seja possível dar prosseguimento na ação a solução do problema, é ideal que se relate os motivos. Isso gera informação valiosa sobre possíveis pitfalls ou caso as barreiras que inviabilizaram as ações hoje sejam superados no futuro, estas possam ser implementadas gerando resultados diferentes.",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -944,7 +944,7 @@
     "href": "relatorio-tres-geracoes.html#pra-onde-vai",
     "title": "12  Relatório de três gerações",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nA\nB\nC",
+    "text": "Pra onde vai\n\nApós as apresentações do relatório de três gerações o próximo passo é a consolidação da soluções, padronização e treinamento das equipes para replicação das ações como padrão.\nOs dados serão armazenados em base de dados para utilização em soluções RAG(retrieval-augmented generation)\nAs soluções com maiores impactos poderão ser compiladas em manuais e guias para outros profissionais e ou treinamentos na etapa Padronização.",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -954,7 +954,7 @@
     "href": "relatorio-tres-geracoes.html#qual-o-resultado",
     "title": "12  Relatório de três gerações",
     "section": "Qual o resultado",
-    "text": "Qual o resultado\n\nA\nB\nC",
+    "text": "Qual o resultado\n\nAmpliar base de conhecimento e reconhecimento através dos registros, aplicações e compartilhamento de ideias a respeito de soluções de problemas.\nAumentar o estímulo dos profissionais em experimentos em busca de soluções\nMelhorar a velocidade nas respostas a problemas reincidentes ou novos mas que possuam similaridades com os existentes. Bem como criar uma cultura a qual compreende melhor as relações de causa e efeito entre um problema e uma solução.",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -964,7 +964,7 @@
     "href": "relatorio-tres-geracoes.html#referências",
     "title": "12  Relatório de três gerações",
     "section": "Referências",
-    "text": "Referências",
+    "text": "Referências\n\n\n\n\nCristina, Werkema. 1995. Ferramentas Da Qualidade No Gerenciamento de Processos. 1ª edição. Edg.\n\n\nVitruvius, Marcus. 2009. Vitrúvio. Tratado de Arquitectura. 3ª edição. IST Press. https://www.amazon.com.br/Vitr%C3%BAvio-Tratado-Arquitectura-Vitr%C3%BAvio-Poli%C3%A3o/dp/9728469438/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=22J001EB3VBHW&dib=eyJ2IjoiMSJ9.4k0P1xBs9HaX-nYjQhSggLZXZZx3AFUJIQlflIsGB6vVGug82pXTH1e4epgjVCb5I6Idtmw58f8N8LLHuz5xpeDoL3x_22BxRXyRNLN_ImjFleoKnXBYxzgUZTIo_nAC8Q03AxHLFCYymFU2F5q6mo2RN5OH4UNY_ajeVYltrvqLIdQzTBuULPPrlA1alQJugb7E9JAK0LOEz-_UNV8Aesu6KvEvDU3xvr2wFGilidacxQYO-T20QiFAMyf10h2_BzuzUfzWFSwX240-k9a5RepBr-DJRG78Irv-q1iVsV8.ioV8gj-22t22Nkfhhk2eRLGjHh2MeLVPJSR-nSFBvvA&dib_tag=se&keywords=vitruvius&qid=1721506511&sprefix=vitruviu%2Caps%2C320&sr=8-4&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12#detailBullets_feature_div.",
     "crumbs": [
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Relatório de três gerações</span>"
     ]
@@ -984,7 +984,7 @@
     "href": "padronizacao.html#o-que-é",
     "title": "13  Padronização",
     "section": "",
-    "text": "Padronização é a atapa onde os registros das ações realizadas que se comprovarão eficazes são consolidados, os documentos e normas são desenvolvidas e publicadas. Como exemplos os POP(procedimento operacaional padrão) e os treinamentos são realizados.\nA padronização envolve estabelecer e seguir um conjunto de regras ou especificações sobre como realizar uma determinada tarefa ou atividade.\nAplicação do conceito de compliance que é o ato ou processo de cumprimento de uma regra, norma ou aquilo que foi proposto para evitar que problemas apareçam ou sejam reincidentes. Esta relacionado a conformidade no cumprimento de requisitos oficiais.\n\n\n\n\nFigura - Procedimento operacional padrão",
+    "text": "Padronização é a atapa onde os registros das ações realizadas que se comprovaram eficazes são consolidados, os documentos e normas são publicadas e os treinamentos são realizados. Um exemplo comum é o POP(procedimento operacaional padrão).\nA padronização envolve estabelecer e seguir um conjunto de regras ou especificações sobre como realizar uma determinada tarefa ou atividade. Ela pode se fundir com o compliance que é o ato ou processo de cumprimento de uma regra, norma ou aquilo que foi proposto para evitar que problemas apareçam ou sejam reincidentes. Esta relacionado a conformidade no cumprimento de requisitos oficiais.\n\n\n\n\nFigura - Procedimento operacional padrão",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
     ]
@@ -994,7 +994,7 @@
     "href": "padronizacao.html#qual-o-objetivo",
     "title": "13  Padronização",
     "section": "Qual o objetivo",
-    "text": "Qual o objetivo\n\nPermitir a reprodução de processos considerandos eficientes, reduzindo a variação, o desperdício de recursos e os custos de produção melhorando a competitividade.\nAjuda a garantir que os processos sejam consistentes, eficientes e eficazes melhorando o desempenho e resultados por seguir as melhores práticas.\nMelhorar a comunicação e colaboração entre os envolvidos usando formatos e linguagens comuns tornando os processos mais simples de serem monitorados e ajustados.\nAuxiliar na criação e cumprimento das regras e normas.",
+    "text": "Qual o objetivo\n\nPermitir a reprodução de processos considerandos eficazes, reduzindo a variação, o desperdício de recursos e os custos de produção melhorando a competitividade.\nAjuda a garantir que os processos sejam consistentes, eficientes e eficazes melhorando o desempenho e os resultados por ser utilizados as melhores práticas até então conhecidas.\nMelhorar a comunicação e colaboração entre os envolvidos usando formatos e linguagens comuns tornando os processos mais simples de serem monitorados e ajustados.\nAuxiliar na criação e cumprimento das regras e normas.",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
     ]
@@ -1004,7 +1004,7 @@
     "href": "padronizacao.html#de-onde-vem",
     "title": "13  Padronização",
     "section": "De onde vem",
-    "text": "De onde vem\n\nVem da observação de benchmarks do setor, feedback de consumidores, requisitos regulatórios e conhecimento interno vindos através de sugestões.\nEncurtar o tempo na implantação e adaptação de modelos que foram testados e que apresentaram resultados positivos, reduzindo custos.\n\nDa necessidade de evitar a reincidências de problemas.\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
+    "text": "De onde vem\n\nDa necessidade de adaptações aos benchmarks do setor, feedback de consumidores, requisitos regulatórios e conhecimento interno vindos através de testes, experimentos e sugestões.\nEncurtar o tempo na implantação e adaptação de modelos que foram testados e que apresentaram resultados positivos.\nDa necessidade de evitar a reincidências de problemas.\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
     ]
@@ -1014,7 +1014,7 @@
     "href": "padronizacao.html#como-fazer",
     "title": "13  Padronização",
     "section": "Como fazer",
-    "text": "Como fazer\n\nReplicar as atividades que funcionaram conforme planejados e foram consideradas eficazes.\nDocumentar os padrões que servirá como orientação para o processo como especificações, regras e melhores práticas que garantam a consistência e qualidade no processo. Como exemplo pode-se considerar procedimentos, diretrizes, listas de verificação, modelos, metricas e políticas.\nRevisar as ações que não tiveram um bom desempenho e propor mudanças.\nAdotar soluções como padrão.\nPlanejar monitoramento contínuo das soluções padronizadas.\nVerificar se o padrão está sendo seguido\nMedir o indicador comparando com a linha de base e registrando os resultados.\nVerificar o que está funcionando e o que não está\nIdentificar se há mudanças sistemáticas\nPraticar e melhorar as atividades de acordo com o método definido.\nProcurar a próxima oportunidade de melhoria.\nComunicar bem e em linguagem consistente e que seja fácil de ser compreendida, pode ser utilizadas fluxogramas, diagramas, vídeos e manuais com a ideia da comunicação ser clara e concisa.\nTreinar pessoas e fornecer os recursos, ferramentas e suporte necessário que permita a execussão do processo padronizado com foco na formação de cultura de melhoria contínua.\nMedir e acommpanhar o desempenho dos resultados do processo. Indicadores como tempo, custo, qualidade e satisfação podem ser utilizadas e apresentados em ferramentas como paineis, relatórios e sistemas ed feedback. A coleta de dados pode ser feita com auxilio de pesquisas, auditorias e análise para avaliar e melhorar os padrões.",
+    "text": "Como fazer\n\nReplicar as atividades que funcionaram conforme planejados e foram consideradas eficazes.\nCriar diretrizes que servirão como orientação para o processo (e.g especificações, regras, melhores práticas, procedimentos, check-lists, modelos, métricas, políticas entre outros) para a obtenção de consistência e qualidade no processo.\nRevisar as ações que não tiveram um bom desempenho e propor mudanças.\nAdotar as soluções definidas como padrão.\nPlanejar monitoramento contínuo das soluções padronizadas.\nVerificar se o padrão está sendo seguido.\nMedir e acommpanhar o desempenho dos resultados do processo comparando com a linha de base e registrando os resultados para verificar o que está funcionando e o que não está. Indicadores como tempo, custo, qualidade e satisfação podem ser utilizadas e apresentados em ferramentas como paineis, relatórios e sistemas ed feedback. A coleta de dados pode ser feita com auxilio de pesquisas, auditorias e análise para avaliar e melhorar os padrões.\nIdentificar se há mudanças sistemáticas.\nProcurar a próxima oportunidade de melhoria.\nComunicar em linguagem consistente e que seja fácil de ser compreendida, pode ser utilizadas fluxogramas, diagramas, vídeos e manuais com a ideia da comunicação ser clara e concisa.\nTreinar pessoas e fornecer os recursos, ferramentas e suporte necessário que permita a execussão do processo padronizado com foco na formação de cultura de melhoria contínua.",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
     ]
@@ -1024,7 +1024,7 @@
     "href": "padronizacao.html#pra-onde-vai",
     "title": "13  Padronização",
     "section": "Pra onde vai",
-    "text": "Pra onde vai\n\nApós a etapa de padronização, o PDCA é reiniciado como parte do processo de melhoria contínua seja no processo existente, um novo.\n\nC",
+    "text": "Pra onde vai\n\nApós a etapa de padronização, o PDCA é reiniciado como parte do processo de melhoria contínua seja no processo existente, um novo.",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
     ]
@@ -1034,7 +1034,7 @@
     "href": "padronizacao.html#qual-o-resultado",
     "title": "13  Padronização",
     "section": "Qual o resultado",
-    "text": "Qual o resultado\n\nA\nB\nC",
+    "text": "Qual o resultado\n\nMelhorar a capacidade e velocidade de adaptação e ajustes aos diferences ciclos existentes dentro dos negócios. e vida pessoal.\nFacilitar o aprendizado, a comunicação e geração de ideias pois como a padronização a ideia é que todos falem a mesma lingua.\nCriação de cultura que pode guiar uma sociedade no longo prazo.",
     "crumbs": [
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
     ]

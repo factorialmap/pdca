@@ -83,7 +83,7 @@ Em algumas situações particulares, os limites de controle poderão ser ajustad
 **A tabela abaixo mostra as subdivisões dos gráficos de controle**
 
 | Tipo de valor | Nome do gráfico                                                       |
-|-------------------|-----------------------------------------------------|
+|--------------------|----------------------------------------------------|
 | Contínuo      | Gráfico $x$ ou $I-MR$ gráfico de valor individual                     |
 | Contínuo      | Gráfico $\bar{x}$ - $R$ ou gráfico média e amplitude c/ subgrupo 2-10 |
 | Contínuo      | Gráfico $\bar{x}$ - $S$ ou gráfico média e amplitude c/ subgrupo \>10 |
@@ -105,6 +105,8 @@ A linha inferior de controle não pode ser menor que zero.
 -   Fornecer para o gestor informações sobre o comportamento do processo.
 
 -   Facilitar a realização de análises, ações ou ajustes nos casos em que os processos apresentarem comportamentos considerados fora do padrão normal aleatório.
+
+![Figura - Gráfico de controle](images\pdca_goals.png){width="699"}
 
 ## De onde vem {.unnumbered}
 

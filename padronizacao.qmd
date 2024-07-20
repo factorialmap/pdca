@@ -2,17 +2,17 @@
 
 ## O que é {.unnumbered}
 
--   Padronização é a atapa onde os registros das ações realizadas que se comprovarão eficazes são consolidados, os documentos e normas são desenvolvidas e publicadas. Como exemplos os POP(procedimento operacaional padrão) e os treinamentos são realizados.
--   A padronização envolve estabelecer e seguir um conjunto de regras ou especificações sobre como realizar uma determinada tarefa ou atividade.
--   Aplicação do conceito de compliance que é o ato ou processo de cumprimento de uma regra, norma ou aquilo que foi proposto para evitar que problemas apareçam ou sejam reincidentes. Esta relacionado a conformidade no cumprimento de requisitos oficiais.
+-   Padronização é a atapa onde os registros das ações realizadas que se comprovaram eficazes são consolidados, os documentos e normas são publicadas e os treinamentos são realizados. Um exemplo comum é o POP(procedimento operacaional padrão).
+
+-   A padronização envolve estabelecer e seguir um conjunto de regras ou especificações sobre como realizar uma determinada tarefa ou atividade. Ela pode se fundir com o compliance que é o ato ou processo de cumprimento de uma regra, norma ou aquilo que foi proposto para evitar que problemas apareçam ou sejam reincidentes. Esta relacionado a conformidade no cumprimento de requisitos oficiais.
 
 ![Figura - Procedimento operacional padrão](images/pop.png)
 
 ## Qual o objetivo {.unnumbered}
 
--   Permitir a reprodução de processos considerandos eficientes, reduzindo a variação, o desperdício de recursos e os custos de produção melhorando a competitividade.
+-   Permitir a reprodução de processos considerandos eficazes, reduzindo a variação, o desperdício de recursos e os custos de produção melhorando a competitividade.
 
--   Ajuda a garantir que os processos sejam consistentes, eficientes e eficazes melhorando o desempenho e resultados por seguir as melhores práticas.
+-   Ajuda a garantir que os processos sejam consistentes, eficientes e eficazes melhorando o desempenho e os resultados por ser utilizados as melhores práticas até então conhecidas.
 
 -   Melhorar a comunicação e colaboração entre os envolvidos usando formatos e linguagens comuns tornando os processos mais simples de serem monitorados e ajustados.
 
@@ -20,9 +20,10 @@
 
 ## De onde vem {.unnumbered}
 
--   Vem da observação de benchmarks do setor, feedback de consumidores, requisitos regulatórios e conhecimento interno vindos através de sugestões.
--   Encurtar o tempo na implantação e adaptação de modelos que foram testados e que apresentaram resultados positivos, reduzindo custos.
--   
+-   Da necessidade de adaptações aos benchmarks do setor, feedback de consumidores, requisitos regulatórios e conhecimento interno vindos através de testes, experimentos e sugestões.
+
+-   Encurtar o tempo na implantação e adaptação de modelos que foram testados e que apresentaram resultados positivos.
+
 -   Da necessidade de evitar a reincidências de problemas.
 
 ![Figura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado](images/step_67.png)
@@ -30,30 +31,37 @@
 ## Como fazer {.unnumbered}
 
 -   Replicar as atividades que funcionaram conforme planejados e foram consideradas eficazes.
--   Documentar os padrões que servirá como orientação para o processo como especificações, regras e melhores práticas que garantam a consistência e qualidade no processo. Como exemplo pode-se considerar procedimentos, diretrizes, listas de verificação, modelos, metricas e políticas.
+
+-   Criar diretrizes que servirão como orientação para o processo (e.g especificações, regras, melhores práticas, procedimentos, check-lists, modelos, métricas, políticas entre outros) para a obtenção de consistência e qualidade no processo.
+
 -   Revisar as ações que não tiveram um bom desempenho e propor mudanças.
--   Adotar soluções como padrão.
+
+-   Adotar as soluções definidas como padrão.
+
 -   Planejar monitoramento contínuo das soluções padronizadas.
--   Verificar se o padrão está sendo seguido
--   Medir o indicador comparando com a linha de base e registrando os resultados.
--   Verificar o que está funcionando e o que não está
--   Identificar se há mudanças sistemáticas
--   Praticar e melhorar as atividades de acordo com o método definido.
+
+-   Verificar se o padrão está sendo seguido.
+
+-   Medir e acommpanhar o desempenho dos resultados do processo comparando com a linha de base e registrando os resultados para verificar o que está funcionando e o que não está. Indicadores como tempo, custo, qualidade e satisfação podem ser utilizadas e apresentados em ferramentas como paineis, relatórios e sistemas ed feedback. A coleta de dados pode ser feita com auxilio de pesquisas, auditorias e análise para avaliar e melhorar os padrões.
+
+-   Identificar se há mudanças sistemáticas.
+
 -   Procurar a próxima oportunidade de melhoria.
--   Comunicar bem e em linguagem consistente e que seja fácil de ser compreendida, pode ser utilizadas fluxogramas, diagramas, vídeos e manuais com a ideia da comunicação ser clara e concisa.
+
+-   Comunicar em linguagem consistente e que seja fácil de ser compreendida, pode ser utilizadas fluxogramas, diagramas, vídeos e manuais com a ideia da comunicação ser clara e concisa.
+
 -   Treinar pessoas e fornecer os recursos, ferramentas e suporte necessário que permita a execussão do processo padronizado com foco na formação de cultura de melhoria contínua.
--   Medir e acommpanhar o desempenho dos resultados do processo. Indicadores como tempo, custo, qualidade e satisfação podem ser utilizadas e apresentados em ferramentas como paineis, relatórios e sistemas ed feedback. A coleta de dados pode ser feita com auxilio de pesquisas, auditorias e análise para avaliar e melhorar os padrões.
 
 ## Pra onde vai {.unnumbered}
 
 -   Após a etapa de padronização, o PDCA é reiniciado como parte do processo de melhoria contínua seja no processo existente, um novo.
--   
--   C
 
 ## Qual o resultado {.unnumbered}
 
--   A
--   B
--   C
+-   Melhorar a capacidade e velocidade de adaptação e ajustes aos diferences ciclos existentes dentro dos negócios. e vida pessoal.
+
+-   Facilitar o aprendizado, a comunicação e geração de ideias pois como a padronização a ideia é que todos falem a mesma lingua.
+
+-   Criação de cultura que pode guiar uma sociedade no longo prazo.
 
 ## Referências {.unnumbered}

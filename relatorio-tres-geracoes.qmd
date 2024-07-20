@@ -2,46 +2,56 @@
 
 ## O que é {.unnumbered}
 
-O relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:
+-   O relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:
+    -   **Passado** – o que foi planejado e o que foi feito.
 
-- **Passado** – o que foi planejado e o que foi feito.
+    -   **Presente** – o resultado obtido e os problemas existentes.
 
-- **Presente** – o resultado obtido e os problemas existentes.
+    -   **Futuro** – mais propostas de solução ou padronização.
+-   Por armazenar uma boa quantidade de informação, os registros de relatórios três gerações podem ser uma opção importante para uso em aplicações RAG(retrieval-augmented generation) que fornecem contextos e referências que podem ser utilizados em sistemas de inteligência artificial generativa.
 
-- **Futuro** – mais propostas de solução.
+![Figura - Relatório de três gerações](images\three_generation_report.png){width="699"}
 
 ## Qual o objetivo {.unnumbered}
 
-- O objetivo principal do relatório de três gerações é relatar, avaliar os esforços que foram feitos para resolver um determinado problema e obter uma visão geral dos resultados e ao mesmo tempo, identificar se há possibilidade imediata de propostas para resolução desses problemas (WERKEMA, 1995).
+-   Relatar em um mesmo registro, os esforços que foram feitos para resolver um determinado problema, obter uma visão geral dos resultados, identificar se houveram problemas durante a implementação da ação e se há possibilidade imediata de propostas para solução defenitiva do problema, @cristina1995
 
-- B
+-   Servir como base de dados de apoio e referência bibliográfica que poderão ser usados durante o processo de solução de problemas futuros, que possuam características similares ou que estejam em diferentes localidades.
 
-- C
+-   Um exemplo prático que demonstra a ideia por traz do relatório de três gerações pode ser visto em @vitruvius2009. A obra, reune uma série de situações com assuntos, procedimentos, técnicas e princípios atemporais que puderam e foram utilizados no futuro.
+
+![Figura - Referência bibliografica escrita pelo arquiteto e engenheiro militar romano Marcus Vitruvius em 25 antes de Cristo](images/tres_geracoes_vitruvio.jpg)
 
 ## De onde vem {.unnumbered}
 
-- A
-- B
-- C
+-   Da necessidade de detalhes e procedimentos durante as ações que foram realizadas para solução de determinados problemas, sendo que esses registros serão utilizados como bases de referência para problemas futuros ou situações parecidas poupando recursos valiosos.
+
+-   Da necessidade de visualizar, apresentar, comunicar e compartilhar detalhes sobre as soluções de problemas, bem como resultados, lições aprendidas e desafios.
 
 ![Figura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado](images/step_67.png)
 
 ## Como fazer {.unnumbered}
 
-- A
-- B
-- C
+-   Durante a execução das ações relatar com o maximo detalhe possível os materiais, métodos e medidas utilizadas para solução do problema.
+
+-   Revisar os temas e elencar os que tiveram mais impacto, bem como seus resultados e desafios encontrados durante o percurso.
+
+-   Caso não seja possível dar prosseguimento na ação a solução do problema, é ideal que se relate os motivos. Isso gera informação valiosa sobre possíveis pitfalls ou caso as barreiras que inviabilizaram as ações hoje sejam superados no futuro, estas possam ser implementadas gerando resultados diferentes.
 
 ## Pra onde vai {.unnumbered}
 
-- A
-- B
-- C
+-   Após as apresentações do relatório de três gerações o próximo passo é a consolidação da soluções, padronização e treinamento das equipes para replicação das ações como padrão.
+
+-   Os dados serão armazenados em base de dados para utilização em soluções RAG(retrieval-augmented generation)
+
+-   As soluções com maiores impactos poderão ser compiladas em manuais e guias para outros profissionais e ou treinamentos na etapa Padronização.
 
 ## Qual o resultado {.unnumbered}
 
-- A
-- B
-- C
+-   Ampliar base de conhecimento e reconhecimento através dos registros, aplicações e compartilhamento de ideias a respeito de soluções de problemas.
+
+-   Aumentar o estímulo dos profissionais em experimentos em busca de soluções
+
+-   Melhorar a velocidade nas respostas a problemas reincidentes ou novos mas que possuam similaridades com os existentes. Bem como criar uma cultura a qual compreende melhor as relações de causa e efeito entre um problema e uma solução.
 
 ## Referências {.unnumbered}

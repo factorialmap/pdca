@@ -89,8 +89,10 @@ data_crime |>
 
 ## Qual o resultado {.unnumbered}
 
--   Apresentar, analisar e comunicar dados de forma eficiente possibilitando a identificação de padrões nos dados e investigação de fenômenos sob diversos pontos de vista.\
--   Facilidade na leitura e interpretação dos resultados melhorando a compreensão de todos em relação ao problema ou fenômeno.\
+-   Apresentar, analisar e comunicar dados de forma eficiente possibilitando a identificação de padrões nos dados e investigação de fenômenos sob diversos pontos de vista.
+
+-   Facilidade na leitura e interpretação dos resultados melhorando a compreensão de todos em relação ao problema ou fenômeno.
+
 -   Por ser uma ferramenta comum, possibilita a reprodutibilidade e uso em praticamente todas as áreas e lugares e por todos os tipos de profissionais que buscam melhorar seus processos.
 
 ## Referências {.unnumbered}
