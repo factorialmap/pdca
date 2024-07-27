@@ -4,46 +4,46 @@ Para aplicar equações matematicas em r markdown é bastante simples. Você pre
 
 ## Notações para estatística {.unnumbered}
 
-| Renderizado                                           | Código fonte                                            | dummy field                                             |
-|-------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
-| $\overline{x}$                                        | `$\overline{x}$`                                        |                                                         |
-| $\mu$                                                 | `$\mu$`                                                 |                                                         |
-| $\mu_0$                                               | `$\mu_0$`                                               |                                                         |
-| $\sigma$                                              | `$\sigma$`                                              |                                                         |
-| $\sum$                                                | `$\sum$`                                                |                                                         |
-| $\beta$                                               | `$\beta$`                                               |                                                         |
-| $s$                                                   | `$s$`                                                   |                                                         |
-| $\alpha$                                              | `$\alpha$`                                              |                                                         |
-| $H_0:\mu_1 = \mu_2$                                   | `$H_0:\mu_1 = \mu_2`                                    |                                                         |
-| $H_0$                                                 | `$H_0$`                                                 |                                                         |
-| $H_1$                                                 | `$H_1$`                                                 |                                                         |
-| $H_i$                                                 | `$H_i$`                                                 |                                                         |
-| $|\mu|$                                               | `$|\mu|$`                                               |                                                         |
-| $\lambda$                                             | `$\lambda$`                                             |                                                         |
-| $\theta$                                              | `$\theta$`                                              |                                                         |
-| $Pr(>|z|)$                                            | `$Pr(>|z|)$`                                            |                                                         |
-| $x = y$                                               | `$x = y$`                                               |                                                         |
-| $x < y$                                               | `$x < y$`                                               |                                                         |
-| $x \geq y$                                            | `$x \geq y$`                                            |                                                         |
-| $x \leq y$                                            | `$x \leq y$`                                            |                                                         |
-| $x \neq y$                                            | `$x \neq y$`                                            |                                                         |
-| $\sum_{i=1}^{n}$                                      | `$\sum_{i=1}{n}$`                                       |                                                         |
-| $Y_i \sim N(\mu,\sigma)$                              | `$Y_i \sim N(\mu,\sigma)$`                              |                                                         |
-| $N(\mu, \sigma^2)$                                    | `$N(\mu \sigma^2)$`                                     |                                                         |
-| $X\sim N(\mu, \sigma^2)$                              | `$X\sim N(\mu,\sigma^2)$`                               |                                                         |
-| $\bar{x}=\frac{1}{n}\sum_{i=1}^{n}$                   | `$\bar{x}=\frac{1}{n}\sum_{i=1}^{n}$`                   |                                                         |
-| $f(k)={n\choose k} p^{k} (1-p)^{n-k}$                 | `$f(k)={n\choose k} p^{k} (1-p)^{n-k}$`                 |                                                         |
-| $\chi^2 = \sum \frac {(O - E)^2}{E}$                  | `$\chi^2 = \sum \frac {(O - E)^2}{E}$`                  |                                                         |
-| $Y_i = \beta0 + \beta_iX +\epsilon_i$                 | `$Y_i = \beta0 + \beta_iX +\epsilon_i$`                 |                                                         |
-| $log{(\frac{p}{1-p})} = \beta_0 + \beta_1X_1$         | `$log{(\frac{p}{1-p})} = \beta_0 + \beta_1X_1$`         |                                                         |
-| $\frac{e(\beta_0+\beta_1x)}{1 + e(\beta_0+\beta_1x)}$ | `$\frac{e(\beta_0+\beta_1x)}{1 + e(\beta_0+\beta_1x)}$` |                                                         |
-| $\frac{e^x}{1 + e^x}$                                 | `$\frac{e^x}{1 + e^x}$`                                 |                                                         |
-| $n= \frac{z^2.p.q.N}{e^2.(N-1)+z^2.p.q}$              | `$n= \frac{z^2.p.q.N}{e^2.(N-1)+z^2.p.q}$`              | Calculo da amostra variavel nominal de população finita |
-| $H_0$                                                 | `$H_0$`                                                 |                                                         |
-| $H_0$                                                 | `$H_0$`                                                 |                                                         |
-| $H_0$                                                 | `$H_0$`                                                 |                                                         |
-| $H_0$                                                 | `$H_0$`                                                 |                                                         |
-| $H_0$                                                 | `$H_0$`                                                 |                                                         |
-| $H_0$                                                 | `$H_0$`                                                 |                                                         |
-| $H_0$                                                 | `$H_0$`                                                 |                                                         |
-| $H_0$                                                 | `$H_0$`                                                 |                                                         |
+| Equação renderizado                                   | Equação código fonte                                    | Descrição                                                                                                      |
+|--------------------|-------------------------|----------------------------|
+| $\overline{x}$                                        | `$\overline{x}$`                                        | Média da amostra                                                                                               |
+| $\mu$                                                 | `$\mu$`                                                 | Média da população                                                                                             |
+| $n$                                                   | `$n$`                                                   | Tamanho da amostra                                                                                             |
+| $\sigma$                                              | `$\sigma$`                                              | Desvio padrão da população                                                                                     |
+| $\sum$                                                | `$\sum$`                                                | Soma                                                                                                           |
+| $\beta$                                               | `$\beta$`                                               | Beta (probabilidade erro tipo 2)                                                                               |
+| $s$                                                   | `$s$`                                                   | Desvio padrão da amostra                                                                                       |
+| $\alpha$                                              | `$\alpha$`                                              | Nível de significância estatística (probabilidade do erro tipo 1)                                              |
+| $H_0:\mu_1 = \mu_2$                                   | `$H_0:\mu_1 = \mu_2`                                    | Hipótese nula de que as médias populacionais de dois grupos são iguais. Não há diferença entre os dois grupos. |
+| $H_0$                                                 | `$H_0$`                                                 | Hipótese nula                                                                                                  |
+| $H_1$                                                 | `$H_1$`                                                 | Hipótese alternativa                                                                                           |
+| $CI$                                                  | `$CI$`                                                  | Intervalo de confiança                                                                                         |
+| $\int_{a}^{b} x^2 \,dx$                               | `$`\\int\_{a}\^{b} x\^2 \\,dx`$`                        | Integral                                                                                                       |
+| $\lambda$                                             | `$\lambda$`                                             | Lambda                                                                                                         |
+| $\theta$                                              | `$\theta$`                                              | Theta, parâmetro da população $\Theta = (\mu,\sigma)$                                                          |
+| $Pr(>\lvert z \rvert)$                                | `$`Pr(\>\\lvert z \\rvert)`$`                           | Probabilidade de que o valor absoluto de z seja maior que algum valor                                          |
+| $x = y$                                               | `$x = y$`                                               | x= y                                                                                                           |
+| $x < y$                                               | `$x < y$`                                               | x menor que y                                                                                                  |
+| $x \geq y$                                            | `$x \geq y$`                                            | x maior ou igual a y                                                                                           |
+| $x \leq y$                                            | `$x \leq y$`                                            | x menor ou igual a y                                                                                           |
+| $x \neq y$                                            | `$x \neq y$`                                            | x diferente de y                                                                                               |
+| $\sum_{i=1}^{n}$                                      | `$\sum_{i=1}{n}$`                                       | Soma dos termos ou um indice i começando em 1 e indo até n                                                     |
+| $Y_i \sim N(\mu,\sigma)$                              | `$Y_i \sim N(\mu,\sigma)$`                              | Yi segue uma distribuição normal                                                                               |
+| $N(\mu, \sigma^2)$                                    | `$N(\mu \sigma^2)$`                                     | Distribuição normal com média e variancia.                                                                     |
+| $X\sim N(\mu, \sigma^2)$                              | `$X\sim N(\mu,\sigma^2)$`                               | X segue distribuiçao normal com média e variância                                                              |
+| $\bar{x}=\frac{1}{n}\sum_{i=1}^{n}$                   | `$\bar{x}=\frac{1}{n}\sum_{i=1}^{n}$`                   | Média amostral de um conjunto de valores. Soma de todos os valores dividido pelo número de valores             |
+| $f(k)={n\choose k} p^{k} (1-p)^{n-k}$                 | `$f(k)={n\choose k} p^{k} (1-p)^{n-k}$`                 | Distribuição binomial de probabilidade                                                                         |
+| $\chi^2 = \sum \frac {(O - E)^2}{E}$                  | `$\chi^2 = \sum \frac {(O - E)^2}{E}$`                  | Chi-quadrado para determinar se há diferença entre os valore observados e valores esperados.                   |
+| $Y_i = \beta0 + \beta_iX +\epsilon_i$                 | `$Y_i = \beta0 + \beta_iX +\epsilon_i$`                 | Regressão linear                                                                                               |
+| $log{(\frac{p}{1-p})} = \beta_0 + \beta_1X_1$         | `$log{(\frac{p}{1-p})} = \beta_0 + \beta_1X_1$`         | Regressão logística logit                                                                                      |
+| $\frac{e(\beta_0+\beta_1x)}{1 + e(\beta_0+\beta_1x)}$ | `$\frac{e(\beta_0+\beta_1x)}{1 + e(\beta_0+\beta_1x)}$` | Função logística ou sigmóide                                                                                   |
+| $\frac{e^x}{1 + e^x}$                                 | `$\frac{e^x}{1 + e^x}$`                                 | Função logística                                                                                               |
+| $n= \frac{z^2.p.q.N}{e^2.(N-1)+z^2.p.q}$              | `$n= \frac{z^2.p.q.N}{e^2.(N-1)+z^2.p.q}$`              | Calculo da amostra variavel nominal de população finita                                                        |
+| $H_0$                                                 | `$H_0$`                                                 |                                                                                                                |
+| $H_0$                                                 | `$H_0$`                                                 |                                                                                                                |
+| $H_0$                                                 | `$H_0$`                                                 |                                                                                                                |
+| $H_0$                                                 | `$H_0$`                                                 |                                                                                                                |
+| $H_0$                                                 | `$H_0$`                                                 |                                                                                                                |
+| $H_0$                                                 | `$H_0$`                                                 |                                                                                                                |
+| $H_0$                                                 | `$H_0$`                                                 |                                                                                                                |
+| $H_0$                                                 | `$H_0$`                                                 |                                                                                                                |
