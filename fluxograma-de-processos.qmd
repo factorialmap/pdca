@@ -8,9 +8,10 @@ Não há uma data precisa do início do uso dessa ideia, mas a evidência mais a
 
 ![Figura 2 - Papiro de Ani: A pesagem do coração](images/papiro_ani.jpg)
 
-O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão.
+O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão @anjos2018
 
-![Figura 3 - fluxograma de processo industrial de metais](images/figura_processo.png)
+![Exemplo de fluxo de processos](images/fluxograma_process_cetil.jpg)
+
 
 ## Qual o objetivo {.unnumbered}
 
@@ -22,12 +23,19 @@ O uso de descrições detalhadas das etapas em um processo nos permite compreend
 
 -   Analisar fenômenos em diferentes perspectivas.
 
+![Figura 3 - fluxograma de processo industrial de metais](images/figura_processo.png)
+
+
+Exemplo de fluxo utilizado em comunicação e valuation.
+
+
+![Fluxo de processo - Excallibur Mfg - Greer SC](images/process_excallibur.jpg)
+
 ## De onde vem {.unnumbered}
 
 -   O fluxograma ou desenho de um processo vem da necessidade ter uma visão geral daquilo que está sendo analisado, estudado ou discutido para compreender melhor as relações e interações entre os elementos. Com isso, permitir que ideias, melhorias possam ser geradas ou até estratégias ou planos táticos possam ser propostos.
 
 ![Figura - Etapa 1 do PDCA: Definir claramente o problema e reconhecer sua importância](images/step_1.png)
-
 
 ## Como fazer {.unnumbered}
 

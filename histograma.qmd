@@ -1,0 +1,45 @@
+
+# Histograma
+
+## O que é {.unnumbered}
+
+- É uma ferramenta visual que permite explorar a ideia da distribuição e a organização dos dados. 
+
+- É um gráfico de barras que mostra quantas vezes(frequência) os dados caem dentro de certos intervalos também chamados de classes. 
+
+- diferente de um gráfico de barras comum, ele não representa categorias distintas, mas faixas contínuas de valores.
+
+Exemplo: Se você mede a altura de 100 pessoas, o histograma pode mostrar quantas pessoas têm entre 1.60 e 1.75, entre 1.75 a 1.85, e assim por diante.
+
+### Característias técnicas {.unnumbered}
+
+![Figura - Histogramas](images\histogram.png){width="699"}
+
+### Informações apresentadas no gráfico {.unnumbered}
+### Tipos de gráficos de controle {.unnumbered}
+
+![Tipos de Histogramas](images\histogram_types.png){width="699"}
+
+## Qual o objetivo {.unnumbered}
+
+- **Visualizar a distribuição dos dados** Ele revela se os dados são simétricos(formato de sino), assimétricos(como uma cauda longa para um lado), concentrados, dispersos, . A forma, da pistas sobre a natureza dos dados e os processos que os geraram.
+
+- **Identificar padrões** multimodal(com várias picos), caudas, lacunas ou outliers(valores muito distantes do corpo principal da distribuição)
+
+- **Comparar distribuições** de diferentes conjuntos de dados (e.g. podemos comparar a distribuição de notas de alunos em duas turmas diferentes para avaliar se o desempenho relativo das turmas)
+
+- **Apoior decisões** guiando a escolha de modelos estatísticos mais adequados para cada tipo de dados em áreas como estatística, ciência de dados, economia, psicologia, medicina, engenharia ou outra área que lide com dados quantitativos.
+
+- **Traduzir o caos em ordem** transformando uma lista aparentemente aleatória de números em uma imagem compreensível.
+
+## De onde vem {.unnumbered}
+
+## Como fazer {.unnumbered}
+
+
+
+## Pra onde vai {.unnumbered}
+
+## Qual o resultado {.unnumbered}
+
+## Referências {.unnumbered}

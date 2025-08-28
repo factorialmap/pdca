@@ -254,7 +254,7 @@
     "href": "fluxograma-de-processos.html",
     "title": "4  Fluxograma de Processos",
     "section": "",
-    "text": "O que é\nRepresentação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é fornecer uma visão clara do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.\nNão há uma data precisa do início do uso dessa ideia, mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.\nO uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão.",
+    "text": "O que é\nRepresentação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é fornecer uma visão clara do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.\nNão há uma data precisa do início do uso dessa ideia, mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.\nO uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão Anjos (2018)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
     ]
@@ -264,7 +264,7 @@
     "href": "fluxograma-de-processos.html#o-que-é",
     "title": "4  Fluxograma de Processos",
     "section": "",
-    "text": "Figura 2 - Papiro de Ani: A pesagem do coração\n\n\n\n\n\n\nFigura 3 - fluxograma de processo industrial de metais",
+    "text": "Figura 2 - Papiro de Ani: A pesagem do coração\n\n\n\n\n\n\nExemplo de fluxo de processos",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
     ]
@@ -274,7 +274,7 @@
     "href": "fluxograma-de-processos.html#qual-o-objetivo",
     "title": "4  Fluxograma de Processos",
     "section": "Qual o objetivo",
-    "text": "Qual o objetivo\n\nEntender as etapas de um processo e identificar oportunidades de melhoria.\nFacilitar a comunicação através da visualização do todo e suas relações\nFacilitar a expressão de ideias, formulação de hipóteses e discussões.\nAnalisar fenômenos em diferentes perspectivas.",
+    "text": "Qual o objetivo\n\nEntender as etapas de um processo e identificar oportunidades de melhoria.\nFacilitar a comunicação através da visualização do todo e suas relações\nFacilitar a expressão de ideias, formulação de hipóteses e discussões.\nAnalisar fenômenos em diferentes perspectivas.\n\n\n\n\nFigura 3 - fluxograma de processo industrial de metais\n\n\nExemplo de fluxo utilizado em comunicação e valuation.\n\n\n\nFluxo de processo - Excallibur Mfg - Greer SC",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
     ]
@@ -294,7 +294,7 @@
     "href": "fluxograma-de-processos.html#como-fazer",
     "title": "4  Fluxograma de Processos",
     "section": "Como fazer",
-    "text": "Como fazer\nExistem várias formas de criar um fluxograma de processos sendo o lápis e o papel um dos mais eficiêntes por outro lado no R também é possível criar vários modelos de fluxogramas os quais citarei alguns usando o pacote DiagrammeR onde:\n\nmermaid é a função que chamará a biblioteca em javascript que fará o diagrama\ngraph LR é a orientação do digrama que pode ser TD=top down, LR = left to right etc.\nA, B, C, D..N é a definição de um nó\n&gt;], [], (), (()) é o formato do nó\n–&gt; é a direção do conector\n\n\n\nCode\nlibrary(DiagrammeR)\n\n\nWarning: package 'DiagrammeR' was built under R version 4.3.2\n\n\nCode\nmermaid(\"\ngraph LR\nA&gt;Mat. prima]--&gt;B[Produção]\nB--&gt;C[Estoque PA]\nC--&gt;D[Demanda]\nE&gt;Mão obra]--&gt;B\nF&gt;Máquina]--&gt;B\n\", height='100%', width='100%')\n\n\n\n\n\n\nCode\nmermaid (\"\ngraph LR\n\nsubgraph Cliente\nA[Vendido no limite]\nend\n\nsubgraph Corretora\nA--&gt;B{Tem saldo?}\nB--&gt;|Sim|C[Manter posição]\nC--&gt; D[Novo pregão]\nD--&gt; B\nend\n\nsubgraph Compliance\nB --&gt;|Não| F[Encerra posição]\nend\n\n\", height='100%', width='100%')\n\n\n\n\n\n\nCode\nmermaid(\"\ngraph LR\n    A[Estoque MP] --&gt;|materia prima| B(Produção)\n    B --&gt; C{Sob pedido?}\n    C --&gt;|Sim| D[Venda]\n    C --&gt;|Não| E[Estoque Prod. Acabado]\n\", height='100%', width='100%')",
+    "text": "Como fazer\nExistem várias formas de criar um fluxograma de processos sendo o lápis e o papel um dos mais eficiêntes por outro lado no R também é possível criar vários modelos de fluxogramas os quais citarei alguns usando o pacote DiagrammeR onde:\n\nmermaid é a função que chamará a biblioteca em javascript que fará o diagrama\ngraph LR é a orientação do digrama que pode ser TD=top down, LR = left to right etc.\nA, B, C, D..N é a definição de um nó\n&gt;], [], (), (()) é o formato do nó\n–&gt; é a direção do conector\n\n\n\nCode\nlibrary(DiagrammeR)\n\nmermaid(\"\ngraph LR\nA&gt;Mat. prima]--&gt;B[Produção]\nB--&gt;C[Estoque PA]\nC--&gt;D[Demanda]\nE&gt;Mão obra]--&gt;B\nF&gt;Máquina]--&gt;B\n\", height='100%', width='100%')\n\n\n\n\n\n\nCode\nmermaid (\"\ngraph LR\n\nsubgraph Cliente\nA[Vendido no limite]\nend\n\nsubgraph Corretora\nA--&gt;B{Tem saldo?}\nB--&gt;|Sim|C[Manter posição]\nC--&gt; D[Novo pregão]\nD--&gt; B\nend\n\nsubgraph Compliance\nB --&gt;|Não| F[Encerra posição]\nend\n\n\", height='100%', width='100%')\n\n\n\n\n\n\nCode\nmermaid(\"\ngraph LR\n    A[Estoque MP] --&gt;|materia prima| B(Produção)\n    B --&gt; C{Sob pedido?}\n    C --&gt;|Sim| D[Venda]\n    C --&gt;|Não| E[Estoque Prod. Acabado]\n\", height='100%', width='100%')",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
     ]
@@ -324,7 +324,7 @@
     "href": "fluxograma-de-processos.html#referências",
     "title": "4  Fluxograma de Processos",
     "section": "Referências",
-    "text": "Referências",
+    "text": "Referências\n\n\n\n\nAnjos, Marcelo. 2018. “Tutorial Gestão de Processos | Mapeamento e Melhoria de Processos, Kaizen,” December. https://www.youtube.com/watch?v=ng_P2_1egQI.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Fluxograma de Processos</span>"
     ]
@@ -812,81 +812,81 @@
   {
     "objectID": "grafico-de-controle.html",
     "href": "grafico-de-controle.html",
-    "title": "11  Gráfico de controle",
+    "title": "12  Gráfico de controle",
     "section": "",
     "text": "O que é",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
   },
   {
     "objectID": "grafico-de-controle.html#o-que-é",
     "href": "grafico-de-controle.html#o-que-é",
-    "title": "11  Gráfico de controle",
+    "title": "12  Gráfico de controle",
     "section": "",
     "text": "Característias técnicas\n\nO gráfico de controle é uma ferramenta útil para avaliar o comportamento de um processo e também fornecer bases para previsões de comportamentos futuros.\nO gráfico mostra algumas características fundamentais que descrevem um processo como:\n\nCentralização que é determinada pela média.\nDispersão, que representa o desvio-padrão ou amplitude. O quanto os pontos de dados estão distantes da média.\nLimites de controle (LC) que sinalizam se o processo está sob controle ou fora de controle.\n\nImagine uma linha de produção de alimentos (tomates cortados em rodelas) onde o objetivo é produzir uniformemente todas as rodelas de tomates, ou seja na mesma espessura e no mesmo tempo. O gráfico de controle ajuda avaliar se o processo está uniforme e sob controle estatístico, se possui variações e quais são essas variações. Eu insiro os dados de tempo médio gasto para fatiar tomates com a mesma espessura em em gráfico de controle.\n\n\nPego uma amostra de 100 tomates.\nRegistro o tempo gasto para fatiar cada tomate.\nO tempo médio gasto para fatiar cada tomate será representada pela linha central \\(\\bar{x}\\) enquanto o limite superior e inferior de controle terão três desvios padrão dessa média representados pela equação matemática \\(\\pm3\\sigma\\). Qualquer variação aleatória dentro desses limites, eu considero que o processo está normal ou sob controle.\nAgora imagine que a partir do 10º tomate o gráfico apresente um padrão onde o tempo começa a aumentar sistematicamente até sair dos limites de controle.\nAo avaliar, percebi que a faca foi perdendo o fio necessitando de mais movimentos para romper a pele do tomate. Como efeito desse fenomeno, mais tempo foi gasto, o risco das fatias terem dimensões diferentes aumentaram e os padrões de qualidade do produto e do processo foram impactadas. As informações sobre padrões e variações podem ser vistas em um gráfico de controle.\n\n\n\n\n\n\nFigura - Gráfico de controle\n\n\n\n\n\n\n\n\nE por que +/- 3 desvios padrão da média?\n\n\n\nA resposta é que considerando a distribuição normal de probabilidades, 99.7% dos dados estão variando em até 3 desvios padrão da média. Neste caso, qualquer variação dentro desses limites é considerando dentro do normal. Um valor comum de três desvios padrão pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados Brassard (1991)\n\n\n\n\nInformações apresentadas no gráfico\n\nDeming, Cahill, and Allan (2018), descrevem que Shewhart em 1924, descobriu duas formas de variações em um processo as quais ele classificou como causas comuns e causas especiais.\nComo os processos sujeitos a variação de causas especiais eram imprevisíveis, as técnicas de probabilidade não poderiam ser usadas para separar um tipo de variação de outra e por isso, Shewhart criou um gráfico de controle estatístico como uma heurística para distinguir esses dois tipos de variação, pois cada tipo, requer tratamentos diferentes.\nVariações por causas comuns ou aleatórias.\n\nFenômenos constantemente observados, variabilidade natural do processo.\nAs variações são previsíveis e quantificáveis e a variabilidade se mantem em uma faixa estável e que neste caso dizemos que o processo está sob controle estatístico.\nFalta significância nos valores individuais seja pra cima ou pra abaixo da média.\nExemplos(processos em que há falta de manutenção de maquinas, inexistência de procedimento operacional padrão ou inadequados, materias primas de qualidade ruim, iluminação ruim, sujeira ou ruídos excessivos, problemas no design entre outros).\n\nVariações por causas especiais ou assinaláveis.\n\nFenômenos imprevistos, emergentes ou anteriomente negligenciados.\nFaz com que o processo se comporte de um modo completamente diferente do usual.\nVariação fora da faixa registrada nos dados históricos deslocando o nível de qualidade.\nPresença de significância que evidencia alguma mudança ou percepção no sistema.\nExemplos (Pane no servidor, falta de operador da maquina, quebra da maquina, lote diferente na matéria prima, falta ou oscilações na energia eletrica, controladores defeituosos)\nPode ser corrigida alterando o componente ou processo.\n\n\n\n\n\n\n\n\nNota sobre os limites de controle\n\n\n\nEm algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto Deming, Cahill, and Allan (2018).\n\n\n\n\nTipos de gráficos de controle\n\nPara que o gráfico consiga capturar e mostrar informações relevantes e precisas a respeito do processo, houve a necessidade de fazer adaptações nos gráficos de acordo com os dados disponíveis durante o processo de fabricação. A figura abaixo auxilia na escolha do gráfico mais adequados para cada tipo de situação e dados disponíveis.\n\nD3, D4 e E2 são constantes para gráfico de controle. A tabela abaixo mostra os coeficiêntes e geralmente os softwares estatísticos já possuem os valores da tabela em seus cálculos.\n\n\n\nn2345A21.881.020.730.58D43.272.572.282.11D30.000.000.000.00E22.661.771.461.29\n\n\nGráfico de controle de variável contínua\n\nÉ formado por dados quantitativos que são aqueles que se movem lentamente em uma direção tais como comprimento(12,3 cm), largura(10,2 mm), peso(12,7 kgs), tempo (2,9 horas) entre outras.\n\nO mais comum é o Xbarra-R que significa média e amplitude das amostras de cada subgrupo. Imagine 100 observações onde dividimos em 20 subgrupos com 5 medições em cada um. Em seguida fazemos a média de cada sub-grupo e plotamos a média de cada sub-grupo no gráfico. Vieira, S (1992)\n\n\nGráfico de controle de variável discreta ou gráfico de atributos\n\nÉ formado por dados qualitativos que são contáveis e se movem em saltos. Por exemplo número de defeitos, número de defeitos em um item(e.g. 12 furos no tecido, 8 riscos em uma superfície metálica), número de itens defeituosos em uma placa eletronica, proporção de defeitos em conjunto de peças entre outros.\nPara esse tipo de controle é comumente utilizado o gráfico C, U, NP, P.\nOs gráficos de controle por atributos são utilizados geralmente quando a medição da característica é inviável, antieconômica ou há conveniência em transformar uma variável em atributo; no entanto, é importante acrescentar que uma variável contínua transmite mais informação do que variáveis discreta/atributos Brassard (1991)\n\nA tabela abaixo mostra as subdivisões dos gráficos de controle\n\nTipos de gráficos de controle\n\n\n\n\n\n\nTipo de valor\nNome do gráfico\n\n\n\n\nContínuo\nGráfico \\(x\\) ou \\(I-MR\\) gráfico de valor individual\n\n\nContínuo\nGráfico \\(\\bar{x}\\) - \\(R\\) ou gráfico média e amplitude c/ subgrupo 2-10\n\n\nContínuo\nGráfico \\(\\bar{x}\\) - \\(S\\) ou gráfico média e amplitude c/ subgrupo &gt;10\n\n\nDiscreto\nGráfico \\(c\\) ou gráfico de número de defeitos\n\n\nDiscreto\nGráfico \\(u\\) ou gráfico de número de defeitos por unidade\n\n\nDiscreto\nGráfico \\(np\\) ou gráfico de número de defeitos\n\n\nDiscreto\nGráfico \\(p\\) ou gráfico de fração defeituosa\n\n\n\n\n\n\n\n\n\nAtenção\n\n\n\nA linha inferior de controle não pode ser menor que zero.",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
   },
   {
     "objectID": "grafico-de-controle.html#qual-o-objetivo",
     "href": "grafico-de-controle.html#qual-o-objetivo",
-    "title": "11  Gráfico de controle",
+    "title": "12  Gráfico de controle",
     "section": "Qual o objetivo",
     "text": "Qual o objetivo\n\nFornecer para o gestor informações sobre o comportamento do processo.\nFacilitar a realização de análises, ações ou ajustes nos casos em que os processos apresentarem comportamentos considerados fora do padrão normal aleatório.\n\n\n\n\nFigura - Gráfico de controle",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
   },
   {
     "objectID": "grafico-de-controle.html#de-onde-vem",
     "href": "grafico-de-controle.html#de-onde-vem",
-    "title": "11  Gráfico de controle",
+    "title": "12  Gráfico de controle",
     "section": "De onde vem",
     "text": "De onde vem\n\nNecessidade de monitoramento e avaliação de um processo. De acordo com Deming, Cahill, and Allan (2018), não se melhora a qualidade através da inspeção pois o defeito já vem com o produto quando ele deixa a maquina antes de inspecioná-lo. É importante avaliar o defeito no momento em que ele está acontecendo ou está prestes a acontecer, nisso o gráfico de controle pode ser uma ferramenta útil.\nNecessidade de ferramenta versátil, que possibilite visualizar e identificar vários tipos de comportamentos como pontos fora do controle, formação de tendências ou padrões repetidos.\nVerificar resultados parciais as ações em andamento e checar resultados.\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
   },
   {
     "objectID": "grafico-de-controle.html#como-fazer",
     "href": "grafico-de-controle.html#como-fazer",
-    "title": "11  Gráfico de controle",
+    "title": "12  Gráfico de controle",
     "section": "Como fazer",
     "text": "Como fazer\n\nDefinir qual tipo de dado disponível ou que pretende utilizar para avaliar o processo, se é um dado contínuo ou um dado discreto.\nCom base no tipo de dado disponível, escolher o gráfico adequado e inserir os dados.\nNo R os gráficos de controle podem ser feitos usando os pacotes qcc e ggQC\n\nGráfico XmR : Sub-grupo é 1 ou seja, valor individual.\nO gráfico XmR também conhecido como I-MR ou gráfico de controle de Shewhart, mostra a variação de processo onde cada ponto é uma obervação de dados contínuos(numéricos), diferentemente do Xbar onde cada ponto, representa uma média dos elementos do sub-grupo.\nO gráfico de controle XmR geralmente é usado para monitorar estabilidade do processo durante correções ou ajuste no processo, determinar se um processo está pronto para ser melhorado e também fornecer informações sobre os efeitos da melhoria através da visualização dos dados.\nComo exemplos práticos de uso, podemos citar o controle de temperatura de cada peça, processos biológicos, orçamentos e vendas mensais, reclamações de clientes, inventário, reações quimicas entre outros.\nAlguns exemplos abaixo serão feitos usando o R (software livre para computação científica e data science) onde será necessário carregar os pacotes tidyverse, ggQC, patchwork, ggthemes e flextable\nUma fábrica de produto quimico quer avaliar o processo de produção para garantir a qualidade do produto. O teor de pureza de 85% é uma característica de qualidade de interesse e é especificado pelo consumidor. O produto é feito em batelada em um reator(imagine uma panela de pressão com sopa, onde qualquer região que você coletar a amostra, terá a mesma característica de qualidade) e portanto, teremos uma amostra por dia com apenas um subgrupo em 24 dias trabalhados totalizando 24 amostras.\n\n\nCode\n#package\nlibrary(tidyverse)\nlibrary(ggQC)\nlibrary(patchwork)\nlibrary(flextable)\n\n\n#data\ndata_xmr &lt;- read.csv(\"https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_imr_chemical.csv\")\n\ndata_xmr %&gt;% as_flextable()\n\n\nsamplepurity_content_percentintegernumeric192.9294.9389.8495.2592.8692.2788.3890.4989.11090.7n: 24\n\n\nCode\n#XmR control chart\nplot_x &lt;- \n  data_xmr |&gt; \n  ggplot(aes(x = sample, y = purity_content_percent))+\n  geom_point()+\n  geom_line()+\n  stat_QC(method = \"XmR\",\n          auto.label = TRUE,\n          label.digits = 2)+\n    labs(title = \"Gráfico XmR/I-MR\",\n       x = \"Amostras\",\n       y = \"% de pureza\")+\n  ggthemes::theme_base()\n\nplot_mr &lt;- \n  data_xmr |&gt; \n  ggplot(aes(x = sample,\n             y = purity_content_percent))+\n  stat_QC(method = \"mR\",\n          auto.label = TRUE)+\n  labs(title = \"Gráfico MR de amplitude \",\n       x = \"Amostras\",\n       y = \"Amplitude móvel\")+\n  ggthemes::theme_base()\n\nplot_x / plot_mr\n\n\n\n\n\n\n\n\n\nGráfico XbarR: Para este gráfico o número de subgrupos vão de 2 e 10.\nNuma fábrica de auto peças, a característica de qualidade de interessse é o diametro primitivo usinado da rosca feita em uma maquina CNC (torno computadorizado). Para avaliar o processo, foram utilizadas 25 amostras com 5 medições cada(5 subgrupos) do diâmetro das peças em milímetros. Como se trata de uma variável contínua ou seja, uma medida(mm), será usado o gráfico Xbar-R conhecido como gráfico de controle por médias(Xbar) e amplitude(R ou range).\n\n\nCode\nlibrary(tidyverse)\nlibrary(ggQC)\nlibrary(patchwork)\n\ndata_xbar &lt;- read.csv(\"https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_xbar_cnc_screw.csv\")\n\ndata_xbar %&gt;% as_flextable()\n\n\nsub_groupx1x2x3x4x5integernumericnumericnumericnumericnumeric17.17.17.17.17.127.17.17.17.17.137.17.17.17.17.147.17.17.17.17.157.17.17.17.17.167.17.17.17.17.177.17.17.17.17.187.17.17.17.17.197.17.17.17.17.1107.17.17.17.17.1n: 25\n\n\nCode\n#using ggQC plot xbar\nplot_xbar &lt;- \n  data_xbar %&gt;%\n  pivot_longer(cols = - sub_group,\n               names_to = \"sample\",\n               values_to = \"value\") %&gt;% \n  ggplot(aes(x = sub_group, y= value, group = 1))+\n  stat_summary(fun = mean, geom = \"point\")+\n  stat_summary(fun = mean, geom = \"line\")+\n  stat_QC(method = \"xBar.rBar\",\n          auto.label = TRUE,\n          label.digits = 3)+\n  ggthemes::theme_base()+\n  labs(title = \"Gráfico Xbar de médias dos subgrupos\",\n       x = \"Amostras\",\n       y = \"Média\")\n\n#using ggQC plot range\nplot_range &lt;- \n  data_xbar %&gt;%\n  pivot_longer(cols = - sub_group,\n               names_to = \"sample\",\n               values_to = \"value\") %&gt;% \n  ggplot(aes(x = sub_group, y= value, group =1 ))+\n  stat_summary(fun = QCrange, geom = \"point\")+\n  stat_summary(fun = QCrange, geom = \"line\")+\n  stat_QC(method = \"rBar\",\n          auto.label = TRUE,\n          label.digits = 3)+\n  ggthemes::theme_base()+\n  labs(title = \"Gráfico de amplitude\",\n       x = \"Amostras\",\n       y = \"Amplitude média\")\n\n#using ggQC plot two charts at the same time\nplot_xbar / plot_range\n\n\n\n\n\n\n\n\n\nGráfico XbarS onde o valor do subgrupo é maior que 10\nNuma fábrica de auto peças, a característica de qualidade de interessse é o diametro primitivo usinado da rosca feita em uma maquina CNC (torno computadorizado). Para avaliar o processo, foram utilizadas 25 amostras com 5 medições cada(5 subgrupos) do diâmetro das peças em milímetros.\nComo se trata de uma variável contínua ou seja, uma medida(mm), será usado o gráfico Xbar-S conhecido como gráfico de controle por médias(Xbar) e desvio padrão (S ou standard deviation).\n\n\nCode\ndata_xbar &lt;- read.csv(\"https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_xbar_cnc_screw.csv\")\n\ndata_xbar %&gt;% as_flextable()\n\n\nsub_groupx1x2x3x4x5integernumericnumericnumericnumericnumeric17.17.17.17.17.127.17.17.17.17.137.17.17.17.17.147.17.17.17.17.157.17.17.17.17.167.17.17.17.17.177.17.17.17.17.187.17.17.17.17.197.17.17.17.17.1107.17.17.17.17.1n: 25\n\n\nCode\n#using ggQC plot xbar\nplot_sbar &lt;- \n  data_xbar %&gt;%\n  pivot_longer(cols = - sub_group,\n               names_to = \"sample\",\n               values_to = \"value\") %&gt;% \n  ggplot(aes(x = sub_group, y= value))+\n  stat_summary(fun = mean, geom = \"point\")+\n  stat_summary(fun = mean, geom = \"line\")+\n  stat_QC(method = \"xBar.sBar\",\n          auto.label = TRUE,\n          label.digits = 3)+\n  ggthemes::theme_base()+\n  labs(title = \"Gráfico Xbar de médias dos subgrupos\",\n       x = \"Amostras\",\n       y = \"Média\")\n\n#using ggQC plot range\nplot_sd &lt;- \n  data_xbar %&gt;%\n  pivot_longer(cols = - sub_group,\n               names_to = \"sample\",\n               values_to = \"value\") %&gt;% \n  ggplot(aes(x = sub_group, y= value, group =1 ))+\n  stat_summary(fun = sd , geom = \"point\")+\n  stat_summary(fun = sd, geom = \"line\")+\n  stat_QC(method = \"sBar\",\n          auto.label = TRUE,\n          label.digits = 3)+\n  ggthemes::theme_base()+\n  labs(title = \"Gráfico desvio padrão da média\",\n       x = \"Amostras\",\n       y = \"Amplitude média\")\n\n#using ggQC plot two charts at the same time\nplot_sbar / plot_sd\n\n\n\n\n\n\n\n\n\nGráfico \\(c\\) ou gráfico de número de defeitos\nEm uma fábrica de circuito impresso, o engenheiro deseja avaliar a estabilidade do processo com o objetivo de melhorar a qualidade do produto. Para isso, foram registrados o número de defeitos observados em 26 amostras sucessivas com 100 placas de circuito impresso em cada amostra. Como o número de defeitos é uma variável discreta(se move em saltos), o engenheiro optou por usar o gráfico de controle tipo c.\n\n\nCode\ndata_c &lt;- read.csv(\"https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_c_pcb.csv\")\n\ndata_c %&gt;% as_flextable()\n\n\nsub_groupsub_group_sizenumber_of_defective_unitsintegerintegerinteger110021210024310016410012510015610057100288100209100311010025n: 26\n\n\nCode\n#plot c chart\ndata_c %&gt;% \n  ggplot(aes(x = sub_group, \n             y = number_of_defective_units))+\n  geom_point()+\n  geom_line()+\n  stat_QC(method = \"c\",\n          auto.label = TRUE,\n          label.digits = 2)+\n  ggthemes::theme_base()+\n  labs(title = \"Gráfico C: Número de defeitos\",\n       x = \"Amostras\",\n       y = \"Número de defeitos\")\n\n\n\n\n\n\n\n\n\nGráfico \\(u\\) ou gráfico de número de defeitos por unidade\nCom objetivo de melhorar a excelencia operacional, um fabricante de computadores optou por usar um gráfico de controle para não conformidades por unidade em uma linha de montagem final para monitorar e avaliar o processo de produção. Uma amostra foi coletada em cada um dos 20 dias úteis de produção coletando-se 5 unidades por amostra.\n\n\nCode\ndata_u &lt;- read.csv(\"https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_u_computer.csv\")\n\ndata_u %&gt;% as_flextable()\n\n\nsample_idsample_sizenumber_of_nonconformitiesintegerintegerinteger151025123584514551065167511857951010515n: 20\n\n\nCode\ndata_u %&gt;% \n  ggplot(aes(x = sample_id , \n             y = number_of_nonconformities ,\n             n = sample_size))+\n  geom_point()+\n  geom_line()+\n  stat_QC(method = \"c\",\n          auto.label = TRUE,\n          label.digits = 3)+\n  ggthemes::theme_base()+\n  labs(title = \"Gráfico U: Número de defeitos por unidade\",\n       x = \"Amostras\",\n       y = \"# defeiros \\n por unidade\")\n\n\n\n\n\n\n\n\n\nGráfico \\(np\\) ou gráfico de número de defeitos\nUma fábrica de sapatos quer avaliar a estabilidade do processo e melhorar a qualidade do produto. Durante 25 dias úteis de produção foi coletado uma amostra por dia com 200 pares de sapato cada amostra e registrado o número de unidades com defeitos. nessas amostras. Como o tipo de dado é uma variável binomial (tem defeito ou não tem defeito) optou-se por utilizar o gráfico np para avaliar o processo.\n\n\nCode\n# np\ndata_np &lt;- read.csv(\"https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_np_shoes_mfg.csv\")\n\ndata_np %&gt;% as_flextable()\n\n\nsub_groupsub_group_sizenumber_of_defective_unitsintegerintegerinteger12001322008320010420015520012620097200682004920071020011n: 25\n\n\nCode\ndata_np %&gt;% \n  ggplot(aes(x =sub_group, \n             y = number_of_defective_units))+\n  geom_point()+\n  geom_line()+\n  stat_QC(method = \"np\",\n          n = 200,    #lembrar de alterar \n          auto.label = TRUE,\n          label.digits = 3)+\n  labs(title = \"Gráfico NP: Número de itens defeituosos\",\n       subtitle = \"n = 200\",\n       x = \"Amostras\",\n       y = \"Itens defeituosos\")+\n  ggthemes::theme_base()\n\n\n\n\n\n\n\n\n\nGráfico \\(p\\) ou gráfico de fração defeituosa\nUma fábrica de baterias resolve avaliar a estabilidade de um processo usando gráficos de controle. Devido a características técnicas do processo o tamanho do subgrupo é variável partindo de 80 até 120 unidades por amotra sendo o número de defeitos por unidade o que deseja-se avaliar. Como o tipo de dado é uma variável discreta, optou-se por usar o gráfico p analisando os dados de 25 dias úteis de trabalho na fábrica.\n\n\nCode\np_chart &lt;- read.csv(\"https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_p_batteries.csv\")\n\np_chart %&gt;% as_flextable()\n\n\nsub_groupsub_group_sizenumber_of_defective_unitsintegerintegerinteger11001228083806410095110106110127100118100169901010906n: 25\n\n\nCode\np_chart %&gt;% \n  mutate(prop_defeitos = number_of_defective_units/sub_group_size) %&gt;% \n  ggplot(aes(x = sub_group,\n             y = prop_defeitos,\n             n = sub_group_size))+\n  geom_point()+\n  geom_line()+\n  stat_QC(method = \"p\",\n          auto.label = TRUE,\n          label.digits = 3)+\n  scale_y_continuous(labels = scales::label_percent())+\n  ggthemes::theme_base()+\n  labs(title = \"Gráfico P: Proporção de itens com defeitos\",\n       x = \"Amostras\",\n       y = \"Proporção de itens \\n c/ defeito\")",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
   },
   {
     "objectID": "grafico-de-controle.html#pra-onde-vai",
     "href": "grafico-de-controle.html#pra-onde-vai",
-    "title": "11  Gráfico de controle",
+    "title": "12  Gráfico de controle",
     "section": "Pra onde vai",
     "text": "Pra onde vai\n\nApós o monitoramento e avaliação das ações, a próxima etapa é a padronização para que o procedimento possa ser replicado para os demais processos semelhantes.",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
   },
   {
     "objectID": "grafico-de-controle.html#qual-o-resultado",
     "href": "grafico-de-controle.html#qual-o-resultado",
-    "title": "11  Gráfico de controle",
+    "title": "12  Gráfico de controle",
     "section": "Qual o resultado",
     "text": "Qual o resultado\n\nMelhoria na avaliação das ações que estão sendo executadas através da identificação de comportamento do processo.\nMelhoria do equilibrio no ambiente e do trabalho da equipe pois permite tomar ações preventivas e preditivas minimizando as pressões e stress durante a solução de um problema.\nMelhoria da qualidade e sustentabilidade nas relações no longo prazo. Por exemplo um produto uniforme terá menos defeitos, com menos defeitos durará mais, durando mais o consumidor fica satisfeito, o consumidor ficando satisfeito ele recomenda o produto e novos consumidores comparão o produto.",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
   },
   {
     "objectID": "grafico-de-controle.html#referências",
     "href": "grafico-de-controle.html#referências",
-    "title": "11  Gráfico de controle",
+    "title": "12  Gráfico de controle",
     "section": "Referências",
     "text": "Referências\n\n\n\n\nBrassard, Michael. 1991. Qualidade. Ferramentas Para Uma Melhoria Contínua. 1ª edição. QualityMark.\n\n\nDeming, W. Edwards, Kevin Edwards Cahill, and Kelly L. Allan. 2018. Out of the Crisis, Reissue. Reissue ed. edição. Cambridge, Massachsetts: MIT Press.\n\n\nVieira, S, Wada,R. 1992. As 7 Ferramentas Estatísticas para o Controle da Qualidade - Sonia Vieira / Ronaldo Wada. Vol. vol1. Qa&t.",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Gráfico de controle</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Gráfico de controle</span>"
     ]
   },
   {
@@ -1117,6 +1117,86 @@
     "text": "Referências\n\n\n\n\nBonvillian, William B., and Sanjay E. Sarma. 2021. Workforce Education: A New Roadmap. The MIT Press.\n\n\nMurre, Jaap M. J., and Joeri Dros. 2015. “Replication and Analysis of Ebbinghaus’ Forgetting Curve.” PLOS ONE 10 (7): 1–23. https://doi.org/10.1371/journal.pone.0120644.\n\n\nQuinn, Clark N. 2011. Designing mLearning: Tapping into the Mobile Revolution for Organizational Performance. Independently published.",
     "crumbs": [
       "Preface"
+    ]
+  },
+  {
+    "objectID": "histograma.html",
+    "href": "histograma.html",
+    "title": "11  Histograma",
+    "section": "",
+    "text": "O que é\nExemplo: Se você mede a altura de 100 pessoas, o histograma pode mostrar quantas pessoas têm entre 1.60 e 1.75, entre 1.75 a 1.85, e assim por diante.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#o-que-é",
+    "href": "histograma.html#o-que-é",
+    "title": "11  Histograma",
+    "section": "",
+    "text": "É uma ferramenta visual que permite explorar a ideia da distribuição e a organização dos dados.\nÉ um gráfico de barras que mostra quantas vezes(frequência) os dados caem dentro de certos intervalos também chamados de classes.\ndiferente de um gráfico de barras comum, ele não representa categorias distintas, mas faixas contínuas de valores.\n\n\n\nCaracterístias técnicas\n\n\n\nFigura - Histogramas\n\n\n\n\nInformações apresentadas no gráfico\n\n\nTipos de gráficos de controle\n\n\n\nTipos de Histogramas",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#qual-o-objetivo",
+    "href": "histograma.html#qual-o-objetivo",
+    "title": "11  Histograma",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nVisualizar a distribuição dos dados Ele revela se os dados são simétricos(formato de sino), assimétricos(como uma cauda longa para um lado), concentrados, dispersos, . A forma, da pistas sobre a natureza dos dados e os processos que os geraram.\nIdentificar padrões multimodal(com várias picos), caudas, lacunas ou outliers(valores muito distantes do corpo principal da distribuição)\nComparar distribuições de diferentes conjuntos de dados (e.g. podemos comparar a distribuição de notas de alunos em duas turmas diferentes para avaliar se o desempenho relativo das turmas)\nApoior decisões guiando a escolha de modelos estatísticos mais adequados para cada tipo de dados em áreas como estatística, ciência de dados, economia, psicologia, medicina, engenharia ou outra área que lide com dados quantitativos.\nTraduzir o caos em ordem transformando uma lista aparentemente aleatória de números em uma imagem compreensível.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#de-onde-vem",
+    "href": "histograma.html#de-onde-vem",
+    "title": "11  Histograma",
+    "section": "De onde vem",
+    "text": "De onde vem",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#como-fazer",
+    "href": "histograma.html#como-fazer",
+    "title": "11  Histograma",
+    "section": "Como fazer",
+    "text": "Como fazer",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#pra-onde-vai",
+    "href": "histograma.html#pra-onde-vai",
+    "title": "11  Histograma",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#qual-o-resultado",
+    "href": "histograma.html#qual-o-resultado",
+    "title": "11  Histograma",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#referências",
+    "href": "histograma.html#referências",
+    "title": "11  Histograma",
+    "section": "Referências",
+    "text": "Referências",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
     ]
   }
 ]
