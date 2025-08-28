@@ -55,7 +55,7 @@ ames |>
     y = "Preço do imóvel")
 ```
 
-Neste exemplo temos um gráfico que nos mostra um gap entre os períodos de 1990 até 1992.
+Neste exemplo temos um gráfico de disperção(scatter-plot), que nos mostra no eixo y a idade das 215 vítmas do médico familiar e criminoso inglês Harold Shipman. Note um gap entre os períodos de 1990 até 1992, com redução significativa das vítimas em sua maioria do sexo feminino. Nesse período, ele executava suas funções de forma intercalada com outros médicos da equipe o que tornava suas práticas suspeitas. Em seguida, ele proseguiu em sua atividade sozinho, e o número de vítimas acelerou até sua prisão. Os detalhes podem ser vistos em @spiegelhalter2022.
 
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -73,7 +73,7 @@ data_crime |>
                 color = "gender2",
                 margin.plot = "histogram",
                 margin.ggtheme = theme_void(),
-                palette = "uchicago",
+                palette =  c("#1abc9c","#DE3163"),
                 xlab = "Ano",
                 ylab = "Idade das vítimas")
 ```
@@ -83,9 +83,6 @@ data_crime |>
 -   No ciclo PDCA o gráfico de dispersão é utilizado principalmente na investigação das características específicas com visão ampla e sobre diversos pontos de vista. Após esta estapa, a próxima é descobrir as causas fundamentais.
 
 -   Para decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores. No exemplo apresentado em @spiegelhalter2022, o gráfico de dispersão possibilidade visualizar um gap no número de crimes com determinadas características justamente no período em que o criminoso estava fora de ação.
-
-
-
 
 ## Qual o resultado {.unnumbered}
 
