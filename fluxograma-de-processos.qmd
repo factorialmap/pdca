@@ -6,12 +6,21 @@ Representação gráfica de uma ideia ou processo usando textos, ilustrações, 
 
 Não há uma data precisa do início do uso dessa ideia, mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.
 
+O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão @anjos2018
+
 ![Figura 2 - Papiro de Ani: A pesagem do coração](images/papiro_ani.jpg)
 
-O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão @anjos2018
+**Exemplo de fluxograma de processos usando o padrão de notação BMPN**
+
+Para modelar processos de negócios de forma visual é utilizado uma linguagem padronizada conhecida também como notação BMPN(Business Process Model and Notation). A ideia é ter uma linguagem comum permitindo que profissionais de diferentes áreas como IT, gestão e operações compreendam e colaborem com a melhoria dos processos. Ela é usada para mapear processos atuais chamados `as-is`, mapear processo futuros chamados `to-be`, identificar gargalos e oportunidades de automação ou melhorias, ao mesmo tempo facilitar a comunicação entre as áreas técnicas e de negócios.
 
 ![Exemplo de fluxo de processos](images/fluxograma_process_cetil.jpg)
 
+::: {.callout-tip collapse="true"}
+## Clique para expandir para ver as principais notações BPMN
+
+![Exemplos de notações BPMN](images/bpmn_notation.png)
+:::
 
 ## Qual o objetivo {.unnumbered}
 
@@ -25,11 +34,9 @@ O uso de descrições detalhadas das etapas em um processo nos permite compreend
 
 ![Figura 3 - fluxograma de processo industrial de metais](images/figura_processo.png)
 
+**Exemplo de fluxo utilizado em comunicação e valuation.**
 
-Exemplo de fluxo utilizado em comunicação e valuation.
-
-
-![Fluxo de processo - Excallibur Mfg - Greer SC](images/process_excallibur.jpg)
+![Fluxo de processo - Excallibur Mfg - Greer SC](images/process_excallibur.png)
 
 ## De onde vem {.unnumbered}
 
@@ -39,7 +46,7 @@ Exemplo de fluxo utilizado em comunicação e valuation.
 
 ## Como fazer {.unnumbered}
 
-Existem várias formas de criar um fluxograma de processos sendo o lápis e o papel um dos mais eficiêntes por outro lado no R também é possível criar vários modelos de fluxogramas os quais citarei alguns usando o pacote `DiagrammeR` onde:
+Existem várias formas de criar um fluxograma de processos sendo o lápis e o papel um deles. Por outro lado, no R também é possível criar vários modelos de fluxogramas os quais citarei alguns usando o pacote `DiagrammeR` onde:
 
 -   **mermaid** é a função que chamará a biblioteca em javascript que fará o diagrama
 -   **graph LR** é a orientação do digrama que pode ser TD=top down, LR = left to right etc.
@@ -47,46 +54,101 @@ Existem várias formas de criar um fluxograma de processos sendo o lápis e o pa
 -   **\>\], \[\], (), (())** é o formato do nó
 -   **--\>** é a direção do conector
 
-```{r}
+**Exemplo do modelo Flowcharts - Corretora de ações na bolsa de valores**
 
-library(DiagrammeR)
+```{mermaid}
 
-mermaid("
 graph LR
-A>Mat. prima]-->B[Produção]
-B-->C[Estoque PA]
-C-->D[Demanda]
-E>Mão obra]-->B
-F>Máquina]-->B
-", height='100%', width='100%')
+    subgraph Cliente
+        A[Vendido no limite]
+    end
 
-mermaid ("
-graph LR
+    subgraph Corretora
+        B{Tem saldo?}
+        C[Manter posição]
+        D[Novo pregão]
+    end
 
-subgraph Cliente
-A[Vendido no limite]
-end
+    subgraph Compliance
+        E[Encerra posição]
+    end
 
-subgraph Corretora
-A-->B{Tem saldo?}
-B-->|Sim|C[Manter posição]
-C--> D[Novo pregão]
-D--> B
-end
+    A --> B
 
-subgraph Compliance
-B -->|Não| F[Encerra posição]
-end
+    B -- Sim --> C
+    C --> D
+    D --> B
 
-", height='100%', width='100%')
+    B -- Não --> E
+```
 
-mermaid("
-graph LR
-    A[Estoque MP] -->|materia prima| B(Produção)
-    B --> C{Sob pedido?}
-    C -->|Sim| D[Venda]
-    C -->|Não| E[Estoque Prod. Acabado]
-", height='100%', width='100%')
+**Exemplo do modelo MindMap - Componentes de princípios Lean**
+
+```{mermaid}
+mindmap
+    root((Lean Principles))
+        Waste
+            Overproduction
+            Waiting
+            Conveyance
+            Processing
+            Inventory
+            Motion
+            Correction
+        Just-in-time
+            Takt time
+            Continuous flow
+            Pull System
+        Jidoka
+            Stop and notify for abnormalities
+            Separete human and machine work
+        Kaizen
+            Value-stream mapping
+            Continuous improving
+        Five S
+            Sourt Out
+            Set in Order
+            Shine
+            Spic-and-span
+            Sustain
+
+```
+
+**Exemplo do modelo Diagrama de Sequência - Fábrica de peças**
+
+```{mermaid}
+sequenceDiagram
+    actor Pacemaker
+    participant Corte
+    participant Pintura
+    participant Montagem
+    participant Expedicao
+
+    Note over Pacemaker,Expedicao: Sistema Puxado com Lean Principles
+
+    Pacemaker->>+Montagem: Sinal de Puxada (Peça B)
+    Note right of Montagem: Gatilho para iniciar trabalho
+    Montagem->>Pintura: Sinal de Puxada (Peça B)
+    Pintura->>Corte: Sinal de Puxada (Peça B)
+
+    Corte->>Pintura: Peça B concluída
+    Note left of Corte: Trabalho realizado sob demanda
+    Pintura->>Montagem: Peça B pintada
+    Montagem->>Pacemaker: Peça B montada
+
+    Pacemaker->>Expedicao: Peça B pronta para envio
+    Note over Pacemaker: Garante fluxo contínuo e sincronizado
+
+    Pacemaker->>+Montagem: Sinal de Puxada (Peça A)
+    Montagem->>Pintura: Sinal de Puxada (Peça A)
+    Pintura->>Corte: Sinal de Puxada (Peça A)
+
+    Corte->>Pintura: Peça A concluída
+    Pintura->>Montagem: Peça A pintada
+    Montagem->>Pacemaker: Peça A montada
+
+    Pacemaker->>Expedicao: Peça A pronta para envio
+    Note over Expedicao: Entrega Just-in-Time ao cliente
 ```
 
 ## Pra onde vai {.unnumbered}

@@ -123,22 +123,9 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-
-<script src="site_libs/d3-3.3.8/d3.min.js"></script>
-
-<script src="site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
-
-<link href="site_libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet">
-
-<script src="site_libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
-
-<link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
-
-<script src="site_libs/chromatography-0.1/chromatography.js"></script>
-
-<script src="site_libs/DiagrammeR-binding-1.0.11/DiagrammeR.js"></script>
-
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -362,18 +349,41 @@ div.csl-indent {
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
 <p>Representação gráfica de uma ideia ou processo usando textos, ilustrações, ideogramas ou figuras geométricas. A ideia central é fornecer uma visão clara do todo, o fluxo dos elementos no desenho e a direção que eles percorrem. Isso permite a formulação de hipóteses, discussões, geração de ideias, previsões acerca de movimentos futuros e possíveis melhorias no caminho.</p>
 <p>Não há uma data precisa do início do uso dessa ideia, mas a evidência mais antiga até então foi observada no Egito antigo e o exemplo abaixo se refere ao papiro de Ani encontrado em Luxor em 1888 e datado de 1250 AC. O mesmo encontra-se hoje no museu Britânico.</p>
+<p>O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão <span class="citation" data-cites="anjos2018">Anjos (<a href="#ref-anjos2018" role="doc-biblioref">2018</a>)</span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/papiro_ani.jpg" class="img-fluid figure-img"></p>
 <figcaption>Figura 2 - Papiro de Ani: A pesagem do coração</figcaption>
 </figure>
 </div>
-<p>O uso de descrições detalhadas das etapas em um processo nos permite compreende-lo melhor, reproduzi-lo e melhora-lo. Por outro lado, a ilustração dessas atividades, cria um efeito didático importante da etapa de compreensão <span class="citation" data-cites="anjos2018">Anjos (<a href="#ref-anjos2018" role="doc-biblioref">2018</a>)</span></p>
+<p><strong>Exemplo de fluxograma de processos usando o padrão de notação BMPN</strong></p>
+<p>Para modelar processos de negócios de forma visual é utilizado uma linguagem padronizada conhecida também como notação BMPN(Business Process Model and Notation). A ideia é ter uma linguagem comum permitindo que profissionais de diferentes áreas como IT, gestão e operações compreendam e colaborem com a melhoria dos processos. Ela é usada para mapear processos atuais chamados <code>as-is</code>, mapear processo futuros chamados <code>to-be</code>, identificar gargalos e oportunidades de automação ou melhorias, ao mesmo tempo facilitar a comunicação entre as áreas técnicas e de negócios.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/fluxograma_process_cetil.jpg" class="img-fluid figure-img"></p>
 <figcaption>Exemplo de fluxo de processos</figcaption>
 </figure>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Clique para expandir para ver as principais notações BPMN
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/bpmn_notation.png" class="img-fluid figure-img"></p>
+<figcaption>Exemplos de notações BPMN</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="qual-o-objetivo" class="level2 unnumbered">
@@ -390,10 +400,10 @@ div.csl-indent {
 <figcaption>Figura 3 - fluxograma de processo industrial de metais</figcaption>
 </figure>
 </div>
-<p>Exemplo de fluxo utilizado em comunicação e valuation.</p>
+<p><strong>Exemplo de fluxo utilizado em comunicação e valuation.</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/process_excallibur.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/process_excallibur.png" class="img-fluid figure-img"></p>
 <figcaption>Fluxo de processo - Excallibur Mfg - Greer SC</figcaption>
 </figure>
 </div>
@@ -412,7 +422,7 @@ div.csl-indent {
 </section>
 <section id="como-fazer" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
-<p>Existem várias formas de criar um fluxograma de processos sendo o lápis e o papel um dos mais eficiêntes por outro lado no R também é possível criar vários modelos de fluxogramas os quais citarei alguns usando o pacote <code>DiagrammeR</code> onde:</p>
+<p>Existem várias formas de criar um fluxograma de processos sendo o lápis e o papel um deles. Por outro lado, no R também é possível criar vários modelos de fluxogramas os quais citarei alguns usando o pacote <code>DiagrammeR</code> onde:</p>
 <ul>
 <li><strong>mermaid</strong> é a função que chamará a biblioteca em javascript que fará o diagrama</li>
 <li><strong>graph LR</strong> é a orientação do digrama que pode ser TD=top down, LR = left to right etc.</li>
@@ -420,63 +430,210 @@ div.csl-indent {
 <li><strong>&gt;], [], (), (())</strong> é o formato do nó</li>
 <li><strong>–&gt;</strong> é a direção do conector</li>
 </ul>
-<div class="cell">
+<p><strong>Exemplo do modelo Flowcharts - Corretora de ações na bolsa de valores</strong></p>
+<div class="cell" data-layout-align="default">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DiagrammeR)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mermaid</span>(<span class="st">"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">graph LR</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="st">A&gt;Mat. prima]--&gt;B[Produção]</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">B--&gt;C[Estoque PA]</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">C--&gt;D[Demanda]</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">E&gt;Mão obra]--&gt;B</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">F&gt;Máquina]--&gt;B</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>graph LR</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    subgraph Cliente</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        A[Vendido no limite]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    end</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    subgraph Corretora</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        B{Tem saldo?}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        C[Manter posição]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        D[Novo pregão]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    end</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    subgraph Compliance</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        E[Encerra posição]</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    end</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    A --&gt; B</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    B -- Sim --&gt; C</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    C --&gt; D</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    D --&gt; B</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    B -- Não --&gt; E</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-53e131baaff9b4196822" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-53e131baaff9b4196822">{"x":{"diagram":"\ngraph LR\nA>Mat. prima]-->B[Produção]\nB-->C[Estoque PA]\nC-->D[Demanda]\nE>Mão obra]-->B\nF>Máquina]-->B\n"},"evals":[],"jsHooks":[]}</script>
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    subgraph Cliente
+        A[Vendido no limite]
+    end
+
+    subgraph Corretora
+        B{Tem saldo?}
+        C[Manter posição]
+        D[Novo pregão]
+    end
+
+    subgraph Compliance
+        E[Encerra posição]
+    end
+
+    A --&gt; B
+
+    B -- Sim --&gt; C
+    C --&gt; D
+    D --&gt; B
+
+    B -- Não --&gt; E
+</pre>
 </div>
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mermaid</span> (<span class="st">"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="st">graph LR</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="st">subgraph Cliente</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="st">A[Vendido no limite]</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="st">end</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="st">subgraph Corretora</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="st">A--&gt;B{Tem saldo?}</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="st">B--&gt;|Sim|C[Manter posição]</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="st">C--&gt; D[Novo pregão]</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="st">D--&gt; B</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="st">end</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="st">subgraph Compliance</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="st">B --&gt;|Não| F[Encerra posição]</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="st">end</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output-display">
-<div id="htmlwidget-76306520fc0e9b4c7aa4" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-76306520fc0e9b4c7aa4">{"x":{"diagram":"\ngraph LR\n\nsubgraph Cliente\nA[Vendido no limite]\nend\n\nsubgraph Corretora\nA-->B{Tem saldo?}\nB-->|Sim|C[Manter posição]\nC--> D[Novo pregão]\nD--> B\nend\n\nsubgraph Compliance\nB -->|Não| F[Encerra posição]\nend\n\n"},"evals":[],"jsHooks":[]}</script>
+<p></p></figure><p></p>
 </div>
+</div>
+</div>
+<p><strong>Exemplo do modelo MindMap - Componentes de princípios Lean</strong></p>
+<div class="cell" data-layout-align="default">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mermaid</span>(<span class="st">"</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="st">graph LR</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="st">    A[Estoque MP] --&gt;|materia prima| B(Produção)</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="st">    B --&gt; C{Sob pedido?}</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="st">    C --&gt;|Sim| D[Venda]</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="st">    C --&gt;|Não| E[Estoque Prod. Acabado]</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="st">"</span>, <span class="at">height=</span><span class="st">'100%'</span>, <span class="at">width=</span><span class="st">'100%'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>mindmap</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    root((Lean Principles))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        Waste</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>            Overproduction</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>            Waiting</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>            Conveyance</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            Processing</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            Inventory</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>            Motion</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>            Correction</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        Just-in-time</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>            Takt time</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>            Continuous flow</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>            Pull System</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        Jidoka</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>            Stop and notify for abnormalities</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>            Separete human and machine work</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        Kaizen</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>            Value-stream mapping</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>            Continuous improving</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        Five S</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>            Sourt Out</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>            Set in Order</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>            Shine</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>            Spic-and-span</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>            Sustain</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="htmlwidget-daffd516a03adfa9fe16" style="width:100%;height:100%;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-daffd516a03adfa9fe16">{"x":{"diagram":"\ngraph LR\n    A[Estoque MP] -->|materia prima| B(Produção)\n    B --> C{Sob pedido?}\n    C -->|Sim| D[Venda]\n    C -->|Não| E[Estoque Prod. Acabado]\n"},"evals":[],"jsHooks":[]}</script>
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">mindmap
+    root((Lean Principles))
+        Waste
+            Overproduction
+            Waiting
+            Conveyance
+            Processing
+            Inventory
+            Motion
+            Correction
+        Just-in-time
+            Takt time
+            Continuous flow
+            Pull System
+        Jidoka
+            Stop and notify for abnormalities
+            Separete human and machine work
+        Kaizen
+            Value-stream mapping
+            Continuous improving
+        Five S
+            Sourt Out
+            Set in Order
+            Shine
+            Spic-and-span
+            Sustain
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>Exemplo do modelo Diagrama de Sequência - Fábrica de peças</strong></p>
+<div class="cell" data-layout-align="default">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>sequenceDiagram</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    actor Pacemaker</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    participant Corte</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    participant Pintura</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    participant Montagem</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    participant Expedicao</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    Note over Pacemaker,Expedicao: Sistema Puxado com Lean Principles</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    Pacemaker-&gt;&gt;+Montagem: Sinal de Puxada (Peça B)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    Note right of Montagem: Gatilho para iniciar trabalho</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    Montagem-&gt;&gt;Pintura: Sinal de Puxada (Peça B)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    Pintura-&gt;&gt;Corte: Sinal de Puxada (Peça B)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    Corte-&gt;&gt;Pintura: Peça B concluída</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    Note left of Corte: Trabalho realizado sob demanda</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    Pintura-&gt;&gt;Montagem: Peça B pintada</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    Montagem-&gt;&gt;Pacemaker: Peça B montada</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    Pacemaker-&gt;&gt;Expedicao: Peça B pronta para envio</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    Note over Pacemaker: Garante fluxo contínuo e sincronizado</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    Pacemaker-&gt;&gt;+Montagem: Sinal de Puxada (Peça A)</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    Montagem-&gt;&gt;Pintura: Sinal de Puxada (Peça A)</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    Pintura-&gt;&gt;Corte: Sinal de Puxada (Peça A)</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    Corte-&gt;&gt;Pintura: Peça A concluída</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>    Pintura-&gt;&gt;Montagem: Peça A pintada</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    Montagem-&gt;&gt;Pacemaker: Peça A montada</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    Pacemaker-&gt;&gt;Expedicao: Peça A pronta para envio</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>    Note over Expedicao: Entrega Just-in-Time ao cliente</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">sequenceDiagram
+    actor Pacemaker
+    participant Corte
+    participant Pintura
+    participant Montagem
+    participant Expedicao
+
+    Note over Pacemaker,Expedicao: Sistema Puxado com Lean Principles
+
+    Pacemaker-&gt;&gt;+Montagem: Sinal de Puxada (Peça B)
+    Note right of Montagem: Gatilho para iniciar trabalho
+    Montagem-&gt;&gt;Pintura: Sinal de Puxada (Peça B)
+    Pintura-&gt;&gt;Corte: Sinal de Puxada (Peça B)
+
+    Corte-&gt;&gt;Pintura: Peça B concluída
+    Note left of Corte: Trabalho realizado sob demanda
+    Pintura-&gt;&gt;Montagem: Peça B pintada
+    Montagem-&gt;&gt;Pacemaker: Peça B montada
+
+    Pacemaker-&gt;&gt;Expedicao: Peça B pronta para envio
+    Note over Pacemaker: Garante fluxo contínuo e sincronizado
+
+    Pacemaker-&gt;&gt;+Montagem: Sinal de Puxada (Peça A)
+    Montagem-&gt;&gt;Pintura: Sinal de Puxada (Peça A)
+    Pintura-&gt;&gt;Corte: Sinal de Puxada (Peça A)
+
+    Corte-&gt;&gt;Pintura: Peça A concluída
+    Pintura-&gt;&gt;Montagem: Peça A pintada
+    Montagem-&gt;&gt;Pacemaker: Peça A montada
+
+    Pacemaker-&gt;&gt;Expedicao: Peça A pronta para envio
+    Note over Expedicao: Entrega Just-in-Time ao cliente
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
 </div>
 </div>
 </section>
