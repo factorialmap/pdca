@@ -8,9 +8,9 @@ Os cinco porquês é uma técnica criada por Sakichi Toyoda no Japão e é utili
 
 ## Qual o objetivo {.unnumbered}
 
--   Buscar maior aproximação possível da causa raiz de um problema.
+-   Buscar maior aproximação possível da causa raiz de um problema, ao mesmo tempo treinar o pensamento crítico.
 -   Estimular a transição do pensamento heuristico para o pensamento racional durante o proceso de busca por relação causal de um problema.
--   Treinar a mente para que esta atitude se transforme em habito evitando que decisões rápidas e com fundamentos limitados ou carregados de viéses cognitivos sejam tomadas. eliminando custos.
+-   Treinar a mente para que esta atitude se transforme em habito evitando que decisões rápidas e com fundamentos limitados ou carregados de viéses cognitivos sejam tomadas, eliminando custos.
 
 ## De onde vem {.unnumbered}
 
@@ -24,6 +24,11 @@ Os cinco porquês é uma técnica criada por Sakichi Toyoda no Japão e é utili
 
 -   Como a técnica é muito simples, a parte mais dificil é lembrar dela no momento exato em que ela se faz necessária. Por exemplo em situações onde o tempo e informaçõse são escassas. É justamente nessas situações que tendemos a tomar decisõs paliativas.
 -   Um bom treinamento do método pode ser percebido pelos filhos em casa os quais nos perguntam os `por ques` várias vezes. Neste momento se percebermos bem, a mente deles se abrem para as respsotas e que quanto mais fundamentada, mais benefícios de longo prazo podem oferecer.
+
+
+![Exemplo do uso do 5 porques](images/five_whys_response.png)
+
+
 
 ## Pra onde vai {.unnumbered}
 
