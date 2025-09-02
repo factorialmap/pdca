@@ -2,15 +2,15 @@
 
 ## O que é {.unnumbered}
 
--   O gráfico de disperção é uma ferramenta estatística que organiza os dados e permite visualizar a relação entre duas variáveis quantitativas(numéricas).
+-   O gráfico de disperção é uma ferramenta estatística que organiza os dados visualmente permitindo compreender a relação entre duas variáveis quantitativas(numéricas). Quando obsevamos que ao aumentar o valor do eixo `x` aumentar também o valor do eixo `y` dizemos que ele possui uma correlação positiva, como poderemos observar mais abaixo.
 
--   A dispersão nos mostra quantos os dados estão espalhados em relação uma média por exemplo tendo como a variância e desvio padrão as medidas de dispersão mais comuns.
+-   A dispersão(distância de cada ponto da reta), nos mostra quantos os dados estão espalhados em relação uma média(reta no gráfico). As medidas de dispersão mais comuns utilizadas são a `variância` e `desvio padrão`. Quando os pontos estão muito espalhados em relação a reta, eles possuem desvio padrão e variância alta.
 
 ![Figura - Grafico de disperção](images/scatter_plot.png)
 
 ## Qual o objetivo {.unnumbered}
 
--   Auxiliar na demonstração e identificação de padrões como por exemplo correlação, clusters, outliers, relações lineares e não lineares, disperção da média entre outros.
+-   Auxiliar na demonstração e identificação de padrões como por exemplo `correlação`, `clusters`, `outliers`, `relações lineares` e `não lineares`, `disperção da média` entre outros.
 
 -   Auxliar na análise do fenômeno durante a melhoria de processos.
 
@@ -28,36 +28,59 @@
 
 Neste exemplo temos um gráfico de correlação negativa ou seja, no eixo `X` tenos a variável HP e quanto mais HP menor será a milhagem por galão de combustível representada no eixo `Y`.
 
-```{r message=FALSE, warning=FALSE}
+
+**Será que quanto mais HP tiver o veículo menor será as milhas por galão que ele faz?**
+
+```{r}
+#| label: plot_dispersao_mtcars
+#| warning: false
+#| message: false
+#| fig-align: center
+
 library(tidyverse)
 library(modeldata)
 library(scales)
 library(ggpubr)
 
-
 mtcars |> 
   ggplot(aes(x = hp, y = mpg))+
   geom_point()+
-  geom_smooth(method = "lm")+
+  geom_smooth(method = "lm", se = FALSE)+
   labs(title = "Correlação negativa quanto mais HP menor as milhas por galão",
-    y = "Milhas por galão")
+    y = "Milhas por galão")+
+  theme_light()
 ```
+
+**Será que a longitude tem correlação positiva com o preço dos imóveis?**
 
 Neste exemplo temos um gráfico que mostra uma relação não linear entre a localização e o preço, onde a variável longitude que é uma das medidas de posicionamento ou localização do imóvel está representado no eixo `X` enquanto a variável preço, está representada no eixo `Y`.
 
-```{r message=FALSE, warning=FALSE}
+```{r}
+#| label: plot_dispersao_house_price
+#| warning: false
+#| message: false
+#| fig-align: center
+
 ames |> 
   ggplot(aes(x = Longitude, y = Sale_Price))+
   geom_point()+
   geom_smooth(method = "loess", formula = y ~ x)+
   scale_y_continuous(labels = label_number(scale_cut = cut_short_scale()))+
   labs(title = "Relação não linear entre o preço do imóvel e a longitude",
-    y = "Preço do imóvel")
+    y = "Preço do imóvel")+
+  theme_light()
 ```
 
-Neste exemplo temos um gráfico de disperção(scatter-plot), que nos mostra no eixo y a idade das 215 vítmas do médico familiar e criminoso inglês Harold Shipman. Note um gap entre os períodos de 1990 até 1992, com redução significativa das vítimas em sua maioria do sexo feminino. Nesse período, ele executava suas funções de forma intercalada com outros médicos da equipe o que tornava suas práticas suspeitas. Em seguida, ele proseguiu em sua atividade sozinho, e o número de vítimas acelerou até sua prisão. Os detalhes podem ser vistos em @spiegelhalter2022.
+**Exemplo de gráfico de dispersão elustrando o caso de Harold Shipman do livro The Art of Statistics**
 
-```{r message=FALSE, warning=FALSE}
+O gráfico de disperção(scatter-plot), nos mostra no eixo y a idade das 215 vítmas de um serial killer inglês chamado Harold Shipman que trabalhava como médico familiar. Note um gap entre os períodos de 1990 até 1992, com redução significativa das vítimas em sua maioria do sexo feminino. Nesse período, ele executava suas funções de forma intercalada com outros médicos da equipe o que tornava suas práticas suspeitas. Em seguida, ele proseguiu em sua atividade sozinho, e o número de vítimas acelerou até sua prisão. Os detalhes podem ser vistos em @spiegelhalter2022.
+
+```{r}
+#| label: plot_art_of_stats
+#| warning: false
+#| message: false
+#| fig-align: center
+
 library(tidyverse)
 library(ggpubr)
 
@@ -70,8 +93,8 @@ data_crime <-
 data_crime |> 
   ggscatterhist(x = "fractional_death_year",
                 y = "age",
-                color = "gender2",
                 margin.plot = "histogram",
+                color = "gender2",
                 margin.ggtheme = theme_void(),
                 palette =  c("#1abc9c","#DE3163"),
                 xlab = "Ano",
@@ -82,7 +105,7 @@ data_crime |>
 
 -   No ciclo PDCA o gráfico de dispersão é utilizado principalmente na investigação das características específicas com visão ampla e sobre diversos pontos de vista. Após esta estapa, a próxima é descobrir as causas fundamentais.
 
--   Para decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores. No exemplo apresentado em @spiegelhalter2022, o gráfico de dispersão possibilidade visualizar um gap no número de crimes com determinadas características justamente no período em que o criminoso estava fora de ação.
+-   Para decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores. 
 
 ## Qual o resultado {.unnumbered}
 

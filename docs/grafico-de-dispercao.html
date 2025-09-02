@@ -345,8 +345,8 @@ div.csl-indent {
 <section id="o-que-é" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
 <ul>
-<li><p>O gráfico de disperção é uma ferramenta estatística que organiza os dados e permite visualizar a relação entre duas variáveis quantitativas(numéricas).</p></li>
-<li><p>A dispersão nos mostra quantos os dados estão espalhados em relação uma média por exemplo tendo como a variância e desvio padrão as medidas de dispersão mais comuns.</p></li>
+<li><p>O gráfico de disperção é uma ferramenta estatística que organiza os dados visualmente permitindo compreender a relação entre duas variáveis quantitativas(numéricas). Quando obsevamos que ao aumentar o valor do eixo <code>x</code> aumentar também o valor do eixo <code>y</code> dizemos que ele possui uma correlação positiva, como poderemos observar mais abaixo.</p></li>
+<li><p>A dispersão(distância de cada ponto da reta), nos mostra quantos os dados estão espalhados em relação uma média(reta no gráfico). As medidas de dispersão mais comuns utilizadas são a <code>variância</code> e <code>desvio padrão</code>. Quando os pontos estão muito espalhados em relação a reta, eles possuem desvio padrão e variância alta.</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -358,7 +358,7 @@ div.csl-indent {
 <section id="qual-o-objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
 <ul>
-<li><p>Auxiliar na demonstração e identificação de padrões como por exemplo correlação, clusters, outliers, relações lineares e não lineares, disperção da média entre outros.</p></li>
+<li><p>Auxiliar na demonstração e identificação de padrões como por exemplo <code>correlação</code>, <code>clusters</code>, <code>outliers</code>, <code>relações lineares</code> e <code>não lineares</code>, <code>disperção da média</code> entre outros.</p></li>
 <li><p>Auxliar na análise do fenômeno durante a melhoria de processos.</p></li>
 </ul>
 </section>
@@ -381,7 +381,8 @@ div.csl-indent {
 <li>O gráfico de disperção por sem simples é possível ser feito em planilhas e também em ferramentas de business intelligence ou ferramentas estatísticas como o R. Apresento aqui alguns modelos.</li>
 </ul>
 <p>Neste exemplo temos um gráfico de correlação negativa ou seja, no eixo <code>X</code> tenos a variável HP e quanto mais HP menor será a milhagem por galão de combustível representada no eixo <code>Y</code>.</p>
-<div class="cell">
+<p><strong>Será que quanto mais HP tiver o veículo menor será as milhas por galão que ele faz?</strong></p>
+<div class="cell" data-layout-align="center">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -389,24 +390,25 @@ div.csl-indent {
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">|&gt;</span> </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> hp, <span class="at">y =</span> mpg))<span class="sc">+</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)<span class="sc">+</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Correlação negativa quanto mais HP menor as milhas por galão"</span>,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Milhas por galão"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">|&gt;</span> </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> hp, <span class="at">y =</span> mpg))<span class="sc">+</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)<span class="sc">+</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Correlação negativa quanto mais HP menor as milhas por galão"</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Milhas por galão"</span>)<span class="sc">+</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="grafico-de-dispercao_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="grafico-de-dispercao_files/figure-html/plot_dispersao_mtcars-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
+<p><strong>Será que a longitude tem correlação positiva com o preço dos imóveis?</strong></p>
 <p>Neste exemplo temos um gráfico que mostra uma relação não linear entre a localização e o preço, onde a variável longitude que é uma das medidas de posicionamento ou localização do imóvel está representado no eixo <code>X</code> enquanto a variável preço, está representada no eixo <code>Y</code>.</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ames <span class="sc">|&gt;</span> </span>
@@ -415,18 +417,20 @@ div.csl-indent {
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">formula =</span> y <span class="sc">~</span> x)<span class="sc">+</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">scale_cut =</span> <span class="fu">cut_short_scale</span>()))<span class="sc">+</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Relação não linear entre o preço do imóvel e a longitude"</span>,</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Preço do imóvel"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Preço do imóvel"</span>)<span class="sc">+</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="grafico-de-dispercao_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="grafico-de-dispercao_files/figure-html/plot_dispersao_house_price-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>Neste exemplo temos um gráfico de disperção(scatter-plot), que nos mostra no eixo y a idade das 215 vítmas do médico familiar e criminoso inglês Harold Shipman. Note um gap entre os períodos de 1990 até 1992, com redução significativa das vítimas em sua maioria do sexo feminino. Nesse período, ele executava suas funções de forma intercalada com outros médicos da equipe o que tornava suas práticas suspeitas. Em seguida, ele proseguiu em sua atividade sozinho, e o número de vítimas acelerou até sua prisão. Os detalhes podem ser vistos em <span class="citation" data-cites="spiegelhalter2022">Spiegelhalter and Schlesinger (<a href="#ref-spiegelhalter2022" role="doc-biblioref">2022</a>)</span>.</p>
-<div class="cell">
+<p><strong>Exemplo de gráfico de dispersão elustrando o caso de Harold Shipman do livro The Art of Statistics</strong></p>
+<p>O gráfico de disperção(scatter-plot), nos mostra no eixo y a idade das 215 vítmas de um serial killer inglês chamado Harold Shipman que trabalhava como médico familiar. Note um gap entre os períodos de 1990 até 1992, com redução significativa das vítimas em sua maioria do sexo feminino. Nesse período, ele executava suas funções de forma intercalada com outros médicos da equipe o que tornava suas práticas suspeitas. Em seguida, ele proseguiu em sua atividade sozinho, e o número de vítimas acelerou até sua prisão. Os detalhes podem ser vistos em <span class="citation" data-cites="spiegelhalter2022">Spiegelhalter and Schlesinger (<a href="#ref-spiegelhalter2022" role="doc-biblioref">2022</a>)</span>.</p>
+<div class="cell" data-layout-align="center">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -441,17 +445,17 @@ div.csl-indent {
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>data_crime <span class="sc">|&gt;</span> </span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggscatterhist</span>(<span class="at">x =</span> <span class="st">"fractional_death_year"</span>,</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">y =</span> <span class="st">"age"</span>,</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">color =</span> <span class="st">"gender2"</span>,</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">margin.plot =</span> <span class="st">"histogram"</span>,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">margin.plot =</span> <span class="st">"histogram"</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">color =</span> <span class="st">"gender2"</span>,</span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">margin.ggtheme =</span> <span class="fu">theme_void</span>(),</span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">palette =</span>  <span class="fu">c</span>(<span class="st">"#1abc9c"</span>,<span class="st">"#DE3163"</span>),</span>
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>                <span class="at">xlab =</span> <span class="st">"Ano"</span>,</span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>                <span class="at">ylab =</span> <span class="st">"Idade das vítimas"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="grafico-de-dispercao_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="grafico-de-dispercao_files/figure-html/plot_art_of_stats-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -461,7 +465,7 @@ div.csl-indent {
 <h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
 <ul>
 <li><p>No ciclo PDCA o gráfico de dispersão é utilizado principalmente na investigação das características específicas com visão ampla e sobre diversos pontos de vista. Após esta estapa, a próxima é descobrir as causas fundamentais.</p></li>
-<li><p>Para decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores. No exemplo apresentado em <span class="citation" data-cites="spiegelhalter2022">Spiegelhalter and Schlesinger (<a href="#ref-spiegelhalter2022" role="doc-biblioref">2022</a>)</span>, o gráfico de dispersão possibilidade visualizar um gap no número de crimes com determinadas características justamente no período em que o criminoso estava fora de ação.</p></li>
+<li><p>Para decisões intermediárias durante a melhoria de process dando suporte a intuições iniciais a respeito do fenômeno e servindo de guia para alocação de esforços para investigações posteriores.</p></li>
 </ul>
 </section>
 <section id="qual-o-resultado" class="level2 unnumbered">
