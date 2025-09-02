@@ -12,6 +12,8 @@
 
 ## Qual o objetivo {.unnumbered}
 
+-   A ideia é ordenar as categorias das mais impactantes para as menos impactantes revelando visualmente essa hierarquia, mostrar o volume relativo e também a curva acumulada com a proporção sobre o total, ao mesmo tempo permitir que o fenômeno possa ser visto em diferentes dimensões como quantidades, impacto financeiro ou tempo perdido.
+
 -   Permitir que o gestor consiga analisar o fenômeno com mais eficiência e com perspectivas diferentes como perspectiva de volume(frequencia, quantidade), custo, efeito e causa.
 
 -   Organizar a distribuição dos dados do maior para o menor, mostrar a proporção acumulada de forma clara e que todos consigam entender.
@@ -28,25 +30,31 @@
 
 ## Como fazer {.unnumbered}
 
--   É recomendado fazer graficos de pareto para causa e para efeito. O gráfico de efeitos mostrará os efeitos é usado para identificar qual o maior problema. Já o de causa é usado para identificar quais as maiores causas.
+-   É recomendado fazer graficos de pareto para causa e para efeito. O gráfico de efeitos mostrará os efeitos é usado para identificar qual o maior problema. Já o de causa é usado para identificar quais as maiores causas. Alguns exemplos de causas e efeitos.
 
-Exemplos
+    -   **Efeito**: defeitos, falhas, gastos, atrazos ne entrega, acidentes, enganos.
 
-```         
--   Efeito: defeitos, falhas, gastos, atrazos ne entrega, acidentes, enganos.
+    -   **Causa**: experiência, lote, tipo, métodos, condições, equipamentos, modelos, instrumentos.
 
--   Causa: experiência, lote, tipo, métodos, condições, equipamentos, modelos, instrumentos.
-```
+**Exemplo de gráfico de pareto - Na perspectiva de custo e quantidade**
 
-```{r warning=FALSE, message=FALSE}
+
+```{r}
+#| label: plot_pareto
+#| warning: false
+#| message: false
+
 library(tidyverse)
 library(ggQC)
+library(patchwork)
 
 df <- tibble(type_nc = c("scratch","spots","folds","holes","rips"),
              qty = c(201,78,47,31,15),
              cost = c(4287,2423,1119,8947,1864))
 
-df |>  
+
+plot_cost <- 
+  df |>  
   arrange(desc(cost)) |>  
   mutate(type_nc = fct_reorder(type_nc, desc(cost))) |>  
   ggplot(aes(x = type_nc, 
@@ -55,8 +63,27 @@ df |>
               point.size = 2,
               line.color = "darkgray",
               bars.fill = c("#ee3a58","#46b29e"))+
-  labs(x = "Tipo não conformidade",
+  labs(title = "Gráfico por custo",
+       x = "Tipo não conformidade",
        y = "Custo")
+
+plot_qty <- 
+  df |>  
+  arrange(desc(qty)) |>  
+  mutate(type_nc = fct_reorder(type_nc, desc(qty))) |>  
+  ggplot(aes(x = type_nc, 
+             y = qty))+
+  stat_pareto(point.color = "darkgray",
+              point.size = 2,
+              line.color = "darkgray",
+              bars.fill = c("#ee3a58","#46b29e"))+
+  labs(title = "Gráfico por quantidade",
+       x = "Tipo não conformidade",
+       y = "Quantidade")
+
+
+plot_cost + plot_qty
+
 ```
 
 ## Pra onde vai {.unnumbered}
