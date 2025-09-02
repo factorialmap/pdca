@@ -158,6 +158,7 @@ Uma fábrica de produto quimico quer avaliar o processo de produção para garan
 #| label: xmr_chart
 #| warning: false
 #| messsage: false
+#| fig-align: center
 
 #package
 library(tidyverse)
@@ -208,6 +209,7 @@ Numa fábrica de auto peças, a característica de qualidade de interessse é o 
 #| label: xbar_chart
 #| warning: false
 #| messsage: false
+#| fig-align: center
 
 library(tidyverse)
 library(ggQC)
@@ -266,6 +268,7 @@ Como se trata de uma variável contínua ou seja, uma medida(mm), será usado o 
 #| label: sbar_chart
 #| warning: false
 #| messsage: false
+#| fig-align: center
 
 data_xbar <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_xbar_cnc_screw.csv")
 
@@ -318,6 +321,7 @@ Em uma fábrica de circuito impresso, o engenheiro deseja avaliar a estabilidade
 #| label: c_chart
 #| warning: false
 #| messsage: false
+#| fig-align: center
 
 data_c <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_c_pcb.csv")
 
@@ -347,6 +351,7 @@ Com objetivo de melhorar a excelencia operacional, um fabricante de computadores
 #| label: u_chart
 #| warning: false
 #| messsage: false
+#| fig-align: center
 
 data_u <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_u_computer.csv")
 
@@ -376,6 +381,7 @@ Uma fábrica de sapatos quer avaliar a estabilidade do processo e melhorar a qua
 #| label: np_chart
 #| warning: false
 #| messsage: false
+#| fig-align: center
 
 # np
 data_np <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_np_shoes_mfg.csv")
@@ -407,6 +413,7 @@ Uma fábrica de baterias resolve avaliar a estabilidade de um processo usando gr
 #| label: p_chart
 #| warning: false
 #| messsage: false
+#| fig-align: center
 
 
 p_chart <- read.csv("https://raw.githubusercontent.com/factorialmap/hitoshi_kume_database/main/data_cc_p_batteries.csv")
