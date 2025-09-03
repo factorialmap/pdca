@@ -1124,7 +1124,7 @@
     "href": "histograma.html",
     "title": "11  Histograma",
     "section": "",
-    "text": "O que é\nExemplo: Se você mede a altura de 100 pessoas, o histograma pode mostrar quantas pessoas têm entre 1.60 e 1.75, entre 1.75 a 1.85, e assim por diante.",
+    "text": "O que é\nExemplo: Se você mede a altura de 100 pessoas, o histograma pode mostrar quantas pessoas têm entre 1.60 e 1.75, entre 1.75 a 1.85, e assim por diante.\nCaracterístias técnicas\nTipos de distribuição dos dados\nPara um estatístico ou melhorista de processos, cada formato do histograma o qual revela a distribuição dos dados, conta uma historia sobre os dados. Abaixo alguns exemplos de distribuições.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
     ]
@@ -1134,7 +1134,7 @@
     "href": "histograma.html#o-que-é",
     "title": "11  Histograma",
     "section": "",
-    "text": "É uma ferramenta visual que permite explorar a ideia da distribuição e a organização dos dados.\nÉ um gráfico de barras que mostra quantas vezes(frequência) os dados caem dentro de certos intervalos também chamados de classes.\ndiferente de um gráfico de barras comum, ele não representa categorias distintas, mas faixas contínuas de valores.\n\n\n\nCaracterístias técnicas\n\n\n\nFigura - Histogramas\n\n\n\n\nInformações apresentadas no gráfico\n\n\nTipos de gráficos de controle\n\n\n\nTipos de Histogramas",
+    "text": "É uma ferramenta visual que permite explorar a ideia da distribuição e a organização dos dados. É um tipo diferente de gráfico de barras onde a maior frequencia de dados se concentra no meio do gráfico, é por isso que ele parece uma montanha ou um sino.\nO gráfico mostra como os dados estão distribuídos em torno de uma média, agrupando os dados em faixas(classes) que mostra qantos valores caem em cada faixa.\n\n\n\n\nO peso das abóboras é simétrico ou seja a maior parte delas pesa em média 10 kgs cada uma.\nA distribuição de problemas cardíacos por idade, é assimétrica a esquerda ou seja, a ocorrência de casos em pessoas com 20 anos é muito baixa, a maior parte está concentrada em 67 acima.\nA distribuição dos preços das casas, é assimétrica a direita ou seja, a maioria das casas da amostra, possuem preços por volta de 450 mil, mas existem algumas poucas com preços bem elevados por volta de 2 milhões cada uma.\n\n\n\n\nFigura - Histogramas\n\n\n\n\n\n\n\nTipos de Histogramas",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
     ]
@@ -1154,7 +1154,7 @@
     "href": "histograma.html#de-onde-vem",
     "title": "11  Histograma",
     "section": "De onde vem",
-    "text": "De onde vem",
+    "text": "De onde vem\n\nA necessidade surgiu da análise estatística aplicada a qualidade, especialmente com o movimento da qualidade total (TQM) e o ciclo PDCA. Empresas precisavam entender como os processos se comportavam para melhorar os produtos, reduzir falhas e tomar decisões baseada em dados reais.\n\nNo exemplo da figura abaixo\n\nCausas especiais estão agindo no processo\nElas são eliminadas, no entanto a variação está muito alta rompendo os limites da especificação.\nÉ feito um trabalho de redução da variação eliminando causas comuns de variação.\nO histograma nos mostra que o processo ficou estável e sob controle.\n\n\n\n\nExemplo do uso de histograma na visualização e ajuste de processos",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
     ]
@@ -1164,7 +1164,7 @@
     "href": "histograma.html#como-fazer",
     "title": "11  Histograma",
     "section": "Como fazer",
-    "text": "Como fazer",
+    "text": "Como fazer\nExemplo um histograma dos preços de casas em Ames Iowa em 2011\nPodemos notar alguns detalhes na distribuição dos preços de imóveis. As linhas pontilhadas são a média de preços.\n\nNão possui ar condicionado central - histograma vermelho: mostra que a quantidade de imóveis é pequena, a distribuição dos preços é normal com preços bem abaixo dos 200 mil dólares.\nPossui ar condicionado central - histograma azul: mostra que a quantidade de imóveis é grande, a distribuição dos preços é assimétrica ou seja, muitas casas tem o preço próximoa 200 mil dólares e poucas casas tem preços acima de 600 mil.\n\n\n\nCode\nlibrary(modeldata)\nlibrary(ggpubr)\nlibrary(scales)\n\ndata(\"ames\")\n\names %&gt;% \n  gghistogram(x = \"Sale_Price\",\n              add = \"mean\",\n              rug = TRUE,\n              fill = \"Central_Air\")+\n  scale_x_continuous(labels = label_number(scale_cut = cut_short_scale()))\n\n\n\n\n\n\n\n\n\nExemplo um histograma com média de 10\nAqui um exemplo de histograma usado em manufatura onde especificação tem limite máximo de 12 e mínimo de 8. Podemos observar que a média de tamanho da peça é de 10 e a variação está dentro dos limites da especificação.\n\n\nCode\n#packages\nlibrary(tidyverse)\nlibrary (ggQC)\nlibrary(patchwork)\n\n#data - para criar os gráficos b, c e d, altere os desvios padrão.\nset.seed(1221)\ndata_norm_dist &lt;-\n  data.frame(process_id = 1:1000,\n             sub_group = rep(1:20, each = 5),\n             process_value = rnorm(n = 1000, mean = 10, sd = .5))\n\n#Capability plot\ndata_norm_dist %&gt;%\n  ggplot (aes (x = process_value ))+\n  geom_histogram(bins = 30)+\n  geom_vline(aes (xintercept = mean (process_value)),\n             linetype = \"dashed\")+\n  stat_QC_Capability(LSL = 8,USL = 12,\n                     show.cap.summary = c(\"Cp\",\"Cpk\"),\n                     cap.summary.size = 3,\n                     method = \"XmR\")+\n  scale_x_continuous (expand = expansion (mult = c(.15,.6)))",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
     ]
@@ -1174,7 +1174,7 @@
     "href": "histograma.html#pra-onde-vai",
     "title": "11  Histograma",
     "section": "Pra onde vai",
-    "text": "Pra onde vai",
+    "text": "Pra onde vai\nDepois de criado, o histograma pode ser usado:\n\nEm reuniões de análise de desempenho.\nPara identificar gargalos ou oportunidades de melhoria.\nComo base para decisões estratégicas, como mudanças em logística ou atendimento.\nEm relatórios gerenciais, para mostrar o comportamento de indicadores.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
     ]
@@ -1184,7 +1184,7 @@
     "href": "histograma.html#qual-o-resultado",
     "title": "11  Histograma",
     "section": "Qual o resultado",
-    "text": "Qual o resultado",
+    "text": "Qual o resultado\n\nClareza sobre o comportamento dos dados.\nIdentificação de padrões ou anomalias.\nMelhoria na tomada de decisão.\nRedução de variabilidade e aumento da previsibilidade.\nBase para ações corretivas ou preventivas.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
     ]

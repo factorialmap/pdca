@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -256,12 +290,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#o-que-é" id="toc-o-que-é" class="nav-link active" data-scroll-target="#o-que-é">O que é</a>
-  <ul class="collapse">
-  <li><a href="#característias-técnicas" id="toc-característias-técnicas" class="nav-link" data-scroll-target="#característias-técnicas">Característias técnicas</a></li>
-  <li><a href="#informações-apresentadas-no-gráfico" id="toc-informações-apresentadas-no-gráfico" class="nav-link" data-scroll-target="#informações-apresentadas-no-gráfico">Informações apresentadas no gráfico</a></li>
-  <li><a href="#tipos-de-gráficos-de-controle" id="toc-tipos-de-gráficos-de-controle" class="nav-link" data-scroll-target="#tipos-de-gráficos-de-controle">Tipos de gráficos de controle</a></li>
-  </ul></li>
+  <li><a href="#o-que-é" id="toc-o-que-é" class="nav-link active" data-scroll-target="#o-que-é">O que é</a></li>
   <li><a href="#qual-o-objetivo" id="toc-qual-o-objetivo" class="nav-link" data-scroll-target="#qual-o-objetivo">Qual o objetivo</a></li>
   <li><a href="#de-onde-vem" id="toc-de-onde-vem" class="nav-link" data-scroll-target="#de-onde-vem">De onde vem</a></li>
   <li><a href="#como-fazer" id="toc-como-fazer" class="nav-link" data-scroll-target="#como-fazer">Como fazer</a></li>
@@ -296,32 +325,30 @@ ul.task-list li input[type="checkbox"] {
 <section id="o-que-é" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="o-que-é">O que é</h2>
 <ul>
-<li><p>É uma ferramenta visual que permite explorar a ideia da distribuição e a organização dos dados.</p></li>
-<li><p>É um gráfico de barras que mostra quantas vezes(frequência) os dados caem dentro de certos intervalos também chamados de classes.</p></li>
-<li><p>diferente de um gráfico de barras comum, ele não representa categorias distintas, mas faixas contínuas de valores.</p></li>
+<li><p>É uma ferramenta visual que permite explorar a ideia da distribuição e a organização dos dados. É um tipo diferente de gráfico de barras onde a maior frequencia de dados se concentra no meio do gráfico, é por isso que ele parece uma montanha ou um sino.</p></li>
+<li><p>O gráfico mostra como os dados estão distribuídos em torno de uma média, agrupando os dados em faixas(classes) que mostra qantos valores caem em cada faixa.</p></li>
 </ul>
 <p>Exemplo: Se você mede a altura de 100 pessoas, o histograma pode mostrar quantas pessoas têm entre 1.60 e 1.75, entre 1.75 a 1.85, e assim por diante.</p>
-<section id="característias-técnicas" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="característias-técnicas">Característias técnicas</h3>
+<p><strong>Característias técnicas</strong></p>
+<ul>
+<li><p>O peso das abóboras é simétrico ou seja a maior parte delas pesa em média 10 kgs cada uma.</p></li>
+<li><p>A distribuição de problemas cardíacos por idade, é assimétrica a esquerda ou seja, a ocorrência de casos em pessoas com 20 anos é muito baixa, a maior parte está concentrada em 67 acima.</p></li>
+<li><p>A distribuição dos preços das casas, é assimétrica a direita ou seja, a maioria das casas da amostra, possuem preços por volta de 450 mil, mas existem algumas poucas com preços bem elevados por volta de 2 milhões cada uma.</p></li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images\histogram.png" class="img-fluid figure-img" width="699"></p>
+<p><img src="images\histograma_what.png" class="img-fluid figure-img" width="699"></p>
 <figcaption>Figura - Histogramas</figcaption>
 </figure>
 </div>
-</section>
-<section id="informações-apresentadas-no-gráfico" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="informações-apresentadas-no-gráfico">Informações apresentadas no gráfico</h3>
-</section>
-<section id="tipos-de-gráficos-de-controle" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="tipos-de-gráficos-de-controle">Tipos de gráficos de controle</h3>
+<p><strong>Tipos de distribuição dos dados</strong></p>
+<p>Para um estatístico ou melhorista de processos, cada formato do histograma o qual revela a distribuição dos dados, conta uma historia sobre os dados. Abaixo alguns exemplos de distribuições.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images\histogram_types.png" class="img-fluid figure-img" width="699"></p>
 <figcaption>Tipos de Histogramas</figcaption>
 </figure>
 </div>
-</section>
 </section>
 <section id="qual-o-objetivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-objetivo">Qual o objetivo</h2>
@@ -335,15 +362,112 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="de-onde-vem" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="de-onde-vem">De onde vem</h2>
+<ul>
+<li>A necessidade surgiu da análise estatística aplicada a qualidade, especialmente com o movimento da qualidade total (TQM) e o ciclo PDCA. Empresas precisavam entender como os processos se comportavam para melhorar os produtos, reduzir falhas e tomar decisões baseada em dados reais.</li>
+</ul>
+<p>No exemplo da figura abaixo</p>
+<ol type="1">
+<li>Causas especiais estão agindo no processo</li>
+<li>Elas são eliminadas, no entanto a variação está muito alta rompendo os limites da especificação.</li>
+<li>É feito um trabalho de redução da variação eliminando causas comuns de variação.</li>
+<li>O histograma nos mostra que o processo ficou estável e sob controle.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/histograma_de_onde_vem.png" class="img-fluid figure-img" width="699"></p>
+<figcaption>Exemplo do uso de histograma na visualização e ajuste de processos</figcaption>
+</figure>
+</div>
 </section>
 <section id="como-fazer" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="como-fazer">Como fazer</h2>
+<p><strong>Exemplo um histograma dos preços de casas em Ames Iowa em 2011</strong></p>
+<p>Podemos notar alguns detalhes na distribuição dos preços de imóveis. As linhas pontilhadas são a média de preços.</p>
+<ul>
+<li><p><strong>Não possui ar condicionado central - histograma vermelho</strong>: mostra que a quantidade de imóveis é pequena, a distribuição dos preços é normal com preços bem abaixo dos 200 mil dólares.</p></li>
+<li><p><strong>Possui ar condicionado central - histograma azul</strong>: mostra que a quantidade de imóveis é grande, a distribuição dos preços é assimétrica ou seja, muitas casas tem o preço próximoa 200 mil dólares e poucas casas tem preços acima de 600 mil.</p></li>
+</ul>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(modeldata)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"ames"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>ames <span class="sc">%&gt;%</span> </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gghistogram</span>(<span class="at">x =</span> <span class="st">"Sale_Price"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>              <span class="at">add =</span> <span class="st">"mean"</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">rug =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>              <span class="at">fill =</span> <span class="st">"Central_Air"</span>)<span class="sc">+</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">scale_cut =</span> <span class="fu">cut_short_scale</span>()))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="histograma_files/figure-html/plot_histogram_ames-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Exemplo um histograma com média de 10</strong></p>
+<p>Aqui um exemplo de histograma usado em manufatura onde especificação tem limite máximo de 12 e mínimo de 8. Podemos observar que a média de tamanho da peça é de 10 e a variação está dentro dos limites da especificação.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#packages</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (ggQC)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">#data - para criar os gráficos b, c e d, altere os desvios padrão.</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1221</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>data_norm_dist <span class="ot">&lt;-</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">process_id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>             <span class="at">sub_group =</span> <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">each =</span> <span class="dv">5</span>),</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>             <span class="at">process_value =</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">1000</span>, <span class="at">mean =</span> <span class="dv">10</span>, <span class="at">sd =</span> .<span class="dv">5</span>))</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#Capability plot</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>data_norm_dist <span class="sc">%&gt;%</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span> (<span class="fu">aes</span> (<span class="at">x =</span> process_value ))<span class="sc">+</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">30</span>)<span class="sc">+</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="fu">aes</span> (<span class="at">xintercept =</span> <span class="fu">mean</span> (process_value)),</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>             <span class="at">linetype =</span> <span class="st">"dashed"</span>)<span class="sc">+</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_QC_Capability</span>(<span class="at">LSL =</span> <span class="dv">8</span>,<span class="at">USL =</span> <span class="dv">12</span>,</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>                     <span class="at">show.cap.summary =</span> <span class="fu">c</span>(<span class="st">"Cp"</span>,<span class="st">"Cpk"</span>),</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>                     <span class="at">cap.summary.size =</span> <span class="dv">3</span>,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>                     <span class="at">method =</span> <span class="st">"XmR"</span>)<span class="sc">+</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span> (<span class="at">expand =</span> <span class="fu">expansion</span> (<span class="at">mult =</span> <span class="fu">c</span>(.<span class="dv">15</span>,.<span class="dv">6</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="histograma_files/figure-html/plot_histogram_cpk-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="pra-onde-vai" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pra-onde-vai">Pra onde vai</h2>
+<p>Depois de criado, o histograma pode ser usado:</p>
+<ul>
+<li>Em reuniões de análise de desempenho.</li>
+<li>Para identificar gargalos ou oportunidades de melhoria.</li>
+<li>Como base para decisões estratégicas, como mudanças em logística ou atendimento.</li>
+<li>Em relatórios gerenciais, para mostrar o comportamento de indicadores.</li>
+</ul>
 </section>
 <section id="qual-o-resultado" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="qual-o-resultado">Qual o resultado</h2>
+<ul>
+<li>Clareza sobre o comportamento dos dados.</li>
+<li>Identificação de padrões ou anomalias.</li>
+<li>Melhoria na tomada de decisão.</li>
+<li>Redução de variabilidade e aumento da previsibilidade.</li>
+<li>Base para ações corretivas ou preventivas.</li>
+</ul>
 </section>
 <section id="referências" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="referências">Referências</h2>
