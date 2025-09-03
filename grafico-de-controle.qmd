@@ -2,23 +2,17 @@
 
 ## O que é {.unnumbered}
 
-### Característias técnicas {.unnumbered}
-
 -   O gráfico de controle é uma ferramenta útil para avaliar o comportamento de um processo e também fornecer bases para previsões de comportamentos futuros.
 
--   O gráfico mostra algumas características fundamentais que descrevem um processo como:
+-   O gráfico mostra detalhes visuais que descrevem um processo como **centralização** que é determinada pela média, **dispersão**, que representa o desvio-padrão (quanto os pontos de dados estão distantes da média) e os **limites de controle** que sinalizam se o processo está sob controle ou fora de controle.
 
-    -   Centralização que é determinada pela média.
-    -   Dispersão, que representa o desvio-padrão ou amplitude. O quanto os pontos de dados estão distantes da média.
-    -   Limites de controle (LC) que sinalizam se o processo está sob controle ou fora de controle.
-
--   Imagine uma linha de produção de alimentos (tomates cortados em rodelas) onde o objetivo é produzir uniformemente todas as rodelas de tomates, ou seja na mesma espessura e no mesmo tempo. O gráfico de controle ajuda avaliar se o processo está uniforme e sob controle estatístico, se possui variações e quais são essas variações. Eu insiro os dados de tempo médio gasto para fatiar tomates com a mesma espessura em em gráfico de controle.
+-   Imagine uma linha de produção de alimentos (tomates cortados em rodelas) onde o objetivo é produzir uniformemente todas as rodelas de tomates com a mesma espessura e no mesmo tempo. O gráfico de controle ajuda avaliar se o processo está uniforme e sob controle estatístico, se possui variações e onde estão elas. Abaixo um gráfico com o tempo médio gasto para fatiar tomates com a mesma espessura.
 
     > 1.  Pego uma amostra de 100 tomates.
     > 2.  Registro o tempo gasto para fatiar cada tomate.
     > 3.  O tempo médio gasto para fatiar cada tomate será representada pela linha central $\bar{x}$ enquanto o limite superior e inferior de controle terão três desvios padrão dessa média representados pela equação matemática $\pm3\sigma$. Qualquer variação aleatória dentro desses limites, eu considero que o processo está normal ou sob controle.
     > 4.  Agora imagine que a partir do 10º tomate o gráfico apresente um padrão onde o tempo começa a aumentar sistematicamente até sair dos limites de controle.
-    > 5.  Ao avaliar, percebi que a faca foi perdendo o fio necessitando de mais movimentos para romper a pele do tomate. Como efeito desse fenomeno, mais tempo foi gasto, o risco das fatias terem dimensões diferentes aumentaram e os padrões de qualidade do produto e do processo foram impactadas. As informações sobre padrões e variações podem ser vistas em um gráfico de controle.
+    > 5.  Ao avaliar, percebi que a faca foi perdendo o fio (a partir do ponto 11), necessitando de mais movimentos para romper a pele do tomate. Como efeito desse fenomeno, mais tempo foi gasto, o risco das fatias terem dimensões diferentes aumentaram e os padrões de qualidade do produto e do processo foram impactadas. As informações sobre padrões e variações podem ser vistas em um gráfico de controle.
 
 ![Figura - Gráfico de controle](images\control_chart.png){width="699"}
 
@@ -28,7 +22,174 @@
 A resposta é que considerando a distribuição normal de probabilidades, 99.7% dos dados estão variando em até 3 desvios padrão da média. Neste caso, qualquer variação dentro desses limites é considerando dentro do normal. Um valor comum de três desvios padrão pode ser justificado pelos bons resultados obtidos na prática, com o nível de confiança estabelecido de 99,74% na análise dos dados @brassard1991
 :::
 
-### Informações apresentadas no gráfico {.unnumbered}
+
+A imagem abaixo tenta ilustrar os conceitos de controle estatístico de processo. A distribuição dos dados ao longo do tempo(curva de densidade) nos ajuda a entender a estabilidade e a capacidade do processo.
+
+- Setas horizontais representam a sequência de produção
+- As linhas horizontais paralelas indicam os limites de especificação ou seja, os limites de controle do processo ideal.
+- As curvas no formato de sino são as distribuições dos dados e mostram a característica de qualidade da peça em diferentes momentos do tempo. Na etapa 4 podemos observar que há uniformidade e atende as especificações.
+
+![Exemplo de controle de processo visto com um histograma ](images/histograma_de_onde_vem.png){width="699"}
+
+Na figura abaixo vamos ilustrar como ficaria isso em um gráfico de controle. Note que o processo começa instável, ele é controlado no entanto com alta variação e posteriormente reduzida a variação. 
+
+```{r}
+#| label: plot_control_pecas
+#| warning: false
+#| message: false
+#| echo: false
+#| fig-align: center
+
+library(tidyverse)
+
+set.seed(123)
+total_obs <- 150
+n_scenario <- total_obs / 3 
+
+# cenário1: Fora de Controle com médias e variâncias diferentes
+# as distribuições estão em locais diferentes com larguras diferentes.
+# o processo não é estável e é imprevisível.
+n_phase1_C1 <- 20
+n_phase2_C1 <- 15
+n_phase3_C1 <- 15
+
+# Fase 1: média baixa, variância média 
+data_C1_phase1 <- rnorm(n_phase1_C1, mean = 9.0, sd = 0.5)
+
+# Fase 2: média alta, variância menor
+data_C1_phase2 <- rnorm(n_phase2_C1, mean = 10.5, sd = 0.3)
+
+# Fase 3: média média, variância alta
+data_C1_phase3 <- rnorm(n_phase3_C1, mean = 9.8, sd = 0.8)
+
+# Combinar as fases para o cenário1
+data_scenario1 <- c(data_C1_phase1, 
+                    data_C1_phase2, 
+                    data_C1_phase3) %>%
+  as_tibble() %>%
+  rename(valor_peca = value) %>%
+  mutate(observacao = 1:n(),
+         cenario = "1_Fora_de_Controle")
+
+# cenário2: estabilizado com alta variância
+# média estável mas muito largas indicando alta variabilidade.
+# muitas peças fora dos limites de especificação mesmo o processo "no alvo".
+mean_C2 <- 10.0 # Média desejada
+sd_C2 <- 1.0   # Variância alta
+
+data_scenario2 <- 
+  rnorm(n_scenario, 
+        mean = mean_C2, 
+        sd = sd_C2) %>%
+  as_tibble() %>%
+  rename(valor_peca = value) %>%
+  mutate(observacao = (n_scenario + 1):(n_scenario * 2),
+         cenario = "2_Estabilizado_Alta_Variancia")
+
+# cenário3: ajustado com médias e variâncias controladas
+# distribuições centradas e estreitas = estável e capaz 
+# baixa variabilidade e todas as peças dentro dos limites de especificação.
+mean_C3 <- 10.0 
+sd_C3 <- 0.2   #variância baixa, ajustada
+
+data_scenario3 <- 
+  rnorm(n_scenario, 
+        mean = mean_C3, 
+        sd = sd_C3) %>%
+  as_tibble() %>%
+  rename(valor_peca = value) %>%
+  mutate( observacao = (n_scenario * 2 + 1):(n_scenario * 3),
+          cenario = "3_Ajustado_e_Controlado" )
+
+# combinar os conjuntos de dados
+df_processo_pecas <- 
+  bind_rows(data_scenario1, 
+            data_scenario2, 
+            data_scenario3)
+
+# Ajustar a coluna 'observacao' para ser contínua em todo o dataframe final
+df_processo_pecas <- df_processo_pecas %>%
+  mutate(observacao = 1:n())
+
+# plot --------------------------------------------------------------------
+
+# add limite de controle lower and upper specification limit
+LSL <- 9.0 
+USL <- 11.0
+alvo <- 10.0
+
+df_processo_pecas %>% 
+  ggplot(aes(x = observacao, 
+             y = valor_peca, 
+             color = cenario)) +
+  geom_line(alpha = 0.7) +
+  geom_point(alpha = 0.8) +
+  geom_hline(yintercept = alvo,linetype = "dashed", color = "#1E88E5", size = 0.3) +
+  geom_hline(yintercept = LSL, linetype = "dashed", color = "#D81B60", size = 0.3) +
+  geom_hline(yintercept = USL, linetype = "dashed", color = "#D81B60", size = 0.3) +
+  annotate("text", x = max(df_processo_pecas$observacao) * 1.05, y = alvo, label = "Alvo", color = "#1E88E5", hjust = 0) +
+  annotate("text", x = max(df_processo_pecas$observacao) * 1.05, y = LSL, label = "LSE", color = "#D81B60", hjust = 0) +
+  annotate("text", x = max(df_processo_pecas$observacao) * 1.05, y = USL, label = "LSI", color = "#D81B60", hjust = 0) +
+  labs(
+    title = "Processo de fabricação de peças, amostra 16",
+    subtitle = "Dados fictícios, apenas para aprendizado",
+    x = "Observação (Tempo)",
+    y = "Diâmetro da peça(mm)",
+    color = "Cenário"
+  ) +
+  scale_color_manual(values = c(
+    "1_Fora_de_Controle" = "#D81B60",
+    "2_Estabilizado_Alta_Variancia" = "orange",
+    "3_Ajustado_e_Controlado" = "#1abc9c"
+  )) +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+```
+
+
+Na figura abaixo, podemos ver através das densidades como está a distribuição em cada etapa do processo. As linhas vermelhas representam os limites da especificação. No cenário 1 podemos observar dois picos na distribuição mostrando que médias e variâncias estão diferentes, já no cenário 2 podemos observar apenas um pico e distribuiçã normal mas ainda com variância alta, já no cenário 3 a média e variância estão dentro dos limites de especificação.
+
+```{r}
+#| label: plot_densidade_pecas
+#| warning: false
+#| message: false
+#| fig-align: center
+#| echo: false
+
+# Alternando para visualização de densidades
+# para ilustrar as curvas de sino
+df_processo_pecas %>% 
+ggplot(aes(x = valor_peca, 
+           fill = cenario, 
+           color = cenario)) +
+  geom_density(alpha = 0.4) +
+  geom_vline(xintercept = alvo, linetype = "dashed", color = "#1E88E5", size = 0.4) +
+  geom_vline(xintercept = LSL, linetype = "dashed", color = "#D81B60", size = 0.4) +
+  geom_vline(xintercept = USL, linetype = "dashed", color = "#D81B60", size = 0.4) +
+  facet_wrap(~cenario) +
+  labs(
+    title = "Distribuições de densidade por cenário do processo",
+    subtitle = "Comparação de média e variância",
+    x = "Diâmetro da peça(mm)",
+    y = "Densidade"
+  ) +
+  scale_fill_manual(values = c(
+    "1_Fora_de_Controle" = "#D81B60",
+    "2_Estabilizado_Alta_Variancia" = "orange",
+    "3_Ajustado_e_Controlado" = "#1abc9c"
+  )) +
+  scale_color_manual(values = c(
+    "1_Fora_de_Controle" = "#D81B60",
+    "2_Estabilizado_Alta_Variancia" = "darkorange",
+    "3_Ajustado_e_Controlado" = "#1abc9c"
+  )) +
+  theme_minimal()+
+  theme(legend.position = "none")
+```
+
+
+**Informações apresentadas no gráfico**
 
 -   @deming2018, descrevem que Shewhart em 1924, descobriu duas formas de variações em um processo as quais ele classificou como **causas comuns** e **causas especiais**.\
     Como os processos sujeitos a variação de causas especiais eram imprevisíveis, as técnicas de probabilidade não poderiam ser usadas para separar um tipo de variação de outra e por isso, Shewhart criou um gráfico de controle estatístico como uma heurística para distinguir esses dois tipos de variação, pois cada tipo, requer tratamentos diferentes.
@@ -63,7 +224,7 @@ A resposta é que considerando a distribuição normal de probabilidades, 99.7% 
 Em algumas situações particulares, os limites de controle poderão ser ajustados, por exemplo, aumentar o limite para quando os custos de investigação das causas forem muito grandes e reduzir para quando as análises das possíveis causas do surgimento de fatores especiais de variação forem simples, consumirem o mínimo de tempo, e em situações em que o custo de produção de artigos defeituosos for alto @deming2018.
 :::
 
-### Tipos de gráficos de controle {.unnumbered}
+**Tipos de gráficos de controle**
 
 -   Para que o gráfico consiga capturar e mostrar informações relevantes e precisas a respeito do processo, houve a necessidade de fazer adaptações nos gráficos de acordo com os dados disponíveis durante o processo de fabricação. A figura abaixo auxilia na escolha do gráfico mais adequados para cada tipo de situação e dados disponíveis.\
     \
@@ -124,7 +285,7 @@ A linha inferior de controle não pode ser menor que zero.
 
 -   Facilitar a realização de análises, ações ou ajustes nos casos em que os processos apresentarem comportamentos considerados fora do padrão normal aleatório.
 
-![Figura - Gráfico de controle](images\pdca_goals.png){width="699"}
+![Objetivos com o gráfico de controle](images\pdca_goals.png){width="699"}
 
 ## De onde vem {.unnumbered}
 
