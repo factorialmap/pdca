@@ -11,25 +11,27 @@ Exemplo: Se você mede a altura de 100 pessoas, o histograma pode mostrar quanta
 
 **Característias técnicas**
 
-- O peso das abóboras é simétrico ou seja a maior parte delas pesa em média 10 kgs cada uma.
+A figura abaixo nos mostra alguns padrões que podem ser observados em um histograma.
 
-- A distribuição de problemas cardíacos por idade, é assimétrica a esquerda ou seja, a ocorrência de casos em pessoas com 20 anos é muito baixa, a maior parte está concentrada em 67 acima.
+- O gráfico da esquerda nos mostra que o peso dos ovos é simétrico ou seja, a maior parte deles pesa em média 57 gramas, já a concentração de ovos que pesam por volta de 45 gramas e 70 gramas é bem pequena.
 
-- A distribuição dos preços das casas, é assimétrica a direita ou seja, a maioria das casas da amostra, possuem preços por volta de 450 mil, mas existem algumas poucas com preços bem elevados por volta de 2 milhões cada uma.
+- O gráfico do centro nos mostra que a distribuição de problemas cardíacos por idade é assimétrica a esquerda ou seja, a ocorrência de casos está concentrada na faixa de idade acima 67 anos, já a concentração de casos abaixo dessa faixa é bem baixo.
+
+- O gráfico da direita nos mostra que a distribuição dos preços das casas é assimétrica a direita ou seja, a maioria das casas da amostra, possuem preços por volta de 450 mil, mas existem algumas poucas com preços bem elevados por volta de 2 milhões cada uma.
 
 
 ![Figura - Histogramas](images\histograma_what.png){width="699"}
 
 **Tipos de distribuição dos dados**
 
-Para um estatístico ou melhorista de processos, cada formato do histograma o qual revela a distribuição dos dados, conta uma historia sobre os dados. Abaixo alguns exemplos de distribuições.
+Para um estatístico ou melhorista de processos, cada forma que os dados se distribuem em um histograma, conta uma historia diferente sobre os dados. Abaixo alguns exemplos de distribuições.
 
 
 ![Tipos de Histogramas](images\histogram_types.png){width="699"}
 
 ## Qual o objetivo {.unnumbered}
 
-- **Visualizar a distribuição dos dados** Ele revela se os dados são simétricos(formato de sino), assimétricos(como uma cauda longa para um lado), concentrados, dispersos, . A forma, da pistas sobre a natureza dos dados e os processos que os geraram.
+- **Visualizar a distribuição dos dados** Ele revela se os dados são simétricos(formato de sino), assimétricos(como uma cauda longa para um lado), concentrados, dispersos. A forma, da pistas sobre a natureza dos dados e os processos que os geraram.
 
 - **Identificar padrões** multimodal(com várias picos), caudas, lacunas ou outliers(valores muito distantes do corpo principal da distribuição)
 
