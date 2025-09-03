@@ -2,13 +2,16 @@
 
 ## O que é {.unnumbered}
 
--   O relatório de três gerações é uma ferramenta que apresenta os dados agrupados e ordenados de acordo com três fases temporais de um determinado problema, que está sendo tratado:
-    -   **Passado** – o que foi planejado e o que foi feito.
+-   O relatório de três gerações é uma ferramenta de análise da qualidade que registra a evolução de um problema, suas cauas e ações corretivas ao longo do tempo. Ele é dividido em três partes também chamado de gerações.
 
-    -   **Presente** – o resultado obtido e os problemas existentes.
+    -   **Primeira geração ou passado** – O que foi planejado e o que foi feito.
 
-    -   **Futuro** – mais propostas de solução ou padronização.
--   Por armazenar uma boa quantidade de informação, os registros de relatórios três gerações podem ser uma opção importante para uso em aplicações RAG(retrieval-augmented generation) que fornecem contextos e referências que podem ser utilizados em sistemas de inteligência artificial generativa.
+    -   **Segunda geração ou presente** – As causas raizes e ações corretivas realizadas.
+
+    -   **Terceira geração ou futuro** – A verificação da eficácia das ações e a padronização para evitar recorrência. 
+
+
+Por armazenar uma boa quantidade de informação, os registros de relatórios três gerações podem ser uma opção importante para uso em aplicações RAG(retrieval-augmented generation) que fornecem contextos e referências que podem ser utilizados em sistemas de inteligência artificial generativa.
 
 ![Figura - Relatório de três gerações](images\three_generation_report.png){width="699"}
 
@@ -20,7 +23,7 @@
 
 -   Um exemplo prático que demonstra a ideia por traz do relatório de três gerações pode ser visto em @vitruvius2009. A obra, reune uma série de situações com assuntos, procedimentos, técnicas e princípios atemporais que puderam e foram utilizados no futuro.
 
-![Figura - Referência bibliografica escrita pelo arquiteto e engenheiro militar romano Marcus Vitruvius em 25 antes de Cristo](images/tres_geracoes_vitruvio.jpg)
+![Figura - Referência bibliografica escrita pelo arquiteto e engenheiro militar romano Marcus Vitruvius em 25 antes de Cristo](images/tres_geracoes_vitruvio.jpg){width="699"}
 
 ## De onde vem {.unnumbered}
 
@@ -42,7 +45,9 @@
 
 -   Após as apresentações do relatório de três gerações o próximo passo é a consolidação da soluções, padronização e treinamento das equipes para replicação das ações como padrão.
 
--   Os dados serão armazenados em base de dados para utilização em soluções RAG(retrieval-augmented generation)
+-   Utilizado como base para treinamentos e capacitação de equipes.
+
+-   Integrado em bancos de dados para IA, como em sistemas RAG, onde os dados históricos são usados para respostas inteligentes e contextualizadas em assistentes virtuais ou sistemas de suporte técnico.
 
 -   As soluções com maiores impactos poderão ser compiladas em manuais e guias para outros profissionais e ou treinamentos na etapa Padronização.
 
