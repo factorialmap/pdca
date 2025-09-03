@@ -15,7 +15,7 @@ A figura abaixo ilustra o método PDCA sendo:
 
 Também conhecido como ciclo de Shewhart ou ciclo de Deming, foi concluído em 1930 por Walter Shewhart no Bell Laboratories que analisando estatisticamente o controle de processos, criou um modelo que poderia ser aplicado em qualquer situação @werkema2021.
 
-O estatístico William Edwards Deming @deming2018 foi o responsável por propagar a idéia no Japão após a segunda guerra mundial. Desde então, obteve-se a popularização ao redor do mundo, das técnicas e da qualidade dos produtos japoneses(veículos, eletronicos, frutas etc), os quais antes da guerra competiam no mercado internacional de produção em massa apenas em preço e não em qualidade.
+O estatístico William Edwards @deming2018 foi o responsável por propagar a idéia no Japão após a segunda guerra mundial. Desde então, obteve-se a popularização ao redor do mundo, das técnicas e da qualidade dos produtos japoneses(veículos, eletronicos, frutas etc), os quais antes da guerra competiam no mercado internacional de produção em massa apenas em preço e não em qualidade.
 
 Segundo @campos1992, o ciclo PDCA tem por princípio tornar mais claras e ágeis as etapas no processo de gerenciamento as quais são assim divididas:
 
