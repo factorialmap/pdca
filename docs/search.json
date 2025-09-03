@@ -20,11 +20,21 @@
     ]
   },
   {
-    "objectID": "index.html#objetivo",
-    "href": "index.html#objetivo",
+    "objectID": "index.html#qual-o-objetivo-do-livro",
+    "href": "index.html#qual-o-objetivo-do-livro",
     "title": "Método PDCA e ferramentas da qualidade",
-    "section": "Objetivo",
-    "text": "Objetivo\nPossibilitar que as ideias e conceitos sobre PDCA e ferramentas da qualidade possam ser usados para o desenvolvimento humano no presente e no futuro. Para facilitar a compreensão, alguns cuidados foram tomados:\n\nUsar uma linguagem simples e exemplos práticos.\nPermitir reprodução em linguagem R mas que pode ser aplicada a outras linguagens.\nExplorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal, ou seja, se as ferramentas mudarem, as ideias continuarão sendo úteis.\nSer um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.",
+    "section": "Qual o objetivo do livro",
+    "text": "Qual o objetivo do livro\nPossibilitar que as ideias e conceitos sobre PDCA e ferramentas da qualidade possam ser usados para o desenvolvimento humano no presente e no futuro. Para isso, alguns cuidados foram tomados:\n\nUsar linguagem simples e exemplos práticos.\nPermitir reprodução dos exemplos em ferramenta com linguagem R.\nExplorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal. Neste caso, se as ferramentas mudarem, as ideias continuarão sendo úteis.\nSer um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#qual-o-tempo-de-leitura-do-livro",
+    "href": "index.html#qual-o-tempo-de-leitura-do-livro",
+    "title": "Método PDCA e ferramentas da qualidade",
+    "section": "Qual o tempo de leitura do livro",
+    "text": "Qual o tempo de leitura do livro\nFoi criado para ser uma leitura com pausas ou para momentos onde houver necessidade, podendo o leitor, retornar periodicamente para revisão do conteúdo.\nEssa ideia também remete a Bonvillian and Sarma (2021), em como lidar com a curva de esquecimento e com a curva de aprendizado.\nNa figura abaixo, conforme a pesquisa de Ebbinhaus de 1880 denominada método de poupança de aprendizado e replicada por Murre and Dros (2015), é possível observar que o esquecimento sobre um assunto abordado(linha vermelha) é neutralizado pelo reforço de aprendizado em períodos subsequentes(linhas verdes), tendo como resultado a redução do esquecimento daquilo que se aprendeu.\n\n\n\nCurva de esquecimento de Ebbinhaus\n\n\nJá na figura abaixo extraída de Quinn (2011), demonstra que quanto maior o tempo e espaçamento do aprendizado juntamente com trabalho prático associado(training), menos acentuada será a curva de esquecimento do tema estudado(test).\n\n\n\nDesign mLearning de Clark Quinn",
     "crumbs": [
       "Preface"
     ]
@@ -35,6 +45,16 @@
     "title": "Método PDCA e ferramentas da qualidade",
     "section": "Agradecimento",
     "text": "Agradecimento\nAgradeço a todos que contribuíram em discussões sobre formatos, experiências para o leitor, com comentários, erros de digitação e outras formas que ajudam a enriquecer o conteúdo desse livro. Os contribuidores a partir de 01 de setembro de 2020 Sheilaback, paulinyzito, SilvioBras, priscilazavadil, Ana Incerti, Muxtaa, FlávioCorrêa e factorialmap.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#referências",
+    "href": "index.html#referências",
+    "title": "Método PDCA e ferramentas da qualidade",
+    "section": "Referências",
+    "text": "Referências\n\n\n\n\nBonvillian, William B., and Sanjay E. Sarma. 2021. Workforce Education: A New Roadmap. The MIT Press.\n\n\nMurre, Jaap M. J., and Joeri Dros. 2015. “Replication and Analysis of Ebbinghaus’ Forgetting Curve.” PLOS ONE 10 (7): 1–23. https://doi.org/10.1371/journal.pone.0120644.\n\n\nQuinn, Clark N. 2011. Designing mLearning: Tapping into the Mobile Revolution for Organizational Performance. Independently published.",
     "crumbs": [
       "Preface"
     ]
@@ -164,7 +184,7 @@
     "href": "cinco-s.html#referências",
     "title": "2  OS 5S",
     "section": "Referências",
-    "text": "Referências\n\n\n\n\nCarvalho, Pedro Carlos De. 2018. O Programa Do 5 S e a Qualidade Total. Alínea.\n\n\nHaroldo Ribeiro. 2006. A Bíblia do 5s da Implantação À Excelência - Sebo do Menino. Casa da Qualidade. https://www.estantevirtual.com.br/sebodomenino/haroldo-ribeiro-a-biblia-do-5s-da-implantacao-a-excelencia-4151684086.\n\n\nKorteling, Johan E., Anne-Marie Brouwer, and Alexander Toet. 2018. “A Neural Network Framework for Cognitive Bias.” Frontiers in Psychology 9 (September). https://doi.org/10.3389/fpsyg.2018.01561.\n\n\nNakata, Kenji. 2000. Acerto 100. Infinito. https://www.facet.br/academico/biblio/material/detalhamento.php?bibliomaterial=2209.\n\n\nVox. 2016. “It’s Not You. Bad Doors Are Everywhere.” February. https://www.youtube.com/watch?v=yY96hTb8WgI.",
+    "text": "Referências\n\n\n\n\nCarvalho, Pedro Carlos De. 2018. O Programa Do 5 S e a Qualidade Total. Alínea.\n\n\nHaroldo Ribeiro. 2006. A Bíblia do 5s da Implantação À Excelência - Sebo do Menino. Casa da Qualidade.\n\n\nKorteling, Johan E., Anne-Marie Brouwer, and Alexander Toet. 2018. “A Neural Network Framework for Cognitive Bias.” Frontiers in Psychology 9 (September). https://doi.org/10.3389/fpsyg.2018.01561.\n\n\nNakata, Kenji. 2000. Acerto 100. Infinito. https://www.facet.br/academico/biblio/material/detalhamento.php?bibliomaterial=2209.\n\n\nVox. 2016. “It’s Not You. Bad Doors Are Everywhere.” February. https://www.youtube.com/watch?v=yY96hTb8WgI.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>OS 5S</span>"
     ]
@@ -244,7 +264,7 @@
     "href": "check-list.html#referências",
     "title": "3  Check-list",
     "section": "Referências",
-    "text": "Referências\n\n\n\n\nKume, Hitoshi. 1992. Metodos Estatisticos Para Melhoria Da Qualidade. 1ª edição. Vol. vol1. Productivity Press. https://www.amazon.com.br/Metodos-Estatisticos-Para-Melhoria-Qualidade/dp/8585247436/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=M%C3%A9todos+Estat%C3%ADsticos+para+melhoria+da+Qualidade&qid=1705377055&sr=8-1.\n\n\nWerkema, Cristina. 2021. Métodos PDCA e Demaic e Suas Ferramentas Analíticas. 1ª edição. GEN Atlas.",
+    "text": "Referências\n\n\n\n\nKume, Hitoshi. 1992. Metodos Estatisticos Para Melhoria Da Qualidade. 1ª edição. Vol. vol1. Productivity Press.\n\n\nWerkema, Cristina. 2021. Métodos PDCA e Demaic e Suas Ferramentas Analíticas. 1ª edição. GEN Atlas.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Check-list</span>"
     ]
@@ -810,6 +830,86 @@
     ]
   },
   {
+    "objectID": "histograma.html",
+    "href": "histograma.html",
+    "title": "11  Histograma",
+    "section": "",
+    "text": "O que é\nExemplo: Se você mede a altura de 100 pessoas, o histograma pode mostrar quantas pessoas têm entre 1.60 e 1.75, entre 1.75 a 1.85, e assim por diante.\nCaracterístias técnicas\nA figura abaixo nos mostra alguns padrões que podem ser observados em um histograma.\nTipos de distribuição dos dados\nPara um estatístico ou melhorista de processos, cada forma que os dados se distribuem em um histograma, conta uma historia diferente sobre os dados. Abaixo alguns exemplos de distribuições.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#o-que-é",
+    "href": "histograma.html#o-que-é",
+    "title": "11  Histograma",
+    "section": "",
+    "text": "É uma ferramenta visual que permite explorar a ideia da distribuição e a organização dos dados. É um tipo diferente de gráfico de barras onde a maior frequencia de dados se concentra no meio do gráfico, é por isso que ele parece uma montanha ou um sino.\nO gráfico mostra como os dados estão distribuídos em torno de uma média, agrupando os dados em faixas(classes) que mostra qantos valores caem em cada faixa.\n\n\n\n\n\nO gráfico da esquerda nos mostra que o peso dos ovos é simétrico ou seja, a maior parte deles pesa em média 57 gramas, já a concentração de ovos que pesam por volta de 45 gramas e 70 gramas é bem pequena.\nO gráfico do centro nos mostra que a distribuição de problemas cardíacos por idade é assimétrica a esquerda ou seja, a ocorrência de casos está concentrada na faixa de idade acima 67 anos, já a concentração de casos abaixo dessa faixa é bem baixo.\nO gráfico da direita nos mostra que a distribuição dos preços das casas é assimétrica a direita ou seja, a maioria das casas da amostra, possuem preços por volta de 450 mil, mas existem algumas poucas com preços bem elevados por volta de 2 milhões cada uma.\n\n\n\n\nFigura - Histogramas\n\n\n\n\n\n\n\nTipos de Histogramas",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#qual-o-objetivo",
+    "href": "histograma.html#qual-o-objetivo",
+    "title": "11  Histograma",
+    "section": "Qual o objetivo",
+    "text": "Qual o objetivo\n\nVisualizar a distribuição dos dados Ele revela se os dados são simétricos(formato de sino), assimétricos(como uma cauda longa para um lado), concentrados, dispersos. A forma, da pistas sobre a natureza dos dados e os processos que os geraram.\nIdentificar padrões multimodal(com várias picos), caudas, lacunas ou outliers(valores muito distantes do corpo principal da distribuição)\nComparar distribuições de diferentes conjuntos de dados (e.g. podemos comparar a distribuição de notas de alunos em duas turmas diferentes para avaliar se o desempenho relativo das turmas)\nApoior decisões guiando a escolha de modelos estatísticos mais adequados para cada tipo de dados em áreas como estatística, ciência de dados, economia, psicologia, medicina, engenharia ou outra área que lide com dados quantitativos.\nTraduzir o caos em ordem transformando uma lista aparentemente aleatória de números em uma imagem compreensível.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#de-onde-vem",
+    "href": "histograma.html#de-onde-vem",
+    "title": "11  Histograma",
+    "section": "De onde vem",
+    "text": "De onde vem\n\nA necessidade surgiu da análise estatística aplicada a qualidade, especialmente com o movimento da qualidade total (TQM) e o ciclo PDCA. Empresas precisavam entender como os processos se comportavam para melhorar os produtos, reduzir falhas e tomar decisões baseada em dados reais.\n\nNo exemplo da figura abaixo\n\nCausas especiais estão agindo no processo\nElas são eliminadas, no entanto a variação está muito alta rompendo os limites da especificação.\nÉ feito um trabalho de redução da variação eliminando causas comuns de variação.\nO histograma nos mostra que o processo ficou estável e sob controle.\n\n\n\n\nExemplo do uso de histograma na visualização e ajuste de processos",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#como-fazer",
+    "href": "histograma.html#como-fazer",
+    "title": "11  Histograma",
+    "section": "Como fazer",
+    "text": "Como fazer\nExemplo um histograma dos preços de casas em Ames Iowa em 2011\nPodemos notar alguns detalhes na distribuição dos preços de imóveis. As linhas pontilhadas são a média de preços.\n\nNão possui ar condicionado central - histograma vermelho: mostra que a quantidade de imóveis é pequena, a distribuição dos preços é normal com preços bem abaixo dos 200 mil dólares.\nPossui ar condicionado central - histograma azul: mostra que a quantidade de imóveis é grande, a distribuição dos preços é assimétrica ou seja, muitas casas tem o preço próximoa 200 mil dólares e poucas casas tem preços acima de 600 mil.\n\n\n\nCode\nlibrary(modeldata)\nlibrary(ggpubr)\nlibrary(scales)\n\ndata(\"ames\")\n\names %&gt;% \n  gghistogram(x = \"Sale_Price\",\n              add = \"mean\",\n              rug = TRUE,\n              fill = \"Central_Air\")+\n  scale_x_continuous(labels = label_number(scale_cut = cut_short_scale()))\n\n\n\n\n\n\n\n\n\nExemplo um histograma com média de 10\nAqui um exemplo de histograma usado em manufatura onde especificação tem limite máximo de 12 e mínimo de 8. Podemos observar que a média de tamanho da peça é de 10 e a variação está dentro dos limites da especificação.\n\n\nCode\n#packages\nlibrary(tidyverse)\nlibrary (ggQC)\nlibrary(patchwork)\n\n#data - para criar os gráficos b, c e d, altere os desvios padrão.\nset.seed(1221)\ndata_norm_dist &lt;-\n  data.frame(process_id = 1:1000,\n             sub_group = rep(1:20, each = 5),\n             process_value = rnorm(n = 1000, mean = 10, sd = .5))\n\n#Capability plot\ndata_norm_dist %&gt;%\n  ggplot (aes (x = process_value ))+\n  geom_histogram(bins = 30)+\n  geom_vline(aes (xintercept = mean (process_value)),\n             linetype = \"dashed\")+\n  stat_QC_Capability(LSL = 8,USL = 12,\n                     show.cap.summary = c(\"Cp\",\"Cpk\"),\n                     cap.summary.size = 3,\n                     method = \"XmR\")+\n  scale_x_continuous (expand = expansion (mult = c(.15,.6)))",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#pra-onde-vai",
+    "href": "histograma.html#pra-onde-vai",
+    "title": "11  Histograma",
+    "section": "Pra onde vai",
+    "text": "Pra onde vai\nDepois de criado, o histograma pode ser usado:\n\nEm reuniões de análise de desempenho.\nPara identificar gargalos ou oportunidades de melhoria.\nComo base para decisões estratégicas, como mudanças em logística ou atendimento.\nEm relatórios gerenciais, para mostrar o comportamento de indicadores.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#qual-o-resultado",
+    "href": "histograma.html#qual-o-resultado",
+    "title": "11  Histograma",
+    "section": "Qual o resultado",
+    "text": "Qual o resultado\n\nClareza sobre o comportamento dos dados.\nIdentificação de padrões ou anomalias.\nMelhoria na tomada de decisão.\nRedução de variabilidade e aumento da previsibilidade.\nBase para ações corretivas ou preventivas.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
+    "objectID": "histograma.html#referências",
+    "href": "histograma.html#referências",
+    "title": "11  Histograma",
+    "section": "Referências",
+    "text": "Referências",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+    ]
+  },
+  {
     "objectID": "grafico-de-controle.html",
     "href": "grafico-de-controle.html",
     "title": "12  Gráfico de controle",
@@ -972,231 +1072,111 @@
   {
     "objectID": "padronizacao.html",
     "href": "padronizacao.html",
-    "title": "13  Padronização",
+    "title": "14  Padronização",
     "section": "",
     "text": "O que é",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Padronização</span>"
     ]
   },
   {
     "objectID": "padronizacao.html#o-que-é",
     "href": "padronizacao.html#o-que-é",
-    "title": "13  Padronização",
+    "title": "14  Padronização",
     "section": "",
     "text": "Padronização é a atapa onde os registros das ações realizadas que se comprovaram eficazes são consolidados, os documentos e normas são publicadas e os treinamentos são realizados. Um exemplo comum é o POP(procedimento operacaional padrão).\nA padronização envolve estabelecer e seguir um conjunto de regras ou especificações sobre como realizar uma determinada tarefa ou atividade. Ela pode se fundir com o compliance que é o ato ou processo de cumprimento de uma regra, norma ou aquilo que foi proposto para evitar que problemas apareçam ou sejam reincidentes. Esta relacionado a conformidade no cumprimento de requisitos oficiais.\n\n\n\n\nFigura - Procedimento operacional padrão",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Padronização</span>"
     ]
   },
   {
     "objectID": "padronizacao.html#qual-o-objetivo",
     "href": "padronizacao.html#qual-o-objetivo",
-    "title": "13  Padronização",
+    "title": "14  Padronização",
     "section": "Qual o objetivo",
     "text": "Qual o objetivo\n\nPermitir a reprodução de processos considerandos eficazes, reduzindo a variação, o desperdício de recursos e os custos de produção melhorando a competitividade.\nAjuda a garantir que os processos sejam consistentes, eficientes e eficazes melhorando o desempenho e os resultados por ser utilizados as melhores práticas até então conhecidas.\nMelhorar a comunicação e colaboração entre os envolvidos usando formatos e linguagens comuns tornando os processos mais simples de serem monitorados e ajustados.\nAuxiliar na criação e cumprimento das regras e normas.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Padronização</span>"
     ]
   },
   {
     "objectID": "padronizacao.html#de-onde-vem",
     "href": "padronizacao.html#de-onde-vem",
-    "title": "13  Padronização",
+    "title": "14  Padronização",
     "section": "De onde vem",
     "text": "De onde vem\n\nDa necessidade de adaptações aos benchmarks do setor, feedback de consumidores, requisitos regulatórios e conhecimento interno vindos através de testes, experimentos e sugestões.\nEncurtar o tempo na implantação e adaptação de modelos que foram testados e que apresentaram resultados positivos.\nDa necessidade de evitar a reincidências de problemas.\n\n\n\n\nFigura - Etapa 6 e 7 do PDCA: Verificar indicadores direcionadores e de resultado",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Padronização</span>"
     ]
   },
   {
     "objectID": "padronizacao.html#como-fazer",
     "href": "padronizacao.html#como-fazer",
-    "title": "13  Padronização",
+    "title": "14  Padronização",
     "section": "Como fazer",
     "text": "Como fazer\n\nReplicar as atividades que funcionaram conforme planejados e foram consideradas eficazes.\nCriar diretrizes que servirão como orientação para o processo (e.g especificações, regras, melhores práticas, procedimentos, check-lists, modelos, métricas, políticas entre outros) para a obtenção de consistência e qualidade no processo.\nRevisar as ações que não tiveram um bom desempenho e propor mudanças.\nAdotar as soluções definidas como padrão.\nPlanejar monitoramento contínuo das soluções padronizadas.\nVerificar se o padrão está sendo seguido.\nMedir e acommpanhar o desempenho dos resultados do processo comparando com a linha de base e registrando os resultados para verificar o que está funcionando e o que não está. Indicadores como tempo, custo, qualidade e satisfação podem ser utilizadas e apresentados em ferramentas como paineis, relatórios e sistemas ed feedback. A coleta de dados pode ser feita com auxilio de pesquisas, auditorias e análise para avaliar e melhorar os padrões.\nIdentificar se há mudanças sistemáticas.\nProcurar a próxima oportunidade de melhoria.\nComunicar em linguagem consistente e que seja fácil de ser compreendida, pode ser utilizadas fluxogramas, diagramas, vídeos e manuais com a ideia da comunicação ser clara e concisa.\nTreinar pessoas e fornecer os recursos, ferramentas e suporte necessário que permita a execussão do processo padronizado com foco na formação de cultura de melhoria contínua.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Padronização</span>"
     ]
   },
   {
     "objectID": "padronizacao.html#pra-onde-vai",
     "href": "padronizacao.html#pra-onde-vai",
-    "title": "13  Padronização",
+    "title": "14  Padronização",
     "section": "Pra onde vai",
     "text": "Pra onde vai\n\nApós a etapa de padronização, o PDCA é reiniciado como parte do processo de melhoria contínua seja no processo existente, um novo.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Padronização</span>"
     ]
   },
   {
     "objectID": "padronizacao.html#qual-o-resultado",
     "href": "padronizacao.html#qual-o-resultado",
-    "title": "13  Padronização",
+    "title": "14  Padronização",
     "section": "Qual o resultado",
     "text": "Qual o resultado\n\nMelhorar a capacidade e velocidade de adaptação e ajustes aos diferences ciclos existentes dentro dos negócios. e vida pessoal.\nFacilitar o aprendizado, a comunicação e geração de ideias pois como a padronização a ideia é que todos falem a mesma lingua.\nCriação de cultura que pode guiar uma sociedade no longo prazo.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Padronização</span>"
     ]
   },
   {
     "objectID": "padronizacao.html#referências",
     "href": "padronizacao.html#referências",
-    "title": "13  Padronização",
+    "title": "14  Padronização",
     "section": "Referências",
     "text": "Referências",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Padronização</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Padronização</span>"
     ]
   },
   {
     "objectID": "glossario.html",
     "href": "glossario.html",
-    "title": "14  Glossário",
+    "title": "15  Glossário",
     "section": "",
     "text": "Objetivo\n\nA ideia do glossário é auxiliar o iniciante em sua jornada de aprendizado.\nJuntando descrição técnica + analogias para que a ideia do termo utilizado faça sentido para os que não ainda não possuem familiaridade com ele.\nPor estar em uma linguagem simples, não significa que o contexto seja simples havendo necessidade de aprofundar-se no tema. Portanto, este é apenas um mecanismo para auxiliar a rede neural biologica(cerebro) associar o novo contexto ao contexto usado no dia-a-dia permitindo assim, a entrada e processado da informação através da perspectiva da associação. Em resumo seria a percepção Ahh, agora isso fez sentido!\n\nAlgorítmo: Sequencia de instruções usadas para resolver uma classe de problemas específicos como por exemplo realizar cálculos. Em outras palavras, seria um conjunto de regras que define com precisão uma sequencia de operações. O nome é derivado do matemático persa al-Khwarizmi que viveu por volta do ano 813 o qual seus trabalhos estabeleceram as bases da álgebra que leva o nome do seu livro Al-Jabr e também na trigonometria.\nHeurística: é uma abordagem para resolução de problemas que pode não ser totalmente especificada ou pode não garantir resultados corretos ou ótimos, especialmente em domínios de problemas onde não há um resultado correto ou ótimo bem definido.\nCalibração: Processo de ajustar um modelo estatístico para que ele seja mais preciso e confiável. Imagine um modelo que tenta prever a probabilidade de fazer sol amanhã. No entanto, o modelo pode estar um pouco desajustado e não refletir bem a realidade e precisar de calibração. Seria como afinar o modelo para que ele seja mais preciso comparando as previsões com os resultados reais, em seguida ajustando os parametros para minimizar os erros. Seria como afinar as cordas de um violão usando um afinador como parametro real.\nMachine learning:\nOdds ratio: Medida estatística que compara a probabilidade de um evento ocorrer em dois grupos diferentes. Imagine que você quer saber se comer gorduras aumenta a chance de obesidade. Você compara dois grupos sendo grupo 1 pessoas que comem gordura e grupo 2 pessoas que não comem gordura. O odds ratio é a razão entre as chances de obesidade entre os dois grupos, se for maior que 1 singifica que o evento(obesidade) é mais provável de ocorrer no grupo que come gorduras, se for igual a 1 significa que não há diferença entre os grupos. Por exemplo se o odds ratio for 3, significa que pessoas que comem gorduras tem 3 vezes mais chandes de obesidade do que as pessoas que não comem gorduras. O odds ratio não é uma medida de causa e efeito, mas sim apenas uma forma de comparar a probabilidade de um evento ocorrer em diferentes grupos.\nCorreção de Bonferroni:\nDocumento reproduzível: Documento onde é possível inserir texto, fórmulas matemáticas e códigos de programação e ou instruções que permitam a reprodução por outros pesquisadores.\nDesvio padrão: Medida de dispersão em torno de uma média. Quanto maior o desvio padrão, maior será a variação em torno da média.\nErro padrão:\nVariável binária: Variável que pode ter apenas dois valores possíveis, geralmente representados por 0 ou 1. Pense em uma pergunta do tipo sim ou não. A resposta pode ser apenas uma das duas opções, ou seja, não há mais escolhas. Como na computação as maquinas trabalham com números essas respostas sao transformadas em números. Sim(1), Não(0), Passa(1), Não passa(0), Defeito(1), Não defeito(0). Essas variáveis são fundamentais da lógica de computadores e são usadas em muitas áreas como programação, estatística e inteligência artificial.\nFalso negativo:\nFalso positivo:\nTeste A/B:\nTeste caso/controle:\nGrupo controle:\nGrupo tratamento:\nPlacebo:\nSabedoria das multidões:\nSignificancia estatística: Hipótese nula:\nVariável discreta: É um tipo de variável que é representada por números, ou seja uma quantidade mas que pode ter apenas valores inteiros e se move em saltos. Por exemplo número de filhos, quantidade de veículos que uma pessoa tem, número de lados em um dado. Geralmente esse tipo de variável pode ser contada. Uma regra geral para identificar se a variável é discreta, tente imaginar se alguem teria 3,8 cachorros em casa, ou uma gelaeira e meia, certamente que não. Logo, a varável é discretra.\nVariável contínua: É um tipo de variável que é representada por números, ou seja uma quantidade que se move lentamente dentro de um intervalo podendo ter valores fracionários ou decimais como a altura de uma pessoa que pode ser 1,75 metros, ou peso de uma melancia que pode ser de 5,7kgs ou a temperatura de uma geladeira que pode ser 5,3 graus.\nVariável dependente:\nVariável de desfecho:\nVariável de resposta:\nVariável independente:\nVariável preditora:\nCp: Capacidade de processo é uma medida que avalia se um processo é capaz de produtize resultados dentro de limites aceitáveis e consistentes dentro de uma especificação. É calculado com base na variabilidade do processo e nas tolerâncias especificadas. Quando maior o CP, maior a capacidade do processo de produzir resultados dentro da especificação.\nImagine a produção de parafusos com diâmetro especificado de 10 mm e tolerância de 0,5mm. Se o CP é alto, significa que o processo é capaz de produzir parafusos com diâmetros entre 9.5mm e 10,5 mm.\nCpk: Capacidade de processo centralizada é uma medida que avalia se um processo é capaz de produzir resultados dentro de limite aceitaveis e consistentes dentro de uma espefificação mas também a centralização dos resultados em relação às especificações. Ela mede a capacidade de um processo de produzir resultados consistentes, dentro das especificações e próximos do valor nominal. É calculado com base na variabilidade do processo, nas tolerâncias especificadas e na centralização dos resultados. Quanto maior o CPK, maior a capacidade do processo de produzir resultados dentro das especificações e próximso do valor nominal.\nImagine a produção de parafusos com diâmetro especificado de 10 mm e tolerância de 0,5mm. Se o CPK é alto, significa que o processo é capaz de produzir parafusos com diâmetros próximos de 10mm, dentro da tolerância de 0,5mm.\nPreditores:\nDistribuição normal:\nDistribuição binomial:\nDistribuição Bernoulli:\nDistribuição Poisson:\nFeature engineering:\nErro do tipo I:\nErro do tipo II:\nErro do tipo III:\nPonto 1 de Deming: Crie constancia de propósito para melhorar continuamente produtos e serviços.\nPonto 3 de Deming: Opte por melhorar a qualidade ao inves de inspeções em massa.\nPonto 4 de Deming: Evite premiar negócios com base no preço inicial. Pense no custo total e quanto as variações influenciam na qualidade.\nPonto 5 de Deming: Melhorar constantemente independente do ciclo economico, seja de expansão ou retração.\nPonto 6 de Deming: Instituir treinamento de trabalho.\nPonto 7 de Deming: Ter em mente que o objetivo da supervisão é ajudar as pessoas, maquinas e dispositivos a fazere um trabalho melhor.\nPonto 8 de Deming: Afastar o medo para que todos possam trabalhar de forma eficaz para a empresa.\nPonto 9 de Deming: Derrubar barreiras entre departamentos. Promover a cooperação e intetração entre os times de pesquisa, design, vendas e produção.\nPonto 10 de Deming: Eliminar slogans e exortações e metas para forçar o trabalho pedindo zero defeitos e novos níveis de produtividade.\nPonto 11 de Deming: Eliminar cotas de trabalho no chão da fabrica.\nPonto 12 de Deming: Eliminar gestão por objetivos de curto prazo.Remover as barreiras de roubam as pessoas o seu direito ao orgulho do seu trabalho.\nPonto 13 de Deming: Instituir programa vigoroso de educação e auto aperfeiçoamento.\nPonto 14 de Deming: Colocar todos para trabalhar para realizar a transformação. A transformação é tarefa de todos(Deming, W. Edwards. Fora da crise (MIT Press) (pp. 23-24) )",
     "crumbs": [
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Glossário</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Glossário</span>"
     ]
   },
   {
     "objectID": "equation.html",
     "href": "equation.html",
-    "title": "15  Equações matemáticas LaTeX",
+    "title": "16  Equações matemáticas LaTeX",
     "section": "",
     "text": "Notações para estatística\nPara aplicar equações matematicas em r markdown é bastante simples. Você precisará usar os simbolos $ ou $$ com os detalhes da equação dentro desses simbolos por exemplo $E=m.c^2$ que ficaria \\(E=m.c^2\\)",
     "crumbs": [
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Equações matemáticas LaTeX</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Equações matemáticas LaTeX</span>"
     ]
   },
   {
     "objectID": "equation.html#notações-para-estatística",
     "href": "equation.html#notações-para-estatística",
-    "title": "15  Equações matemáticas LaTeX",
+    "title": "16  Equações matemáticas LaTeX",
     "section": "",
     "text": "Equação renderizado\nEquação código fonte\nDescrição\n\n\n\n\n\\(\\overline{x}\\)\n$\\overline{x}$\nMédia da amostra\n\n\n\\(\\mu\\)\n$\\mu$\nMédia da população\n\n\n\\(n\\)\n$n$\nTamanho da amostra\n\n\n\\(\\sigma\\)\n$\\sigma$\nDesvio padrão da população\n\n\n\\(\\sum\\)\n$\\sum$\nSoma\n\n\n\\(\\beta\\)\n$\\beta$\nBeta (probabilidade erro tipo 2)\n\n\n\\(s\\)\n$s$\nDesvio padrão da amostra\n\n\n\\(\\alpha\\)\n$\\alpha$\nNível de significância estatística (probabilidade do erro tipo 1)\n\n\n\\(H_0:\\mu_1 = \\mu_2\\)\n$H_0:\\mu_1 = \\mu_2\nHipótese nula de que as médias populacionais de dois grupos são iguais. Não há diferença entre os dois grupos.\n\n\n\\(H_0\\)\n$H_0$\nHipótese nula\n\n\n\\(H_1\\)\n$H_1$\nHipótese alternativa\n\n\n\\(CI\\)\n$CI$\nIntervalo de confiança\n\n\n\\(\\int_{a}^{b} x^2 \\,dx\\)\n$\\int_{a}^{b} x^2 \\,dx$\nIntegral\n\n\n\\(\\lambda\\)\n$\\lambda$\nLambda\n\n\n\\(\\theta\\)\n$\\theta$\nTheta, parâmetro da população \\(\\Theta = (\\mu,\\sigma)\\)\n\n\n\\(Pr(&gt;\\lvert z \\rvert)\\)\n$Pr(&gt;\\lvert z \\rvert)$\nProbabilidade de que o valor absoluto de z seja maior que algum valor\n\n\n\\(x = y\\)\n$x = y$\nx= y\n\n\n\\(x &lt; y\\)\n$x &lt; y$\nx menor que y\n\n\n\\(x \\geq y\\)\n$x \\geq y$\nx maior ou igual a y\n\n\n\\(x \\leq y\\)\n$x \\leq y$\nx menor ou igual a y\n\n\n\\(x \\neq y\\)\n$x \\neq y$\nx diferente de y\n\n\n\\(\\sum_{i=1}^{n}\\)\n$\\sum_{i=1}{n}$\nSoma dos termos ou um indice i começando em 1 e indo até n\n\n\n\\(Y_i \\sim N(\\mu,\\sigma)\\)\n$Y_i \\sim N(\\mu,\\sigma)$\nYi segue uma distribuição normal\n\n\n\\(N(\\mu, \\sigma^2)\\)\n$N(\\mu \\sigma^2)$\nDistribuição normal com média e variancia.\n\n\n\\(X\\sim N(\\mu, \\sigma^2)\\)\n$X\\sim N(\\mu,\\sigma^2)$\nX segue distribuiçao normal com média e variância\n\n\n\\(\\bar{x}=\\frac{1}{n}\\sum_{i=1}^{n}\\)\n$\\bar{x}=\\frac{1}{n}\\sum_{i=1}^{n}$\nMédia amostral de um conjunto de valores. Soma de todos os valores dividido pelo número de valores\n\n\n\\(f(k)={n\\choose k} p^{k} (1-p)^{n-k}\\)\n$f(k)={n\\choose k} p^{k} (1-p)^{n-k}$\nDistribuição binomial de probabilidade\n\n\n\\(\\chi^2 = \\sum \\frac {(O - E)^2}{E}\\)\n$\\chi^2 = \\sum \\frac {(O - E)^2}{E}$\nChi-quadrado para determinar se há diferença entre os valore observados e valores esperados.\n\n\n\\(Y_i = \\beta0 + \\beta_iX +\\epsilon_i\\)\n$Y_i = \\beta0 + \\beta_iX +\\epsilon_i$\nRegressão linear\n\n\n\\(log{(\\frac{p}{1-p})} = \\beta_0 + \\beta_1X_1\\)\n$log{(\\frac{p}{1-p})} = \\beta_0 + \\beta_1X_1$\nRegressão logística logit\n\n\n\\(\\frac{e(\\beta_0+\\beta_1x)}{1 + e(\\beta_0+\\beta_1x)}\\)\n$\\frac{e(\\beta_0+\\beta_1x)}{1 + e(\\beta_0+\\beta_1x)}$\nFunção logística ou sigmóide\n\n\n\\(\\frac{e^x}{1 + e^x}\\)\n$\\frac{e^x}{1 + e^x}$\nFunção logística\n\n\n\\(n= \\frac{z^2.p.q.N}{e^2.(N-1)+z^2.p.q}\\)\n$n= \\frac{z^2.p.q.N}{e^2.(N-1)+z^2.p.q}$\nCalculo da amostra variavel nominal de população finita\n\n\n\\(SSW(C,k) =\\sum_{ i=1}^{N} || x_i - c_p{(i)}||^2\\)\n$H_0$\n\n\n\n\\(j=\\sum_{n=1}^k\\sum_{i=1}^{n}||x_i^{(j)}-c_j||^2\\)\n$j=\\sum_{n=1}^k\\sum_{i=1}^{n}||x_i^{(j)}-c_j||^2$\nk-mean cluster\n\n\n\\(\\sum_{i=1}^{n}\\)\n$\\sum_{i=1}^{n}$\nSomatória de elementos\n\n\n\\(\\overline{x}= \\frac{\\sum x}{n}\\)\n$\\frac{\\sum_{i=1}^{n}x_i}{n}$\nMédia\n\n\n\\(s=\\sqrt{\\frac{\\sum(x - \\overline{x})^2}{n-1}}\\)\n$s=\\sqrt{\\frac{\\sum(x - \\overline{x})^2}{n-1}}$\nDesvio padrão\n\n\n\\(s^2=\\frac{\\sum(x_i- \\overline{x})^2} {n-1}\\)\n$s^2=\\frac{\\sum(x_i- \\overline{x})^2} {n-1}$\nVariância\n\n\n\\(P(A or B)=P(A)+P(B)-P(A and B)\\)\n$P(A or B)=P(A)+P(B)-P(A and B)$\nProbabilidade\n\n\n\\(V(s)=max_a(R(s,a)+\\gamma V(s'))\\)\n$V(s)=max_a(R(s,a)+\\gamma V(s’))$\nBellman Equation\n\n\n\\(\\lambda\\)\n$\\lambda$\nLambda\n\n\n\\(\\phi\\)\n$\\phi$\nPhi\n\n\n\\(\\sqrt9\\)\n$\\sqrt9$\nRaiz quadrada de 9\n\n\n\\(\\approx\\)\n$\\approx$\nAproximado",
     "crumbs": [
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Equações matemáticas LaTeX</span>"
-    ]
-  },
-  {
-    "objectID": "equation.html#section",
-    "href": "equation.html#section",
-    "title": "15  Equações Latex",
-    "section": "15.2 ",
-    "text": "15.2",
-    "crumbs": [
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Equações Latex</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#qual-o-objetivo-do-livro",
-    "href": "index.html#qual-o-objetivo-do-livro",
-    "title": "Método PDCA e ferramentas da qualidade",
-    "section": "Qual o objetivo do livro",
-    "text": "Qual o objetivo do livro\nPossibilitar que as ideias e conceitos sobre PDCA e ferramentas da qualidade possam ser usados para o desenvolvimento humano no presente e no futuro. Para isso, alguns cuidados foram tomados:\n\nUsar linguagem simples e exemplos práticos.\nPermitir reprodução dos exemplos em ferramenta com linguagem R.\nExplorar a ideia por traz dos métodos e ferramentas com o objetivo de ser atemporal. Neste caso, se as ferramentas mudarem, as ideias continuarão sendo úteis.\nSer um gatilho para reflexão, permitindo a geração de ideias próprias ao invés de ser um livro de melhores práticas.",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
-    "objectID": "index.html#qual-o-tempo-de-leitura-do-livro",
-    "href": "index.html#qual-o-tempo-de-leitura-do-livro",
-    "title": "Método PDCA e ferramentas da qualidade",
-    "section": "Qual o tempo de leitura do livro",
-    "text": "Qual o tempo de leitura do livro\nFoi criado para ser uma leitura com pausas ou para momentos onde houver necessidade, podendo o leitor, retornar periodicamente para revisão do conteúdo.\nEssa ideia também remete a Bonvillian and Sarma (2021), em como lidar com a curva de esquecimento e com a curva de aprendizado.\nNa figura abaixo, conforme a pesquisa de Ebbinhaus de 1880 denominada método de poupança de aprendizado e replicada por Murre and Dros (2015), é possível observar que o esquecimento sobre um assunto abordado(linha vermelha) é neutralizado pelo reforço de aprendizado em períodos subsequentes(linhas verdes), tendo como resultado a redução do esquecimento daquilo que se aprendeu.\n\n\n\nCurva de esquecimento de Ebbinhaus\n\n\nJá na figura abaixo extraída de Quinn (2011), demonstra que quanto maior o tempo e espaçamento do aprendizado juntamente com trabalho prático associado(training), menos acentuada será a curva de esquecimento do tema estudado(test).\n\n\n\nDesign mLearning de Clark Quinn",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
-    "objectID": "index.html#referências",
-    "href": "index.html#referências",
-    "title": "Método PDCA e ferramentas da qualidade",
-    "section": "Referências",
-    "text": "Referências\n\n\n\n\nBonvillian, William B., and Sanjay E. Sarma. 2021. Workforce Education: A New Roadmap. The MIT Press.\n\n\nMurre, Jaap M. J., and Joeri Dros. 2015. “Replication and Analysis of Ebbinghaus’ Forgetting Curve.” PLOS ONE 10 (7): 1–23. https://doi.org/10.1371/journal.pone.0120644.\n\n\nQuinn, Clark N. 2011. Designing mLearning: Tapping into the Mobile Revolution for Organizational Performance. Independently published.",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
-    "objectID": "histograma.html",
-    "href": "histograma.html",
-    "title": "11  Histograma",
-    "section": "",
-    "text": "O que é\nExemplo: Se você mede a altura de 100 pessoas, o histograma pode mostrar quantas pessoas têm entre 1.60 e 1.75, entre 1.75 a 1.85, e assim por diante.\nCaracterístias técnicas\nA figura abaixo nos mostra alguns padrões que podem ser observados em um histograma.\nTipos de distribuição dos dados\nPara um estatístico ou melhorista de processos, cada forma que os dados se distribuem em um histograma, conta uma historia diferente sobre os dados. Abaixo alguns exemplos de distribuições.",
-    "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
-    ]
-  },
-  {
-    "objectID": "histograma.html#o-que-é",
-    "href": "histograma.html#o-que-é",
-    "title": "11  Histograma",
-    "section": "",
-    "text": "É uma ferramenta visual que permite explorar a ideia da distribuição e a organização dos dados. É um tipo diferente de gráfico de barras onde a maior frequencia de dados se concentra no meio do gráfico, é por isso que ele parece uma montanha ou um sino.\nO gráfico mostra como os dados estão distribuídos em torno de uma média, agrupando os dados em faixas(classes) que mostra qantos valores caem em cada faixa.\n\n\n\n\n\nO gráfico da esquerda nos mostra que o peso dos ovos é simétrico ou seja, a maior parte deles pesa em média 57 gramas, já a concentração de ovos que pesam por volta de 45 gramas e 70 gramas é bem pequena.\nO gráfico do centro nos mostra que a distribuição de problemas cardíacos por idade é assimétrica a esquerda ou seja, a ocorrência de casos está concentrada na faixa de idade acima 67 anos, já a concentração de casos abaixo dessa faixa é bem baixo.\nO gráfico da direita nos mostra que a distribuição dos preços das casas é assimétrica a direita ou seja, a maioria das casas da amostra, possuem preços por volta de 450 mil, mas existem algumas poucas com preços bem elevados por volta de 2 milhões cada uma.\n\n\n\n\nFigura - Histogramas\n\n\n\n\n\n\n\nTipos de Histogramas",
-    "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
-    ]
-  },
-  {
-    "objectID": "histograma.html#qual-o-objetivo",
-    "href": "histograma.html#qual-o-objetivo",
-    "title": "11  Histograma",
-    "section": "Qual o objetivo",
-    "text": "Qual o objetivo\n\nVisualizar a distribuição dos dados Ele revela se os dados são simétricos(formato de sino), assimétricos(como uma cauda longa para um lado), concentrados, dispersos. A forma, da pistas sobre a natureza dos dados e os processos que os geraram.\nIdentificar padrões multimodal(com várias picos), caudas, lacunas ou outliers(valores muito distantes do corpo principal da distribuição)\nComparar distribuições de diferentes conjuntos de dados (e.g. podemos comparar a distribuição de notas de alunos em duas turmas diferentes para avaliar se o desempenho relativo das turmas)\nApoior decisões guiando a escolha de modelos estatísticos mais adequados para cada tipo de dados em áreas como estatística, ciência de dados, economia, psicologia, medicina, engenharia ou outra área que lide com dados quantitativos.\nTraduzir o caos em ordem transformando uma lista aparentemente aleatória de números em uma imagem compreensível.",
-    "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
-    ]
-  },
-  {
-    "objectID": "histograma.html#de-onde-vem",
-    "href": "histograma.html#de-onde-vem",
-    "title": "11  Histograma",
-    "section": "De onde vem",
-    "text": "De onde vem\n\nA necessidade surgiu da análise estatística aplicada a qualidade, especialmente com o movimento da qualidade total (TQM) e o ciclo PDCA. Empresas precisavam entender como os processos se comportavam para melhorar os produtos, reduzir falhas e tomar decisões baseada em dados reais.\n\nNo exemplo da figura abaixo\n\nCausas especiais estão agindo no processo\nElas são eliminadas, no entanto a variação está muito alta rompendo os limites da especificação.\nÉ feito um trabalho de redução da variação eliminando causas comuns de variação.\nO histograma nos mostra que o processo ficou estável e sob controle.\n\n\n\n\nExemplo do uso de histograma na visualização e ajuste de processos",
-    "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
-    ]
-  },
-  {
-    "objectID": "histograma.html#como-fazer",
-    "href": "histograma.html#como-fazer",
-    "title": "11  Histograma",
-    "section": "Como fazer",
-    "text": "Como fazer\nExemplo um histograma dos preços de casas em Ames Iowa em 2011\nPodemos notar alguns detalhes na distribuição dos preços de imóveis. As linhas pontilhadas são a média de preços.\n\nNão possui ar condicionado central - histograma vermelho: mostra que a quantidade de imóveis é pequena, a distribuição dos preços é normal com preços bem abaixo dos 200 mil dólares.\nPossui ar condicionado central - histograma azul: mostra que a quantidade de imóveis é grande, a distribuição dos preços é assimétrica ou seja, muitas casas tem o preço próximoa 200 mil dólares e poucas casas tem preços acima de 600 mil.\n\n\n\nCode\nlibrary(modeldata)\nlibrary(ggpubr)\nlibrary(scales)\n\ndata(\"ames\")\n\names %&gt;% \n  gghistogram(x = \"Sale_Price\",\n              add = \"mean\",\n              rug = TRUE,\n              fill = \"Central_Air\")+\n  scale_x_continuous(labels = label_number(scale_cut = cut_short_scale()))\n\n\n\n\n\n\n\n\n\nExemplo um histograma com média de 10\nAqui um exemplo de histograma usado em manufatura onde especificação tem limite máximo de 12 e mínimo de 8. Podemos observar que a média de tamanho da peça é de 10 e a variação está dentro dos limites da especificação.\n\n\nCode\n#packages\nlibrary(tidyverse)\nlibrary (ggQC)\nlibrary(patchwork)\n\n#data - para criar os gráficos b, c e d, altere os desvios padrão.\nset.seed(1221)\ndata_norm_dist &lt;-\n  data.frame(process_id = 1:1000,\n             sub_group = rep(1:20, each = 5),\n             process_value = rnorm(n = 1000, mean = 10, sd = .5))\n\n#Capability plot\ndata_norm_dist %&gt;%\n  ggplot (aes (x = process_value ))+\n  geom_histogram(bins = 30)+\n  geom_vline(aes (xintercept = mean (process_value)),\n             linetype = \"dashed\")+\n  stat_QC_Capability(LSL = 8,USL = 12,\n                     show.cap.summary = c(\"Cp\",\"Cpk\"),\n                     cap.summary.size = 3,\n                     method = \"XmR\")+\n  scale_x_continuous (expand = expansion (mult = c(.15,.6)))",
-    "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
-    ]
-  },
-  {
-    "objectID": "histograma.html#pra-onde-vai",
-    "href": "histograma.html#pra-onde-vai",
-    "title": "11  Histograma",
-    "section": "Pra onde vai",
-    "text": "Pra onde vai\nDepois de criado, o histograma pode ser usado:\n\nEm reuniões de análise de desempenho.\nPara identificar gargalos ou oportunidades de melhoria.\nComo base para decisões estratégicas, como mudanças em logística ou atendimento.\nEm relatórios gerenciais, para mostrar o comportamento de indicadores.",
-    "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
-    ]
-  },
-  {
-    "objectID": "histograma.html#qual-o-resultado",
-    "href": "histograma.html#qual-o-resultado",
-    "title": "11  Histograma",
-    "section": "Qual o resultado",
-    "text": "Qual o resultado\n\nClareza sobre o comportamento dos dados.\nIdentificação de padrões ou anomalias.\nMelhoria na tomada de decisão.\nRedução de variabilidade e aumento da previsibilidade.\nBase para ações corretivas ou preventivas.",
-    "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
-    ]
-  },
-  {
-    "objectID": "histograma.html#referências",
-    "href": "histograma.html#referências",
-    "title": "11  Histograma",
-    "section": "Referências",
-    "text": "Referências",
-    "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Histograma</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Equações matemáticas LaTeX</span>"
     ]
   }
 ]
